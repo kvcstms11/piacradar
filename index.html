@@ -32,7 +32,7 @@
       --shadow: 0 18px 60px rgba(0,0,0,.45);
       --radius: 18px;
       --radius2: 26px;
-      --max: 1080px;
+      --max: 1100px;
     }
 
     *{ box-sizing:border-box; }
@@ -50,7 +50,6 @@
     }
     a{ color:inherit; text-decoration:none; }
     a:hover{ text-decoration:underline; }
-
     .wrap{ max-width: var(--max); margin: 0 auto; padding: 26px 18px 64px; }
 
     /* Top bar */
@@ -61,10 +60,7 @@
       gap:18px;
       padding: 10px 0 18px;
     }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width: 220px;
-    }
+    .brand{ display:flex; align-items:center; gap:12px; min-width: 220px; }
     .logo{
       width:42px; height:42px;
       border-radius: 14px;
@@ -118,8 +114,9 @@
       position:relative;
       padding: 30px 26px;
       display:grid;
-      grid-template-columns: 1.25fr;
-      gap: 18px;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 16px;
+      align-items:start;
     }
     .badge{
       display:inline-flex;
@@ -150,7 +147,6 @@
       font-size: 16px;
       max-width: 64ch;
     }
-
     .cta{
       margin-top: 18px;
       display:flex;
@@ -189,7 +185,7 @@
       background: linear-gradient(135deg, rgba(94,234,212,.26), rgba(96,165,250,.22));
     }
 
-    /* Sections */
+    /* Panels */
     section{ margin-top: 26px; }
     .panel{
       border-radius: var(--radius2);
@@ -224,6 +220,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
     }
+
     .box{
       border-radius: var(--radius);
       border: 1px solid rgba(255,255,255,.12);
@@ -240,6 +237,7 @@
       color: rgba(255,255,255,.74);
       font-size: 14px;
     }
+
     .list{
       margin: 10px 0 0;
       padding-left: 18px;
@@ -256,6 +254,33 @@
       background: rgba(255,255,255,.04);
       padding: 6px 10px;
       border-radius: 999px;
+    }
+
+    /* Example card */
+    .card{
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      padding: 16px 14px;
+    }
+    .card h3{
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: rgba(255,255,255,.88);
+      letter-spacing: -.1px;
+    }
+    pre{
+      margin: 0;
+      padding: 12px 12px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(10,16,28,.55);
+      color: rgba(255,255,255,.86);
+      overflow:auto;
+      white-space:pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.45;
     }
 
     /* Pricing */
@@ -358,21 +383,6 @@
       font-size: 14px;
     }
 
-    /* Example */
-    pre{
-      margin: 0;
-      padding: 14px 14px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(10,16,28,.55);
-      color: rgba(255,255,255,.86);
-      overflow:auto;
-      white-space:pre-wrap;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-      font-size: 13px;
-      line-height: 1.45;
-    }
-
     /* Form */
     label{
       display:block;
@@ -424,6 +434,7 @@
       .grid3{ grid-template-columns: 1fr; }
       .grid2{ grid-template-columns: 1fr; }
       .social-row{ grid-template-columns: 1fr 1fr; }
+      .hero-inner{ grid-template-columns: 1fr; }
       .top{ align-items:flex-start; }
     }
     @media (max-width: 560px){
@@ -451,6 +462,7 @@
         <a href="#miert">Miért hasznos</a>
         <a href="#fontos">Mi számít fontosnak</a>
         <a href="#ar">Árazás</a>
+        <a href="#kozosseg">Közösségi oldalak</a>
         <a href="#gyik">GYIK</a>
         <a href="#uzenet">Írj üzenetet</a>
       </nav>
@@ -459,26 +471,55 @@
     <!-- HERO -->
     <header class="hero">
       <div class="hero-inner">
-        <div class="badge"><span class="dot"></span> Prémium csatorna — napi 3 poszt, posztonként 6–8 hír</div>
+        <div>
+          <div class="badge"><span class="dot"></span> Prémium csatorna — napi 3 poszt, posztonként 6–8 hír</div>
 
-        <h2>Tömör piaci összefoglaló.<br/>Mi történt, és miért számít.</h2>
+          <h2>Tömör piaci összefoglaló.<br/>Mi történt, és miért számít.</h2>
 
-        <p class="sub">
-          EU/USA makró (infláció, munkaerőpiac), nagy vállalati jelentések (earnings) és crypto — röviden, magyarul,
-          pénzügyi fogalmakat angolul (yield, risk-off, earnings miss). Minden posztban szűrés + rövid értelmezés, és ha mélyebben érdekel, a források linkelve vannak.
-        </p>
+          <p class="sub">
+            EU/USA makró (infláció, munkaerőpiac), nagy vállalati jelentések (earnings) és crypto — röviden, magyarul,
+            pénzügyi fogalmakat angolul (yield, risk-off, earnings miss). Minden posztban szűrés + rövid értelmezés, és ha mélyebben érdekel, a források linkelve vannak.
+          </p>
 
-        <div class="cta">
-          <!-- TODO: cseréld a Telegram invite linkre (csatornához / bothoz) -->
-          <a class="btn primary" href="https://t.me/PIACRADAR_INVITE_LINK" target="_blank" rel="noopener">
-            Csatlakozás Telegramon →
-          </a>
-          <!-- TODO: cseréld a fizetés/tagság partner linkre -->
-          <a class="btn" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
-            Előfizetés →
-          </a>
-          <a class="btn" href="#uzenet">Kérdés / üzenet →</a>
+          <div class="cta">
+            <!-- TODO: cseréld a Telegram invite linkre -->
+            <a class="btn primary" href="https://t.me/PIACRADAR_INVITE_LINK" target="_blank" rel="noopener">
+              Csatlakozás Telegramon →
+            </a>
+            <!-- TODO: cseréld a fizetés/tagság partner linkre -->
+            <a class="btn" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
+              Előfizetés →
+            </a>
+            <a class="btn" href="#uzenet">Kérdés / üzenet →</a>
+          </div>
+
+          <div class="pillrow">
+            <span class="pill">EU/USA macro</span>
+            <span class="pill">Earnings (nagy cégek)</span>
+            <span class="pill">Crypto</span>
+            <span class="pill">Market-moving hírek</span>
+            <span class="pill">Rövid edukáció</span>
+          </div>
         </div>
+
+        <!-- Példa poszt (rövidített) -->
+        <aside class="card" id="pelda">
+          <h3>Példa poszt (rövid)</h3>
+          <pre>🔴 Amazon: gyenge reakció earnings körül
+A piac a capex/AI-spend és az AWS növekedés egyensúlyát árazza; a részletes számok a forrásban.
+↳ Miért számít: ha a guidance óvatos, a mega-cap tech hangulat és a szektor rotáció is változhat.
+Forrás: The Motley Fool
+
+🔴 Bitcoin: pánikemelkedő volatilitás
+BTC nagyot esett, miközben a BVIV megugrott (FTX-éra szinthez közeli feszültség).
+↳ Miért számít: risk-off jelzés lehet, főleg ha a derivatív piac is feszül.
+Forrás: CoinDesk
+
+🟡 Tech sell-off: szélesebb nyomás
+A tech szektor eladási hulláma felerősödött, a piac az AI-költségeket és a hozamkörnyezetet figyeli.
+↳ Miért számít: ha tartós, átírhatja a rövid távú “vezető szektor” narratívát.
+Forrás: Yahoo Finance</pre>
+        </aside>
       </div>
     </header>
 
@@ -531,8 +572,7 @@
           <p>
             Sok embernek van több előfizetése (híroldalak, hírlevelek, appok), mégis jön az a pont, amikor a sokadik olvasatlan üzenet után
             az az érzés marad: <b>túl sok a hír</b>. Ilyenkor már nem több headline kell, hanem <b>szűrés</b> és <b>magyarázat</b>:
-            mi a lényeg, mi a kontextus, és mi lehet a piaci hatás.
-            Itt jön képbe a Piacradar.
+            mi a lényeg, mi a kontextus, és mi lehet a piaci hatás. Itt jön képbe a Piacradar.
           </p>
         </div>
 
@@ -540,20 +580,12 @@
           <h4>Amit a Piacradar ad</h4>
           <ul class="list">
             <li><b>Időmegtakarítás</b>: 6–8 hír összefoglalva egy posztban, csak ami számít</li>
-            <li><b>Kontextus</b>: mit jelent az adat/jelentés (benchmark, trend, meglepetés)</li>
-            <li><b>Forráslinkek</b>: ha mélyebb részletek érdekelnek, ott a hivatkozás</li>
-            <li><b>Stabil minőség</b>: deduplikált téma, rövid és lényegre törő megfogalmazás</li>
-            <li><b>Prémium fókusz</b>: nem promo, nem clickbait — piaci relevancia</li>
+            <li><b>Kontextus</b>: mit jelent az adat/jelentés (trend, benchmark, meglepetés)</li>
+            <li><b>Források linkelve</b>: ha mélyebb részletek érdekelnek, ott a hivatkozás</li>
+            <li><b>Stabil minőség</b>: deduplikált témák, tömör és lényegre törő megfogalmazás</li>
+            <li><b>Edukáció</b>: fogalmak és összefüggések röviden, hogy gyorsabban értsd a piacot</li>
           </ul>
         </div>
-      </div>
-
-      <div class="pillrow">
-        <span class="pill">EU/USA macro</span>
-        <span class="pill">Earnings (nagy cégek)</span>
-        <span class="pill">Crypto</span>
-        <span class="pill">Market-moving hírek</span>
-        <span class="pill">Rövid edukáció</span>
       </div>
     </section>
 
@@ -561,18 +593,18 @@
     <section id="fontos" class="panel">
       <div class="kicker">
         <h3>Mi számít fontos hírnek</h3>
-        <span>Mit válogatunk be — és mit nem</span>
+        <span>Mit válogatunk be — és mit szűrünk ki</span>
       </div>
 
       <div class="grid2">
         <div class="box">
           <h4>Fontos (példák)</h4>
           <ul class="list">
-            <li><b>EU/USA makró</b>: inflációs adatok (CPI/PPI/PCE), munkaerőpiac (NFP, unemployment, claims), PMI/ISM, GDP</li>
+            <li><b>EU/USA makró</b>: infláció (CPI/PPI/PCE), munkaerőpiac (NFP, unemployment, claims), PMI/ISM, GDP</li>
             <li><b>Fed/ECB</b>: kamatdöntés, kommunikáció, forward guidance</li>
-            <li><b>Nagy earnings</b>: mega-cap / szektorvezetők — számok, guidance, és rövid értelmezés</li>
-            <li><b>Szektor-hatású megállapodások</b>: nagy M&A, nagyobb iparági dealek, supply chain / kapacitás hírek</li>
-            <li><b>Crypto</b>: széles piacra ható események (risk-on/off, nagy intézményi fejlemények), nem jóslatok</li>
+            <li><b>Nagy earnings</b>: mega-cap / szektorvezetők — számok, guidance, rövid értelmezés</li>
+            <li><b>Szektor-hatású megállapodások</b>: nagy M&A, iparági dealek, supply chain / kapacitás hírek</li>
+            <li><b>Crypto</b>: széles piacra ható események (risk-on/off, intézményi fejlemények), nem jóslatok</li>
           </ul>
         </div>
 
@@ -601,7 +633,7 @@
       <div class="grid2">
         <div class="box price">
           <h4>Prémium</h4>
-          <div class="big">€5.99 / hó</div>
+          <div class="big">€7.99 / hó</div>
           <div class="note">Kezdetben 1 csomag: a prémium csatorna a teljes szolgáltatás.</div>
           <ul class="list">
             <li>Napi 3 poszt (reggel / délután / este)</li>
@@ -616,13 +648,13 @@
         </div>
 
         <div class="box">
-          <h4>Később: Pro (opcionális)</h4>
+          <h4>Később: Pro</h4>
           <p>
-            Ha lesz elég extra ötlet és igény, később jöhet egy Pro réteg (pl. extra deep dive, market calendar, korábbi hozzáférés).
+            Később, ha lesz elég extra ötlet és igény, jöhet egy Pro réteg (pl. extra deep dive, market calendar, korábbi hozzáférés).
           </p>
           <div class="pillrow">
-            <span class="pill">Későbbi opció</span>
-            <span class="pill">~€7.99 / hó</span>
+            <span class="pill">Fejlesztés alatt</span>
+            <span class="pill">Extra funkciók</span>
           </div>
         </div>
       </div>
@@ -632,12 +664,11 @@
     <section id="kozosseg" class="panel">
       <div class="kicker">
         <h3>Közösségi oldalak</h3>
-        <span>Promo és frissítések — 4 platform</span>
+        <span>Hosszabb videós elemzések</span>
       </div>
 
       <div class="social-row">
         <a class="social" href="https://www.tiktok.com/@officialkovacstamas" target="_blank" rel="noopener">
-          <!-- TikTok -->
           <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M14 3v10.2a3.8 3.8 0 1 1-3-3.7V7.3a6.5 6.5 0 1 0 5 6.3V8.6c1.2.9 2.7 1.4 4 1.4V6.9c-2.2 0-4-1.8-4-4h-2z" fill="rgba(255,255,255,.92)"/>
           </svg>
@@ -648,7 +679,6 @@
         </a>
 
         <a class="social" href="https://www.instagram.com/officialkovacstamas/" target="_blank" rel="noopener">
-          <!-- Instagram -->
           <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2z" stroke="rgba(255,255,255,.92)" stroke-width="1.8"/>
             <path d="M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4z" stroke="rgba(255,255,255,.92)" stroke-width="1.8"/>
@@ -661,7 +691,6 @@
         </a>
 
         <a class="social" href="https://www.youtube.com/@officialkovacstamas" target="_blank" rel="noopener">
-          <!-- YouTube -->
           <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M21 8.5a3 3 0 0 0-2.1-2.1C17.1 6 12 6 12 6s-5.1 0-6.9.4A3 3 0 0 0 3 8.5 31 31 0 0 0 3 12a31 31 0 0 0 .1 3.5 3 3 0 0 0 2.1 2.1C6.9 18 12 18 12 18s5.1 0 6.9-.4A3 3 0 0 0 21 15.5 31 31 0 0 0 21 12a31 31 0 0 0 0-3.5z" fill="rgba(255,255,255,.92)"/>
             <path d="M10.2 14.7V9.3L14.8 12l-4.6 2.7z" fill="#0b1220"/>
@@ -673,7 +702,6 @@
         </a>
 
         <a class="social" href="https://x.com/kvcstms11" target="_blank" rel="noopener">
-          <!-- X -->
           <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M18.7 3H21l-7.7 8.8L22 21h-6.9l-5.4-6.6L4 21H1.7l8.3-9.5L2 3h7.1l4.9 5.9L18.7 3z" fill="rgba(255,255,255,.92)"/>
           </svg>
@@ -702,7 +730,7 @@
           <summary>Miben más a Piacradar a sima hírolvasásnál?</summary>
           <p>
             Nem csak headline: a Piacradar szűri a zajt, összevonja a duplikált témákat, és röviden leírja,
-            <b>mi történt</b> és <b>miért számít</b> (pl. trend, benchmark, piaci hatás). Ha mélyebben érdekel: a források linkelve vannak.
+            <b>mi történt</b> és <b>miért számít</b>. Ha mélyebben érdekel: a források linkelve vannak.
           </p>
         </details>
 
@@ -716,15 +744,14 @@
         <details>
           <summary>Hogyan tudok visszajelezni?</summary>
           <p>
-            A Telegram csatornán <b>👍/👎</b> reakciókkal és <b>kommenttel</b> is tudsz visszajelezni. Ez közvetlenül segíti a finomhangolást:
-            mit érdemes rövidíteni, mit kell jobban magyarázni, mi a legértékesebb.
+            A Telegram csatornán <b>👍/👎</b> reakciókkal és <b>kommenttel</b> is tudsz visszajelezni. Ez közvetlenül segíti a finomhangolást.
           </p>
         </details>
 
         <details>
           <summary>Mit jelent az, hogy “miért számít”?</summary>
           <p>
-            Rövid értelmezés: mi a kontextus (trend, meglepetés, benchmark), és mi lehet a tipikus piaci csatorna
+            Rövid értelmezés: mi a kontextus (trend, benchmark, meglepetés), és mi lehet a tipikus piaci csatorna
             (yields, USD, szektorhatás, risk-on/off).
           </p>
         </details>
@@ -732,7 +759,7 @@
         <details>
           <summary>Van ingyenes csatorna?</summary>
           <p>
-            Nem. A tartalom a prémium csatornában érhető el. A közösségi felületeken viszont lesznek promó és edukációs anyagok.
+            Nem. A tartalom a prémium csatornában érhető el. A közösségi felületeken lesznek promó és edukációs anyagok.
           </p>
         </details>
 
@@ -743,7 +770,6 @@
           </p>
         </details>
 
-        <!-- +3 releváns kérdés -->
         <details>
           <summary>Milyen forrásokra épül?</summary>
           <p>
@@ -777,10 +803,7 @@
 
       <div class="box" style="max-width: 720px; margin: 0 auto;">
         <form action="https://api.web3forms.com/submit" method="POST">
-          <!-- web3forms access key -->
           <input type="hidden" name="access_key" value="6d0dd951-1bfb-4f51-85fb-b0fd46f61d6e" />
-
-          <!-- honeypot -->
           <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
 
           <label for="name">Név</label>
@@ -800,24 +823,6 @@
           <button type="submit" class="btn primary" style="margin-top: 12px;">Üzenet küldése →</button>
         </form>
       </div>
-    </section>
-
-    <!-- PÉLDA (ALUL) -->
-    <section id="pelda" class="panel">
-      <div class="kicker">
-        <h3>Példa összefoglaló</h3>
-        <span>Így néz ki egy blokk</span>
-      </div>
-
-      <pre>🟢 Nvidia vezeti a tech rally-t
-A chipgyártó részvényei jelentősen emelkedtek és húzták magukkal a félvezető szektort, miközben Microsoft szintén erősödött. A technológiai szektor kompenzálta a kommunikációs szolgáltatások gyengeségét.
-↳ Miért számít: Az AI-chipek iránti aggodalmak csillapodása, a szektor fundamentumai erősek maradnak
-Forrás: Yahoo Finance
-
-🔴 Stellantis 25%-ot zuhant eredmények után
-A Chrysler anyavállalata 22 milliárd eurós (25,9 milliárd USD) egyszeri leírást jelentett be és felfüggesztette osztalékfizetését. A részvény 25%-ot esett pénteken.
-↳ Miért számít: Jelentős veszteség az autóiparban, jelzi a szektor nehézségeit
-Forrás: Yahoo Finance</pre>
     </section>
 
     <!-- FOOTER (csak itt legyen a disclaimer) -->
