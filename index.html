@@ -14,7 +14,6 @@
   <meta property="og:title" content="Piacradar — Prémium piaci összefoglalók Telegramon" />
   <meta property="og:description" content="Tömör, tényalapú piaci összefoglalók: mi történt és miért számít. Makró + earnings + market-moving hírek. Telegramon." />
   <meta property="og:type" content="website" />
-  <!-- TODO: cseréld a végleges domainre -->
   <meta property="og:url" content="https://piacradar.eu/" />
 
   <style>
@@ -73,7 +72,7 @@
     }
     .brand p{
       margin:2px 0 0; color:var(--muted); font-size:13px;
-      white-space:nowrap; /* <-- EZT kerested: egy sorban marad */
+      white-space:nowrap; /* egy sorban marad */
     }
 
     .nav{
@@ -115,7 +114,7 @@
       position:relative;
       padding:28px 22px;
       display:grid;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns: 1.10fr .90fr; /* <-- szélesebb jobb oldal */
       gap:18px;
       align-items:stretch;
     }
@@ -179,6 +178,9 @@
       border-radius:18px;
       padding:16px 16px 14px;
     }
+    /* Példa kártya: ne legyen max-width korlát */
+    #pelda{ max-width:none; }
+
     .card h3{
       margin:0 0 10px;
       font-size:14px;
@@ -195,14 +197,16 @@
       color:rgba(255,255,255,.80);
     }
 
-    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    /* Pills: desktopon 1 sorba kényszerítjük, mobilon vissza wrap */
+    .pillrow{ display:flex; flex-wrap:nowrap; gap:10px; margin-top:12px; }
     .pill{
       font-size:12px;
       color:rgba(255,255,255,.72);
-      padding:6px 10px;
+      padding:7px 10px; /* kicsit kompaktabb */
       border-radius:999px;
       border:1px solid var(--border);
       background:rgba(255,255,255,.03);
+      white-space:nowrap;
     }
 
     /* Sections */
@@ -355,7 +359,10 @@
       .grid3{ grid-template-columns: 1fr; }
       .grid2{ grid-template-columns: 1fr; }
       .grid4{ grid-template-columns: 1fr 1fr; }
-      .nav{ display:none; } /* 1 oldalas landingnél mobilon nem feltétlen kell */
+      .nav{ display:none; }
+
+      /* mobilon inkább törjön sorba, ne kényszerítsük 1 sorba */
+      .pillrow{ flex-wrap:wrap; }
     }
     @media (max-width: 520px){
       .hero h2{ font-size:28px; }
@@ -401,14 +408,13 @@
           <h2>Tömör piaci összefoglaló.<br/>Mi történt, és miért számít.</h2>
 
           <p class="sub">
-            EU és USA gazdasági adatok, vállalati jelentések és piacmozgató hírek — 
-            magyarul, tömören, pénzügyi fogalmakkal magyarázva. 
-            Nem csak tájékoztatás, hanem oktatás is: 
+            EU és USA gazdasági adatok, vállalati jelentések és piacmozgató hírek —
+            magyarul, tömören, pénzügyi fogalmakkal magyarázva.
+            Nem csak tájékoztatás, hanem oktatás is:
             a Piacradar segít érteni, nem csak követni a piacot.
           </p>
 
           <div class="cta">
-            <!-- TODO: ide tedd a fizetési / tagság kezelő partner linkjét -->
             <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
               Előfizetés (Prémium) →
             </a>
@@ -422,7 +428,7 @@
         </div>
 
         <!-- Example (short) -->
-        <aside class="card" aria-label="Példa összefoglaló">
+        <aside class="card" id="pelda" aria-label="Példa összefoglaló">
           <h3>Példa</h3>
           <pre>🟢 Nvidia vezeti a tech rally-t
 A chipgyártó részvényei emelkedtek, és húzták a félvezető szektort.
@@ -620,7 +626,6 @@ Forrás: Yahoo Finance</pre>
             <li>Edukációs magyarázatok (fogalmak, keretek)</li>
           </ul>
           <div class="cta" style="margin-top:12px;">
-            <!-- TODO: ide tedd a végleges payment linket -->
             <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
               Előfizetés →
             </a>
@@ -648,7 +653,6 @@ Forrás: Yahoo Finance</pre>
 
       <div class="grid4">
         <a class="social-tile" href="https://www.tiktok.com/@officialkovacstamas" target="_blank" rel="noopener">
-          <!-- TikTok -->
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
             <path d="M14.5 4c.6 2.7 2.5 4.6 5.2 5.1v3.4c-2 0-3.8-.6-5.2-1.7v6.2c0 3.1-2.5 5.6-5.6 5.6S3 20.1 3 17s2.5-5.6 5.6-5.6c.4 0 .9.1 1.3.2v3.5c-.4-.2-.8-.3-1.3-.3-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2 2.2-1 2.2-2.2V4h2.4Z"
               stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -658,7 +662,6 @@ Forrás: Yahoo Finance</pre>
         </a>
 
         <a class="social-tile" href="https://www.instagram.com/officialkovacstamas/" target="_blank" rel="noopener">
-          <!-- Instagram -->
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
             <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="1.6"/>
             <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="1.6"/>
@@ -669,7 +672,6 @@ Forrás: Yahoo Finance</pre>
         </a>
 
         <a class="social-tile" href="https://www.youtube.com/@officialkovacstamas" target="_blank" rel="noopener">
-          <!-- YouTube -->
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
             <path d="M21 8.2a3 3 0 0 0-2.1-2.1C17.1 5.5 12 5.5 12 5.5s-5.1 0-6.9.6A3 3 0 0 0 3 8.2 31 31 0 0 0 3 12a31 31 0 0 0 .1 3.8 3 3 0 0 0 2.1 2.1c1.8.6 6.8.6 6.8.6s5.1 0 6.9-.6a3 3 0 0 0 2.1-2.1c.2-1.3.2-2.6.2-3.8s0-2.5-.2-3.8Z"
               stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
@@ -680,7 +682,6 @@ Forrás: Yahoo Finance</pre>
         </a>
 
         <a class="social-tile" href="https://x.com/kvcstms11" target="_blank" rel="noopener">
-          <!-- X -->
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
             <path d="M7 3h3.2l4.2 6 4.6-6H22l-7 9 7 9h-3.2l-4.7-6.6L9 21H2l7.8-9.9L7 3Z"
               stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
@@ -810,7 +811,6 @@ Forrás: Yahoo Finance</pre>
       </div>
 
       <div class="footer-links">
-        <!-- TODO: ide tedd a végleges payment linket -->
         <a href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés</a>
         <a href="#gyik">GYIK</a>
         <a href="#uzenet">Üzenet</a>
@@ -819,7 +819,6 @@ Forrás: Yahoo Finance</pre>
 
   </div>
 
-  <!-- Web3Forms client script (captcha) -->
   <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <script>
