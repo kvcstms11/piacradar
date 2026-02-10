@@ -4,15 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Piacradar — Piaci összefoglalók Telegramon</title>
-  <meta name="description" content="Piacradar — tömör, tényalapú piaci összefoglalók Telegramon. EU/USA makró, nagy vállalati jelentések, crypto és market-moving hírek: mi történt, miért számít." />
+  <title>Piacradar — Prémium piaci összefoglalók Telegramon</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Piacradar: prémium piaci összefoglalók Telegramon. EU/USA makró (CPI/PPI/NFP/PMI), nagy earnings, crypto és market-moving hírek: mi történt és miért számít. Szűrés + rövid értelmezés, forráslinkekkel." />
+  <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0b1220" />
 
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Piacradar — Piaci összefoglalók Telegramon" />
-  <meta property="og:description" content="EU/USA makró, earnings, crypto és market-moving hírek — röviden: mi történt és miért számít." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Piacradar — Prémium piaci összefoglalók Telegramon" />
+  <meta property="og:description" content="Napi 3 poszt, posztonként 6–8 deduplikált hír rövid értelmezéssel. EU/USA makró, earnings, crypto. Forráslinkekkel." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="hu_HU" />
+  <!-- TODO: cseréld a saját domainre -->
   <meta property="og:url" content="https://piacradar.eu/" />
 
   <style>
@@ -29,10 +32,11 @@
       --shadow: 0 18px 60px rgba(0,0,0,.45);
       --radius: 18px;
       --radius2: 26px;
-      --max: 1060px;
+      --max: 1080px;
     }
+
     *{ box-sizing:border-box; }
-    html,body{ height:100%; scroll-behavior:smooth; }
+    html,body{ height:100%; }
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
@@ -47,237 +51,384 @@
     a{ color:inherit; text-decoration:none; }
     a:hover{ text-decoration:underline; }
 
-    .wrap{ max-width: var(--max); margin:0 auto; padding: 26px 18px 70px; }
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 26px 18px 64px; }
+
+    /* Top bar */
     .top{
-      display:flex; gap:14px; align-items:center; justify-content:space-between;
-      position:sticky; top:0; z-index:20;
-      padding:12px 0;
-      backdrop-filter: blur(10px);
-    }
-    .brand{ display:flex; gap:12px; align-items:center; }
-    .logo{
-      width:40px; height:40px; border-radius: 14px;
-      background:
-        radial-gradient(10px 10px at 25% 30%, rgba(255,255,255,.75), transparent 60%),
-        linear-gradient(135deg, rgba(94,234,212,.90), rgba(96,165,250,.85));
-      box-shadow: 0 16px 40px rgba(0,0,0,.25);
-    }
-    .brand h1{ margin:0; font-size:16px; letter-spacing:.2px; }
-    .brand p{ margin:0; color:var(--muted); font-size:12px; }
-
-    .nav{
-      display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-end;
-      font-size: 12px; color: rgba(255,255,255,.78);
-    }
-    .nav a{
-      padding: 8px 10px;
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: 999px;
-      background: rgba(255,255,255,.03);
-    }
-
-    .hero{
-      margin-top: 10px;
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .hero-inner{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 18px;
-      padding: 26px;
-    }
-
-    .badge{
-      display:inline-flex; gap:8px; align-items:center;
-      padding: 7px 10px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      border-radius: 999px;
-      color: rgba(255,255,255,.84);
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    .dot{
-      width:8px; height:8px; border-radius:999px;
-      background: var(--accent);
-      box-shadow: 0 0 18px rgba(94,234,212,.65);
-    }
-
-    h2{
-      margin: 0 0 10px;
-      font-size: 34px;
-      line-height: 1.10;
-      letter-spacing: -0.4px;
-    }
-    .sub{
-      margin: 0 0 16px;
-      color: rgba(255,255,255,.78);
-      max-width: 55ch;
-    }
-    .cta{ display:flex; gap:10px; flex-wrap:wrap; margin: 14px 0 6px; }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      color: rgba(255,255,255,.92);
-      font-weight: 600;
-      font-size: 13px;
-    }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(94,234,212,.18), rgba(96,165,250,.12));
-      border-color: rgba(94,234,212,.35);
-    }
-    .fine{ margin: 10px 0 0; color: rgba(255,255,255,.62); font-size: 12px; }
-
-    .card{
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.14);
-      padding: 16px;
-    }
-    .card h3{ margin:0 0 10px; font-size: 13px; color: rgba(255,255,255,.86); }
-    pre{
-      margin:0;
-      white-space: pre-wrap;
-      word-break: break-word;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 12px;
-      color: rgba(255,255,255,.84);
-      line-height: 1.4;
-    }
-
-    section{ margin-top: 28px; }
-    .kicker{
-      display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
-      margin-bottom: 10px;
-    }
-    .kicker h3{ margin:0; font-size: 16px; letter-spacing:.2px; }
-    .kicker span{ color: rgba(255,255,255,.62); font-size: 12px; }
-
-    .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    .box{
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      padding: 16px;
-    }
-    .box h4{ margin: 0 0 8px; font-size: 14px; color: rgba(255,255,255,.88); }
-    .box p{ margin:0; color: rgba(255,255,255,.74); font-size: 13px; }
-    .bullets{ margin: 8px 0 0; padding-left: 18px; color: rgba(255,255,255,.74); }
-    .bullets li{ margin: 6px 0; }
-
-    .pillrow{ display:flex; gap:8px; flex-wrap:wrap; margin-top: 12px; }
-    .pill{
-      font-size: 12px;
-      color: rgba(255,255,255,.78);
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-    }
-
-    /* Social */
-    .social4{
-      display:grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    .social{
-      display:flex; align-items:center; justify-content:center; gap:10px;
-      padding: 14px 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      font-weight: 700;
-      font-size: 13px;
-    }
-    .social svg{ width:18px; height:18px; opacity:.92; }
-    .social:hover{ background: rgba(255,255,255,.06); text-decoration:none; }
-
-    /* FAQ */
-    .faq-toggle{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      padding: 14px 16px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      cursor:pointer;
-      font-weight: 700;
-      font-size: 13px;
-    }
-    .faq-toggle .hint{ color: rgba(255,255,255,.62); font-weight: 600; font-size: 12px; }
-    .faq-wrap[hidden]{ display:none; }
-
-    details{
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      padding: 12px 14px;
-    }
-    details + details{ margin-top: 10px; }
-    summary{
-      cursor:pointer;
-      list-style:none;
-      font-weight: 700;
-      color: rgba(255,255,255,.88);
-    }
-    summary::-webkit-details-marker{ display:none; }
-    .faq-a{
-      margin-top: 8px;
-      color: rgba(255,255,255,.74);
-      font-size: 13px;
-    }
-
-    /* Form */
-    .form{
-      display:grid; gap: 10px;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-    label{ font-size: 12px; color: rgba(255,255,255,.78); }
-    input, textarea{
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.92);
-      outline: none;
-    }
-    input:focus, textarea:focus{
-      border-color: rgba(94,234,212,.40);
-      box-shadow: 0 0 0 3px rgba(94,234,212,.12);
-    }
-    textarea{ min-height: 130px; resize: vertical; }
-
-    footer{
-      margin-top: 34px;
       display:flex;
       align-items:center;
       justify-content:space-between;
+      gap:18px;
+      padding: 10px 0 18px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 220px;
+    }
+    .logo{
+      width:42px; height:42px;
+      border-radius: 14px;
+      background:
+        radial-gradient(18px 18px at 30% 30%, rgba(94,234,212,.85), transparent 60%),
+        radial-gradient(18px 18px at 70% 70%, rgba(96,165,250,.85), transparent 60%),
+        rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .brand h1{ margin:0; font-size: 16px; letter-spacing:.2px; }
+    .brand p{ margin:2px 0 0; font-size: 12px; color: var(--muted); }
+
+    .nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .nav a{
+      font-size: 13px;
+      color: rgba(255,255,255,.78);
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+    .nav a:hover{
+      text-decoration:none;
+      border-color: rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+    }
+
+    /* Hero */
+    .hero{
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .hero::before{
+      content:"";
+      position:absolute; inset:-1px;
+      background:
+        radial-gradient(700px 240px at 20% 0%, rgba(94,234,212,.14), transparent 60%),
+        radial-gradient(700px 240px at 80% 0%, rgba(96,165,250,.12), transparent 60%);
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      padding: 30px 26px;
+      display:grid;
+      grid-template-columns: 1.25fr;
+      gap: 18px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.82);
+      font-size: 13px;
+      width: fit-content;
+    }
+    .dot{
+      width:8px; height:8px; border-radius: 99px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(94,234,212,.18);
+    }
+    .hero h2{
+      margin: 14px 0 10px;
+      font-size: clamp(28px, 3.6vw, 44px);
+      line-height: 1.08;
+      letter-spacing: -.6px;
+    }
+    .sub{
+      margin: 0;
+      color: rgba(255,255,255,.78);
+      font-size: 16px;
+      max-width: 64ch;
+    }
+
+    .cta{
+      margin-top: 18px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.90);
+      font-size: 14px;
+      cursor:pointer;
+      text-decoration:none;
+      transition: transform .08s ease, background .15s ease, border-color .15s ease;
+      user-select:none;
+    }
+    .btn:hover{
+      text-decoration:none;
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.18);
+      transform: translateY(-1px);
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(94,234,212,.22), rgba(96,165,250,.18));
+      border-color: rgba(94,234,212,.30);
+    }
+    .btn.primary:hover{
+      background: linear-gradient(135deg, rgba(94,234,212,.26), rgba(96,165,250,.22));
+    }
+
+    /* Sections */
+    section{ margin-top: 26px; }
+    .panel{
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      padding: 22px 20px;
+    }
+    .kicker{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom: 14px;
+    }
+    .kicker h3{
+      margin:0;
+      font-size: 18px;
+      letter-spacing: -.2px;
+    }
+    .kicker span{
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .box{
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      padding: 16px 14px;
+    }
+    .box h4{
+      margin:0 0 8px;
+      font-size: 14px;
+      color: rgba(255,255,255,.88);
+    }
+    .box p{
+      margin:0;
+      color: rgba(255,255,255,.74);
+      font-size: 14px;
+    }
+    .list{
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.74);
+      font-size: 14px;
+    }
+    .list li{ margin: 6px 0; }
+
+    .pillrow{ display:flex; gap:8px; flex-wrap:wrap; margin-top: 10px; }
+    .pill{
+      font-size: 12px;
+      color: rgba(255,255,255,.78);
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    /* Pricing */
+    .price{
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+    .price .big{
+      font-size: 30px;
+      letter-spacing: -0.4px;
+      font-weight: 700;
+    }
+    .price .note{
+      color: rgba(255,255,255,.72);
+      font-size: 13px;
+    }
+
+    /* Social */
+    .social-row{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .social{
+      display:flex;
+      align-items:center;
       gap: 12px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,.10);
+      padding: 14px 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      transition: transform .08s ease, background .15s ease, border-color .15s ease;
+    }
+    .social:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,.07);
+      border-color: rgba(255,255,255,.18);
+      text-decoration:none;
+    }
+    .icon{
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+      opacity: .92;
+    }
+    .social .meta{
+      display:flex; flex-direction:column; gap:2px;
+      min-width: 0;
+    }
+    .social .meta b{
+      font-size: 13px;
+      font-weight: 650;
+      color: rgba(255,255,255,.90);
+      line-height: 1.2;
+    }
+    .social .meta span{
+      font-size: 12px;
+      color: rgba(255,255,255,.70);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* FAQ accordion */
+    .faq-toggle{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      cursor:pointer;
+      user-select:none;
+    }
+    .faq-toggle b{ font-size: 14px; font-weight: 650; }
+    .faq-toggle span{ color: var(--muted); font-size: 13px; }
+
+    .faq-wrap{ margin-top: 12px; display:none; }
+    .faq-wrap.open{ display:block; }
+
+    details{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      padding: 10px 12px;
+      margin: 10px 0;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      font-weight: 600;
+      color: rgba(255,255,255,.86);
+      font-size: 14px;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    details p{
+      margin: 10px 0 2px;
+      color: rgba(255,255,255,.74);
+      font-size: 14px;
+    }
+
+    /* Example */
+    pre{
+      margin: 0;
+      padding: 14px 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(10,16,28,.55);
+      color: rgba(255,255,255,.86);
+      overflow:auto;
+      white-space:pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    /* Form */
+    label{
+      display:block;
+      margin-top: 10px;
+      font-size: 13px;
+      color: rgba(255,255,255,.78);
+    }
+    input, textarea{
+      width:100%;
+      padding: 10px 10px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      outline:none;
+    }
+    input:focus, textarea:focus{
+      border-color: rgba(94,234,212,.35);
+      box-shadow: 0 0 0 4px rgba(94,234,212,.12);
+    }
+
+    footer{
+      margin-top: 26px;
+      padding: 18px 4px 0;
+      display:flex;
+      gap: 12px;
+      justify-content:space-between;
+      align-items:flex-end;
+      flex-wrap:wrap;
       color: rgba(255,255,255,.62);
       font-size: 12px;
     }
-
-    @media (max-width: 980px){
-      .hero-inner{ grid-template-columns: 1fr; }
-      .grid2, .grid3{ grid-template-columns: 1fr; }
-      .social4{ grid-template-columns: 1fr 1fr; }
+    .footlinks{ display:flex; gap: 12px; flex-wrap:wrap; }
+    .footlinks a{
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      color: rgba(255,255,255,.70);
     }
-    @media (max-width: 520px){
-      h2{ font-size: 28px; }
-      .nav{ display:none; }
-      .social4{ grid-template-columns: 1fr; }
+    .footlinks a:hover{
+      text-decoration:none;
+      background: rgba(255,255,255,.06);
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .grid3{ grid-template-columns: 1fr; }
+      .grid2{ grid-template-columns: 1fr; }
+      .social-row{ grid-template-columns: 1fr 1fr; }
+      .top{ align-items:flex-start; }
+    }
+    @media (max-width: 560px){
+      .social-row{ grid-template-columns: 1fr; }
+      .hero-inner{ padding: 26px 18px; }
     }
   </style>
 </head>
@@ -285,12 +436,13 @@
 <body>
   <div class="wrap">
 
+    <!-- TOP BAR -->
     <div class="top">
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div>
           <h1>Piacradar</h1>
-          <p>Piaci összefoglalók — Telegramon</p>
+          <p>Prémium piaci összefoglalók — Telegramon</p>
         </div>
       </div>
 
@@ -300,387 +452,409 @@
         <a href="#fontos">Mi számít fontosnak</a>
         <a href="#ar">Árazás</a>
         <a href="#gyik">GYIK</a>
-        <a href="#kozosseg">Közösségi oldalak</a>
-        <a href="#uzenet">Üzenet</a>
+        <a href="#uzenet">Írj üzenetet</a>
       </nav>
     </div>
 
+    <!-- HERO -->
     <header class="hero">
       <div class="hero-inner">
-        <div>
-          <div class="badge"><span class="dot"></span> Éles indulás előtt — minőség fókusz, automatizált összegzés</div>
+        <div class="badge"><span class="dot"></span> Prémium csatorna — napi 3 poszt, posztonként 6–8 hír</div>
 
-          <h2>Tömör piaci összefoglaló.<br/>Mi történt, és miért számít.</h2>
+        <h2>Tömör piaci összefoglaló.<br/>Mi történt, és miért számít.</h2>
 
-          <p class="sub">
-            EU/USA makró (CPI, PPI, NFP, PMI), nagy vállalati jelentések és market-moving hírek — magyarul,
-            de a fontos pénzügyi fogalmakat angolul (yield, risk-off, earnings miss).
-          </p>
+        <p class="sub">
+          EU/USA makró (infláció, munkaerőpiac), nagy vállalati jelentések (earnings) és crypto — röviden, magyarul,
+          pénzügyi fogalmakat angolul (yield, risk-off, earnings miss). Minden posztban szűrés + rövid értelmezés, és ha mélyebben érdekel, a források linkelve vannak.
+        </p>
 
-          <div class="cta">
-            <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
-              Előfizetés (Premium) →
-            </a>
-            <a class="btn" href="#pelda">Példa összefoglaló</a>
-            <a class="btn" href="#uzenet">Kérdés / üzenet</a>
-          </div>
-
-          <p class="fine">⚠️ Nem befektetési tanács. Tény + rövid értelmezés, forráslinkekkel.</p>
+        <div class="cta">
+          <!-- TODO: cseréld a Telegram invite linkre (csatornához / bothoz) -->
+          <a class="btn primary" href="https://t.me/PIACRADAR_INVITE_LINK" target="_blank" rel="noopener">
+            Csatlakozás Telegramon →
+          </a>
+          <!-- TODO: cseréld a fizetés/tagság partner linkre -->
+          <a class="btn" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
+            Előfizetés →
+          </a>
+          <a class="btn" href="#uzenet">Kérdés / üzenet →</a>
         </div>
-
-        <aside class="card" id="pelda">
-          <h3>Példa (formátum)</h3>
-          <pre>📡 Piacradar — Morning Brief
-2026.02.06
-
-🔴 US CPI: 3.1% YoY (várt: 3.2%, előző: 3.3%)
-A headline CPI tovább hűlt, közelebb a 2%-os célhoz.
-↳ Miért számít: disinflation → Fed-cut narratíva erősödhet → yields le, growth érzékeny.
-Forrás: [BLS] (link)
-
-🟡 Mega-cap earnings: guidance óvatos
-↳ Miért számít: capex/AI-spend vs margin trade-off, szektorhatás.
-Forrás: [FT] (link)
-
-⚠️ Nem befektetési tanács.
-Hasznos volt? 👍 | 👎</pre>
-
-          <div class="pillrow">
-            <span class="pill">Makró</span>
-            <span class="pill">Earnings</span>
-            <span class="pill">Crypto</span>
-            <span class="pill">Miért számít</span>
-          </div>
-        </aside>
       </div>
     </header>
 
-    <section id="hogyan">
+    <!-- HOGYAN MŰKÖDIK -->
+    <section id="hogyan" class="panel">
       <div class="kicker">
         <h3>Hogyan működik</h3>
-        <span>Rutin + “high-impact” összefoglalók</span>
-      </div>
-
-      <div class="grid2">
-        <div class="box">
-          <h4>Napi ritmus (Premium)</h4>
-          <ul class="bullets">
-            <li>Napi 3 poszt: reggel / délután / este.</li>
-            <li>Fontosabb makró vagy earnings után külön “azonnali összefoglaló”.</li>
-            <li>Hétvégi elemzés + következő hét kitekintő.</li>
-          </ul>
-        </div>
-
-        <div class="box">
-          <h4>Mit kapsz a posztokban?</h4>
-          <ul class="bullets">
-            <li>Tények konkrét számokkal (%, USD, bps, YoY), amennyire elérhető.</li>
-            <li>“Miért számít” — trend, meglepetés, piaci következmény (yield, USD, szektor).</li>
-            <li>Edukáció: rövid fogalommagyarázatok, hogy érthető legyen a piac logikája.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="box" style="margin-top:12px;">
-        <h4>Miért nehéz ma híreket követni?</h4>
-        <p>
-          A legtöbb feed zajos, ismétel, clickbaites, és gyakran ugyanarról a témáról 5–10 variációt kapsz.
-          A Piacradar célja: <b>összevonni</b> a témákat, <b>kiszűrni</b> a kevésbé releváns tartalmat, és
-          3–5 másodperces “érthetőségre” hozni a lényeget.
-        </p>
-      </div>
-    </section>
-
-    <section id="miert">
-      <div class="kicker">
-        <h3>Miért hasznos</h3>
-        <span>Időt spórol, kontextust ad</span>
+        <span>Napi ritmus + azonnali reakciók</span>
       </div>
 
       <div class="grid3">
         <div class="box">
-          <h4>Kevesebb zaj</h4>
-          <p>Egyszerre 6–8 hír összegzése: csak az megy ki, ami tényleg számít — témadeduplikációval.</p>
-        </div>
-        <div class="box">
-          <h4>Kontextus + következmény</h4>
-          <p>Nem “hírújság”: rövid értelmezés, hogy a hír mit jelent a yield / USD / szektorok felől nézve.</p>
-        </div>
-        <div class="box">
-          <h4>Edukáció beépítve</h4>
-          <p>Fogalmak és összefüggések magyarázata (pl. core inflation, guidance, earnings miss).</p>
+          <h4>Napi ritmus</h4>
+          <ul class="list">
+            <li><b>Napi 3 poszt</b>: reggel / délután / este</li>
+            <li>Posztonként <b>6–8 hír</b> (deduplikálva, összevonva)</li>
+            <li>Mindig: <b>mi történt + miért számít</b></li>
+          </ul>
         </div>
 
         <div class="box">
-          <h4>Makró és earnings egyben</h4>
-          <p>EU/USA adatok (infláció, munkaerőpiac) + nagy vállalati számok és hatásuk egy keretben.</p>
+          <h4>Fontos jelentések</h4>
+          <ul class="list">
+            <li>Ha kijön egy nagy adat/jelentés (CPI, NFP, Fed/ECB, big earnings): <b>külön összefoglaló</b> közvetlenül utána</li>
+            <li>Konkrét számok + rövid értelmezés (benchmark/előző/várakozás, ha elérhető)</li>
+          </ul>
         </div>
+
         <div class="box">
-          <h4>Forráslinkek (ha mélyebben érdekel)</h4>
-          <p>Minden poszthoz csatolt források: ha részleteket akarsz, egy kattintásra ott a teljes cikk/jelentés.</p>
-        </div>
-        <div class="box">
-          <h4>Stabil minőség</h4>
-          <p>Szabályalapú szűrés + ellenőrzések: tilos a buy/sell, price target, “jóslás” jelleg.</p>
+          <h4>Hétvégi anyagok</h4>
+          <ul class="list">
+            <li><b>Hétvégi elemzés</b>: mi történt a héten, mi mozgatta a piacot</li>
+            <li><b>Next week outlook</b>: jövő heti makró/earnings fókusz, mire figyel a piac</li>
+            <li><b>Edukáció</b>: rövid magyarázatok fogalmakhoz (pl. yield, core inflation, guidance)</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="fontos">
+    <!-- MIÉRT HASZNOS -->
+    <section id="miert" class="panel">
       <div class="kicker">
-        <h3>Mi számít fontos hírnek?</h3>
-        <span>Mit emelünk be a Premium csatornába</span>
+        <h3>Miért hasznos</h3>
+        <span>Szűrés + értelmezés</span>
       </div>
 
       <div class="grid2">
         <div class="box">
-          <h4>Fontos</h4>
-          <ul class="bullets">
-            <li><b>EU/USA makró adatok</b>: inflációs, munkaerőpiaci, ciklusjelzők (CPI/PPI/NFP/PMI stb.).</li>
-            <li><b>Nagy vállalati jelentések</b>: konkrét számok + rövid értelmezés (earnings, guidance, margin).</li>
-            <li><b>Piacra/szektorra ható megállapodások</b>: M&A, stratégiai deals, szabályozás, ellátási lánc.</li>
-            <li><b>Market-moving események</b>: Fed/ECB üzenetek, yield-spike, risk-on/off fordulók.</li>
+          <h4>Miért nehéz követni a híreket?</h4>
+          <p>
+            Sok embernek van több előfizetése (híroldalak, hírlevelek, appok), mégis jön az a pont, amikor a sokadik olvasatlan üzenet után
+            az az érzés marad: <b>túl sok a hír</b>. Ilyenkor már nem több headline kell, hanem <b>szűrés</b> és <b>magyarázat</b>:
+            mi a lényeg, mi a kontextus, és mi lehet a piaci hatás.
+            Itt jön képbe a Piacradar.
+          </p>
+        </div>
+
+        <div class="box">
+          <h4>Amit a Piacradar ad</h4>
+          <ul class="list">
+            <li><b>Időmegtakarítás</b>: 6–8 hír összefoglalva egy posztban, csak ami számít</li>
+            <li><b>Kontextus</b>: mit jelent az adat/jelentés (benchmark, trend, meglepetés)</li>
+            <li><b>Forráslinkek</b>: ha mélyebb részletek érdekelnek, ott a hivatkozás</li>
+            <li><b>Stabil minőség</b>: deduplikált téma, rövid és lényegre törő megfogalmazás</li>
+            <li><b>Prémium fókusz</b>: nem promo, nem clickbait — piaci relevancia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pillrow">
+        <span class="pill">EU/USA macro</span>
+        <span class="pill">Earnings (nagy cégek)</span>
+        <span class="pill">Crypto</span>
+        <span class="pill">Market-moving hírek</span>
+        <span class="pill">Rövid edukáció</span>
+      </div>
+    </section>
+
+    <!-- MI SZÁMÍT FONTOSNAK -->
+    <section id="fontos" class="panel">
+      <div class="kicker">
+        <h3>Mi számít fontos hírnek</h3>
+        <span>Mit válogatunk be — és mit nem</span>
+      </div>
+
+      <div class="grid2">
+        <div class="box">
+          <h4>Fontos (példák)</h4>
+          <ul class="list">
+            <li><b>EU/USA makró</b>: inflációs adatok (CPI/PPI/PCE), munkaerőpiac (NFP, unemployment, claims), PMI/ISM, GDP</li>
+            <li><b>Fed/ECB</b>: kamatdöntés, kommunikáció, forward guidance</li>
+            <li><b>Nagy earnings</b>: mega-cap / szektorvezetők — számok, guidance, és rövid értelmezés</li>
+            <li><b>Szektor-hatású megállapodások</b>: nagy M&A, nagyobb iparági dealek, supply chain / kapacitás hírek</li>
+            <li><b>Crypto</b>: széles piacra ható események (risk-on/off, nagy intézményi fejlemények), nem jóslatok</li>
           </ul>
         </div>
 
         <div class="box">
-          <h4>Nem fontos (kiszűrjük)</h4>
-          <ul class="bullets">
-            <li>“Price prediction” cikkek, “X elérheti Y-t 2030-ra”.</li>
-            <li>Analyst rating (upgrade/downgrade) jellegű zaj.</li>
-            <li>“Top 10 stocks to buy” és hasonló listák.</li>
-            <li>Kripto árjóslások / spekuláció tényként.</li>
+          <h4>Nem fontos / kiszűrjük</h4>
+          <ul class="list">
+            <li>"Price prediction" cikkek (pl. “X elérheti Y-t 2030-ra”)</li>
+            <li>Analyst rating (upgrade/downgrade) önmagában</li>
+            <li>“Top 10 stocks to buy” jellegű listák</li>
+            <li>Kripto árjóslások / spekuláció tényként</li>
           </ul>
+          <p style="margin-top:10px; color: rgba(255,255,255,.72); font-size: 13px;">
+            A cél: <b>piaci relevancia + értelmezés</b>, nem zaj.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="ar">
+    <!-- ÁRAZÁS -->
+    <section id="ar" class="panel">
       <div class="kicker">
         <h3>Árazás</h3>
-        <span>1 csatorna, 1 csomag — Premium</span>
+        <span>1 prémium csatorna (nincs free csatorna)</span>
       </div>
 
       <div class="grid2">
-        <div class="box">
-          <h4>Premium — 7.99 € / hó</h4>
-          <p>
-            Nincs ingyenes Telegram csatorna. A teljes Piacradar szolgáltatás előfizetéssel érhető el.
-            A nyilvános “teaser” tartalmak a közösségi oldalaimon futnak.
-          </p>
-          <p style="margin-top:12px;">
-            <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
-              Előfizetés (Premium) →
-            </a>
-          </p>
-          <p class="fine">Telegram hozzáférést az előfizetés után automatikusan kapod meg.</p>
-        </div>
-
-        <div class="box">
-          <h4>Mit tartalmaz</h4>
-          <ul class="bullets">
-            <li>Napi 3 poszt (reggel/délután/este).</li>
-            <li>High-impact jelentések után azonnali összefoglaló.</li>
-            <li>Hétvégi elemzés + következő hét kitekintő.</li>
-            <li>Edukációs mini-magyarazatok pénzügyi fogalmakhoz.</li>
-            <li>Forráslinkek, ha mélyebben érdekel a téma.</li>
+        <div class="box price">
+          <h4>Prémium</h4>
+          <div class="big">€5.99 / hó</div>
+          <div class="note">Kezdetben 1 csomag: a prémium csatorna a teljes szolgáltatás.</div>
+          <ul class="list">
+            <li>Napi 3 poszt (reggel / délután / este)</li>
+            <li>Posztonként 6–8 hír összefoglalva + miért számít</li>
+            <li>Fontos jelentések után külön összefoglaló</li>
+            <li>Hétvégi elemzés + next week outlook</li>
+            <li>Edukációs magyarázatok fogalmakhoz</li>
           </ul>
+          <div class="cta" style="margin-top: 8px;">
+            <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés →</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>Később: Pro (opcionális)</h4>
+          <p>
+            Ha lesz elég extra ötlet és igény, később jöhet egy Pro réteg (pl. extra deep dive, market calendar, korábbi hozzáférés).
+          </p>
           <div class="pillrow">
-            <span class="pill">Makró</span>
-            <span class="pill">Earnings</span>
-            <span class="pill">Crypto</span>
-            <span class="pill">Market-moving</span>
+            <span class="pill">Későbbi opció</span>
+            <span class="pill">~€7.99 / hó</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="gyik">
-      <div class="kicker">
-        <h3>GYIK</h3>
-        <span>Kattints: lenyíló válaszok</span>
-      </div>
-
-      <!-- Gomb: megjeleníti/elrejti az egész GYIK-ot -->
-      <button class="faq-toggle" id="faqBtn" type="button" aria-expanded="false" aria-controls="faqWrap">
-        <span>GYIK megnyitása</span>
-        <span class="hint">Lenyíló kérdések →</span>
-      </button>
-
-      <div id="faqWrap" class="faq-wrap" hidden style="margin-top:12px;">
-        <details>
-          <summary>Van ingyenes Telegram csatorna?</summary>
-          <div class="faq-a">
-            Nincs. A teljes Piacradar szolgáltatás egy fizetős (Premium) Telegram csatornában érhető el.
-            A nyilvános “teaser” és promo tartalmakat a közösségi oldalaimon kapod meg.
-          </div>
-        </details>
-
-        <details>
-          <summary>Mikor és milyen gyakran jönnek az összefoglalók?</summary>
-          <div class="faq-a">
-            Premiumban napi 3 poszt (reggel / délután / este). Emellett a fontosabb makró vagy earnings események
-            után külön “azonnali összefoglaló” is jöhet, plusz hétvégi elemzés és heti kitekintő.
-          </div>
-        </details>
-
-        <details>
-          <summary>Mire használhatók a forráslinkek?</summary>
-          <div class="faq-a">
-            Az összefoglaló célja a lényeg. Ha viszont mélyebben érdekelnek a részletek (számok, háttér, kontextus),
-            ott vannak a források egy kattintásra.
-          </div>
-        </details>
-
-        <details>
-          <summary>Hogyan adhatok visszajelzést?</summary>
-          <div class="faq-a">
-            A csatornában 👍/👎 reakcióval és kommenttel is tudsz jelezni.
-            A visszajelzések közvetlenül termékfejlesztésre mennek: mit kell rövidíteni, pontosítani, vagy jobban magyarázni.
-          </div>
-        </details>
-
-        <details>
-          <summary>Mit biztosan nem fogsz látni?</summary>
-          <div class="faq-a">
-            Buy/sell jellegű mondatokat, price targetet, “garantált” állításokat és “jóslás” típusú cikkeket.
-            A Piacradar célja: tény + rövid értelmezés, nem ajánlás.
-          </div>
-        </details>
-
-        <details>
-          <summary>Milyen híreket tekintetek “fontosnak”?</summary>
-          <div class="faq-a">
-            EU/USA makró (infláció, munkaerőpiac, ciklus), nagy vállalati jelentések konkrét számokkal,
-            és olyan események, amelyeknek szektor- vagy piacszintű hatása lehet (M&A, szabályozás, yield-mozgás).
-          </div>
-        </details>
-
-        <details>
-          <summary>Mi van, ha hibás egy szám vagy értelmezés?</summary>
-          <div class="faq-a">
-            Korrekciót küldünk. A pénzügyben a transzparens javítás bizalmi tőke:
-            ha tévedés van, jelöljük, és javítjuk.
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <section id="kozosseg">
+    <!-- KÖZÖSSÉGI OLDALAK -->
+    <section id="kozosseg" class="panel">
       <div class="kicker">
         <h3>Közösségi oldalak</h3>
-        <span>Itt kapsz nyilvános teaser tartalmakat</span>
+        <span>Promo és frissítések — 4 platform</span>
       </div>
 
-      <div class="social4">
+      <div class="social-row">
         <a class="social" href="https://www.tiktok.com/@officialkovacstamas" target="_blank" rel="noopener">
-          <!-- TikTok icon -->
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M14 3v11.2a3.8 3.8 0 1 1-3.2-3.75V7.2A7 7 0 1 0 17 14V7.1c1.2.9 2.7 1.4 4 1.4V5.2c-2.6 0-5.2-1.9-7-2.2Z" fill="currentColor" opacity=".9"/>
+          <!-- TikTok -->
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M14 3v10.2a3.8 3.8 0 1 1-3-3.7V7.3a6.5 6.5 0 1 0 5 6.3V8.6c1.2.9 2.7 1.4 4 1.4V6.9c-2.2 0-4-1.8-4-4h-2z" fill="rgba(255,255,255,.92)"/>
           </svg>
-          TikTok
+          <div class="meta">
+            <b>TikTok</b>
+            <span>@officialkovacstamas</span>
+          </div>
         </a>
 
         <a class="social" href="https://www.instagram.com/officialkovacstamas/" target="_blank" rel="noopener">
-          <!-- Instagram icon -->
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" stroke="currentColor" stroke-width="1.6"/>
-            <path d="M12 16.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" stroke="currentColor" stroke-width="1.6"/>
-            <path d="M17.6 6.5h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <!-- Instagram -->
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2z" stroke="rgba(255,255,255,.92)" stroke-width="1.8"/>
+            <path d="M12 16.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4z" stroke="rgba(255,255,255,.92)" stroke-width="1.8"/>
+            <path d="M17.6 6.4h.01" stroke="rgba(255,255,255,.92)" stroke-width="3.2" stroke-linecap="round"/>
           </svg>
-          Instagram
+          <div class="meta">
+            <b>Instagram</b>
+            <span>@officialkovacstamas</span>
+          </div>
         </a>
 
         <a class="social" href="https://www.youtube.com/@officialkovacstamas" target="_blank" rel="noopener">
-          <!-- YouTube icon -->
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M21 12s0-3.5-.5-5a3 3 0 0 0-2-2c-1.8-.5-6.5-.5-6.5-.5s-4.7 0-6.5.5a3 3 0 0 0-2 2C3 8.5 3 12 3 12s0 3.5.5 5a3 3 0 0 0 2 2c1.8.5 6.5.5 6.5.5s4.7 0 6.5-.5a3 3 0 0 0 2-2c.5-1.5.5-5 .5-5Z" stroke="currentColor" stroke-width="1.6"/>
-            <path d="M10.5 9.5v5l5-2.5-5-2.5Z" fill="currentColor" opacity=".9"/>
+          <!-- YouTube -->
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 8.5a3 3 0 0 0-2.1-2.1C17.1 6 12 6 12 6s-5.1 0-6.9.4A3 3 0 0 0 3 8.5 31 31 0 0 0 3 12a31 31 0 0 0 .1 3.5 3 3 0 0 0 2.1 2.1C6.9 18 12 18 12 18s5.1 0 6.9-.4A3 3 0 0 0 21 15.5 31 31 0 0 0 21 12a31 31 0 0 0 0-3.5z" fill="rgba(255,255,255,.92)"/>
+            <path d="M10.2 14.7V9.3L14.8 12l-4.6 2.7z" fill="#0b1220"/>
           </svg>
-          YouTube
+          <div class="meta">
+            <b>YouTube</b>
+            <span>@officialkovacstamas</span>
+          </div>
         </a>
 
         <a class="social" href="https://x.com/kvcstms11" target="_blank" rel="noopener">
-          <!-- X icon -->
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M18.5 3H21l-6.6 7.5L22 21h-6l-4.7-6.2L5.8 21H3l7.2-8.2L2 3h6l4.3 5.7L18.5 3Z" fill="currentColor" opacity=".9"/>
+          <!-- X -->
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18.7 3H21l-7.7 8.8L22 21h-6.9l-5.4-6.6L4 21H1.7l8.3-9.5L2 3h7.1l4.9 5.9L18.7 3z" fill="rgba(255,255,255,.92)"/>
           </svg>
-          X
+          <div class="meta">
+            <b>X</b>
+            <span>@kvcstms11</span>
+          </div>
         </a>
       </div>
     </section>
 
-    <section id="uzenet">
+    <!-- GYIK -->
+    <section id="gyik" class="panel">
       <div class="kicker">
-        <h3>Üzenet</h3>
-        <span>Kérdés, együttműködés, visszajelzés</span>
+        <h3>GYIK</h3>
+        <span>Nyisd le a kérdéseket</span>
       </div>
 
-      <div class="box">
-        <form class="form" action="https://api.web3forms.com/submit" method="POST">
-          <!-- Web3Forms key -->
-          <input type="hidden" name="access_key" value="6d0dd951-1bfb-4f51-85fb-b0fd46f61d6e" />
-          <input type="hidden" name="subject" value="Piacradar — Web üzenet" />
-          <input type="hidden" name="from_name" value="Piacradar landing" />
+      <div class="faq-toggle" id="faqToggle" role="button" tabindex="0" aria-controls="faqWrap" aria-expanded="false">
+        <b>Gyakori kérdések megnyitása</b>
+        <span>▼</span>
+      </div>
 
-          <div>
-            <label for="name">Név</label>
-            <input id="name" name="name" type="text" placeholder="Neved" required />
-          </div>
-
-          <div>
-            <label for="email">Email cím</label>
-            <input id="email" name="email" type="email" placeholder="email@pelda.hu" required />
-          </div>
-
-          <div>
-            <label for="message">Üzenet</label>
-            <textarea id="message" name="message" placeholder="Írd le röviden, miben segíthetek…" required></textarea>
-          </div>
-
-          <div class="h-captcha" data-captcha="true"></div>
-
-          <button type="submit" class="btn primary">Üzenet küldése →</button>
-
-          <p class="fine">
-            Tipp: a Premium csatornában 👍/👎 reakcióval és kommenttel is tudsz visszajelezni.
+      <div class="faq-wrap" id="faqWrap">
+        <details>
+          <summary>Miben más a Piacradar a sima hírolvasásnál?</summary>
+          <p>
+            Nem csak headline: a Piacradar szűri a zajt, összevonja a duplikált témákat, és röviden leírja,
+            <b>mi történt</b> és <b>miért számít</b> (pl. trend, benchmark, piaci hatás). Ha mélyebben érdekel: a források linkelve vannak.
           </p>
+        </details>
+
+        <details>
+          <summary>Hány hír van egy posztban?</summary>
+          <p>
+            Tipikusan <b>6–8 hír</b> egy posztban, deduplikálva (ha több forrás ugyanarról szól, az egy blokk lesz).
+          </p>
+        </details>
+
+        <details>
+          <summary>Hogyan tudok visszajelezni?</summary>
+          <p>
+            A Telegram csatornán <b>👍/👎</b> reakciókkal és <b>kommenttel</b> is tudsz visszajelezni. Ez közvetlenül segíti a finomhangolást:
+            mit érdemes rövidíteni, mit kell jobban magyarázni, mi a legértékesebb.
+          </p>
+        </details>
+
+        <details>
+          <summary>Mit jelent az, hogy “miért számít”?</summary>
+          <p>
+            Rövid értelmezés: mi a kontextus (trend, meglepetés, benchmark), és mi lehet a tipikus piaci csatorna
+            (yields, USD, szektorhatás, risk-on/off).
+          </p>
+        </details>
+
+        <details>
+          <summary>Van ingyenes csatorna?</summary>
+          <p>
+            Nem. A tartalom a prémium csatornában érhető el. A közösségi felületeken viszont lesznek promó és edukációs anyagok.
+          </p>
+        </details>
+
+        <details>
+          <summary>Mit nem csinál a Piacradar?</summary>
+          <p>
+            Nem ad befektetési ajánlást, nincs buy/sell, nincs árjóslás és price target. A fókusz: tény + rövid értelmezés.
+          </p>
+        </details>
+
+        <!-- +3 releváns kérdés -->
+        <details>
+          <summary>Milyen forrásokra épül?</summary>
+          <p>
+            Több forrásból jönnek a hírek (makró, corporate, crypto). A posztokban a lényeg: ha érdekel a mélyebb részlet, ott a forráslink.
+          </p>
+        </details>
+
+        <details>
+          <summary>Mikor jön külön poszt egy jelentésről?</summary>
+          <p>
+            Ha “high impact” esemény történik (pl. CPI, NFP, Fed/ECB, nagy earnings), jön egy külön összefoglaló közvetlenül a megjelenés után.
+          </p>
+        </details>
+
+        <details>
+          <summary>Lesz edukáció is?</summary>
+          <p>
+            Igen. Rövid blokkokban segít a pénzügyi fogalmak megértésében (pl. yield, core inflation, guidance, risk-off),
+            hogy az összefoglalók érthetőbbek és hasznosabbak legyenek.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ÜZENETKÜLDŐ ŰRLAP (web3forms) -->
+    <section id="uzenet" class="panel">
+      <div class="kicker">
+        <h3>Írj üzenetet</h3>
+        <span>Visszajelzés / kérdés / együttműködés</span>
+      </div>
+
+      <div class="box" style="max-width: 720px; margin: 0 auto;">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- web3forms access key -->
+          <input type="hidden" name="access_key" value="6d0dd951-1bfb-4f51-85fb-b0fd46f61d6e" />
+
+          <!-- honeypot -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
+
+          <label for="name">Név</label>
+          <input id="name" name="name" type="text" placeholder="Név" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="email@domain.com" required />
+
+          <label for="subject">Tárgy</label>
+          <input id="subject" name="subject" type="text" placeholder="Pl. feedback / kérdés / együttműködés" required />
+
+          <label for="message">Üzenet</label>
+          <textarea id="message" name="message" rows="6" placeholder="Írd le röviden, miben segíthetek..." required></textarea>
+
+          <div class="h-captcha" data-captcha="true" style="margin-top: 12px;"></div>
+
+          <button type="submit" class="btn primary" style="margin-top: 12px;">Üzenet küldése →</button>
         </form>
       </div>
     </section>
 
+    <!-- PÉLDA (ALUL) -->
+    <section id="pelda" class="panel">
+      <div class="kicker">
+        <h3>Példa összefoglaló</h3>
+        <span>Így néz ki egy blokk</span>
+      </div>
+
+      <pre>🟢 Nvidia vezeti a tech rally-t
+A chipgyártó részvényei jelentősen emelkedtek és húzták magukkal a félvezető szektort, miközben Microsoft szintén erősödött. A technológiai szektor kompenzálta a kommunikációs szolgáltatások gyengeségét.
+↳ Miért számít: Az AI-chipek iránti aggodalmak csillapodása, a szektor fundamentumai erősek maradnak
+Forrás: Yahoo Finance
+
+🔴 Stellantis 25%-ot zuhant eredmények után
+A Chrysler anyavállalata 22 milliárd eurós (25,9 milliárd USD) egyszeri leírást jelentett be és felfüggesztette osztalékfizetését. A részvény 25%-ot esett pénteken.
+↳ Miért számít: Jelentős veszteség az autóiparban, jelzi a szektor nehézségeit
+Forrás: Yahoo Finance</pre>
+    </section>
+
+    <!-- FOOTER (csak itt legyen a disclaimer) -->
     <footer>
       <div>
-        <div style="font-weight:700; color: rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
-        <div>© <span id="y"></span> • Tényalapú piaci összefoglalók • ⚠️ Nem befektetési tanács.</div>
+        <div style="font-weight:650; color: rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
+        <div>© <span id="y"></span> • Prémium piaci összefoglalók • ⚠️ Nem befektetési tanács.</div>
       </div>
 
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <a class="btn" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés</a>
-        <a class="btn" href="#gyik">GYIK</a>
-        <a class="btn" href="#uzenet">Üzenet</a>
+      <div class="footlinks">
+        <a href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés</a>
+        <a href="https://t.me/PIACRADAR_INVITE_LINK" target="_blank" rel="noopener">Csatlakozás</a>
+        <a href="#uzenet">Üzenet</a>
       </div>
     </footer>
-
   </div>
 
-  <!-- Web3Forms client script -->
+  <!-- web3forms + hCaptcha -->
   <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <script>
+    // year
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // FAQ show/hide toggle
-    const btn = document.getElementById("faqBtn");
-    const wrap = document.getElementById("faqWrap");
+    // FAQ toggle
+    const faqToggle = document.getElementById("faqToggle");
+    const faqWrap = document.getElementById("faqWrap");
 
-    btn.addEventListener("click", () => {
-      const expanded = btn.getAttribute("aria-expanded") === "true";
-      btn.setAttribute("aria-expanded", String(!expanded));
-      wrap.hidden = expanded;
+    function toggleFaq(){
+      const isOpen = faqWrap.classList.toggle("open");
+      faqToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      faqToggle.querySelector("span").textContent = isOpen ? "▲" : "▼";
+    }
 
-      btn.querySelector(".hint").textContent = expanded ? "Lenyíló kérdések →" : "Összecsukás →";
-      btn.querySelector("span").textContent = expanded ? "GYIK megnyitása" : "GYIK elrejtése";
+    faqToggle.addEventListener("click", toggleFaq);
+    faqToggle.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleFaq(); }
     });
   </script>
 </body>
