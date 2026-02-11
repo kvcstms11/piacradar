@@ -45,7 +45,7 @@
       position:relative;
     }
 
-    /* FIX háttér (nem scrollozik), a tartalom megy fölötte */
+    /* FIX háttér */
     body::before{
       content:"";
       position:fixed;
@@ -98,6 +98,7 @@
       padding:8px 10px;
       border:1px solid transparent;
       border-radius:999px;
+      white-space:nowrap; /* <-- Üzenet egy sorban marad */
     }
     .nav a:hover{
       text-decoration:none;
@@ -264,7 +265,8 @@
     /* Social tiles */
     .social a:hover{ text-decoration:none; }
     .social-tile{
-      display:flex; align-items:center; gap:10px;
+      display:flex; align-items:center; justify-content:center; /* <-- középre igazítás */
+      gap:10px;
       padding:12px 12px;
       border-radius:18px;
       border:1px solid var(--border);
@@ -272,6 +274,7 @@
       transition: transform .12s ease, background .12s ease;
       height:52px;
       backdrop-filter: blur(6px);
+      text-align:center; /* <-- középre igazítás */
     }
     .social-tile:hover{
       transform: translateY(-1px);
@@ -286,7 +289,6 @@
     }
 
     /* FAQ (accordion) */
-    .faq-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
     .faq-list{ margin-top:12px; display:block; }
     details{
       border:1px solid var(--border);
@@ -320,6 +322,7 @@
       font-size:13.5px;
       padding-right:6px;
     }
+    .faq-cta{ margin-top:12px; display:flex; justify-content:flex-start; }
 
     /* Form */
     label{
@@ -355,6 +358,7 @@
       border:1px solid transparent;
       padding:6px 10px;
       border-radius:999px;
+      white-space:nowrap;
     }
     .footer-links a:hover{
       text-decoration:none;
@@ -392,15 +396,15 @@
         </div>
       </div>
 
+      <!-- Miért kikerült, Üzenet egy sorban -->
       <nav class="nav" aria-label="Navigáció">
-        <a href="#miert">Miért</a>
         <a href="#hogyan">Hogyan működik</a>
         <a href="#mitkapsz">Mit kapsz</a>
         <a href="#fontos">Mi számít fontosnak</a>
         <a href="#arazas">Árazás</a>
         <a href="#kozosseg">Közösségi oldalak</a>
         <a href="#gyik">GYIK</a>
-        <a href="#uzenet">Üzenet</a>
+        <a href="#uzenet">Kérdés / üzenet</a>
       </nav>
     </div>
 
@@ -432,7 +436,6 @@
           </p>
         </div>
 
-        <!-- Example (short) -->
         <aside class="card" aria-label="Példa összefoglaló">
           <h3>Példa</h3>
           <pre>🟢 Nvidia vezeti a tech rally-t
@@ -453,33 +456,6 @@ Forrás: Yahoo Finance</pre>
         </aside>
       </div>
     </header>
-
-    <!-- WHY IT'S HARD -->
-    <section id="miert" class="panel">
-      <div class="kicker">
-        <h3>Miért nehéz híreket követni?</h3>
-      </div>
-
-      <div class="grid2">
-        <div class="box">
-          <h4>Túl sok forrás, túl kevés idő</h4>
-          <p>
-            Sokan több előfizetéssel zsonglőrködnek (híroldalak, hírlevelek, appok), mégis
-            jön az a pont, amikor a sokadik olvasatlan üzenetnél csak annyit érzel: <em>túl sok a hír</em>.
-            Ilyenkor nem az a kérdés, hogy van-e tartalom — hanem hogy mi a lényeg, és mit jelent a piacra nézve.
-          </p>
-        </div>
-        <div class="box">
-          <h4>A “mi történt” kevés</h4>
-          <p>
-            Egy headline önmagában ritkán elég. A hasznos információ az, ha gyorsan érthető:
-            <strong>mi történt</strong>, <strong>mihez képest fontos</strong> (előző, várakozás, benchmark),
-            és <strong>mi lehet a piaci következmény</strong> (yields, USD, szektorok, risk-on/off).
-            Itt jön képbe a Piacradar.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- HOW IT WORKS -->
     <section id="hogyan" class="panel">
@@ -514,54 +490,19 @@ Forrás: Yahoo Finance</pre>
           <h4>Napi ritmus</h4>
           <ul class="list">
             <li><strong>Napi 3 poszt</strong> (reggel / délután / este).</li>
-            <li>Egy posztban <strong>6–8 különböző hír</strong> rövid magyarázata (nem 1 headline).</li>
-            <li><strong>Fontos jelentések</strong> után külön “gyors összefoglaló” (közvetlenül a publikálás után).</li>
-            <li><strong>Hétvégi elemzés</strong> (mi történt és mit érdemes figyelni).</li>
-            <li><strong>Következő heti kitekintő</strong> (fő makró események + várható fókusz).</li>
+            <li>Egy posztban <strong>6–8 különböző hír</strong> rövid magyarázata.</li>
+            <li><strong>Fontos jelentések</strong> után külön “gyors összefoglaló”.</li>
+            <li><strong>Hétvégi elemzés</strong> + <strong>következő heti kitekintő</strong>.</li>
           </ul>
         </div>
 
         <div class="box">
           <h4>Edukáció (beépítve)</h4>
           <ul class="list">
-            <li>Rövid fogalom-magyarázatok: mi az a <em>yield</em>, <em>risk-off</em>, <em>earnings miss</em>, <em>core inflation</em> stb.</li>
+            <li>Rövid fogalom-magyarázatok: <em>yield</em>, <em>risk-off</em>, <em>earnings miss</em>, stb.</li>
             <li>Makró adatoknál összevetés: előző / várakozás / “mihez képest fontos”.</li>
-            <li>Kontextus: trend (“3 hónapja javul/romlik”), meglepetés, piaci csatorna.</li>
+            <li>Kontextus: trend, meglepetés, piaci csatorna.</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY USEFUL -->
-    <section class="panel" id="hasznos">
-      <div class="kicker">
-        <h3>Miért hasznos?</h3>
-      </div>
-
-      <div class="grid3">
-        <div class="box">
-          <h4>Időt spórol</h4>
-          <p>Egy helyen megkapod azt a 6–8 hírt, ami tényleg számít — magyarázattal.</p>
-        </div>
-        <div class="box">
-          <h4>Kontextust ad</h4>
-          <p>Nem csak “mi történt”, hanem “mihez képest”, és “melyik piaci csatornán keresztül hat”.</p>
-        </div>
-        <div class="box">
-          <h4>Források csatolva</h4>
-          <p>Ha mélyebb részletek érdekelnek, ott vannak a forráslinkek — gyors ellenőrzéshez vagy további olvasáshoz.</p>
-        </div>
-        <div class="box">
-          <h4>Konzisztens formátum</h4>
-          <p>Ugyanaz a logika minden nap: prioritás, számok, “Miért számít?”, hatás (yields / USD / szektor).</p>
-        </div>
-        <div class="box">
-          <h4>Kevesebb zaj</h4>
-          <p>Kiszűrve a tipikus zaj: price prediction, analyst rating, clickbait “top stocks”.</p>
-        </div>
-        <div class="box">
-          <h4>Fókusz a piacra</h4>
-          <p>EU/USA makró + nagy earnings + szektorhatású megállapodások — ahol tényleg változik a narratíva.</p>
         </div>
       </div>
     </section>
@@ -574,35 +515,23 @@ Forrás: Yahoo Finance</pre>
 
       <div class="grid2">
         <div class="box">
-          <h4>✅ Fontos (piacbefolyásoló)</h4>
+          <h4>✅ Fontos</h4>
           <ul class="list">
-            <li><strong>EU/USA makroadatok</strong>: inflációs (CPI/PPI/PCE), munkaerőpiaci (NFP, unemployment), aktivitási (PMI/ISM, GDP).</li>
+            <li><strong>EU/USA makroadatok</strong>: CPI/PPI/PCE, NFP, unemployment, PMI/ISM, GDP.</li>
             <li><strong>Fed / ECB</strong>: kamatdöntés, kommunikáció, iránymutatás.</li>
-            <li><strong>Nagy vállalati jelentések</strong>: mega-cap és szektor-vezetők, ahol a számok + guidance szektorhangulatot mozgat.</li>
-            <li><strong>Szektor hatású megállapodások</strong>: stratégiai partnerships, supply-chain, szabályozói döntések, nagy capex/AI-spend.</li>
-            <li><strong>Market-moving események</strong>: nagy hozam-elmozdulás, risk-on/off fordulat, geopolitika ha tényleg piaci csatornán üt.</li>
+            <li><strong>Nagy vállalati jelentések</strong>: számok + guidance, szektorhangulat.</li>
+            <li><strong>Szektor hatású megállapodások</strong>: partnerships, szabályozás, capex/AI-spend.</li>
+            <li><strong>Market-moving események</strong>: hozam-elmozdulás, risk-on/off fordulat.</li>
           </ul>
         </div>
 
         <div class="box">
-          <h4>⛔ Nem fontos (zaj)</h4>
+          <h4>⛔ Zaj</h4>
           <ul class="list">
-            <li>“Price prediction” cikkek (“X stock $Y by 2030”).</li>
-            <li>Analyst rating / upgrade / downgrade önmagában.</li>
-            <li>“Top 10 stocks to buy” jellegű listák.</li>
-            <li>Kripto árjóslás / spekuláció tényként.</li>
+            <li>Price prediction, analyst rating önmagában, “top stocks” listák.</li>
             <li>Forrás nélküli pletyka, clickbait.</li>
           </ul>
         </div>
-      </div>
-
-      <div class="box" style="margin-top:12px;">
-        <h4>Prioritás jelölés a posztokban</h4>
-        <ul class="list">
-          <li>🔴 <strong>Magas</strong>: Fed/ECB, CPI/PPI/PCE/NFP, nagy earnings meglepetés, szektorfordító esemény.</li>
-          <li>🟡 <strong>Közepes</strong>: releváns makró (PMI/ISM), fontosabb earnings, trendet erősítő adatok.</li>
-          <li>🟢 <strong>Alacsony</strong>: kisebb, de kontextusban hasznos hír (csak ha segít érteni a nap narratíváját).</li>
-        </ul>
       </div>
     </section>
 
@@ -622,7 +551,7 @@ Forrás: Yahoo Finance</pre>
             <li>Napi 3 poszt (posztonként 6–8 hír magyarázata)</li>
             <li>Fontos jelentések utáni gyors összefoglaló</li>
             <li>Hétvégi elemzés + következő heti kitekintő</li>
-            <li>Edukációs magyarázatok (fogalmak, keretek)</li>
+            <li>Edukációs magyarázatok</li>
           </ul>
           <div class="cta" style="margin-top:12px;">
             <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
@@ -692,10 +621,9 @@ Forrás: Yahoo Finance</pre>
         <h3>GYIK</h3>
       </div>
 
-      <div class="faq-actions">
-        <button class="btn" type="button" id="faqOpenAll">Összes megnyitása</button>
-        <button class="btn" type="button" id="faqCloseAll">Összes bezárása</button>
-        <a class="btn" href="#uzenet">Írok inkább kérdést →</a>
+      <!-- gombok helyett 1 CTA -->
+      <div class="faq-cta">
+        <a class="btn" href="#uzenet">Inkább írok kérdést →</a>
       </div>
 
       <div class="faq-list" id="faqList">
@@ -725,7 +653,7 @@ Forrás: Yahoo Finance</pre>
             <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </summary>
           <div class="faq-answer">
-            Igen: az üzenetekre tudsz reakciót adni (👍/👎), és kommentben is írhatsz. A kommentekből lesz a finomhangolás: mit tartsunk, mit rövidítsünk, mit magyarázzunk jobban.
+            Igen: az üzenetekre tudsz reakciót adni (👍/👎), és kommentben is írhatsz.
           </div>
         </details>
 
@@ -745,7 +673,7 @@ Forrás: Yahoo Finance</pre>
             <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </summary>
           <div class="faq-answer">
-            Később igen, ha már van elég extra és automatizálható tartalom (deep dive, event-brief, watchlist fókusz). Induláskor 1 prémium csatorna van.
+            Később igen, ha már van elég extra és automatizálható tartalom. Induláskor 1 prémium csatorna van.
           </div>
         </details>
 
@@ -755,13 +683,13 @@ Forrás: Yahoo Finance</pre>
             <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </summary>
           <div class="faq-answer">
-            Magyarul, de a makró rövidítések és pénzügyi fogalmak angolul maradnak (CPI, PPI, NFP, Fed, yield, risk-off), mert így pontosabb és iparági standard.
+            Magyarul, de a makró rövidítések és pénzügyi fogalmak angolul maradnak (CPI, PPI, NFP, Fed, yield, risk-off).
           </div>
         </details>
       </div>
     </section>
 
-    <!-- CONTACT / MESSAGE -->
+    <!-- MESSAGE -->
     <section id="uzenet" class="panel">
       <div class="kicker">
         <h3>Üzenet</h3>
@@ -805,34 +733,20 @@ Forrás: Yahoo Finance</pre>
       <div class="footer-links">
         <a href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés</a>
         <a href="#gyik">GYIK</a>
-        <a href="#uzenet">Üzenet</a>
+        <a href="#uzenet">Kérdés / üzenet</a>
       </div>
     </footer>
 
   </div>
 
-  <!-- Web3Forms client script (captcha) -->
   <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <script>
-    // Year
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // Force FAQ closed on load (browser néha megjegyzi az open state-et)
+    // FAQ zárva induljon
     window.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll("#faqList details").forEach(d => d.open = false);
-    });
-
-    // FAQ open/close all
-    const faqOpenAll = document.getElementById("faqOpenAll");
-    const faqCloseAll = document.getElementById("faqCloseAll");
-    const faqDetails = () => Array.from(document.querySelectorAll("#faqList details"));
-
-    faqOpenAll?.addEventListener("click", () => {
-      faqDetails().forEach(d => d.open = true);
-    });
-    faqCloseAll?.addEventListener("click", () => {
-      faqDetails().forEach(d => d.open = false);
     });
 
     // Smooth anchor scroll
