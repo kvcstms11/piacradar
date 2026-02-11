@@ -113,7 +113,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.25);
       overflow:hidden;
     }
-    /* Ha saját PNG logót akarsz: tedd a repóba pl. /logo.png és uncommenteld ezt:
+    /* Saját PNG logó: tedd a repóba /logo.png és uncommenteld
     .logo{ background:none; }
     .logo img{ width:100%; height:100%; object-fit:cover; display:block; }
     */
@@ -167,10 +167,13 @@
       position:relative;
       padding:28px 22px;
       display:grid;
-      grid-template-columns: 1.2fr .8fr;
+      /* jobb oldali kártya ne menjen össze */
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap:18px;
       align-items:stretch;
     }
+    /* kulcs: grid-gyerekek shrinkelhetők legyenek, ne “összenyomás” bug */
+    .hero-inner > *{ min-width:0; }
 
     .badge{
       display:inline-flex; align-items:center; gap:8px;
@@ -241,13 +244,24 @@
     pre{
       margin:0;
       white-space:pre-wrap;
-      word-wrap:break-word;
+      overflow-wrap:anywhere; /* URL-ok törhetnek, de ne agresszívan */
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       font-size:12.5px;
       line-height:1.45;
       color:rgba(255,255,255,.80);
     }
-    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+
+    /* pill sor: desktopon egy sorban maradjon */
+    .pillrow{
+      display:flex;
+      flex-wrap:nowrap;
+      gap:8px;
+      margin-top:12px;
+      overflow-x:auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .pillrow::-webkit-scrollbar{ display:none; }
     .pill{
       font-size:12px;
       color:rgba(255,255,255,.72);
@@ -255,6 +269,8 @@
       border-radius:999px;
       border:1px solid var(--border);
       background:rgba(255,255,255,.03);
+      white-space:nowrap;
+      flex:0 0 auto;
     }
 
     /* Sections */
@@ -294,20 +310,19 @@
     .list li{ margin:8px 0; }
     .muted{ color:rgba(255,255,255,.68); }
 
-    /* Social tiles: középre igazítva, magyarázó szöveg nélkül */
+    /* Social tiles: vissza az “előző” kompaktabb méretre + középre */
     .social a:hover{ text-decoration:none; }
     .social-tile{
       display:flex;
-      flex-direction:column;
       align-items:center;
-      justify-content:center;
+      justify-content:center;  /* középre */
       gap:10px;
-      padding:14px 12px;
+      padding:12px 12px;
       border-radius:18px;
       border:1px solid var(--border);
       background:rgba(255,255,255,.04);
       transition: transform .12s ease, background .12s ease;
-      height:92px;
+      height:52px;            /* kisebb, mint az előző “vastag” verzió */
       text-align:center;
     }
     .social-tile:hover{
@@ -315,15 +330,18 @@
       background:rgba(255,255,255,.06);
     }
     .icon{
-      width:20px; height:20px;
+      width:18px; height:18px;
       color:rgba(255,255,255,.88);
+      flex: 0 0 auto;
     }
     .social-name{
-      font-weight:800; font-size:14px;
+      font-weight:800;
+      font-size:14px;
       color:rgba(255,255,255,.88);
+      line-height:1;
     }
 
-    /* FAQ (accordion) */
+    /* FAQ */
     .faq-list{ margin-top:12px; display:block; }
     details{
       border:1px solid var(--border);
@@ -376,14 +394,20 @@
     }
     textarea{ resize:vertical; min-height:120px; }
 
+    /* Footer + legal */
     footer{
       margin-top:22px;
-      display:flex; align-items:flex-start; justify-content:space-between;
-      gap:14px;
       padding:16px 6px 0;
       color:rgba(255,255,255,.60);
       border-top:1px solid rgba(255,255,255,.10);
       font-size:12.5px;
+    }
+    .footer-top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:12px;
     }
     .footer-links{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
     .footer-links a{
@@ -399,6 +423,22 @@
       background:rgba(255,255,255,.04);
     }
 
+    .legal{
+      border-top:1px solid rgba(255,255,255,.10);
+      padding-top:12px;
+      color:rgba(255,255,255,.58);
+      font-size:12px;
+      line-height:1.55;
+    }
+    .legal strong{
+      display:block;
+      color:rgba(255,255,255,.74);
+      font-weight:800;
+      margin-bottom:6px;
+      font-size:12.5px;
+      letter-spacing:.2px;
+    }
+
     /* Responsive */
     @media (max-width: 980px){
       .hero-inner{ grid-template-columns: 1fr; }
@@ -406,7 +446,8 @@
       .grid3{ grid-template-columns: 1fr; }
       .grid2{ grid-template-columns: 1fr; }
       .grid4{ grid-template-columns: 1fr 1fr; }
-      .nav{ display:none; } /* mobilon elég a görgetés */
+      .nav{ display:none; }
+      .pillrow{ flex-wrap:wrap; overflow:visible; }
     }
     @media (max-width: 520px){
       .hero h2{ font-size:28px; }
@@ -510,7 +551,7 @@
     <div class="top">
       <div class="brand">
         <div class="logo" aria-hidden="true">
-          <!-- Ha saját PNG logót használsz:
+          <!-- Saját PNG logó:
           <img src="/logo.png" alt="Piacradar logó" />
           -->
         </div>
@@ -570,7 +611,7 @@ Forrás: Yahoo Finance
 22 mrd EUR egyszeri leírás + osztalékfelfüggesztés, a részvény nagyot esett.
 ↳ Miért számít: szektor-szintű stressz az autóiparban, beszállítói láncokra is hat.
 Forrás: Yahoo Finance</pre>
-          <div class="pillrow">
+          <div class="pillrow" aria-label="Témák">
             <span class="pill">Makró (EU/USA)</span>
             <span class="pill">Earnings</span>
             <span class="pill">Szektor hatás</span>
@@ -580,7 +621,7 @@ Forrás: Yahoo Finance</pre>
       </div>
     </header>
 
-    <!-- WHY IT'S HARD (nem a menüben, de megmarad) -->
+    <!-- WHY IT'S HARD -->
     <section class="panel">
       <div class="kicker">
         <h3>Miért nehéz híreket követni?</h3>
@@ -654,40 +695,6 @@ Forrás: Yahoo Finance</pre>
             <li>Makró adatoknál összevetés: előző / várakozás / “mihez képest fontos”.</li>
             <li>Kontextus: trend, meglepetés, piaci csatorna.</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY USEFUL -->
-    <section class="panel" id="hasznos">
-      <div class="kicker">
-        <h3>Miért hasznos?</h3>
-      </div>
-
-      <div class="grid3">
-        <div class="box">
-          <h4>Időt spórol</h4>
-          <p>Egy helyen megkapod azt a 6–8 hírt, ami tényleg számít — magyarázattal.</p>
-        </div>
-        <div class="box">
-          <h4>Kontextust ad</h4>
-          <p>Nem csak “mi történt”, hanem “mihez képest”, és “melyik piaci csatornán keresztül hat”.</p>
-        </div>
-        <div class="box">
-          <h4>Források csatolva</h4>
-          <p>Ha mélyebb részletek érdekelnek, ott vannak a forráslinkek — ellenőrzéshez és tovább olvasáshoz.</p>
-        </div>
-        <div class="box">
-          <h4>Konzisztens formátum</h4>
-          <p>Ugyanaz a logika minden nap: prioritás, számok, “Miért számít?”, hatás (yields / USD / szektor).</p>
-        </div>
-        <div class="box">
-          <h4>Kevesebb zaj</h4>
-          <p>Kiszűrve a tipikus zaj: price prediction, analyst rating, clickbait “top stocks”.</p>
-        </div>
-        <div class="box">
-          <h4>Fókusz a piacra</h4>
-          <p>EU/USA makró + nagy earnings + szektorhatású megállapodások — ahol tényleg változik a narratíva.</p>
         </div>
       </div>
     </section>
@@ -917,18 +924,28 @@ Forrás: Yahoo Finance</pre>
 
     <!-- FOOTER -->
     <footer>
-      <div>
-        <div style="font-weight:900; color:rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
-        <div>© <span id="y"></span> • Prémium piaci összefoglalók • ⚠️ Nem befektetési tanács.</div>
+      <div class="footer-top">
+        <div>
+          <div style="font-weight:900; color:rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
+          <div>© <span id="y"></span> • Prémium piaci összefoglalók</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés</a>
+          <a href="#gyik">GYIK</a>
+          <a href="#uzenet">Üzenet</a>
+        </div>
       </div>
 
-      <div class="footer-links">
-        <a href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés</a>
-        <a href="#gyik">GYIK</a>
-        <a href="#uzenet">Üzenet</a>
-        <!-- opcionális, ha később csinálsz külön oldalakat -->
-        <!-- <a href="/impresszum.html">Impresszum</a>
-        <a href="/adatkezeles.html">Adatkezelés</a> -->
+      <div class="legal">
+        <strong>Jogi nyilatkozat</strong>
+        A Piacradar szolgáltatás keretében megjelenő tartalmak kizárólag általános tájékoztatási célt szolgálnak.
+        A közölt információk nem minősülnek befektetési tanácsadásnak, ajánlattételnek, pénzügyi elemzésnek vagy
+        bármilyen pénzügyi szolgáltatásnak. A szolgáltatás nem veszi figyelembe az egyéni pénzügyi helyzetet,
+        kockázatvállalási képességet vagy befektetési célokat.<br/><br/>
+        A Piacradar készítői nem vállalnak felelősséget a tartalmak alapján hozott döntésekért, illetve az ezekből eredő
+        közvetlen vagy közvetett károkért. A felhasználó a szolgáltatás használatával tudomásul veszi és elfogadja
+        a fenti feltételeket.
       </div>
     </footer>
 
@@ -938,7 +955,6 @@ Forrás: Yahoo Finance</pre>
   <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <script>
-    // Year
     document.getElementById("y").textContent = new Date().getFullYear();
 
     // Smooth anchor scroll
@@ -954,15 +970,10 @@ Forrás: Yahoo Finance</pre>
       });
     });
 
-    // Safety: ha bárhol véletlen open maradna (pl. másolásnál), zárjuk induláskor
-    // (csak a FAQ-ra vonatkozik)
+    // FAQ: alapból zárva
     window.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll("#faqList details").forEach(d => d.open = false);
     });
   </script>
-
-  <!-- Analytics (opcionális, később)
-  <script defer data-domain="piacradar.eu" src="https://plausible.io/js/script.js"></script>
-  -->
 </body>
 </html>
