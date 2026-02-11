@@ -39,12 +39,25 @@
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
       color:var(--text);
+      background: var(--bg);
+      line-height:1.45;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    /* FIX háttér (nem scrollozik), a tartalom megy fölötte */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
       background:
         radial-gradient(900px 450px at 15% 10%, rgba(94,234,212,.18), transparent 60%),
         radial-gradient(800px 400px at 85% 20%, rgba(96,165,250,.16), transparent 60%),
         radial-gradient(900px 450px at 60% 95%, rgba(94,234,212,.10), transparent 55%),
         var(--bg);
-      line-height:1.45;
+      z-index:-1;
+      pointer-events:none;
+      transform: translateZ(0);
     }
 
     a{ color:inherit; text-decoration:none; }
@@ -72,7 +85,7 @@
     }
     .brand p{
       margin:2px 0 0; color:var(--muted); font-size:13px;
-      white-space:nowrap; /* egy sorban marad */
+      white-space:nowrap;
     }
 
     .nav{
@@ -101,6 +114,7 @@
       box-shadow:var(--shadow);
       overflow:hidden;
       position:relative;
+      backdrop-filter: blur(6px);
     }
     .hero::before{
       content:"";
@@ -114,7 +128,7 @@
       position:relative;
       padding:28px 22px;
       display:grid;
-      grid-template-columns: 1.10fr .90fr; /* <-- szélesebb jobb oldal */
+      grid-template-columns: 1.15fr .85fr;
       gap:18px;
       align-items:stretch;
     }
@@ -128,6 +142,7 @@
       color:rgba(255,255,255,.80);
       font-size:13px;
       margin-bottom:14px;
+      backdrop-filter: blur(6px);
     }
     .dot{
       width:8px; height:8px; border-radius:50%;
@@ -162,6 +177,7 @@
       min-height:42px;
       cursor:pointer;
       user-select:none;
+      backdrop-filter: blur(6px);
     }
     .btn:hover{ text-decoration:none; background:rgba(255,255,255,.06); }
     .btn.primary{
@@ -177,10 +193,8 @@
       background:rgba(255,255,255,.04);
       border-radius:18px;
       padding:16px 16px 14px;
+      backdrop-filter: blur(6px);
     }
-    /* Példa kártya: ne legyen max-width korlát */
-    #pelda{ max-width:none; }
-
     .card h3{
       margin:0 0 10px;
       font-size:14px;
@@ -197,12 +211,11 @@
       color:rgba(255,255,255,.80);
     }
 
-    /* Pills: desktopon 1 sorba kényszerítjük, mobilon vissza wrap */
-    .pillrow{ display:flex; flex-wrap:nowrap; gap:10px; margin-top:12px; }
+    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
     .pill{
       font-size:12px;
       color:rgba(255,255,255,.72);
-      padding:7px 10px; /* kicsit kompaktabb */
+      padding:6px 10px;
       border-radius:999px;
       border:1px solid var(--border);
       background:rgba(255,255,255,.03);
@@ -216,6 +229,7 @@
       border:1px solid var(--border);
       background:rgba(255,255,255,.03);
       padding:18px;
+      backdrop-filter: blur(6px);
     }
     .kicker{
       display:flex; align-items:baseline; justify-content:space-between;
@@ -223,10 +237,6 @@
     }
     .kicker h3{
       margin:0; font-size:16px; letter-spacing:.2px;
-    }
-    .kicker span{
-      color:rgba(255,255,255,.62);
-      font-size:13px;
     }
 
     .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
@@ -238,6 +248,7 @@
       background:rgba(255,255,255,.04);
       border-radius:18px;
       padding:14px;
+      backdrop-filter: blur(6px);
     }
     .box h4{ margin:0 0 6px; font-size:14px; }
     .box p{ margin:0; color:rgba(255,255,255,.74); font-size:13.5px; }
@@ -260,6 +271,7 @@
       background:rgba(255,255,255,.04);
       transition: transform .12s ease, background .12s ease;
       height:52px;
+      backdrop-filter: blur(6px);
     }
     .social-tile:hover{
       transform: translateY(-1px);
@@ -270,11 +282,7 @@
       color:rgba(255,255,255,.86);
     }
     .social-name{
-      font-weight:700; font-size:14px;
-    }
-    .social-sub{
-      font-size:12.5px; color:rgba(255,255,255,.62);
-      margin-left:auto;
+      font-weight:800; font-size:14px;
     }
 
     /* FAQ (accordion) */
@@ -286,6 +294,7 @@
       border-radius:16px;
       padding:12px 12px;
       margin:10px 0;
+      backdrop-filter: blur(6px);
     }
     summary{
       cursor:pointer;
@@ -294,7 +303,7 @@
       align-items:center;
       justify-content:space-between;
       gap:12px;
-      font-weight:700;
+      font-weight:800;
       color:rgba(255,255,255,.86);
     }
     summary::-webkit-details-marker{ display:none; }
@@ -327,6 +336,7 @@
       background:rgba(255,255,255,.05);
       color:var(--text);
       outline:none;
+      backdrop-filter: blur(6px);
     }
     textarea{ resize:vertical; min-height:120px; }
 
@@ -360,16 +370,11 @@
       .grid2{ grid-template-columns: 1fr; }
       .grid4{ grid-template-columns: 1fr 1fr; }
       .nav{ display:none; }
-
-      /* mobilon inkább törjön sorba, ne kényszerítsük 1 sorba */
-      .pillrow{ flex-wrap:wrap; }
     }
     @media (max-width: 520px){
       .hero h2{ font-size:28px; }
       .grid4{ grid-template-columns: 1fr; }
-      .brand p{
-        max-width: 220px; overflow:hidden; text-overflow:ellipsis;
-      }
+      .brand p{ max-width: 220px; overflow:hidden; text-overflow:ellipsis; }
     }
   </style>
 </head>
@@ -428,7 +433,7 @@
         </div>
 
         <!-- Example (short) -->
-        <aside class="card" id="pelda" aria-label="Példa összefoglaló">
+        <aside class="card" aria-label="Példa összefoglaló">
           <h3>Példa</h3>
           <pre>🟢 Nvidia vezeti a tech rally-t
 A chipgyártó részvényei emelkedtek, és húzták a félvezető szektort.
@@ -453,7 +458,6 @@ Forrás: Yahoo Finance</pre>
     <section id="miert" class="panel">
       <div class="kicker">
         <h3>Miért nehéz híreket követni?</h3>
-        <span>…és miért kell szűrés + magyarázat</span>
       </div>
 
       <div class="grid2">
@@ -481,7 +485,6 @@ Forrás: Yahoo Finance</pre>
     <section id="hogyan" class="panel">
       <div class="kicker">
         <h3>Hogyan működik?</h3>
-        <span>gyors fogyasztás, minimális zaj</span>
       </div>
 
       <div class="grid3">
@@ -504,7 +507,6 @@ Forrás: Yahoo Finance</pre>
     <section id="mitkapsz" class="panel">
       <div class="kicker">
         <h3>Mit kapsz a Prémium csatornában?</h3>
-        <span>ritmus + edukáció</span>
       </div>
 
       <div class="grid2">
@@ -534,7 +536,6 @@ Forrás: Yahoo Finance</pre>
     <section class="panel" id="hasznos">
       <div class="kicker">
         <h3>Miért hasznos?</h3>
-        <span>érték = idő + tiszta keret</span>
       </div>
 
       <div class="grid3">
@@ -569,7 +570,6 @@ Forrás: Yahoo Finance</pre>
     <section id="fontos" class="panel">
       <div class="kicker">
         <h3>Mi számít fontos hírnek?</h3>
-        <span>prioritás + szűrés</span>
       </div>
 
       <div class="grid2">
@@ -610,7 +610,6 @@ Forrás: Yahoo Finance</pre>
     <section id="arazas" class="panel">
       <div class="kicker">
         <h3>Árazás</h3>
-        <span>1 csatorna induláskor</span>
       </div>
 
       <div class="grid2">
@@ -634,7 +633,7 @@ Forrás: Yahoo Finance</pre>
 
         <div class="box">
           <h4>Pro</h4>
-          <p class="muted" style="margin-bottom:10px;">Fejlesztés alatt. Akkor jön, ha már van elég extra érték és automatizálható tartalom.</p>
+          <p class="muted" style="margin-bottom:10px;">Fejlesztés alatt.</p>
           <ul class="list">
             <li>Extra mélység (deep dive) heti 1×</li>
             <li>Esemény-brief (CPI/FOMC/ECB napokon)</li>
@@ -648,7 +647,6 @@ Forrás: Yahoo Finance</pre>
     <section id="kozosseg" class="panel social">
       <div class="kicker">
         <h3>Közösségi oldalak</h3>
-        <span>Hosszabb videós elemzések</span>
       </div>
 
       <div class="grid4">
@@ -658,7 +656,6 @@ Forrás: Yahoo Finance</pre>
               stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <div class="social-name">TikTok</div>
-          <div class="social-sub">videók</div>
         </a>
 
         <a class="social-tile" href="https://www.instagram.com/officialkovacstamas/" target="_blank" rel="noopener">
@@ -668,7 +665,6 @@ Forrás: Yahoo Finance</pre>
             <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
           </svg>
           <div class="social-name">Instagram</div>
-          <div class="social-sub">rövid posztok</div>
         </a>
 
         <a class="social-tile" href="https://www.youtube.com/@officialkovacstamas" target="_blank" rel="noopener">
@@ -678,7 +674,6 @@ Forrás: Yahoo Finance</pre>
             <path d="M10 9.5 16 12l-6 2.5v-5Z" fill="currentColor"/>
           </svg>
           <div class="social-name">YouTube</div>
-          <div class="social-sub">hosszabb</div>
         </a>
 
         <a class="social-tile" href="https://x.com/kvcstms11" target="_blank" rel="noopener">
@@ -687,7 +682,6 @@ Forrás: Yahoo Finance</pre>
               stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
           </svg>
           <div class="social-name">X</div>
-          <div class="social-sub">gyors update</div>
         </a>
       </div>
     </section>
@@ -696,7 +690,6 @@ Forrás: Yahoo Finance</pre>
     <section id="gyik" class="panel">
       <div class="kicker">
         <h3>GYIK</h3>
-        <span>kattints a kérdésekre</span>
       </div>
 
       <div class="faq-actions">
@@ -772,7 +765,6 @@ Forrás: Yahoo Finance</pre>
     <section id="uzenet" class="panel">
       <div class="kicker">
         <h3>Üzenet</h3>
-        <span>kérdés, visszajelzés, együttműködés</span>
       </div>
 
       <div class="box" style="max-width:680px; margin:0 auto;">
@@ -806,7 +798,7 @@ Forrás: Yahoo Finance</pre>
     <!-- FOOTER -->
     <footer>
       <div>
-        <div style="font-weight:800; color:rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
+        <div style="font-weight:900; color:rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
         <div>© <span id="y"></span> • Prémium piaci összefoglalók • ⚠️ Nem befektetési tanács.</div>
       </div>
 
@@ -819,11 +811,17 @@ Forrás: Yahoo Finance</pre>
 
   </div>
 
+  <!-- Web3Forms client script (captcha) -->
   <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <script>
     // Year
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Force FAQ closed on load (browser néha megjegyzi az open state-et)
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("#faqList details").forEach(d => d.open = false);
+    });
 
     // FAQ open/close all
     const faqOpenAll = document.getElementById("faqOpenAll");
