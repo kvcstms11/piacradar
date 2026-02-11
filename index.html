@@ -3,146 +3,1009 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Piacradar — Adatkezelési tájékoztató</title>
-  <meta name="robots" content="index,follow" />
+
+  <title>Piacradar — Prémium piaci kivonat Telegramon</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Piacradar — prémium piaci kivonat Telegramon. EU/USA makró, top earnings és piacmozgató események: mi történt + miért számít, tömören, magyarul, forráslinkkel. Nem headline-feed." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
   <meta name="theme-color" content="#0b1220" />
+  <link rel="canonical" href="https://piacradar.eu/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Piacradar — Prémium piaci kivonat Telegramon" />
+  <meta property="og:description" content="Tömör, tényalapú kivonat: mi történt és miért számít. Piaci napokon 3 fix üzenet (07:00, 15:15, 21:00). Telegramon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://piacradar.eu/" />
+  <!-- TODO: tegyél be egy valódi preview képet (1200x630) -->
+  <meta property="og:image" content="https://piacradar.eu/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Piacradar — Prémium piaci kivonat Telegramon" />
+  <meta name="twitter:description" content="Mi történt + miért számít. Piaci napokon 3 fix üzenet. Forráslinkekkel." />
+  <meta name="twitter:image" content="https://piacradar.eu/og.png" />
+
+  <!-- Icons (TODO) -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
   <style>
     :root{
       --bg:#0b1220;
+      --panel:rgba(255,255,255,.06);
       --text:rgba(255,255,255,.92);
-      --muted:rgba(255,255,255,.70);
+      --muted:rgba(255,255,255,.68);
       --border:rgba(255,255,255,.14);
+      --accent:#5eead4;
+      --accent2:#60a5fa;
       --shadow:0 18px 60px rgba(0,0,0,.45);
       --radius:18px;
-      --max:860px;
+      --radius2:26px;
+      --max:1120px;
     }
+
     *{ box-sizing:border-box; }
+    html,body{ height:100%; }
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
-      background:var(--bg);
       color:var(--text);
-      line-height:1.55;
+      background: var(--bg);
+      line-height:1.45;
+      overflow-x:hidden;
     }
+
     body::before{
       content:"";
       position:fixed;
       inset:0;
       z-index:-1;
       background:
-        radial-gradient(900px 450px at 15% 10%, rgba(94,234,212,.14), transparent 60%),
-        radial-gradient(800px 400px at 85% 20%, rgba(96,165,250,.12), transparent 60%),
+        radial-gradient(900px 450px at 15% 10%, rgba(94,234,212,.18), transparent 60%),
+        radial-gradient(800px 400px at 85% 20%, rgba(96,165,250,.16), transparent 60%),
+        radial-gradient(900px 450px at 60% 95%, rgba(94,234,212,.10), transparent 55%),
         var(--bg);
+      transform: translateZ(0);
     }
-    a{ color:inherit; }
-    .wrap{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:28px 18px 56px;
+
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .skip{
+      position:absolute; left:-9999px; top:10px;
+      background:#111a2c; border:1px solid var(--border);
+      color:var(--text); padding:10px 12px; border-radius:12px; z-index:9999;
     }
+    .skip:focus{ left:12px; }
+
+    .wrap{ max-width:var(--max); margin:0 auto; padding:26px 18px 64px; }
+
+    /* Top bar */
+    .top{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:18px; margin-bottom:18px;
+    }
+    .brand{ display:flex; align-items:center; gap:12px; min-width:240px; }
+    .logo{
+      width:40px; height:40px; border-radius:12px;
+      background:
+        radial-gradient(12px 12px at 30% 35%, rgba(94,234,212,.85), transparent 60%),
+        radial-gradient(14px 14px at 70% 65%, rgba(96,165,250,.85), transparent 60%),
+        linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,.05));
+      border:1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      overflow:hidden;
+    }
+    .brand .title{ font-size:18px; font-weight:900; margin:0; letter-spacing:.2px; }
+    .brand p{ margin:2px 0 0; color:var(--muted); font-size:13px; white-space:nowrap; }
+
+    .nav{
+      display:flex; align-items:center; gap:10px;
+      flex-wrap:wrap; justify-content:flex-end;
+    }
+    .nav a{
+      font-size:13px; color:rgba(255,255,255,.78);
+      padding:8px 10px; border:1px solid transparent;
+      border-radius:999px; white-space:nowrap;
+    }
+    .nav a:hover{
+      text-decoration:none; border-color:var(--border);
+      background:rgba(255,255,255,.04);
+    }
+
+    /* Mobile menu */
+    .menu-btn{
+      display:none;
+      align-items:center;
+      justify-content:center;
+      width:42px; height:42px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      color:rgba(255,255,255,.88);
+      cursor:pointer;
+    }
+    .menu-btn:hover{ background:rgba(255,255,255,.06); }
+    .menu-btn svg{ width:18px; height:18px; }
+
+    .drawer{
+      position:fixed; inset:0;
+      background:rgba(0,0,0,.55);
+      display:none;
+      z-index:9998;
+    }
+    .drawer.open{ display:block; }
+    .drawer-panel{
+      position:absolute;
+      right:16px; top:16px;
+      width:min(420px, calc(100% - 32px));
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:rgba(17,26,44,.92);
+      box-shadow:var(--shadow);
+      padding:12px;
+      backdrop-filter: blur(10px);
+    }
+    .drawer-head{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; padding:6px 6px 10px;
+    }
+    .drawer-head .label{
+      font-weight:900; color:rgba(255,255,255,.88);
+      font-size:13px; letter-spacing:.2px;
+    }
+    .drawer-close{
+      width:38px; height:38px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .drawer-close:hover{ background:rgba(255,255,255,.06); }
+    .drawer-links{
+      display:grid; gap:6px; padding:0 6px 6px;
+    }
+    .drawer-links a{
+      padding:10px 10px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      color:rgba(255,255,255,.84);
+      font-size:14px;
+    }
+    .drawer-links a:hover{
+      text-decoration:none;
+      background:rgba(255,255,255,.06);
+    }
+
+    /* Hero */
+    header.hero{
+      border-radius:var(--radius2);
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    header.hero::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(420px 220px at 22% 30%, rgba(94,234,212,.18), transparent 55%),
+        radial-gradient(420px 220px at 78% 35%, rgba(96,165,250,.18), transparent 55%);
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      padding:28px 22px;
+      display:grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap:18px;
+      align-items:stretch;
+    }
+    .hero-inner > *{ min-width:0; }
+
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px;
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:rgba(255,255,255,.80);
+      font-size:13px;
+      margin-bottom:14px;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background:var(--accent);
+      box-shadow: 0 0 0 4px rgba(94,234,212,.14);
+    }
+
+    h1{
+      margin:0 0 10px;
+      font-size:36px;
+      line-height:1.08;
+      letter-spacing:-.6px;
+    }
+    .sub{
+      margin:0 0 16px;
+      color:rgba(255,255,255,.78);
+      font-size:15px;
+      max-width:62ch;
+    }
+
+    .cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:11px 14px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      color:rgba(255,255,255,.88);
+      font-weight:900;
+      font-size:14px;
+      min-height:42px;
+      cursor:pointer;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:hover{ text-decoration:none; background:rgba(255,255,255,.06); }
+    .btn.primary{
+      border-color: rgba(94,234,212,.35);
+      background: linear-gradient(135deg, rgba(94,234,212,.22), rgba(96,165,250,.14));
+    }
+    .btn.primary:hover{
+      background: linear-gradient(135deg, rgba(94,234,212,.28), rgba(96,165,250,.18));
+    }
+    .btn.sm{
+      padding:8px 10px;
+      min-height:36px;
+      font-size:13px;
+      border-radius:12px;
+    }
+
     .card{
       border:1px solid var(--border);
       background:rgba(255,255,255,.04);
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow:var(--shadow);
+      border-radius:18px;
+      padding:16px 16px 14px;
     }
-    h1{ margin:0 0 8px; font-size:24px; letter-spacing:-.3px; }
-    h2{ margin:18px 0 8px; font-size:15px; letter-spacing:.2px; }
-    p{ margin:0 0 10px; color:rgba(255,255,255,.82); }
-    .muted{ color:var(--muted); font-size:13px; }
-    ul{ margin:8px 0 12px; padding-left:18px; color:rgba(255,255,255,.82); }
-    li{ margin:6px 0; }
-    .topline{
-      display:flex;
-      align-items:baseline;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:12px;
+    .card h2{
+      margin:0 0 10px;
+      font-size:14px;
+      color:rgba(255,255,255,.84);
+      letter-spacing:.2px;
+      font-weight:900;
     }
-    .pill{
-      font-size:12px;
-      padding:6px 10px;
-      border-radius:999px;
+    pre{
+      margin:0;
+      white-space:pre-wrap;
+      overflow-wrap:anywhere;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size:12.5px;
+      line-height:1.45;
+      color:rgba(255,255,255,.80);
+    }
+
+    /* Sections */
+    section{ margin-top:22px; }
+    .panel{
+      border-radius:var(--radius2);
       border:1px solid var(--border);
       background:rgba(255,255,255,.03);
+      padding:18px;
+    }
+    .kicker{
+      display:flex; align-items:baseline; justify-content:space-between;
+      gap:12px; margin-bottom:12px;
+    }
+    .kicker h2{
+      margin:0; font-size:16px; letter-spacing:.2px; font-weight:900;
+    }
+
+    .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+    .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; }
+    .grid4{ display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
+
+    .box{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      padding:14px;
+    }
+    .box h3{ margin:0 0 6px; font-size:14px; font-weight:900; }
+    .box p{ margin:0; color:rgba(255,255,255,.74); font-size:13.5px; }
+
+    .list{
+      margin:10px 0 0;
+      padding-left:18px;
+      color:rgba(255,255,255,.76);
+    }
+    .list li{ margin:8px 0; }
+    .muted{ color:rgba(255,255,255,.68); }
+
+    /* Social tiles */
+    .social a:hover{ text-decoration:none; }
+    .social-tile{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 12px;
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      transition: transform .12s ease, background .12s ease;
+      height:52px;
+      text-align:center;
+    }
+    .social-tile:hover{
+      transform: translateY(-1px);
+      background:rgba(255,255,255,.06);
+    }
+    .icon{
+      width:18px; height:18px;
+      color:rgba(255,255,255,.88);
+      flex: 0 0 auto;
+    }
+    .social-name{
+      font-weight:900;
+      font-size:14px;
+      color:rgba(255,255,255,.88);
+      line-height:1;
+    }
+
+    /* FAQ */
+    .faq-list{ margin-top:12px; display:block; }
+    details{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      border-radius:16px;
+      padding:12px 12px;
+      margin:10px 0;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      font-weight:900;
+      color:rgba(255,255,255,.88);
+    }
+    summary::-webkit-details-marker{ display:none; }
+    .chev{
+      width:18px; height:18px;
+      opacity:.85;
+      transform: rotate(0deg);
+      transition: transform .12s ease;
+      flex: 0 0 auto;
+    }
+    details[open] .chev{ transform: rotate(180deg); }
+    .faq-answer{
+      margin-top:10px;
+      color:rgba(255,255,255,.74);
+      font-size:13.5px;
+      padding-right:6px;
+    }
+
+    /* Form */
+    label{
+      display:block;
+      font-size:13px;
       color:rgba(255,255,255,.78);
+      margin:10px 0 6px;
+    }
+    input, textarea{
+      width:100%;
+      padding:11px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.05);
+      color:var(--text);
+      outline:none;
+    }
+    textarea{ resize:vertical; min-height:120px; }
+    .consent{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      margin-top:10px;
+      padding:10px 10px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      color:rgba(255,255,255,.78);
+      font-size:13px;
+    }
+    .consent input{ width:18px; height:18px; margin-top:2px; }
+    .consent-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .notice{
+      display:none;
+      margin:12px 0 0;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(94,234,212,.35);
+      background:rgba(94,234,212,.08);
+      color:rgba(255,255,255,.86);
+      font-size:13.5px;
+    }
+    .notice.show{ display:block; }
+
+    /* Footer */
+    footer{
+      margin-top:22px;
+      padding:16px 6px 0;
+      color:rgba(255,255,255,.60);
+      border-top:1px solid rgba(255,255,255,.10);
+      font-size:12.5px;
+    }
+    .footer-top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:12px;
+    }
+    .footer-links{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    .footer-links a{
+      color:rgba(255,255,255,.72);
+      border:1px solid transparent;
+      padding:6px 10px;
+      border-radius:999px;
       white-space:nowrap;
     }
+    .footer-links a:hover{
+      text-decoration:none;
+      border-color:var(--border);
+      background:rgba(255,255,255,.04);
+    }
+    .legal{
+      border-top:1px solid rgba(255,255,255,.10);
+      padding-top:12px;
+      color:rgba(255,255,255,.58);
+      font-size:12px;
+      line-height:1.55;
+    }
+    .legal strong{
+      display:block;
+      color:rgba(255,255,255,.74);
+      font-weight:900;
+      margin-bottom:6px;
+      font-size:12.5px;
+      letter-spacing:.2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-inner{ grid-template-columns: 1fr; }
+      h1{ font-size:32px; }
+      .grid3{ grid-template-columns: 1fr; }
+      .grid2{ grid-template-columns: 1fr; }
+      .grid4{ grid-template-columns: 1fr 1fr; }
+      .nav{ display:none; }
+      .menu-btn{ display:flex; }
+    }
+    @media (max-width: 520px){
+      h1{ font-size:28px; }
+      .grid4{ grid-template-columns: 1fr; }
+      .brand p{
+        max-width: 220px; overflow:hidden; text-overflow:ellipsis;
+      }
+    }
   </style>
+
+  <!-- Structured Data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Piacradar",
+    "url": "https://piacradar.eu/",
+    "sameAs": [
+      "https://www.tiktok.com/@officialkovacstamas",
+      "https://www.instagram.com/officialkovacstamas/",
+      "https://www.youtube.com/@officialkovacstamas",
+      "https://x.com/kvcstms11"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="topline">
-        <h1>Adatkezelési tájékoztató</h1>
-        <div class="pill">Piacradar</div>
+  <a class="skip" href="#main">Ugrás a tartalomra</a>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menü">
+      <div class="drawer-head">
+        <div class="label">Navigáció</div>
+        <button class="drawer-close" type="button" id="drawerClose" aria-label="Bezárás">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
       </div>
-
-      <p class="muted">
-        Utolsó frissítés: <strong>TODO: dátum</strong>
-      </p>
-
-      <h2>1) Adatkezelő</h2>
-      <p>
-        <strong>Piacradar</strong><br/>
-        <span class="muted">TODO: név/cégnév • cím • ország</span><br/>
-        Kapcsolat: <span class="muted">TODO: CONTACT_EMAIL</span>
-      </p>
-
-      <h2>2) Milyen adatokat kezelünk?</h2>
-      <ul>
-        <li>Név</li>
-        <li>Email cím</li>
-        <li>Téma</li>
-        <li>Üzenet tartalma</li>
-        <li>Technikai adatok (pl. spamvédelem/captcha működéséhez szükséges adatok a szolgáltatónál)</li>
-      </ul>
-
-      <h2>3) Az adatkezelés célja</h2>
-      <p>
-        A kapcsolatfelvételi űrlapon beérkező megkeresések fogadása, megválaszolása, ügyfélkapcsolat kezelése.
-      </p>
-
-      <h2>4) Jogi alap</h2>
-      <p>
-        Hozzájárulás (GDPR 6. cikk (1) a)).
-        A hozzájárulás bármikor visszavonható, ez nem érinti a visszavonás előtti adatkezelés jogszerűségét.
-      </p>
-
-      <h2>5) Adatfeldolgozók / harmadik felek</h2>
-      <p>
-        A kapcsolatfelvételi űrlap beküldését a Web3Forms szolgáltatás kezeli (adatfeldolgozó),
-        továbbá a spamvédelemhez captcha/hCaptcha szolgáltatás kerülhet igénybevételre.
-      </p>
-
-      <h2>6) Adattárolás időtartama</h2>
-      <p>
-        A megkeresés lezárásáig, illetve legfeljebb <strong>TODO: pl. 12 hónapig</strong>, kivéve, ha jogszabály hosszabb megőrzést ír elő.
-      </p>
-
-      <h2>7) Érintetti jogok</h2>
-      <ul>
-        <li>Tájékoztatáshoz és hozzáféréshez való jog</li>
-        <li>Helyesbítéshez való jog</li>
-        <li>Törléshez való jog</li>
-        <li>Adatkezelés korlátozásához való jog</li>
-        <li>Adathordozhatósághoz való jog</li>
-        <li>Tiltakozáshoz való jog (ha alkalmazható)</li>
-        <li>Hozzájárulás visszavonása</li>
-      </ul>
-
-      <h2>8) Panasz</h2>
-      <p>
-        Panasz benyújtható a lakóhely szerint illetékes felügyeleti hatóságnál.
-        (Magyarországon: NAIH; Ausztriában: Datenschutzbehörde — ha releváns.)
-      </p>
-
-      <p class="muted" style="margin-top:14px;">
-        Ha szeretnéd, ezt megírom “teljesen jogászbarát” verzióban is (cookie-k, logok, pontos feldolgozók, adattovábbítási országok), de ahhoz kell,
-        hogy pontosan ki az adatkezelő (magánszemély/cég), és hol hostolod a site-ot.
-      </p>
+      <div class="drawer-links">
+        <a href="#hogyan">Hogyan működik</a>
+        <a href="#mitkapsz">Mit kapsz</a>
+        <a href="#fontos">Mi számít fontosnak</a>
+        <a href="#arazas">Árazás</a>
+        <a href="#kozosseg">Közösségi oldalak</a>
+        <a href="#gyik">GYIK</a>
+        <a href="#uzenet">Üzenet</a>
+        <a href="./adatkezeles.html" target="_blank" rel="noopener">Adatkezelés</a>
+        <a href="#jogi">Jogi nyilatkozat</a>
+      </div>
     </div>
   </div>
+
+  <div class="wrap" id="top">
+    <!-- TOP BAR -->
+    <div class="top">
+      <div class="brand" aria-label="Piacradar">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="title">Piacradar</div>
+          <p>Prémium piaci kivonat — Telegramon</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navigáció">
+        <a href="#hogyan">Hogyan működik</a>
+        <a href="#mitkapsz">Mit kapsz</a>
+        <a href="#fontos">Mi számít fontosnak</a>
+        <a href="#arazas">Árazás</a>
+        <a href="#kozosseg">Közösségi oldalak</a>
+        <a href="#gyik">GYIK</a>
+        <a href="#uzenet">Üzenet</a>
+      </nav>
+
+      <button class="menu-btn" type="button" id="menuBtn" aria-label="Menü megnyitása">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 7h14M5 12h14M5 17h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <main id="main">
+      <!-- HERO -->
+      <header class="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="badge"><span class="dot"></span> Piaci napokon 3 fix üzenet • 07:00 / 15:15 / 21:00</div>
+
+            <h1>Tömör piaci kivonat.<br/>Mi történt, és miért számít.</h1>
+
+            <p class="sub">
+              EU és USA makró, top earnings és piacmozgató események — magyarul, tömören, forráslinkkel.
+              Nem headline-feed: a lényeg + keret, felesleges zaj nélkül.
+            </p>
+
+            <div class="cta">
+              <!-- TODO: cseréld le -->
+              <a class="btn primary" href="https://MEMBERSHIP_URL" target="_blank" rel="noopener">
+                Előfizetés (Prémium) →
+              </a>
+              <a class="btn" href="#uzenet">Kérdés / üzenet →</a>
+              <a class="btn" href="#gyik">GYIK →</a>
+            </div>
+
+            <p class="muted" style="margin:12px 0 0; font-size:13px;">
+              A Telegram hozzáférést az előfizetés után kapod meg. Adatkezelési tájékoztató: külön oldalon.
+            </p>
+          </div>
+
+          <aside class="card" aria-label="Példa">
+            <h2>Példa (formátum)</h2>
+            <pre>📡 Piacradar — US Open Pulse (15:15)
+YYYY.MM.DD
+
+🔴 Makró meglepetés: actual vs est
+↳ Miért számít: rövid csatorna (hozam / USD / szektor / risk-on/off).
+Forrás: [Reuters](https://www.reuters.com/)
+
+🟡 Earnings reakció: guidance mozgat
+↳ Miért számít: driver (margin / capex / demand / pricing).
+Forrás: [WSJ](https://www.wsj.com/)
+
+⚠️ Tájékoztató jellegű, nem befektetési tanács.</pre>
+          </aside>
+        </div>
+      </header>
+
+      <!-- WHY -->
+      <section class="panel">
+        <div class="kicker">
+          <h2>Miért nehéz híreket követni?</h2>
+        </div>
+
+        <div class="grid2">
+          <div class="box">
+            <h3>Túl sok zaj</h3>
+            <p>
+              A headline gyors, de keret nélkül félrevisz. A Piacradar nem cikklistát ad,
+              hanem eseményt + értelmezést.
+            </p>
+          </div>
+          <div class="box">
+            <h3>A “mi történt” kevés</h3>
+            <p>
+              Fontos, hogy lásd: mi történt, mihez képest, és mi lehet a piaci csatorna (hozam/FX/szektor).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW -->
+      <section id="hogyan" class="panel">
+        <div class="kicker">
+          <h2>Hogyan működik?</h2>
+        </div>
+
+        <div class="grid3">
+          <div class="box">
+            <h3>1) Szűrés (event-first)</h3>
+            <p>Csak a piaci szempontból releváns események: makró, top earnings, policy/geo (ha van csatornája).</p>
+          </div>
+          <div class="box">
+            <h3>2) Rövid értelmezés</h3>
+            <p>“Mi történt” + “Miért számít” — általános keretben, jelzés/tanács nélkül.</p>
+          </div>
+          <div class="box">
+            <h3>3) Forráslink</h3>
+            <p>A forrás neve kattintható link (nem külön URL-sor). Ha kell a mélység, ott az eredeti.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT YOU GET -->
+      <section id="mitkapsz" class="panel">
+        <div class="kicker">
+          <h2>Mit kapsz a Prémium csatornában?</h2>
+        </div>
+
+        <div class="grid2">
+          <div class="box">
+            <h3>Napi ritmus (piaci napokon)</h3>
+            <ul class="list">
+              <li><strong>07:00</strong> — Morning Brief</li>
+              <li><strong>15:15</strong> — US Open Pulse</li>
+              <li><strong>21:00</strong> — Evening Wrap</li>
+            </ul>
+            <p class="muted" style="margin-top:10px; font-size:12.5px;">
+              Időzóna: CET/CEST. A posztok esemény-alapon készülnek: zaj nélkül.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Edukáció (beépítve)</h3>
+            <ul class="list">
+              <li>Fogalmak: yield, spread, risk-on/off, EPS, guidance, core inflation</li>
+              <li>Makrónál: előző / várakozás / meglepetés</li>
+              <li>Earningsnél: számok + guidance + reakció</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMPORTANT -->
+      <section id="fontos" class="panel">
+        <div class="kicker">
+          <h2>Mi számít fontos hírnek?</h2>
+        </div>
+
+        <div class="grid2">
+          <div class="box">
+            <h3>✅ Küldhető (piacmozgató)</h3>
+            <ul class="list">
+              <li>Fed/ECB döntés, kommunikáció, guidance</li>
+              <li>CPI/PPI/PCE/NFP/GDP/PMI/ISM — actual vs est + csatorna</li>
+              <li>Top earnings — számok + guidance + mozgás (PM/AH)</li>
+              <li>Deal/capex/szabályozás — konkrétumokkal</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>⛔ Zaj</h3>
+            <ul class="list">
+              <li>Árjóslás / price target cikkek</li>
+              <li>Upgrade/downgrade önmagában</li>
+              <li>Clickbait / forrás nélküli pletyka</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section id="arazas" class="panel">
+        <div class="kicker">
+          <h2>Árazás</h2>
+        </div>
+
+        <div class="grid2">
+          <div class="box">
+            <h3>Prémium</h3>
+            <p style="margin-bottom:10px;">
+              <strong style="font-size:22px;">7,99€</strong> / hó
+            </p>
+            <ul class="list">
+              <li>Piaci napokon 3 fix üzenet (07:00 / 15:15 / 21:00)</li>
+              <li>Event-first kivonat: mi történt + miért számít</li>
+              <li>Forráslinkek</li>
+            </ul>
+            <div class="cta" style="margin-top:12px;">
+              <a class="btn primary" href="https://MEMBERSHIP_URL" target="_blank" rel="noopener">
+                Előfizetés →
+              </a>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3>Pro</h3>
+            <p class="muted" style="margin-bottom:10px;">Fejlesztés alatt.</p>
+            <ul class="list">
+              <li>Extra mélység (deep dive)</li>
+              <li>Esemény-brief (CPI/FOMC/ECB napokon)</li>
+              <li>Watchlist fókusz (később)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL -->
+      <section id="kozosseg" class="panel social">
+        <div class="kicker">
+          <h2>Közösségi oldalak</h2>
+        </div>
+
+        <div class="grid4">
+          <a class="social-tile" href="https://www.tiktok.com/@officialkovacstamas" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+              <path d="M14.5 4c.6 2.7 2.5 4.6 5.2 5.1v3.4c-2 0-3.8-.6-5.2-1.7v6.2c0 3.1-2.5 5.6-5.6 5.6S3 20.1 3 17s2.5-5.6 5.6-5.6c.4 0 .9.1 1.3.2v3.5c-.4-.2-.8-.3-1.3-.3-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2 2.2-1 2.2-2.2V4h2.4Z"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="social-name">TikTok</div>
+          </a>
+
+          <a class="social-tile" href="https://www.instagram.com/officialkovacstamas/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+              <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div class="social-name">Instagram</div>
+          </a>
+
+          <a class="social-tile" href="https://www.youtube.com/@officialkovacstamas" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+              <path d="M21 8.2a3 3 0 0 0-2.1-2.1C17.1 5.5 12 5.5 12 5.5s-5.1 0-6.9.6A3 3 0 0 0 3 8.2 31 31 0 0 0 3 12a31 31 0 0 0 .1 3.8 3 3 0 0 0 2.1 2.1c1.8.6 6.8.6 6.8.6s5.1 0 6.9-.6a3 3 0 0 0 2.1-2.1c.2-1.3.2-2.6.2-3.8s0-2.5-.2-3.8Z"
+                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M10 9.5 16 12l-6 2.5v-5Z" fill="currentColor"/>
+            </svg>
+            <div class="social-name">YouTube</div>
+          </a>
+
+          <a class="social-tile" href="https://x.com/kvcstms11" target="_blank" rel="noopener" aria-label="X">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+              <path d="M7 3h3.2l4.2 6 4.6-6H22l-7 9 7 9h-3.2l-4.7-6.6L9 21H2l7.8-9.9L7 3Z"
+                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            <div class="social-name">X</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="gyik" class="panel">
+        <div class="kicker">
+          <h2>GYIK</h2>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <details>
+            <summary>
+              Hogyan kapom meg a Telegram hozzáférést?
+              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <div class="faq-answer">
+              Előfizetés után automatikusan megkapod a belépési információt. A csatorna nem nyilvános.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Milyen gyakran jönnek üzenetek?
+              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <div class="faq-answer">
+              Piaci napokon 3 fix üzenet: <strong>07:00</strong> / <strong>15:15</strong> / <strong>21:00</strong> (CET/CEST).
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Befektetési tanácsot ad a Piacradar?
+              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <div class="faq-answer">
+              Nem. A részletek a <a href="#jogi">Jogi nyilatkozatban</a> vannak.
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- MESSAGE -->
+      <section id="uzenet" class="panel">
+        <div class="kicker">
+          <h2>Üzenet</h2>
+        </div>
+
+        <div class="box" style="max-width:680px; margin:0 auto;">
+          <div class="notice" id="formNotice" role="status" aria-live="polite">
+            Köszönöm — az üzenet elküldve.
+          </div>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- TODO: add meg a Web3Forms key-t -->
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="Piacradar — új üzenet a landing page-ről" />
+            <input type="hidden" name="from_name" value="Piacradar Landing" />
+            <!-- TODO: állítsd be a saját domainre -->
+            <input type="hidden" name="redirect" value="https://piacradar.eu/?sent=1#uzenet" />
+
+            <label for="name">Név</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="email">Email cím</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="topic">Téma</label>
+            <input id="topic" name="topic" type="text" placeholder="pl. előfizetés / tartalom / együttműködés" required />
+
+            <label for="message">Üzenet</label>
+            <textarea id="message" name="message" placeholder="Írd le röviden, miben segíthetek…" required></textarea>
+
+            <div class="consent">
+              <input id="consent" name="consent" type="checkbox" required />
+              <div>
+                Hozzájárulok, hogy a Piacradar az üzenetem megválaszolásához kezelje a megadott adatokat.
+                Az adatkezelés részletei külön oldalon:
+                <div class="consent-actions">
+                  <a class="btn sm" href="./adatkezeles.html" target="_blank" rel="noopener">
+                    Adatkezelési tájékoztató →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-captcha" data-captcha="true" style="margin-top:10px;"></div>
+
+            <div class="cta" style="margin-top:12px;">
+              <button class="btn primary" type="submit">Üzenet küldése →</button>
+              <a class="btn" href="#top">Vissza a tetejére</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- LEGAL -->
+      <section id="jogi" class="panel">
+        <div class="kicker">
+          <h2>Jogi nyilatkozat</h2>
+        </div>
+
+        <div class="box">
+          <p>
+            A Piacradar szolgáltatás keretében megjelenő tartalmak kizárólag általános tájékoztatási célt szolgálnak.
+            A közölt információk nem minősülnek befektetési tanácsadásnak, ajánlattételnek, pénzügyi elemzésnek vagy
+            bármilyen pénzügyi szolgáltatásnak. A szolgáltatás nem veszi figyelembe az egyéni pénzügyi helyzetet,
+            kockázatvállalási képességet vagy befektetési célokat.
+          </p>
+          <p>
+            A Piacradar készítői nem vállalnak felelősséget a tartalmak alapján hozott döntésekért, illetve az ezekből eredő
+            közvetlen vagy közvetett károkért. A felhasználó a szolgáltatás használatával tudomásul veszi és elfogadja
+            a fenti feltételeket.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div style="font-weight:900; color:rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
+          <div>© <span id="y"></span> • Prémium piaci kivonat</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://MEMBERSHIP_URL" target="_blank" rel="noopener">Előfizetés</a>
+          <a href="./adatkezeles.html" target="_blank" rel="noopener">Adatkezelés</a>
+          <a href="#jogi">Jogi</a>
+          <a href="#uzenet">Üzenet</a>
+        </div>
+      </div>
+
+      <!-- Footerben is teljes jogi nyilatkozat (ahogy kérted) -->
+      <div class="legal">
+        <strong>Jogi nyilatkozat</strong>
+        A Piacradar szolgáltatás keretében megjelenő tartalmak kizárólag általános tájékoztatási célt szolgálnak.
+        A közölt információk nem minősülnek befektetési tanácsadásnak, ajánlattételnek, pénzügyi elemzésnek vagy
+        bármilyen pénzügyi szolgáltatásnak. A szolgáltatás nem veszi figyelembe az egyéni pénzügyi helyzetet,
+        kockázatvállalási képességet vagy befektetési célokat.<br/><br/>
+        A Piacradar készítői nem vállalnak felelősséget a tartalmak alapján hozott döntésekért, illetve az ezekből eredő
+        közvetlen vagy közvetett károkért. A felhasználó a szolgáltatás használatával tudomásul veszi és elfogadja
+        a fenti feltételeket.
+      </div>
+    </footer>
+  </div>
+
+  <!-- Web3Forms client script (captcha) -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // FAQ: alapból zárva + success flag
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("#faqList details").forEach(d => d.open = false);
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("sent") === "1") {
+        document.getElementById("formNotice")?.classList.add("show");
+      }
+    });
+
+    // Smooth anchor scroll + drawer close
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", (e) => {
+        const id = a.getAttribute("href");
+        if (!id || id === "#") return;
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.replaceState(null, "", id);
+        closeDrawer();
+      });
+    });
+
+    // Mobile drawer
+    const drawer = document.getElementById("drawer");
+    const menuBtn = document.getElementById("menuBtn");
+    const drawerClose = document.getElementById("drawerClose");
+
+    function openDrawer(){
+      drawer.classList.add("open");
+      drawer.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeDrawer(){
+      drawer.classList.remove("open");
+      drawer.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    menuBtn?.addEventListener("click", openDrawer);
+    drawerClose?.addEventListener("click", closeDrawer);
+    drawer?.addEventListener("click", (e) => { if (e.target === drawer) closeDrawer(); });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && drawer.classList.contains("open")) closeDrawer();
+    });
+  </script>
 </body>
 </html>
