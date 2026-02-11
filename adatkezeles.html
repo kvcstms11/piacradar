@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piacradar — Adatkezelési tájékoztató</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b1220" />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --border:rgba(255,255,255,.14);
+      --shadow:0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+      --max:860px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-1;
+      background:
+        radial-gradient(900px 450px at 15% 10%, rgba(94,234,212,.14), transparent 60%),
+        radial-gradient(800px 400px at 85% 20%, rgba(96,165,250,.12), transparent 60%),
+        var(--bg);
+    }
+    a{ color:inherit; }
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:28px 18px 56px;
+    }
+    .card{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    h1{ margin:0 0 8px; font-size:24px; letter-spacing:-.3px; }
+    h2{ margin:18px 0 8px; font-size:15px; letter-spacing:.2px; }
+    p{ margin:0 0 10px; color:rgba(255,255,255,.82); }
+    .muted{ color:var(--muted); font-size:13px; }
+    ul{ margin:8px 0 12px; padding-left:18px; color:rgba(255,255,255,.82); }
+    li{ margin:6px 0; }
+    .topline{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:12px;
+    }
+    .pill{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03);
+      color:rgba(255,255,255,.78);
+      white-space:nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="topline">
+        <h1>Adatkezelési tájékoztató</h1>
+        <div class="pill">Piacradar</div>
+      </div>
+
+      <p class="muted">
+        Utolsó frissítés: <strong>TODO: dátum</strong>
+      </p>
+
+      <h2>1) Adatkezelő</h2>
+      <p>
+        <strong>Piacradar</strong><br/>
+        <span class="muted">TODO: név/cégnév • cím • ország</span><br/>
+        Kapcsolat: <span class="muted">TODO: CONTACT_EMAIL</span>
+      </p>
+
+      <h2>2) Milyen adatokat kezelünk?</h2>
+      <ul>
+        <li>Név</li>
+        <li>Email cím</li>
+        <li>Téma</li>
+        <li>Üzenet tartalma</li>
+        <li>Technikai adatok (pl. spamvédelem/captcha működéséhez szükséges adatok a szolgáltatónál)</li>
+      </ul>
+
+      <h2>3) Az adatkezelés célja</h2>
+      <p>
+        A kapcsolatfelvételi űrlapon beérkező megkeresések fogadása, megválaszolása, ügyfélkapcsolat kezelése.
+      </p>
+
+      <h2>4) Jogi alap</h2>
+      <p>
+        Hozzájárulás (GDPR 6. cikk (1) a)).
+        A hozzájárulás bármikor visszavonható, ez nem érinti a visszavonás előtti adatkezelés jogszerűségét.
+      </p>
+
+      <h2>5) Adatfeldolgozók / harmadik felek</h2>
+      <p>
+        A kapcsolatfelvételi űrlap beküldését a Web3Forms szolgáltatás kezeli (adatfeldolgozó),
+        továbbá a spamvédelemhez captcha/hCaptcha szolgáltatás kerülhet igénybevételre.
+      </p>
+
+      <h2>6) Adattárolás időtartama</h2>
+      <p>
+        A megkeresés lezárásáig, illetve legfeljebb <strong>TODO: pl. 12 hónapig</strong>, kivéve, ha jogszabály hosszabb megőrzést ír elő.
+      </p>
+
+      <h2>7) Érintetti jogok</h2>
+      <ul>
+        <li>Tájékoztatáshoz és hozzáféréshez való jog</li>
+        <li>Helyesbítéshez való jog</li>
+        <li>Törléshez való jog</li>
+        <li>Adatkezelés korlátozásához való jog</li>
+        <li>Adathordozhatósághoz való jog</li>
+        <li>Tiltakozáshoz való jog (ha alkalmazható)</li>
+        <li>Hozzájárulás visszavonása</li>
+      </ul>
+
+      <h2>8) Panasz</h2>
+      <p>
+        Panasz benyújtható a lakóhely szerint illetékes felügyeleti hatóságnál.
+        (Magyarországon: NAIH; Ausztriában: Datenschutzbehörde — ha releváns.)
+      </p>
+
+      <p class="muted" style="margin-top:14px;">
+        Ha szeretnéd, ezt megírom “teljesen jogászbarát” verzióban is (cookie-k, logok, pontos feldolgozók, adattovábbítási országok), de ahhoz kell,
+        hogy pontosan ki az adatkezelő (magánszemély/cég), és hol hostolod a site-ot.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
