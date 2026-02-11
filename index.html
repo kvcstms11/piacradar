@@ -6,11 +6,13 @@
 
   <title>Piacradar — Prémium piaci összefoglalók Telegramon</title>
 
-  <meta name="description" content="Piacradar — prémium piaci összefoglalók Telegramon. EU és USA gazdasági adatok, vállalati jelentések és piacmozgató hírek — magyarul, tömören, pénzügyi fogalmakkal magyarázva." />
+  <meta name="description" content="Piacradar — prémium piaci összefoglalók Telegramon. EU és USA gazdasági adatok, vállalati jelentések és piacmozgató hírek — magyarul, tömören, pénzügyi fogalmakkal magyarázva. Nem csak tájékoztatás, hanem oktatás is: a Piacradar segít érteni, nem csak követni a piacot." />
+  <meta name="keywords" content="piaci hírek, piaci összefoglaló, makroadatok, CPI, PPI, NFP, PMI, Fed, ECB, earnings, részvény, kötvényhozam, yield, risk-off, kripto, piacradar, Telegram" />
   <meta name="theme-color" content="#0b1220" />
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Piacradar — Prémium piaci összefoglalók Telegramon" />
-  <meta property="og:description" content="Tömör, tényalapú piaci összefoglalók: mi történt és miért számít. Telegramon." />
+  <meta property="og:description" content="Tömör, tényalapú piaci összefoglalók: mi történt és miért számít. Makró + earnings + market-moving hírek. Telegramon." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://piacradar.eu/" />
 
@@ -32,7 +34,7 @@
     }
 
     *{ box-sizing:border-box; }
-    html,body{ height:100%; scroll-behavior: smooth; }
+    html,body{ height:100%; }
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
@@ -43,6 +45,7 @@
       position:relative;
     }
 
+    /* FIX háttér (nem scrollozik), a tartalom megy fölötte */
     body::before{
       content:"";
       position:fixed;
@@ -77,93 +80,301 @@
       border:1px solid var(--border);
       box-shadow: 0 10px 30px rgba(0,0,0,.25);
     }
-    .brand h1{ font-size:18px; letter-spacing:.2px; margin:0; }
-    .brand p{ margin:2px 0 0; color:var(--muted); font-size:13px; white-space:nowrap; }
+    .brand h1{
+      font-size:18px; letter-spacing:.2px; margin:0;
+    }
+    .brand p{
+      margin:2px 0 0; color:var(--muted); font-size:13px;
+      white-space:nowrap;
+    }
 
-    .nav{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:flex-end; }
+    .nav{
+      display:flex; align-items:center; gap:12px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
     .nav a{
       font-size:13px; color:rgba(255,255,255,.78);
-      padding:8px 10px; border:1px solid transparent; border-radius:999px;
+      padding:8px 10px;
+      border:1px solid transparent;
+      border-radius:999px;
     }
-    .nav a:hover{ text-decoration:none; border-color:var(--border); background:rgba(255,255,255,.04); }
+    .nav a:hover{
+      text-decoration:none;
+      border-color:var(--border);
+      background:rgba(255,255,255,.04);
+    }
 
     /* Hero */
     .hero{
-      border-radius:var(--radius2); border:1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      box-shadow:var(--shadow); overflow:hidden; position:relative; backdrop-filter: blur(6px);
+      border-radius:var(--radius2);
+      border:1px solid var(--border);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+      backdrop-filter: blur(6px);
     }
-    .hero-inner{ position:relative; padding:28px 22px; display:grid; grid-template-columns: 1.15fr .85fr; gap:18px; align-items:stretch; }
+    .hero::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(420px 220px at 22% 30%, rgba(94,234,212,.18), transparent 55%),
+        radial-gradient(420px 220px at 78% 35%, rgba(96,165,250,.18), transparent 55%);
+      pointer-events:none;
+    }
+    .hero-inner{
+      position:relative;
+      padding:28px 22px;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
 
     .badge{
-      display:inline-flex; align-items:center; gap:8px; padding:8px 12px;
-      background:rgba(255,255,255,.05); border:1px solid var(--border); border-radius:999px;
-      color:rgba(255,255,255,.80); font-size:13px; margin-bottom:14px; backdrop-filter: blur(6px);
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px;
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:rgba(255,255,255,.80);
+      font-size:13px;
+      margin-bottom:14px;
+      backdrop-filter: blur(6px);
     }
-    .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow: 0 0 0 4px rgba(94,234,212,.14); }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background:var(--accent);
+      box-shadow: 0 0 0 4px rgba(94,234,212,.14);
+    }
 
-    .hero h2{ margin:0 0 10px; font-size:36px; line-height:1.08; letter-spacing:-.6px; }
-    .sub{ margin:0 0 16px; color:rgba(255,255,255,.78); font-size:15px; max-width:60ch; }
+    .hero h2{
+      margin:0 0 10px;
+      font-size:36px;
+      line-height:1.08;
+      letter-spacing:-.6px;
+    }
+    .sub{
+      margin:0 0 16px;
+      color:rgba(255,255,255,.78);
+      font-size:15px;
+      max-width:60ch;
+    }
 
     .cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
     .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding:11px 14px; border-radius:14px; border:1px solid var(--border);
-      background:rgba(255,255,255,.04); color:rgba(255,255,255,.88);
-      font-weight:600; font-size:14px; min-height:42px; cursor:pointer; backdrop-filter: blur(6px);
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:11px 14px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      color:rgba(255,255,255,.88);
+      font-weight:600;
+      font-size:14px;
+      min-height:42px;
+      cursor:pointer;
+      user-select:none;
+      backdrop-filter: blur(6px);
     }
     .btn:hover{ text-decoration:none; background:rgba(255,255,255,.06); }
-    .btn.primary{ border-color: rgba(94,234,212,.35); background: linear-gradient(135deg, rgba(94,234,212,.22), rgba(96,165,250,.14)); }
+    .btn.primary{
+      border-color: rgba(94,234,212,.35);
+      background: linear-gradient(135deg, rgba(94,234,212,.22), rgba(96,165,250,.14));
+    }
+    .btn.primary:hover{
+      background: linear-gradient(135deg, rgba(94,234,212,.28), rgba(96,165,250,.18));
+    }
 
-    .card{ border:1px solid var(--border); background:rgba(255,255,255,.04); border-radius:18px; padding:16px; backdrop-filter: blur(6px); }
-    pre{ margin:0; white-space:pre-wrap; font-family: ui-monospace, monospace; font-size:12.5px; color:rgba(255,255,255,.80); }
+    .card{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      padding:16px 16px 14px;
+      backdrop-filter: blur(6px);
+    }
+    .card h3{
+      margin:0 0 10px;
+      font-size:14px;
+      color:rgba(255,255,255,.84);
+      letter-spacing:.2px;
+    }
+    pre{
+      margin:0;
+      white-space:pre-wrap;
+      word-wrap:break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size:12.5px;
+      line-height:1.45;
+      color:rgba(255,255,255,.80);
+    }
+
+    .pillrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .pill{
+      font-size:12px;
+      color:rgba(255,255,255,.72);
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03);
+      white-space:nowrap;
+    }
 
     /* Sections */
     section{ margin-top:22px; }
-    .panel{ border-radius:var(--radius2); border:1px solid var(--border); background:rgba(255,255,255,.03); padding:18px; backdrop-filter: blur(6px); }
-    .kicker{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:12px; }
+    .panel{
+      border-radius:var(--radius2);
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03);
+      padding:18px;
+      backdrop-filter: blur(6px);
+    }
+    .kicker{
+      display:flex; align-items:baseline; justify-content:space-between;
+      gap:12px; margin-bottom:12px;
+    }
+    .kicker h3{
+      margin:0; font-size:16px; letter-spacing:.2px;
+    }
+
     .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
     .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; }
     .grid4{ display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
 
-    .box{ border:1px solid var(--border); background:rgba(255,255,255,.04); border-radius:18px; padding:14px; }
+    .box{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      padding:14px;
+      backdrop-filter: blur(6px);
+    }
+    .box h4{ margin:0 0 6px; font-size:14px; }
     .box p{ margin:0; color:rgba(255,255,255,.74); font-size:13.5px; }
-    .list{ margin:10px 0 0; padding-left:18px; color:rgba(255,255,255,.76); }
 
-    /* FAQ - Nested Accordion Styles */
-    .outer-details { width: 100%; }
-    .outer-summary { display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; }
-    .outer-summary::-webkit-details-marker { display: none; }
-    .outer-summary h3 { margin: 0; font-size: 18px; color: var(--accent); }
-    
-    .outer-details[open] .outer-summary { margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
-    .outer-content { animation: fadeIn 0.3s ease-in-out; }
+    .list{
+      margin:10px 0 0;
+      padding-left:18px;
+      color:rgba(255,255,255,.76);
+    }
+    .list li{ margin:8px 0; }
+    .muted{ color:rgba(255,255,255,.68); }
 
-    .faq-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom: 14px; }
-    .faq-list details{ border:1px solid var(--border); background:rgba(255,255,255,.04); border-radius:16px; padding:12px; margin:10px 0; }
-    summary { cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between; gap:12px; font-weight:800; }
-    summary::-webkit-details-marker { display:none; }
-    .chev { width:18px; height:18px; transition: transform .12s ease; }
-    details[open] > summary .chev { transform: rotate(180deg); }
-    .faq-answer { margin-top:10px; color:rgba(255,255,255,.74); font-size:13.5px; }
+    /* Social tiles */
+    .social a:hover{ text-decoration:none; }
+    .social-tile{
+      display:flex; align-items:center; gap:10px;
+      padding:12px 12px;
+      border-radius:18px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      transition: transform .12s ease, background .12s ease;
+      height:52px;
+      backdrop-filter: blur(6px);
+    }
+    .social-tile:hover{
+      transform: translateY(-1px);
+      background:rgba(255,255,255,.06);
+    }
+    .icon{
+      width:18px; height:18px; flex:0 0 18px;
+      color:rgba(255,255,255,.86);
+    }
+    .social-name{
+      font-weight:800; font-size:14px;
+    }
 
-    /* Social & Forms */
-    .social-tile{ display:flex; align-items:center; gap:10px; padding:12px; border-radius:18px; border:1px solid var(--border); background:rgba(255,255,255,.04); transition: transform .12s; height:52px; }
-    .social-tile:hover{ transform: translateY(-1px); background:rgba(255,255,255,.06); text-decoration: none; }
-    .icon{ width:18px; height:18px; color:rgba(255,255,255,.86); }
-    
-    input, textarea{ width:100%; padding:11px; border-radius:12px; border:1px solid var(--border); background:rgba(255,255,255,.05); color:var(--text); outline:none; margin-top: 6px; }
-    label{ font-size:13px; color:rgba(255,255,255,.78); margin-top:10px; display:block; }
+    /* FAQ (accordion) */
+    .faq-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .faq-list{ margin-top:12px; display:block; }
+    details{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      border-radius:16px;
+      padding:12px 12px;
+      margin:10px 0;
+      backdrop-filter: blur(6px);
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      font-weight:800;
+      color:rgba(255,255,255,.86);
+    }
+    summary::-webkit-details-marker{ display:none; }
+    .chev{
+      width:18px; height:18px;
+      opacity:.85;
+      transform: rotate(0deg);
+      transition: transform .12s ease;
+    }
+    details[open] .chev{ transform: rotate(180deg); }
+    .faq-answer{
+      margin-top:10px;
+      color:rgba(255,255,255,.74);
+      font-size:13.5px;
+      padding-right:6px;
+    }
 
-    footer{ margin-top:22px; display:flex; justify-content:space-between; padding:16px 6px; color:rgba(255,255,255,.60); border-top:1px solid var(--border); font-size:12.5px; }
+    /* Form */
+    label{
+      display:block;
+      font-size:13px;
+      color:rgba(255,255,255,.78);
+      margin:10px 0 6px;
+    }
+    input, textarea{
+      width:100%;
+      padding:11px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.05);
+      color:var(--text);
+      outline:none;
+      backdrop-filter: blur(6px);
+    }
+    textarea{ resize:vertical; min-height:120px; }
 
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    footer{
+      margin-top:22px;
+      display:flex; align-items:flex-start; justify-content:space-between;
+      gap:14px;
+      padding:16px 6px 0;
+      color:rgba(255,255,255,.60);
+      border-top:1px solid rgba(255,255,255,.10);
+      font-size:12.5px;
+    }
+    .footer-links{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    .footer-links a{
+      color:rgba(255,255,255,.72);
+      border:1px solid transparent;
+      padding:6px 10px;
+      border-radius:999px;
+    }
+    .footer-links a:hover{
+      text-decoration:none;
+      border-color:var(--border);
+      background:rgba(255,255,255,.04);
+    }
 
+    /* Responsive */
     @media (max-width: 980px){
       .hero-inner{ grid-template-columns: 1fr; }
-      .grid3, .grid2{ grid-template-columns: 1fr; }
+      .hero h2{ font-size:32px; }
+      .grid3{ grid-template-columns: 1fr; }
+      .grid2{ grid-template-columns: 1fr; }
       .grid4{ grid-template-columns: 1fr 1fr; }
       .nav{ display:none; }
+    }
+    @media (max-width: 520px){
+      .hero h2{ font-size:28px; }
+      .grid4{ grid-template-columns: 1fr; }
+      .brand p{ max-width: 220px; overflow:hidden; text-overflow:ellipsis; }
     }
   </style>
 </head>
@@ -171,6 +382,7 @@
 <body>
   <div class="wrap">
 
+    <!-- TOP BAR -->
     <div class="top">
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
@@ -179,136 +391,462 @@
           <p>Prémium piaci összefoglalók — Telegramon</p>
         </div>
       </div>
+
       <nav class="nav" aria-label="Navigáció">
         <a href="#miert">Miért</a>
-        <a href="#hogyan">Hogyan</a>
+        <a href="#hogyan">Hogyan működik</a>
+        <a href="#mitkapsz">Mit kapsz</a>
+        <a href="#fontos">Mi számít fontosnak</a>
         <a href="#arazas">Árazás</a>
+        <a href="#kozosseg">Közösségi oldalak</a>
         <a href="#gyik">GYIK</a>
         <a href="#uzenet">Üzenet</a>
       </nav>
     </div>
 
+    <!-- HERO -->
     <header class="hero" id="top">
       <div class="hero-inner">
         <div>
-          <div class="badge"><span class="dot"></span> Prémium csatorna • Napi 3 összefoglaló</div>
+          <div class="badge"><span class="dot"></span> Prémium csatorna • Napi ritmus • Minőség fókusz</div>
+
           <h2>Tömör piaci összefoglaló.<br/>Mi történt, és miért számít.</h2>
+
           <p class="sub">
             EU és USA gazdasági adatok, vállalati jelentések és piacmozgató hírek —
-            magyarul, tömören, pénzügyi fogalmakkal magyarázva. Segítünk érteni a piacot.
+            magyarul, tömören, pénzügyi fogalmakkal magyarázva.
+            Nem csak tájékoztatás, hanem oktatás is:
+            a Piacradar segít érteni, nem csak követni a piacot.
           </p>
+
           <div class="cta">
-            <a class="btn primary" href="#">Előfizetés (Prémium) →</a>
+            <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
+              Előfizetés (Prémium) →
+            </a>
+            <a class="btn" href="#uzenet">Kérdés / üzenet →</a>
             <a class="btn" href="#gyik">GYIK →</a>
           </div>
+
+          <p class="muted" style="margin:12px 0 0; font-size:13px;">
+            A Telegram hozzáférést az előfizetés után kapod meg. Ingyenes tartalommal a közösségi oldalakon találkozhatsz.
+          </p>
         </div>
-        <aside class="card">
+
+        <!-- Example (short) -->
+        <aside class="card" aria-label="Példa összefoglaló">
+          <h3>Példa</h3>
           <pre>🟢 Nvidia vezeti a tech rally-t
-A chipgyártó részvényei emelkedtek.
-↳ Miért számít: az AI-capex félelmek enyhülése risk-on hangulatot erősít.
+A chipgyártó részvényei emelkedtek, és húzták a félvezető szektort.
+↳ Miért számít: az AI-capex félelmek enyhülése risk-on hangulatot erősíthet.
+Forrás: Yahoo Finance
+
+🔴 Stellantis 25%-ot zuhant eredmények után
+22 mrd EUR egyszeri leírás + osztalékfelfüggesztés, a részvény nagyot esett.
+↳ Miért számít: szektor-szintű stressz az autóiparban, beszállítói láncokra is hat.
 Forrás: Yahoo Finance</pre>
+          <div class="pillrow">
+            <span class="pill">Makró (EU/USA)</span>
+            <span class="pill">Earnings</span>
+            <span class="pill">Szektor hatás</span>
+            <span class="pill">Forráslinkek</span>
+          </div>
         </aside>
       </div>
     </header>
 
-    <section id="hogyan" class="panel">
-      <div class="kicker"><h3>Hogyan működik?</h3></div>
-      <div class="grid3">
-        <div class="box"><h4>1) Szűrés</h4><p>Csak a valódi piacmozgató hírek maradnak (makró, kamatdöntés, nagy earnings).</p></div>
-        <div class="box"><h4>2) Értelmezés</h4><p>Minden hírnél leírjuk a kontextust: mihez képest jó vagy rossz az adat.</p></div>
-        <div class="box"><h4>3) Hatásmechanizmus</h4><p>Megmutatjuk, melyik csatornán (hozamok, dollár, szektor) keresztül üt át a hír.</p></div>
+    <!-- WHY IT'S HARD -->
+    <section id="miert" class="panel">
+      <div class="kicker">
+        <h3>Miért nehéz híreket követni?</h3>
       </div>
-    </section>
 
-    <section id="arazas" class="panel">
-      <div class="kicker"><h3>Árazás</h3></div>
       <div class="grid2">
         <div class="box">
-          <h4 style="font-size:22px;">Prémium: 7,99€ / hó</h4>
-          <ul class="list">
-            <li>Napi 3 poszt (reggel, délután, este)</li>
-            <li>Hétvégi nagy összefoglaló</li>
-            <li>Azonnali breaking news értelmezés</li>
-          </ul>
-          <div class="cta"><a class="btn primary" href="#">Előfizetés →</a></div>
+          <h4>Túl sok forrás, túl kevés idő</h4>
+          <p>
+            Sokan több előfizetéssel zsonglőrködnek (híroldalak, hírlevelek, appok), mégis
+            jön az a pont, amikor a sokadik olvasatlan üzenetnél csak annyit érzel: <em>túl sok a hír</em>.
+            Ilyenkor nem az a kérdés, hogy van-e tartalom — hanem hogy mi a lényeg, és mit jelent a piacra nézve.
+          </p>
         </div>
-        <div class="box"><h4 class="muted">Pro: Fejlesztés alatt</h4><p>Deep-dive elemzések és watchlist fókusz hamarosan.</p></div>
+        <div class="box">
+          <h4>A “mi történt” kevés</h4>
+          <p>
+            Egy headline önmagában ritkán elég. A hasznos információ az, ha gyorsan érthető:
+            <strong>mi történt</strong>, <strong>mihez képest fontos</strong> (előző, várakozás, benchmark),
+            és <strong>mi lehet a piaci következmény</strong> (yields, USD, szektorok, risk-on/off).
+            Itt jön képbe a Piacradar.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="gyik" class="panel">
-      <details class="outer-details">
-        <summary class="outer-summary">
-          <div class="kicker" style="margin:0;"><h3>Gyakran Ismételt Kérdések</h3></div>
-          <svg class="chev" style="width:24px; height:24px;" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </summary>
+    <!-- HOW IT WORKS -->
+    <section id="hogyan" class="panel">
+      <div class="kicker">
+        <h3>Hogyan működik?</h3>
+      </div>
 
-        <div class="outer-content">
-          <div class="faq-actions">
-            <button class="btn" type="button" id="faqOpenAll">Összes megnyitása</button>
-            <button class="btn" type="button" id="faqCloseAll">Összes bezárása</button>
-          </div>
-
-          <div class="faq-list" id="faqList">
-            <details>
-              <summary>Hogyan kapom meg a hozzáférést?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
-              <div class="faq-answer">Sikeres fizetés után azonnal kapsz egy privát Telegram meghívót emailben és a visszaigazoló oldalon.</div>
-            </details>
-            <details>
-              <summary>Milyen nyelven érkeznek a hírek?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
-              <div class="faq-answer">A leírások magyarul vannak, de a szakzsargont (pl. CPI, NFP, yield) angolul hagyjuk a pontosság kedvéért.</div>
-            </details>
-            <details>
-              <summary>Bármikor lemondható az előfizetés?<svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
-              <div class="faq-answer">Igen, nincs hűségidő. Egy kattintással lemondhatod a profilodban, és a hónap végéig tag maradsz.</div>
-            </details>
-          </div>
+      <div class="grid3">
+        <div class="box">
+          <h4>1) Szűrés</h4>
+          <p>Bejövő hírekből csak a piaci hatás szempontjából relevánsak maradnak (EU/USA makró, nagy earnings, market-moving események).</p>
         </div>
-      </details>
+        <div class="box">
+          <h4>2) Rövid értelmezés</h4>
+          <p>Minden pont kap “Miért számít?” részt: összevetés (előző/várakozás/benchmark) + várható piaci csatorna (yields, USD, szektor).</p>
+        </div>
+        <div class="box">
+          <h4>3) Források csatolva</h4>
+          <p>Ha mélyebben érdekel egy téma, ott a forráslink. A Piacradar nem rejti el az eredetit — csak időt spórol és keretet ad.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- WHAT YOU GET -->
+    <section id="mitkapsz" class="panel">
+      <div class="kicker">
+        <h3>Mit kapsz a Prémium csatornában?</h3>
+      </div>
+
+      <div class="grid2">
+        <div class="box">
+          <h4>Napi ritmus</h4>
+          <ul class="list">
+            <li><strong>Napi 3 poszt</strong> (reggel / délután / este).</li>
+            <li>Egy posztban <strong>6–8 különböző hír</strong> rövid magyarázata (nem 1 headline).</li>
+            <li><strong>Fontos jelentések</strong> után külön “gyors összefoglaló” (közvetlenül a publikálás után).</li>
+            <li><strong>Hétvégi elemzés</strong> (mi történt és mit érdemes figyelni).</li>
+            <li><strong>Következő heti kitekintő</strong> (fő makró események + várható fókusz).</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4>Edukáció (beépítve)</h4>
+          <ul class="list">
+            <li>Rövid fogalom-magyarázatok: mi az a <em>yield</em>, <em>risk-off</em>, <em>earnings miss</em>, <em>core inflation</em> stb.</li>
+            <li>Makró adatoknál összevetés: előző / várakozás / “mihez képest fontos”.</li>
+            <li>Kontextus: trend (“3 hónapja javul/romlik”), meglepetés, piaci csatorna.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY USEFUL -->
+    <section class="panel" id="hasznos">
+      <div class="kicker">
+        <h3>Miért hasznos?</h3>
+      </div>
+
+      <div class="grid3">
+        <div class="box">
+          <h4>Időt spórol</h4>
+          <p>Egy helyen megkapod azt a 6–8 hírt, ami tényleg számít — magyarázattal.</p>
+        </div>
+        <div class="box">
+          <h4>Kontextust ad</h4>
+          <p>Nem csak “mi történt”, hanem “mihez képest”, és “melyik piaci csatornán keresztül hat”.</p>
+        </div>
+        <div class="box">
+          <h4>Források csatolva</h4>
+          <p>Ha mélyebb részletek érdekelnek, ott vannak a forráslinkek — gyors ellenőrzéshez vagy további olvasáshoz.</p>
+        </div>
+        <div class="box">
+          <h4>Konzisztens formátum</h4>
+          <p>Ugyanaz a logika minden nap: prioritás, számok, “Miért számít?”, hatás (yields / USD / szektor).</p>
+        </div>
+        <div class="box">
+          <h4>Kevesebb zaj</h4>
+          <p>Kiszűrve a tipikus zaj: price prediction, analyst rating, clickbait “top stocks”.</p>
+        </div>
+        <div class="box">
+          <h4>Fókusz a piacra</h4>
+          <p>EU/USA makró + nagy earnings + szektorhatású megállapodások — ahol tényleg változik a narratíva.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPORTANT VS NOT -->
+    <section id="fontos" class="panel">
+      <div class="kicker">
+        <h3>Mi számít fontos hírnek?</h3>
+      </div>
+
+      <div class="grid2">
+        <div class="box">
+          <h4>✅ Fontos (piacbefolyásoló)</h4>
+          <ul class="list">
+            <li><strong>EU/USA makroadatok</strong>: inflációs (CPI/PPI/PCE), munkaerőpiaci (NFP, unemployment), aktivitási (PMI/ISM, GDP).</li>
+            <li><strong>Fed / ECB</strong>: kamatdöntés, kommunikáció, iránymutatás.</li>
+            <li><strong>Nagy vállalati jelentések</strong>: mega-cap és szektor-vezetők, ahol a számok + guidance szektorhangulatot mozgat.</li>
+            <li><strong>Szektor hatású megállapodások</strong>: stratégiai partnerships, supply-chain, szabályozói döntések, nagy capex/AI-spend.</li>
+            <li><strong>Market-moving események</strong>: nagy hozam-elmozdulás, risk-on/off fordulat, geopolitika ha tényleg piaci csatornán üt.</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4>⛔ Nem fontos (zaj)</h4>
+          <ul class="list">
+            <li>“Price prediction” cikkek (“X stock $Y by 2030”).</li>
+            <li>Analyst rating / upgrade / downgrade önmagában.</li>
+            <li>“Top 10 stocks to buy” jellegű listák.</li>
+            <li>Kripto árjóslás / spekuláció tényként.</li>
+            <li>Forrás nélküli pletyka, clickbait.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:12px;">
+        <h4>Prioritás jelölés a posztokban</h4>
+        <ul class="list">
+          <li>🔴 <strong>Magas</strong>: Fed/ECB, CPI/PPI/PCE/NFP, nagy earnings meglepetés, szektorfordító esemény.</li>
+          <li>🟡 <strong>Közepes</strong>: releváns makró (PMI/ISM), fontosabb earnings, trendet erősítő adatok.</li>
+          <li>🟢 <strong>Alacsony</strong>: kisebb, de kontextusban hasznos hír (csak ha segít érteni a nap narratíváját).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="arazas" class="panel">
+      <div class="kicker">
+        <h3>Árazás</h3>
+      </div>
+
+      <div class="grid2">
+        <div class="box">
+          <h4>Prémium</h4>
+          <p style="margin-bottom:10px;">
+            <strong style="font-size:22px;">7,99€</strong> / hó
+          </p>
+          <ul class="list">
+            <li>Napi 3 poszt (posztonként 6–8 hír magyarázata)</li>
+            <li>Fontos jelentések utáni gyors összefoglaló</li>
+            <li>Hétvégi elemzés + következő heti kitekintő</li>
+            <li>Edukációs magyarázatok (fogalmak, keretek)</li>
+          </ul>
+          <div class="cta" style="margin-top:12px;">
+            <a class="btn primary" href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">
+              Előfizetés →
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>Pro</h4>
+          <p class="muted" style="margin-bottom:10px;">Fejlesztés alatt.</p>
+          <ul class="list">
+            <li>Extra mélység (deep dive) heti 1×</li>
+            <li>Esemény-brief (CPI/FOMC/ECB napokon)</li>
+            <li>Watchlist fókusz (később)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section id="kozosseg" class="panel social">
+      <div class="kicker">
+        <h3>Közösségi oldalak</h3>
+      </div>
+
+      <div class="grid4">
+        <a class="social-tile" href="https://www.tiktok.com/@officialkovacstamas" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path d="M14.5 4c.6 2.7 2.5 4.6 5.2 5.1v3.4c-2 0-3.8-.6-5.2-1.7v6.2c0 3.1-2.5 5.6-5.6 5.6S3 20.1 3 17s2.5-5.6 5.6-5.6c.4 0 .9.1 1.3.2v3.5c-.4-.2-.8-.3-1.3-.3-1.2 0-2.2 1-2.2 2.2s1 2.2 2.2 2.2 2.2-1 2.2-2.2V4h2.4Z"
+              stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="social-name">TikTok</div>
+        </a>
+
+        <a class="social-tile" href="https://www.instagram.com/officialkovacstamas/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <div class="social-name">Instagram</div>
+        </a>
+
+        <a class="social-tile" href="https://www.youtube.com/@officialkovacstamas" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path d="M21 8.2a3 3 0 0 0-2.1-2.1C17.1 5.5 12 5.5 12 5.5s-5.1 0-6.9.6A3 3 0 0 0 3 8.2 31 31 0 0 0 3 12a31 31 0 0 0 .1 3.8 3 3 0 0 0 2.1 2.1c1.8.6 6.8.6 6.8.6s5.1 0 6.9-.6a3 3 0 0 0 2.1-2.1c.2-1.3.2-2.6.2-3.8s0-2.5-.2-3.8Z"
+              stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M10 9.5 16 12l-6 2.5v-5Z" fill="currentColor"/>
+          </svg>
+          <div class="social-name">YouTube</div>
+        </a>
+
+        <a class="social-tile" href="https://x.com/kvcstms11" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path d="M7 3h3.2l4.2 6 4.6-6H22l-7 9 7 9h-3.2l-4.7-6.6L9 21H2l7.8-9.9L7 3Z"
+              stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+          <div class="social-name">X</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="gyik" class="panel">
+      <div class="kicker">
+        <h3>GYIK</h3>
+      </div>
+
+      <div class="faq-actions">
+        <button class="btn" type="button" id="faqOpenAll">Összes megnyitása</button>
+        <button class="btn" type="button" id="faqCloseAll">Összes bezárása</button>
+        <a class="btn" href="#uzenet">Írok inkább kérdést →</a>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <details>
+          <summary>
+            Hogyan kapom meg a Telegram hozzáférést?
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="faq-answer">
+            Előfizetés után automatikusan megkapod a belépési információt. A csatorna nem nyilvános, így a linket nem tesszük ki a landingre.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Milyen gyakran jönnek posztok és mennyi hír van egy posztban?
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="faq-answer">
+            Napi 3 poszt (reggel / délután / este). Egy posztban 6–8 különböző hír rövid magyarázata van, “Miért számít?” résszel és forráslinkkel.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Van visszajelzési lehetőség a csatornán belül?
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="faq-answer">
+            Igen: az üzenetekre tudsz reakciót adni (👍/👎), és kommentben is írhatsz. A kommentekből lesz a finomhangolás: mit tartsunk, mit rövidítsünk, mit magyarázzunk jobban.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Mitől “prémium” ez, ha vannak ingyen hírek is?
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="faq-answer">
+            A prémium érték a szűrés + magyarázat + konzisztens keret. Nem 30 headline-t kapsz, hanem azt a 6–8 témát, ami számít, és rögtön érthető: mi történt, mihez képest, mi a piaci csatorna.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Lesz Pro csomag?
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="faq-answer">
+            Később igen, ha már van elég extra és automatizálható tartalom (deep dive, event-brief, watchlist fókusz). Induláskor 1 prémium csatorna van.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Milyen nyelven ír a Piacradar?
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="faq-answer">
+            Magyarul, de a makró rövidítések és pénzügyi fogalmak angolul maradnak (CPI, PPI, NFP, Fed, yield, risk-off), mert így pontosabb és iparági standard.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT / MESSAGE -->
     <section id="uzenet" class="panel">
-      <div class="kicker"><h3>Üzenet küldése</h3></div>
-      <div class="box" style="max-width:600px; margin:0 auto;">
+      <div class="kicker">
+        <h3>Üzenet</h3>
+      </div>
+
+      <div class="box" style="max-width:680px; margin:0 auto;">
         <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="YOUR_KEY_HERE">
-          <label for="name">Név</label><input id="name" name="name" type="text" required>
-          <label for="email">Email</label><input id="email" name="email" type="email" required>
-          <label for="message">Üzenet</label><textarea id="message" name="message" rows="4" required></textarea>
-          <div class="cta" style="margin-top:16px;"><button class="btn primary" type="submit">Küldés →</button></div>
+          <input type="hidden" name="access_key" value="6d0dd951-1bfb-4f51-85fb-b0fd46f61d6e" />
+          <input type="hidden" name="subject" value="Piacradar — új üzenet a landing page-ről" />
+          <input type="hidden" name="from_name" value="Piacradar Landing" />
+
+          <label for="name">Név</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+
+          <label for="email">Email cím</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <label for="topic">Téma</label>
+          <input id="topic" name="topic" type="text" placeholder="pl. előfizetés / tartalom / együttműködés" required />
+
+          <label for="message">Üzenet</label>
+          <textarea id="message" name="message" placeholder="Írd le röviden, miben segíthetek…" required></textarea>
+
+          <div class="h-captcha" data-captcha="true" style="margin-top:10px;"></div>
+
+          <div class="cta" style="margin-top:12px;">
+            <button class="btn primary" type="submit">Üzenet küldése →</button>
+            <a class="btn" href="#top">Vissza a tetejére</a>
+          </div>
         </form>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-      <div><strong>Piacradar</strong> © <span id="y"></span> • Nem befektetési tanács.</div>
-      <div class="nav"><a href="#top">Vissza a tetejére</a></div>
+      <div>
+        <div style="font-weight:900; color:rgba(255,255,255,.82); margin-bottom:6px;">Piacradar</div>
+        <div>© <span id="y"></span> • Prémium piaci összefoglalók • ⚠️ Nem befektetési tanács.</div>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://PAYMENT_OR_MEMBERSHIP_PARTNER_LINK" target="_blank" rel="noopener">Előfizetés</a>
+        <a href="#gyik">GYIK</a>
+        <a href="#uzenet">Üzenet</a>
+      </div>
     </footer>
+
   </div>
 
+  <!-- Web3Forms client script (captcha) -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
   <script>
+    // Year
     document.getElementById("y").textContent = new Date().getFullYear();
 
-    // FAQ logic
-    const faqOpenAll = document.getElementById("faqOpenAll");
-    const faqCloseAll = document.getElementById("faqCloseAll");
-    const outerDetails = document.querySelector('.outer-details');
-
-    faqOpenAll?.addEventListener("click", () => {
-      document.querySelectorAll("#faqList details").forEach(d => d.open = true);
-    });
-    faqCloseAll?.addEventListener("click", () => {
+    // Force FAQ closed on load (browser néha megjegyzi az open state-et)
+    window.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll("#faqList details").forEach(d => d.open = false);
     });
 
-    // Auto-open FAQ section if linked
-    document.querySelectorAll('a[href="#gyik"]').forEach(link => {
-      link.addEventListener('click', () => { outerDetails.open = true; });
+    // FAQ open/close all
+    const faqOpenAll = document.getElementById("faqOpenAll");
+    const faqCloseAll = document.getElementById("faqCloseAll");
+    const faqDetails = () => Array.from(document.querySelectorAll("#faqList details"));
+
+    faqOpenAll?.addEventListener("click", () => {
+      faqDetails().forEach(d => d.open = true);
+    });
+    faqCloseAll?.addEventListener("click", () => {
+      faqDetails().forEach(d => d.open = false);
     });
 
-    if (window.location.hash === '#gyik') { outerDetails.open = true; }
+    // Smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", (e) => {
+        const id = a.getAttribute("href");
+        if (!id || id === "#") return;
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.replaceState(null, "", id);
+      });
+    });
   </script>
 </body>
 </html>
