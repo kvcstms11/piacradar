@@ -34,7 +34,8 @@
         radial-gradient(800px 400px at 85% 20%, rgba(96,165,250,.12), transparent 60%),
         var(--bg);
     }
-    a{ color:inherit; }
+    a{ color:rgba(94,234,212,.9); }
+    a:hover{ text-decoration:underline; }
     .wrap{
       max-width:var(--max);
       margin:0 auto;
@@ -44,14 +45,14 @@
       border:1px solid var(--border);
       background:rgba(255,255,255,.04);
       border-radius:var(--radius);
-      padding:18px;
+      padding:22px;
       box-shadow:var(--shadow);
     }
     h1{ margin:0 0 8px; font-size:24px; letter-spacing:-.3px; }
-    h2{ margin:18px 0 8px; font-size:15px; letter-spacing:.2px; }
-    p{ margin:0 0 10px; color:rgba(255,255,255,.82); }
+    h2{ margin:22px 0 8px; font-size:15px; letter-spacing:.2px; font-weight:900; }
+    p{ margin:0 0 10px; color:rgba(255,255,255,.82); font-size:14.5px; }
     .muted{ color:var(--muted); font-size:13px; }
-    ul{ margin:8px 0 12px; padding-left:18px; color:rgba(255,255,255,.82); }
+    ul{ margin:8px 0 12px; padding-left:18px; color:rgba(255,255,255,.82); font-size:14.5px; }
     li{ margin:6px 0; }
     .topline{
       display:flex;
@@ -69,10 +70,39 @@
       color:rgba(255,255,255,.78);
       white-space:nowrap;
     }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:10px 0 14px;
+      font-size:13.5px;
+    }
+    th, td{
+      text-align:left;
+      padding:8px 10px;
+      border:1px solid var(--border);
+      color:rgba(255,255,255,.82);
+    }
+    th{
+      background:rgba(255,255,255,.06);
+      font-weight:900;
+      font-size:12.5px;
+      color:rgba(255,255,255,.70);
+      text-transform:uppercase;
+      letter-spacing:.3px;
+    }
+    .back{
+      display:inline-block;
+      margin-bottom:14px;
+      font-size:13px;
+      color:rgba(255,255,255,.60);
+      text-decoration:none;
+    }
+    .back:hover{ color:rgba(255,255,255,.80); }
   </style>
 </head>
 <body>
   <div class="wrap">
+    <a class="back" href="./index.html">← Vissza a főoldalra</a>
     <div class="card">
       <div class="topline">
         <h1>Adatkezelési tájékoztató</h1>
@@ -80,67 +110,158 @@
       </div>
 
       <p class="muted">
-        Utolsó frissítés: <strong>TODO: dátum</strong>
+        Utolsó frissítés: <strong>2026. március 5.</strong>
       </p>
 
-      <h2>1) Adatkezelő</h2>
+      <!-- 1. ADATKEZELŐ -->
+      <h2>1. Adatkezelő</h2>
       <p>
-        <strong>Piacradar</strong><br/>
-        <span class="muted">TODO: név/cégnév • cím • ország</span><br/>
-        Kapcsolat: <span class="muted">TODO: CONTACT_EMAIL</span>
+        <strong>Kovács Tamás</strong><br/>
+        E-mail: <a href="mailto:info@piacradar.eu">info@piacradar.eu</a><br/>
+        Weboldal: <a href="https://piacradar.eu">piacradar.eu</a>
       </p>
 
-      <h2>2) Milyen adatokat kezelünk?</h2>
+      <!-- 2. KEZELT ADATOK -->
+      <h2>2. Milyen adatokat kezelünk?</h2>
+
+      <table>
+        <tr>
+          <th>Adat</th>
+          <th>Forrás</th>
+          <th>Cél</th>
+        </tr>
+        <tr>
+          <td>E-mail cím</td>
+          <td>Stripe fizetési folyamat</td>
+          <td>Előfizetés kezelése, Telegram meghívó kiküldése, szolgáltatással kapcsolatos értesítések</td>
+        </tr>
+        <tr>
+          <td>Fizetési adatok (kártya, számlázási cím)</td>
+          <td>Stripe</td>
+          <td>Fizetés feldolgozása — az adatkezelő ezeket közvetlenül nem tárolja, a Stripe mint adatfeldolgozó kezeli</td>
+        </tr>
+        <tr>
+          <td>Név, e-mail, üzenet</td>
+          <td>Kapcsolatfelvételi űrlap</td>
+          <td>Megkeresés megválaszolása</td>
+        </tr>
+        <tr>
+          <td>Technikai adatok</td>
+          <td>Captcha (hCaptcha / Web3Forms)</td>
+          <td>Spamvédelem</td>
+        </tr>
+      </table>
+
+      <p class="muted">
+        A Telegram csatornához való hozzáférés egyedi meghívó linken keresztül történik.
+        A Telegram felhasználónevet az adatkezelő nem tárolja és nem kezeli.
+      </p>
+
+      <!-- 3. JOGALAP -->
+      <h2>3. Az adatkezelés jogalapja</h2>
       <ul>
-        <li>Név</li>
-        <li>Email cím</li>
-        <li>Téma</li>
-        <li>Üzenet tartalma</li>
-        <li>Technikai adatok (pl. spamvédelem/captcha működéséhez szükséges adatok a szolgáltatónál)</li>
+        <li><strong>Előfizetés (e-mail cím, fizetési adatok):</strong> szerződés teljesítése (GDPR 6. cikk (1) b) — az előfizetői szolgáltatás nyújtásához szükséges.</li>
+        <li><strong>Kapcsolatfelvételi űrlap:</strong> hozzájárulás (GDPR 6. cikk (1) a) — bármikor visszavonható.</li>
+        <li><strong>Szolgáltatással kapcsolatos értesítések</strong> (pl. technikai probléma, migrációs értesítés): jogos érdek (GDPR 6. cikk (1) f) — az előfizetők tájékoztatása a szolgáltatás működéséről.</li>
       </ul>
 
-      <h2>3) Az adatkezelés célja</h2>
-      <p>
-        A kapcsolatfelvételi űrlapon beérkező megkeresések fogadása, megválaszolása, ügyfélkapcsolat kezelése.
-      </p>
+      <!-- 4. ADATFELDOLGOZÓK -->
+      <h2>4. Adatfeldolgozók és harmadik felek</h2>
+      <table>
+        <tr>
+          <th>Szolgáltató</th>
+          <th>Szerep</th>
+          <th>Székhely</th>
+        </tr>
+        <tr>
+          <td>Stripe, Inc.</td>
+          <td>Fizetés feldolgozása, előfizetés kezelése</td>
+          <td>USA (EU Standard Contractual Clauses)</td>
+        </tr>
+        <tr>
+          <td>Web3Forms</td>
+          <td>Kapcsolatfelvételi űrlap feldolgozása</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>hCaptcha (Intuition Machines)</td>
+          <td>Spamvédelem</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>GitHub Pages (Microsoft)</td>
+          <td>Weboldal hosting</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Rackhost Zrt.</td>
+          <td>Domain regisztráció, DNS kezelés</td>
+          <td>Magyarország</td>
+        </tr>
+        <tr>
+          <td>Telegram Messenger Inc.</td>
+          <td>Tartalomszolgáltatás csatornája</td>
+          <td>Egyesült Arab Emírségek / Brit Virgin-szigetek</td>
+        </tr>
+      </table>
 
-      <h2>4) Jogi alap</h2>
-      <p>
-        Hozzájárulás (GDPR 6. cikk (1) a)).
-        A hozzájárulás bármikor visszavonható, ez nem érinti a visszavonás előtti adatkezelés jogszerűségét.
-      </p>
+      <!-- 5. ADATTÁROLÁS -->
+      <h2>5. Adattárolás időtartama</h2>
+      <ul>
+        <li><strong>Előfizetői e-mail:</strong> az előfizetés megszűnését követő 30 napig (a kifizetett időszak lejártáig a hozzáférés megmarad, utána törlés).</li>
+        <li><strong>Fizetési adatok:</strong> a Stripe saját adatkezelési szabályzata szerint (kötelező pénzügyi nyilvántartási időszak).</li>
+        <li><strong>Kapcsolatfelvételi adatok:</strong> a megkeresés lezárásától számított legfeljebb 12 hónapig.</li>
+      </ul>
 
-      <h2>5) Adatfeldolgozók / harmadik felek</h2>
-      <p>
-        A kapcsolatfelvételi űrlap beküldését a Web3Forms szolgáltatás kezeli (adatfeldolgozó),
-        továbbá a spamvédelemhez captcha/hCaptcha szolgáltatás kerülhet igénybevételre.
-      </p>
-
-      <h2>6) Adattárolás időtartama</h2>
-      <p>
-        A megkeresés lezárásáig, illetve legfeljebb <strong>TODO: pl. 12 hónapig</strong>, kivéve, ha jogszabály hosszabb megőrzést ír elő.
-      </p>
-
-      <h2>7) Érintetti jogok</h2>
+      <!-- 6. ÉRINTETTI JOGOK -->
+      <h2>6. Az érintett jogai</h2>
+      <p>A GDPR alapján az alábbi jogok illetik meg:</p>
       <ul>
         <li>Tájékoztatáshoz és hozzáféréshez való jog</li>
         <li>Helyesbítéshez való jog</li>
-        <li>Törléshez való jog</li>
-        <li>Adatkezelés korlátozásához való jog</li>
+        <li>Törléshez való jog ("elfeledtetés joga")</li>
+        <li>Az adatkezelés korlátozásához való jog</li>
         <li>Adathordozhatósághoz való jog</li>
-        <li>Tiltakozáshoz való jog (ha alkalmazható)</li>
-        <li>Hozzájárulás visszavonása</li>
+        <li>Tiltakozáshoz való jog</li>
+        <li>Hozzájárulás visszavonása (ahol a jogalap hozzájárulás)</li>
       </ul>
-
-      <h2>8) Panasz</h2>
       <p>
-        Panasz benyújtható a lakóhely szerint illetékes felügyeleti hatóságnál.
-        (Magyarországon: NAIH; Ausztriában: Datenschutzbehörde — ha releváns.)
+        Joggyakorláshoz forduljon az <a href="mailto:info@piacradar.eu">info@piacradar.eu</a> címre.
+        A kérelmekre legfeljebb 30 napon belül válaszolunk.
       </p>
 
-      <p class="muted" style="margin-top:14px;">
-        Ha szeretnéd, ezt megírom “teljesen jogászbarát” verzióban is (cookie-k, logok, pontos feldolgozók, adattovábbítási országok), de ahhoz kell,
-        hogy pontosan ki az adatkezelő (magánszemély/cég), és hol hostolod a site-ot.
+      <!-- 7. ELŐFIZETÉS LEMONDÁSA -->
+      <h2>7. Előfizetés lemondása</h2>
+      <p>
+        Az előfizetés bármikor lemondható. A lemondás után a hozzáférés a már kifizetett időszak
+        (havi vagy éves) végéig él. Az időszak lejártát követően a Telegram csatornához
+        való hozzáférés megszűnik, és az e-mail cím 30 napon belül törlésre kerül.
+      </p>
+
+      <!-- 8. PANASZ -->
+      <h2>8. Panasz</h2>
+      <p>
+        Panasz benyújtható a lakóhely szerint illetékes felügyeleti hatóságnál:
+      </p>
+      <ul>
+        <li><strong>Magyarország:</strong> Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH) — <a href="https://naih.hu" target="_blank" rel="noopener">naih.hu</a></li>
+        <li><strong>Ausztria:</strong> Datenschutzbehörde (DSB) — <a href="https://dsb.gv.at" target="_blank" rel="noopener">dsb.gv.at</a></li>
+      </ul>
+
+      <!-- 9. COOKIE -->
+      <h2>9. Cookie-k és nyomkövetés</h2>
+      <p>
+        A piacradar.eu weboldal nem használ saját cookie-kat és nem alkalmaz nyomkövetést (analytics).
+        A beágyazott szolgáltatások (hCaptcha, Stripe Checkout) saját cookie-kat helyezhetnek el —
+        ezekre az adott szolgáltató adatkezelési szabályzata vonatkozik.
+      </p>
+
+      <!-- 10. MÓDOSÍTÁS -->
+      <h2>10. Tájékoztató módosítása</h2>
+      <p>
+        Az adatkezelő fenntartja a jogot a tájékoztató módosítására.
+        A módosítás dátumát az oldal tetején jelezzük.
+        Lényeges változás esetén az aktív előfizetőket e-mailben értesítjük.
       </p>
     </div>
   </div>
