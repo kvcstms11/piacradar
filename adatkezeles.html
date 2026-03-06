@@ -110,7 +110,7 @@
       </div>
 
       <p class="muted">
-        Utolsó frissítés: <strong>2026. március 5.</strong>
+        Utolsó frissítés: <strong>2026. március 6.</strong>
       </p>
 
       <!-- 1. ADATKEZELŐ -->
@@ -132,13 +132,18 @@
         </tr>
         <tr>
           <td>E-mail cím</td>
-          <td>Stripe fizetési folyamat</td>
+          <td>Stripe fizetési folyamat / MailerLite</td>
           <td>Előfizetés kezelése, Telegram meghívó kiküldése, szolgáltatással kapcsolatos értesítések</td>
         </tr>
         <tr>
           <td>Fizetési adatok (kártya, számlázási cím)</td>
           <td>Stripe</td>
           <td>Fizetés feldolgozása — az adatkezelő ezeket közvetlenül nem tárolja, a Stripe mint adatfeldolgozó kezeli</td>
+        </tr>
+        <tr>
+          <td>Számlázási adatok (név, cím)</td>
+          <td>Stripe</td>
+          <td>Számla kiállítása — a számviteli jogszabályok szerinti kötelező megőrzés</td>
         </tr>
         <tr>
           <td>Név, e-mail, üzenet</td>
@@ -161,6 +166,7 @@
       <h2>3. Az adatkezelés jogalapja</h2>
       <ul>
         <li><strong>Előfizetés (e-mail cím, fizetési adatok):</strong> szerződés teljesítése (GDPR 6. cikk (1) b) — az előfizetői szolgáltatás nyújtásához szükséges.</li>
+        <li><strong>Számlázási adatok megőrzése:</strong> jogi kötelezettség (GDPR 6. cikk (1) c) — a számviteli jogszabályok (ausztriai UGB / magyar Szt.) szerinti bizonylat-megőrzési kötelezettség.</li>
         <li><strong>Kapcsolatfelvételi űrlap:</strong> hozzájárulás (GDPR 6. cikk (1) a) — bármikor visszavonható.</li>
         <li><strong>Szolgáltatással kapcsolatos értesítések</strong> (pl. technikai probléma, migrációs értesítés): jogos érdek (GDPR 6. cikk (1) f) — az előfizetők tájékoztatása a szolgáltatás működéséről.</li>
       </ul>
@@ -172,49 +178,84 @@
           <th>Szolgáltató</th>
           <th>Szerep</th>
           <th>Székhely</th>
+          <th>Adattovábbítás alapja</th>
         </tr>
         <tr>
           <td>Stripe, Inc.</td>
-          <td>Fizetés feldolgozása, előfizetés kezelése</td>
-          <td>USA (EU Standard Contractual Clauses)</td>
+          <td>Fizetés feldolgozása, előfizetés kezelése, automatizált csalásmegelőzés</td>
+          <td>USA</td>
+          <td>EU–U.S. Data Privacy Framework (DPF) + SCC</td>
+        </tr>
+        <tr>
+          <td>MailerLite (UAB MailerLite)</td>
+          <td>Előfizetői lista kezelése, e-mail értesítések küldése</td>
+          <td>Litvánia (EU)</td>
+          <td>EU-n belüli adatkezelés</td>
+        </tr>
+        <tr>
+          <td>Google LLC (Gmail)</td>
+          <td>E-mail kommunikáció (kapcsolatfelvételi megkeresések megválaszolása)</td>
+          <td>USA</td>
+          <td>EU–U.S. Data Privacy Framework (DPF) + SCC</td>
         </tr>
         <tr>
           <td>Web3Forms</td>
           <td>Kapcsolatfelvételi űrlap feldolgozása</td>
           <td>USA</td>
+          <td>SCC</td>
         </tr>
         <tr>
           <td>hCaptcha (Intuition Machines)</td>
           <td>Spamvédelem</td>
           <td>USA</td>
+          <td>SCC</td>
         </tr>
         <tr>
           <td>GitHub Pages (Microsoft)</td>
           <td>Weboldal hosting</td>
           <td>USA</td>
+          <td>EU–U.S. Data Privacy Framework (DPF) + SCC</td>
         </tr>
         <tr>
           <td>Rackhost Zrt.</td>
           <td>Domain regisztráció, DNS kezelés</td>
           <td>Magyarország</td>
+          <td>EU-n belüli adatkezelés</td>
         </tr>
         <tr>
           <td>Telegram Messenger Inc.</td>
           <td>Tartalomszolgáltatás csatornája</td>
           <td>Egyesült Arab Emírségek / Brit Virgin-szigetek</td>
+          <td>SCC</td>
         </tr>
       </table>
 
-      <!-- 5. ADATTÁROLÁS -->
-      <h2>5. Adattárolás időtartama</h2>
+      <p class="muted">
+        Az USA-ba irányuló adattovábbítás az EU–U.S. Data Privacy Framework (DPF) keretrendszeren
+        és/vagy az Európai Bizottság által jóváhagyott általános szerződési feltételeken (Standard
+        Contractual Clauses, SCC) alapul.
+      </p>
+
+      <!-- 5. AUTOMATIZÁLT DÖNTÉSHOZATAL -->
+      <h2>5. Automatizált döntéshozatal</h2>
+      <p>
+        A fizetési folyamat során a Stripe automatizált csalásmegelőzési eszközöket alkalmaz,
+        amelyek a tranzakció elutasításához vezethetnek. Ez a GDPR 22. cikke szerinti
+        automatizált döntéshozatalnak minősülhet. Az érintett jogosult emberi beavatkozást
+        kérni az <a href="mailto:info@piacradar.eu">info@piacradar.eu</a> címen.
+      </p>
+
+      <!-- 6. ADATTÁROLÁS -->
+      <h2>6. Adattárolás időtartama</h2>
       <ul>
-        <li><strong>Előfizetői e-mail:</strong> az előfizetés megszűnését követő 30 napig (a kifizetett időszak lejártáig a hozzáférés megmarad, utána törlés).</li>
-        <li><strong>Fizetési adatok:</strong> a Stripe saját adatkezelési szabályzata szerint (kötelező pénzügyi nyilvántartási időszak).</li>
+        <li><strong>Előfizetői e-mail (operatív):</strong> az előfizetés megszűnését követő 30 napig (a kifizetett időszak lejártáig a hozzáférés megmarad, utána törlés).</li>
+        <li><strong>Számlázási adatok (név, cím):</strong> a számviteli jogszabályoknak megfelelően a kiállított számlák adatait a Stripe rendszerében és a könyvelésben a tárgyévet követő 7 évig (Ausztria, UGB §212) őrizzük meg.</li>
+        <li><strong>Fizetési adatok (kártyaadatok):</strong> a Stripe saját adatkezelési szabályzata szerint — az adatkezelő ezekhez nem fér hozzá.</li>
         <li><strong>Kapcsolatfelvételi adatok:</strong> a megkeresés lezárásától számított legfeljebb 12 hónapig.</li>
       </ul>
 
-      <!-- 6. ÉRINTETTI JOGOK -->
-      <h2>6. Az érintett jogai</h2>
+      <!-- 7. ÉRINTETTI JOGOK -->
+      <h2>7. Az érintett jogai</h2>
       <p>A GDPR alapján az alábbi jogok illetik meg:</p>
       <ul>
         <li>Tájékoztatáshoz és hozzáféréshez való jog</li>
@@ -224,22 +265,24 @@
         <li>Adathordozhatósághoz való jog</li>
         <li>Tiltakozáshoz való jog</li>
         <li>Hozzájárulás visszavonása (ahol a jogalap hozzájárulás)</li>
+        <li>Automatizált döntéshozatallal szembeni tiltakozás joga</li>
       </ul>
       <p>
         Joggyakorláshoz forduljon az <a href="mailto:info@piacradar.eu">info@piacradar.eu</a> címre.
         A kérelmekre legfeljebb 30 napon belül válaszolunk.
       </p>
 
-      <!-- 7. ELŐFIZETÉS LEMONDÁSA -->
-      <h2>7. Előfizetés lemondása</h2>
+      <!-- 8. ELŐFIZETÉS LEMONDÁSA -->
+      <h2>8. Előfizetés lemondása</h2>
       <p>
         Az előfizetés bármikor lemondható. A lemondás után a hozzáférés a már kifizetett időszak
         (havi vagy éves) végéig él. Az időszak lejártát követően a Telegram csatornához
-        való hozzáférés megszűnik, és az e-mail cím 30 napon belül törlésre kerül.
+        való hozzáférés megszűnik, és az operatív e-mail cím 30 napon belül törlésre kerül.
+        A számlázási adatok a jogszabályi megőrzési kötelezettségig megmaradnak.
       </p>
 
-      <!-- 8. PANASZ -->
-      <h2>8. Panasz</h2>
+      <!-- 9. PANASZ -->
+      <h2>9. Panasz</h2>
       <p>
         Panasz benyújtható a lakóhely szerint illetékes felügyeleti hatóságnál:
       </p>
@@ -248,16 +291,16 @@
         <li><strong>Ausztria:</strong> Datenschutzbehörde (DSB) — <a href="https://dsb.gv.at" target="_blank" rel="noopener">dsb.gv.at</a></li>
       </ul>
 
-      <!-- 9. COOKIE -->
-      <h2>9. Cookie-k és nyomkövetés</h2>
+      <!-- 10. COOKIE -->
+      <h2>10. Cookie-k és nyomkövetés</h2>
       <p>
         A piacradar.eu weboldal nem használ saját cookie-kat és nem alkalmaz nyomkövetést (analytics).
         A beágyazott szolgáltatások (hCaptcha, Stripe Checkout) saját cookie-kat helyezhetnek el —
         ezekre az adott szolgáltató adatkezelési szabályzata vonatkozik.
       </p>
 
-      <!-- 10. MÓDOSÍTÁS -->
-      <h2>10. Tájékoztató módosítása</h2>
+      <!-- 11. MÓDOSÍTÁS -->
+      <h2>11. Tájékoztató módosítása</h2>
       <p>
         Az adatkezelő fenntartja a jogot a tájékoztató módosítására.
         A módosítás dátumát az oldal tetején jelezzük.
