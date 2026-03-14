@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piacradar — Pénzügyi Szótár</title>
+  <meta name="description" content="Piacradar pénzügyi szótár — CPI, GDP, VIX, EPS és 100+ fogalom magyarázata befektetőknek, magyarul." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="canonical" href="https://piacradar.eu/glossary.html" />
+  <meta property="og:title" content="Piacradar — Pénzügyi Szótár" />
+  <meta property="og:description" content="100+ pénzügyi fogalom magyarázata befektetőknek — magyarul, tömören, Piacradar kontextussal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://piacradar.eu/glossary.html" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.68);
+      --border: rgba(255,255,255,.14);
+      --accent: #5eead4;
+      --accent2: #60a5fa;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed; inset: 0; z-index: -1;
+      background:
+        radial-gradient(900px 450px at 15% 10%, rgba(94,234,212,.18), transparent 60%),
+        radial-gradient(800px 400px at 85% 20%, rgba(96,165,250,.16), transparent 60%),
+        radial-gradient(900px 450px at 60% 95%, rgba(94,234,212,.10), transparent 55%),
+        var(--bg);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 26px 18px 64px; }
+
+    /* TOP BAR */
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo {
+      width: 40px; height: 40px; border-radius: 12px;
+      background:
+        radial-gradient(12px 12px at 30% 35%, rgba(94,234,212,.85), transparent 60%),
+        radial-gradient(14px 14px at 70% 65%, rgba(96,165,250,.85), transparent 60%),
+        linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,.05));
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .brand-text .title { font-size: 18px; font-weight: 900; letter-spacing: .2px; }
+    .brand-text p { color: var(--muted); font-size: 13px; margin-top: 2px; }
+    .nav { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav a { font-size: 13px; color: rgba(255,255,255,.78); padding: 8px 10px; border: 1px solid transparent; border-radius: 999px; white-space: nowrap; }
+    .nav a:hover { text-decoration: none; border-color: var(--border); background: rgba(255,255,255,.04); }
+    .nav a.active { border-color: rgba(94,234,212,.35); color: var(--accent); }
+
+    /* HERO */
+    .page-hero {
+      border-radius: var(--radius2); border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      box-shadow: var(--shadow); padding: 32px 28px; margin-bottom: 22px;
+      position: relative; overflow: hidden;
+    }
+    .page-hero::before {
+      content: ""; position: absolute; inset: -2px;
+      background:
+        radial-gradient(420px 220px at 22% 60%, rgba(94,234,212,.14), transparent 55%),
+        radial-gradient(420px 220px at 78% 30%, rgba(96,165,250,.12), transparent 55%);
+      pointer-events: none;
+    }
+    .page-hero-inner { position: relative; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px; background: rgba(255,255,255,.05);
+      border: 1px solid var(--border); border-radius: 999px;
+      color: rgba(255,255,255,.80); font-size: 13px; margin-bottom: 14px;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(94,234,212,.14); }
+    .page-hero h1 { font-size: 32px; line-height: 1.1; letter-spacing: -.4px; margin-bottom: 10px; }
+    .page-hero p { color: rgba(255,255,255,.74); font-size: 15px; max-width: 60ch; }
+
+    /* SEARCH */
+    .search-row { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; flex-wrap: wrap; }
+    .search-wrap { position: relative; flex: 1; min-width: 220px; }
+    .search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: rgba(255,255,255,.4); pointer-events: none; }
+    #searchInput {
+      width: 100%; padding: 10px 12px 10px 36px;
+      border-radius: 14px; border: 1px solid var(--border);
+      background: rgba(255,255,255,.05); color: var(--text);
+      font-size: 14px; outline: none; transition: border-color .15s;
+    }
+    #searchInput:focus { border-color: rgba(94,234,212,.4); }
+    #searchInput::placeholder { color: rgba(255,255,255,.35); }
+
+    /* ALPHABET NAV */
+    .alpha-nav { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 18px; }
+    .alpha-btn {
+      padding: 5px 9px; border-radius: 8px; border: 1px solid var(--border);
+      background: rgba(255,255,255,.03); color: rgba(255,255,255,.6);
+      font-size: 12px; font-weight: 700; cursor: pointer; transition: all .15s;
+    }
+    .alpha-btn:hover { background: rgba(255,255,255,.07); color: var(--text); }
+    .alpha-btn.has-items { color: rgba(255,255,255,.82); }
+
+    /* STATS */
+    .stats-row { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+    .stat-box { padding: 10px 14px; border: 1px solid var(--border); background: rgba(255,255,255,.03); border-radius: 14px; font-size: 13px; color: var(--muted); }
+    .stat-box strong { color: var(--text); font-size: 18px; display: block; font-weight: 900; }
+
+    /* GRID */
+    #glossaryGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+
+    .term-card {
+      border: 1px solid var(--border); background: rgba(255,255,255,.04);
+      border-radius: var(--radius); padding: 14px 16px;
+      cursor: pointer; transition: all .18s ease;
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    }
+    .term-card:hover { border-color: rgba(94,234,212,.3); background: rgba(255,255,255,.07); transform: translateY(-1px); }
+    .term-name { font-size: 14px; font-weight: 900; color: rgba(255,255,255,.92); }
+    .term-arrow { color: var(--muted); font-size: 14px; transition: transform .15s; flex-shrink: 0; }
+    .term-card:hover .term-arrow { transform: translateX(4px); color: var(--accent); }
+
+    /* EMPTY */
+    #emptyState { display: none; text-align: center; padding: 60px 20px; color: var(--muted); grid-column: 1/-1; }
+
+    /* LOADING */
+    #loading { text-align: center; padding: 60px 20px; color: var(--muted); grid-column: 1/-1; }
+    .spinner { width: 32px; height: 32px; border: 2px solid rgba(255,255,255,.1); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* SINGLE ENTRY VIEW */
+    #entryView { display: none; }
+    .entry-back {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 9px 14px; border-radius: 12px; border: 1px solid var(--border);
+      background: rgba(255,255,255,.04); color: rgba(255,255,255,.78);
+      font-size: 13px; font-weight: 700; cursor: pointer; margin-bottom: 20px;
+    }
+    .entry-back:hover { background: rgba(255,255,255,.07); text-decoration: none; }
+
+    .entry-panel {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius2); padding: 32px;
+      box-shadow: var(--shadow); max-width: 760px;
+      position: relative; overflow: hidden;
+    }
+    .entry-panel::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(500px 300px at 80% 10%, rgba(94,234,212,.07), transparent 60%);
+      pointer-events: none;
+    }
+    .entry-panel-inner { position: relative; }
+    .entry-title { font-size: 28px; font-weight: 900; line-height: 1.15; margin-bottom: 24px; }
+
+    .entry-section { margin-bottom: 20px; }
+    .entry-section-label {
+      font-size: 11px; font-weight: 700; letter-spacing: .7px; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 8px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .entry-section-label::after { content: ""; flex: 1; height: 1px; background: rgba(94,234,212,.2); }
+    .entry-section-text { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.82); }
+
+    .entry-simple-text { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.82); }
+
+    .entry-tg-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 16px; border-radius: 14px;
+      border: 1px solid rgba(94,234,212,.35);
+      background: linear-gradient(135deg, rgba(94,234,212,.18), rgba(96,165,250,.12));
+      color: rgba(255,255,255,.88); font-weight: 900; font-size: 14px; margin-top: 24px;
+    }
+    .entry-tg-btn:hover { text-decoration: none; background: linear-gradient(135deg, rgba(94,234,212,.24), rgba(96,165,250,.18)); }
+
+    /* FOOTER */
+    footer { margin-top: 40px; padding: 16px 6px 0; color: rgba(255,255,255,.60); border-top: 1px solid rgba(255,255,255,.10); font-size: 12.5px; }
+    .footer-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-bottom: 12px; }
+    .footer-links { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .footer-links a { color: rgba(255,255,255,.72); border: 1px solid transparent; padding: 6px 10px; border-radius: 999px; }
+    .footer-links a:hover { text-decoration: none; border-color: var(--border); background: rgba(255,255,255,.04); }
+    .legal { border-top: 1px solid rgba(255,255,255,.10); padding-top: 12px; color: rgba(255,255,255,.48); font-size: 12px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .page-hero h1 { font-size: 26px; }
+      #glossaryGrid { grid-template-columns: 1fr 1fr; }
+      .nav { display: none; }
+      .entry-panel { padding: 20px; }
+      .entry-title { font-size: 22px; }
+    }
+    @media (max-width: 480px) {
+      #glossaryGrid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- TOP BAR -->
+    <div class="top">
+      <a class="brand" href="https://piacradar.eu/" aria-label="Piacradar főoldal">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="title">Piacradar</div>
+          <p>Prémium piaci kivonat — Telegramon</p>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Navigáció">
+        <a href="https://piacradar.eu/">Főoldal</a>
+        <a href="https://piacradar.eu/stories.html">Történetek</a>
+        <a href="https://piacradar.eu/glossary.html" class="active">Szótár</a>
+        <a href="https://t.me/+Mk5bfbCfUf1lMGE" target="_blank" rel="noopener">Csatlakozás →</a>
+      </nav>
+    </div>
+
+    <!-- LIST VIEW -->
+    <div id="listView">
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div class="badge"><span class="dot"></span> <span id="termCount">—</span> pénzügyi fogalom</div>
+          <h1>📘 Pénzügyi Szótár</h1>
+          <p>CPI, GDP, VIX, EPS és még 100+ fogalom magyarázata — befektetői kontextussal, magyarul.</p>
+        </div>
+      </div>
+
+      <div class="search-row">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M20 20l-3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Keresés... (pl. CPI, yield, earnings)" autocomplete="off" />
+        </div>
+      </div>
+
+      <div class="alpha-nav" id="alphNav"></div>
+
+      <div class="stats-row">
+        <div class="stat-box"><strong id="statVisible">—</strong>találat</div>
+        <div class="stat-box"><strong id="statTotal">—</strong>összesen</div>
+      </div>
+
+      <div id="glossaryGrid">
+        <div id="loading"><div class="spinner"></div><p>Szótár betöltése...</p></div>
+      </div>
+    </div>
+
+    <!-- ENTRY VIEW -->
+    <div id="entryView">
+      <button class="entry-back" id="backBtn">
+        <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Vissza a szótárhoz
+      </button>
+      <div class="entry-panel">
+        <div class="entry-panel-inner">
+          <div class="entry-title" id="entryTitle"></div>
+          <div id="entrySections"></div>
+          <a class="entry-tg-btn" href="https://t.me/+Mk5bfbCfUf1lMGE" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M21 3 9.5 13.5M21 3l-7 18-3.5-7.5L3 10l18-7Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Csatlakozás a Piacradar csatornához →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div style="font-weight:900; color:rgba(255,255,255,.82); margin-bottom:4px;">Piacradar</div>
+          <div>© <span id="y"></span> • Prémium piaci kivonat</div>
+        </div>
+        <div class="footer-links">
+          <a href="https://piacradar.eu/">Főoldal</a>
+          <a href="https://piacradar.eu/stories.html">Történetek</a>
+          <a href="https://piacradar.eu/adatkezeles.html" target="_blank" rel="noopener">Adatkezelés</a>
+          <a href="https://t.me/+Mk5bfbCfUf1lMGE" target="_blank" rel="noopener">Telegram →</a>
+        </div>
+      </div>
+      <div class="legal">A Piacradar szótára kizárólag oktatási és tájékoztatási célt szolgál. Nem minősül befektetési tanácsadásnak.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    let allTerms = [];
+    let activeAlpha = "all";
+
+    // --- LOAD ---
+    async function loadGlossary() {
+      try {
+        const res = await fetch("/glossary-data.json?v=" + Date.now());
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        allTerms = await res.json();
+        document.getElementById("termCount").textContent = allTerms.length;
+        document.getElementById("statTotal").textContent = allTerms.length;
+        buildAlpha();
+        renderGrid(allTerms);
+        checkHash();
+      } catch(e) {
+        document.getElementById("loading").innerHTML = '<p style="color:rgba(255,255,255,.5)">Nem sikerült betölteni a szótárat.</p>';
+      }
+    }
+
+    // --- ALPHABET NAV ---
+    function buildAlpha() {
+      const letters = [...new Set(allTerms.map(t => t.title[0].toUpperCase()))].sort();
+      const nav = document.getElementById("alphNav");
+      nav.innerHTML = "";
+
+      const allBtn = document.createElement("button");
+      allBtn.className = "alpha-btn has-items active";
+      allBtn.textContent = "Összes";
+      allBtn.dataset.alpha = "all";
+      allBtn.addEventListener("click", () => setAlpha("all", allBtn));
+      nav.appendChild(allBtn);
+
+      letters.forEach(l => {
+        const btn = document.createElement("button");
+        btn.className = "alpha-btn has-items";
+        btn.textContent = l;
+        btn.dataset.alpha = l;
+        btn.addEventListener("click", () => setAlpha(l, btn));
+        nav.appendChild(btn);
+      });
+    }
+
+    function setAlpha(alpha, btn) {
+      activeAlpha = alpha;
+      document.querySelectorAll(".alpha-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      filterAndRender();
+    }
+
+    // --- FILTER ---
+    function filterAndRender() {
+      const q = document.getElementById("searchInput").value.toLowerCase().trim();
+      let filtered = allTerms;
+
+      if (activeAlpha !== "all") {
+        filtered = filtered.filter(t => t.title[0].toUpperCase() === activeAlpha);
+      }
+      if (q) {
+        filtered = filtered.filter(t =>
+          t.title.toLowerCase().includes(q) ||
+          t.slug.toLowerCase().includes(q) ||
+          t.sections.some(s => s.text.toLowerCase().includes(q))
+        );
+      }
+
+      renderGrid(filtered);
+      document.getElementById("statVisible").textContent = filtered.length;
+    }
+
+    // --- RENDER GRID ---
+    function renderGrid(terms) {
+      const grid = document.getElementById("glossaryGrid");
+      grid.innerHTML = "";
+
+      if (terms.length === 0) {
+        grid.innerHTML = '<div id="emptyState" style="display:block;text-align:center;padding:60px 20px;color:var(--muted);grid-column:1/-1"><p>Nincs találat.</p></div>';
+        return;
+      }
+
+      terms.forEach(term => {
+        const card = document.createElement("div");
+        card.className = "term-card";
+        card.setAttribute("role", "button");
+        card.setAttribute("tabindex", "0");
+        card.innerHTML = `<span class="term-name">${term.title}</span><span class="term-arrow">→</span>`;
+        card.addEventListener("click", () => showEntry(term.slug));
+        card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") showEntry(term.slug); });
+        grid.appendChild(card);
+      });
+    }
+
+    // --- ENTRY VIEW ---
+    function showEntry(slug) {
+      const term = allTerms.find(t => t.slug === slug);
+      if (!term) return;
+
+      document.getElementById("entryTitle").textContent = term.title;
+
+      const sectionsEl = document.getElementById("entrySections");
+      sectionsEl.innerHTML = "";
+
+      if (term.sections.length === 1 && !term.sections[0].title) {
+        const p = document.createElement("p");
+        p.className = "entry-simple-text";
+        p.textContent = term.sections[0].text;
+        sectionsEl.appendChild(p);
+      } else {
+        term.sections.forEach(s => {
+          const div = document.createElement("div");
+          div.className = "entry-section";
+          if (s.title) {
+            const label = document.createElement("div");
+            label.className = "entry-section-label";
+            label.textContent = s.title;
+            div.appendChild(label);
+          }
+          const text = document.createElement("p");
+          text.className = "entry-section-text";
+          text.textContent = s.text;
+          div.appendChild(text);
+          sectionsEl.appendChild(div);
+        });
+      }
+
+      document.getElementById("listView").style.display = "none";
+      document.getElementById("entryView").style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      history.replaceState(null, "", "#" + slug);
+    }
+
+    function showList() {
+      document.getElementById("entryView").style.display = "none";
+      document.getElementById("listView").style.display = "block";
+      history.replaceState(null, "", window.location.pathname);
+    }
+
+    document.getElementById("backBtn").addEventListener("click", showList);
+
+    // --- HASH ---
+    function checkHash() {
+      const hash = window.location.hash.replace("#", "");
+      if (hash && allTerms.find(t => t.slug === hash)) {
+        showEntry(hash);
+      }
+    }
+
+    window.addEventListener("hashchange", () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) showEntry(hash);
+      else showList();
+    });
+
+    // --- SEARCH ---
+    document.getElementById("searchInput").addEventListener("input", filterAndRender);
+
+    // --- INIT ---
+    loadGlossary();
+  </script>
+</body>
+</html>
