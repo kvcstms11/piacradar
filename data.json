@@ -1,0 +1,119 @@
+[
+  {
+    "story_id": "PR_001",
+    "title": "A nap, amikor majdnem összeomlott a modern pénzügyi rendszer (LTCM, 1998)",
+    "category": "Kockázat",
+    "story_text": "1998 nyarán a Wall Street még mindig a '90-es évek eufóriájában élt: internet, globalizáció, olcsó pénz, mindenki verhetetlennek hitte magát. A Long-Term Capital Management (LTCM) nevű hedge fund pedig a kor „szupercsapata\" volt: két Nobel-díjas közgazdász — Myron Scholes és Robert Merton —, a világ legjobb kötvénykereskedői, és egy olyan matematikai modell, amely szerint a piacok soha nem térnek el túl messzire az egyensúlytól.\n\nA stratégia egyszerű volt: apró árfolyameltérésekre fogadtak óriási tőkeáttétellel. Ha két kötvény árfolyama történelmileg együtt mozgott, és most eltért, az LTCM arra játszott, hogy visszatérnek egymáshoz. A modell szerint ez „szinte biztos\" — a historikus korreláció alapján szó szerint egymilliárd évente egyszer kellett volna tévesen sülni.\n\nA valóság szerint viszont semmi sem biztos.\n\n1998 augusztusában Oroszország államcsődöt jelentett. A piacok pánikba estek, a befektetők menekültek a biztonságos eszközökbe, és minden korábbi korreláció szétesett. Az LTCM pozíciói egyszerre, egy irányba kezdtek veszíteni — olyan mértékben, amit a modell szerint csak egyszer kellett volna látni a világegyetem életében.\n\nA fund 4 milliárd dollárnyi tőkére 125 milliárd dollárnyi pozíciót vett fel, a mérlegen kívüli derivatív kitettség pedig elérte az 1,25 billió dollárt. A veszteségek napok alatt elszabadultak: négy hónap alatt 4,6 milliárd dollár tűnt el. A Wall Street rájött: ha az LTCM összeomlik, magával rántja a teljes globális pénzügyi rendszert. A Fed pánikszerűen összehívta a nagybankokat — Goldman Sachs, Merrill Lynch, JP Morgan és a többiek —, és egyetlen éjszaka alatt 3,6 milliárd dolláros mentőcsomagot szervezett.\n\nA modern pénzügyi rendszer így egyetlen hedge fund hibás modelljén múlt. Az LTCM-et nem a rossz szándék, hanem a rossz feltételezések döntötték meg: hogy a korreláció stabil marad, és hogy mindig lesz ellenoldal a pozíciókra.",
+    "takeaway": "A piacok extrém mozgásai mindig akkor jönnek, amikor a modellek szerint „nem jöhetnek\".",
+    "why_now": "2026-ban, AI-vezérelt, tőkeáttétes piacokon ez különösen aktuális — a koncentrált pozíciók és a gépi kereskedés növeli a rendszerkockázatot.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_002",
+    "title": "A Super Bowl indikátor, mint buborékjelző: dotcom, kriptó, AI — ismétlődő minta vagy új korszak?",
+    "category": "Buborék",
+    "story_text": "A Super Bowl évtizedek óta nemcsak sportesemény, hanem a gazdasági hangulat egyik legjobb lakmuszpapírja. Amikor egy szektor hirtelen tömegesen jelenik meg a legdrágább reklámidőben — ahol egyetlen 30 másodperces spot ára elérheti a 7 millió dollárt —, az gyakran nem a stabil növekedést, hanem a túlforrósodott hype-ot jelzi.\n\nA 2000-es Super Bowlt sokan „Dot-com Bowlként\" emlegetik: közel húsz internetes startup költött el milliókat egyetlen reklámra, többek között a Pets.com, a Webvan és az eToys. Két hónappal később a Nasdaq összeomlott, és a legtöbb hirdető cég eltűnt. A Pets.com kilenc hónappal az IPO után csődöt jelentett — a Super Bowl-spotot belekalkulálva.\n\nUgyanez történt 2022-ben a kriptóval. A Coinbase, a Crypto.com, az eToro és az FTX is Super Bowl-spotot vett, a média pedig „Crypto Bowlként\" hivatkozott az évre. A Coinbase hirdetése egyszerűen egy pattogó QR-kód volt — és a szerver összeomlott a forgalomtól. Néhány hónapon belül jött a Terra-összeomlás, majd az FTX, Celsius, Voyager és BlockFi csődje. Sam Bankman-Fried, aki az FTX Super Bowl-reklámjában szerepelt, 2023-ban börtönbe került.\n\nMost pedig az AI-szektor kezd hasonló mintát mutatni. A legutóbbi Super Bowlon már több nagy AI-cég is megjelent. Ugyanakkor fontos különbség, hogy az AI-cégek jelentős része valódi, mérhető bevételt termel — az NVIDIA, a Microsoft és a Google nem papíron létező startup. A kérdés inkább az, hogy a tőzsdei árazások mennyire tükrözik a valós teljesítményt, vagy mennyire előzik meg azt.\n\nA Super Bowl tehát nem előrejelzés, hanem hangulatmérő. Amikor egy szektor egyszerre akar mindenkit meggyőzni arról, hogy „ez a jövő\", az gyakran azt jelzi, hogy már túl sok pénz kerget túl kevés bizonyosságot.",
+    "takeaway": "A reklámok sokszor nem a növekedés kezdetét, hanem a hype tetőpontját jelzik — még akkor is, ha a technológia maga valóban értékes.",
+    "why_now": "AI-nál ugyanez a kérdés: a technológia forradalmi, de az árazások mennyire előzik meg a valós teljesítményt?",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_003",
+    "title": "A „Nifty Fifty\" mítosza — amikor a piac elhitte, hogy bizonyos részvények soha nem esnek",
+    "category": "Buborék",
+    "story_text": "A hetvenes évek elején az amerikai tőzsdén kialakult egy különös jelenség: a befektetők egy csoportja úgy gondolta, hogy létezik egy elit részvénykosár, amely bármilyen áron megéri. Ezt nevezték el „Nifty Fifty\"-nek: Coca-Cola, McDonald's, IBM, Disney, Polaroid, Xerox — ikonikus márkák, stabil növekedéssel, erős márkaértékkel.\n\nA narratíva egyszerű volt: ezek a cégek annyira jók, hogy nem számít a valuation. Ha drága, akkor is megéri — mert mindig drágább lesz. Az eredmény: extrém magas P/E ráták, sokszor 50-80-szoros értékeltség. A Polaroidé 94-szeres volt. A McDonald'sé 83-szoros. Az átlagos S&P 500-as cég akkor 19-szeres P/E-n forgott.\n\nA befektetők „egy döntést kellett hozni\": megvenni és tartani. Nem kellett elemezni, nem kellett eladni. Ez volt az úgynevezett „one-decision stock\" logika — és egy ideig működött.\n\nAmikor 1973-74-ben megérkezett a recesszió, az olajválság és az inflációs sokk, a Nifty Fifty részvényei összeomlottak. Sok papír 60-80%-ot esett csúcsáról, és évekbe telt, mire visszanyerték korábbi szintjüket. A Polaroid soha nem tért vissza — és végül csődbe ment a digitális fényképezés korszakában.\n\nA Nifty Fifty nem azért bukott el, mert rossz cégek lettek volna — Coca-Cola és McDonald's ma is óriás. Azért omlott össze a sztori, mert a befektetők túl sok jövőt áraztak be túl korán, és a magas múltbeli növekedés alapján végtelen jövőbeli növekedést feltételeztek. A valóság az, hogy még a legjobb cégek növekedése is lassul valamikor.",
+    "takeaway": "A legnagyobb kockázat nem a rossz cég, hanem a túl magas ár — még a legjobb vállalatokra is.",
+    "why_now": "A dotcom-lufi, a kriptoboom vagy akár a jelenlegi AI-hype is hordozza ezt a mintát: amikor a narratíva erősebb, mint a számok.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_004",
+    "title": "Amikor a frank „elszabadult\" (SNB, 2015)",
+    "category": "Jegybank",
+    "story_text": "2015 januárjában a piac úgy kezelte a svájci frankot, mint egy szabályozott, unalmas devizát: a Svájci Nemzeti Bank (SNB) évek óta védte az EUR/CHF 1.20-as szintjét, és a kereskedők nagy része elhitte, hogy ez „tartós fal\". Néhányan olyan pozíciókba mentek, ahol a CHF gyengülésére fogadtak — szinte ingyen pénznek tűnt.\n\nAztán 2015. január 15-én reggel az SNB váratlanul ejengedte a szintet. Minden előzetes jelzés nélkül, bejelentés nélkül. A CHF percek alatt 30%-ot erősödött az euróval szemben — olyan mozgás, amit normál körülmények között hónapok vagy évek alatt lehetett volna látni. A kereskedőknek nem volt idejük reagálni.\n\nAz addig „kis kockázatú\" pozíciók egyszerre lettek életveszélyesek. Nem csak spekulánsok sérültek: brókercégek, hedge fundok, retail számlák is, mert a stop megbízások nem ott teljesültek, ahol a képernyőn „kellett volna\" — a piaci rés annyira nagy volt, hogy az automatikus védelem nem működött. Az FXCM nevű brókercég 225 millió dolláros veszteséget szenvedett egyetlen nap alatt, és csak vészfinanszírozással kerülte el a csődöt.\n\nA legkeményebb tanulság nem az, hogy a jegybankok néha meglepnek. Hanem az, hogy a likviditás nem lineáris: amikor mindenki egyszerre akar kijönni ugyanazon az ajtón, az ajtó egyszerűen eltűnik. A „szinte biztos\" jegybanki védelem egy percig sem tartott, ha az SNB úgy döntött, hogy feladja.",
+    "takeaway": "A „jegybanki put\" nem szerződés, csak feltételezés.",
+    "why_now": "2026-ban is vannak „biztosnak\" hitt szintek (FX, hozam, kripto-peg), és pont ezek tudnak a legcsúnyábban törni, ha változik a rezsim.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_005",
+    "title": "A nap, amikor az olaj ára negatív lett (WTI, 2020)",
+    "category": "Struktúra",
+    "story_text": "2020 tavaszán a világ lelassult, a kereslet összeesett, a repülők a földön maradtak, a gyárak leálltak. A globális olajfogyasztás naponta 30 millió hordóval esett vissza — ez a normál kereslet közel 30%-a. A termelők azonban nem álltak le azonnal, a tárolók pedig rohamosan teltek.\n\nA tőzsdén sokan nem olajat vesznek, hanem határidős kontraktust — és az fizikai teljesítéshez is kapcsolódhat. Ez a különbség papíron technikai részletnek tűnik, valójában 2020 áprilisában ez volt a lényeg.\n\nAmikor a májusi WTI kontraktus lejárata közeledett, a pozíciók „átgörgetése\" hirtelen nem rutinfeladat volt, hanem pánik. A Cushing, Oklahoma-i tárolókapacitás — ami a WTI benchmark fizikai teljesítési pontja — teljesen megtelt. Akinek nem volt hol tárolnia, annak minden áron szabadulnia kellett a kontraktustól. És amikor a „minden áron\" találkozik a „nincs vevő\"-vel, megtörténik az, ami addig elképzelhetetlen volt: 2020. április 20-án a WTI ára -7.63-ra esett. A piac fizetett azért, hogy vidd el tőle a kötelezettséget.\n\nA kiskereskedelmi befektetők egy része az USO ETF-en keresztül próbált „olcsón olajba menni\" — és nem értette, miért nem követte az ETF a spot árat. Az ok: az ETF folyamatosan görgette a futures kontraktusokat, a contango piacon ez folyamatos veszteséget termelt, függetlenül attól, merre ment az olaj ára.\n\nA sztori nem az olajról szól, hanem a termékek mikrovilágáról: lejárat, szállítás, bázis, raktárkapacitás, futures görbe, contango vs. backwardation. És arról, hogy ugyanaz a ticker teljesen mást jelenthet spotban, ETF-ben vagy futures-ben.",
+    "takeaway": "Amit megveszel, azt értsd: instrumentum ≠ mögöttes.",
+    "why_now": "ETF-ek, opciók, kripto-derivatívák világában a csomagolás sokszor fontosabb, mint a sztori.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_006",
+    "title": "„Portfolio insurance\" és az 1987-es Black Monday",
+    "category": "Struktúra",
+    "story_text": "A 80-as években egy elegáns ötlet terjedt el a Wall Streeten: ha esik a piac, add el az S&P 500 futures-t; ha emelkedik, vedd vissza. Ezt hívták portfolio insurance-nak — egyfajta „automata kockázatcsökkentés\", amelyet a Hayne Leland és Mark Rubinstein által kidolgozott matematikai modell alapján implementáltak. Papíron logikus, dinamikus hedging-stratégia volt.\n\nA gond az volt, hogy 1987-re közel 100 milliárd dollárnyi vagyon mögött ugyanaz az algoritmus dolgozott. Amikor a piac esni kezdett, az algoritmusok ugyanazt csinálták: eladni futures-t, eladni futures-t, eladni futures-t. Ez önmagát erősítő spirált hozott létre. A futures piac esése visszahatott a részvénypiacra, ami újabb futures-eladást váltott ki.\n\n1987. október 19-én, Black Mondayon a Dow Jones egyetlen nap alatt 22,6%-ot esett — a mai napig a legnagyobb egynapos százalékos esés a történelemben. A portfolio insurance algoritmusok aznapra egyetlen dologra épültek: hogy mindig lesz ellenoldal a piacon. Nem volt. Ahogy a veszteségek növekedtek, a market maker-ek és kereskedők visszavonultak, a likviditás elpárolgott.\n\nA modell azt feltételezte, hogy a piac folytonos — hogy az ár simán csúszik egyik szintről a másikra. A valóságban a piac ugrott egyet, és a „biztosítás\" nem fedezett semmit.",
+    "takeaway": "Ha mindenki ugyanúgy fedez, az nem fedezés, hanem crowding.",
+    "why_now": "Ugyanez a logika él a vol-termékekben, opciós hedgekben és néhány kripto-likvidációs mechanikában.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_007",
+    "title": "Amikor a londoni bankrendszer majdnem megállt (Northern Rock, 2007)",
+    "category": "Kockázat",
+    "story_text": "A 2000-es évek közepén a bankok egyre jobban ráálltak a „wholesale funding\"-ra: rövid lejáratú, olcsó forrásból finanszírozták a hosszú lejáratú jelzáloghiteleket. Amíg az interbankpiac nyitva volt és a bizalom töretlen volt, ez működött — olcsó forrás, magasabb kamatú kihelyezés, szép marzs.\n\nA Northern Rock brit bank különösen agresszívan alkalmazta ezt a modellt: az Egyesült Királyság leggyorsabban növekvő jelzálóbankjává vált, miközben mérlegének nagy részét rövid lejáratú piaci forrásból finanszírozta. 2007 nyarán azonban az amerikai subprime válság elkezdett átterjedni az európai bankközi piacra. A bizalom megrepedt, a wholesale funding drágult, majd szinte teljesen eltűnt.\n\n2007 szeptemberében a Bank of England vészhelyszíni hitelt nyújtott a Northern Rocknak — és a hír kiszivárgott. Másnap reggel sorok alakultak ki a fiókok előtt. A brit befektetők, akik addig soha életükben nem láttak bankrohamot, egymás mögé álltak, hogy kivegyék a megtakarításaikat. A Northern Rock 1,5 milliárd fontot veszített egyetlen nap alatt a betétkivonások miatt.\n\nA tanulság az, hogy a bank nem attól dől el, hogy rossz a portfólió, hanem attól, hogy rosszkor kell refinanszíroznia. A lejárati mismatch — rövid forrás, hosszú kihelyezés — csendben épül fel, és hirtelen lesz látható. A likviditás olyan, mint az oxigén: akkor tűnik fel, ha elfogy.",
+    "takeaway": "A lejárati mismatch csendben öl.",
+    "why_now": "Magas kamatkörnyezetben és gyors hangulatváltásoknál a finanszírozás a „rejtett earnings\".",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_008",
+    "title": "A „Flash Crash\" és a gépek reflexei (2010)",
+    "category": "Struktúra",
+    "story_text": "Egy normál kereskedési napon a piac zajos, de folytonos: vannak vevők, vannak eladók, az ár fokozatosan csúszik egyik szintről a másikra. 2010. május 6-án azonban volt egy pillanat, amikor ez a folytonosság néhány percre teljesen eltűnt. Az S&P 500 14:45-től kezdve közel 10%-ot esett, a Dow Jones egyetlen percen belül közel ezer pontot veszített, majd szinte ugyanolyan gyorsan visszapattant.\n\nA háttérben több dolog találkozott: egy nagy intézményi eladó automatikusan végrehajtott, 4,1 milliárd dolláros E-mini futures megbízása beindított egy láncolatot. Az algoritmikus kereskedők, akik normál esetben likviditást biztosítanak, érzékelték a rendellenes piaci körülményeket — és egyszerűen kikapcsoltak. Visszavonultak. Amikor a market maker algoritmusok eltűnnek, a piac egyik pillanatról a másikra vékony jégen áll.\n\nAccenture részvénye egy centért kelt el. Egyes blue chip papírok pillanatok alatt 99%-ot estek a stop megbízások láncreakcióban való teljesülése miatt. Ezeket az ügyleteket utólag törölték, de a befektetők, akiknek pozíciói automatikusan záródtak, valós veszteséget szenvedtek.\n\nA modern piacban a „likvid\" szó feltételes. A könyv mélysége nem garantált — csak „jó időben\", normál körülmények között elérhető. Amikor mindenki egyszerre látja ugyanazt a kockázatot, a likviditásszolgáltatók egyszerre tűnnek el.",
+    "takeaway": "Likviditás = hangulatfüggő szolgáltatás.",
+    "why_now": "AI-vezérelt kereskedés mellett még fontosabb a stopok és pozíméret ésszerű kezelése.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_009",
+    "title": "Amikor a brit nyugdíjalapok a hozamokba „ragadtak\" (LDI, 2022)",
+    "category": "Kockázat",
+    "story_text": "A nyugdíjalapok világában van egy logika: a kötelezettségeket — a jövőben fizetendő nyugdíjakat — próbálod „illeszteni\" a portfólióhoz. Az LDI (liability-driven investment) erre kínált megoldást: hosszú lejáratú kötvényekkel és kamatderivatívákkal csökkenteni a kamatkockázatot. Ha a hozamok esnek, a kötelezettség értéke nő, de a kötvényportfólió is nő — így ki van egyenlítve.\n\nA stratégia évtizedekig jól működött alacsony kamatkörnyezetben. A brit nyugdíjalapoknál a derivatív kitettség elérte a 1,5 billió fontot. A gond akkor jött, amikor 2022 szeptemberében Liz Truss kormánya váratlan adócsökkentő csomagot jelentett be, és a brit állampapír-hozamok napok alatt historikus mértékben ugrottak.\n\nA derivatív fedezet hirtelen óriási margin callt generált — az alapoknak rövid idő alatt készpénzt kellett előteremteniük. Mit adsz el gyorsan, ha készpénz kell? Kötvényt. Csakhogy ha az összes brit nyugdíjalap egyszerre adja el az állampapírokat, a hozam még jobban emelkedik, ami újabb margin callt generál. Öngerjesztő spirál indult el, amely az angol állampapírpiacot a teljes összeomlás szélére sodorta.\n\nA Bank of England kénytelen volt beavatkozni és állampapírokat vásárolni — pont az ellentétét annak, amit az inflációellenes monetáris politikája diktált volna. A „jó\" fedezeti rendszer is összeomolhat, ha a mozgás gyorsabb, mint amire tervezték.",
+    "takeaway": "A fedezet nem ingyen van: cash-menedzsment nélkül veszélyes.",
+    "why_now": "Sok „okos\" stratégia valójában likviditási stratégia. Aki ezt nem kezeli, az meglepődik.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_010",
+    "title": "Amikor egy családi iroda megmozgatta a piacot (Archegos, 2021)",
+    "category": "Kockázat",
+    "story_text": "Az Archegos Capital Management nem volt klasszikus hedge fund — nem volt nyilvános, nem kellett regisztrálnia az SEC-nél, és a neve ismeretlen volt a legtöbb piaci szereplő számára. Mégis képes volt egyetlen cégként több nagy részvényben — ViacomCBS, Discovery, Baidu, GSX Techedu — tízmilliárd dolláros kitettséget felépíteni, méghozzá úgy, hogy szinte senki nem látta a teljes képet.\n\nA titok a total return swap konstrukcióban volt: az Archegos nem vette meg közvetlenül a részvényeket, hanem swap megállapodásokat kötött több prime broker-rel — Goldman Sachs, Morgan Stanley, Credit Suisse, Nomura —, amelyek nominálisan tartották a részvényeket, de a gazdasági kockázat és hozam az Archegos-nál volt. Mivel minden bankkal külön-külön tárgyalt, egyik sem látta a teljes kitettséget.\n\nAmikor 2021 márciusában a ViacomCBS egy tőkeemelés után esni kezdett, az Archegos margin callt kapott. Nem tudott fizetni. A bankok kénytelenek voltak a pozíciókat felszámolni — de mivel egyszerre akartak kijönni ugyanazokból a részvényekből, a forced selling napok alatt 30-50%-os eséseket okozott az érintett papírokban.\n\nA Credit Suisse 5,5 milliárd dolláros veszteséget szenvedett — ez a bank végső összeomlásának egyik gyújtózsinórja lett. Az ügy emlékeztet arra, hogy a piac nem mindig információ alapján mozog. Néha mechanikusan mozog: margin call, kényszereladás, likviditáshiány.",
+    "takeaway": "A tőkeáttétel nem csak a befektető kockázata, hanem a piacé is.",
+    "why_now": "A rejtett leverage (derivatívák, structured termékek) ugyanúgy jelen van más eszközosztályokban is.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_011",
+    "title": "A „Volmageddon\" és a vol short illúziója (2018)",
+    "category": "Struktúra",
+    "story_text": "Volt idő — különösen 2012 és 2017 között —, amikor a volatilitás „eladása\" stabil pénznyomdának tűnt. A VIX éveken át historikus mélypontokon tartózkodott, a piac szinte egyenletesen emelkedett, és a vol-short stratégiák — amelyek az alacsony volatilitás fennmaradására fogadtak — napról napra kis nyereséget termeltek.\n\nTermékek születtek rá: az XIV (inverse VIX ETN) és a SVXY (short VIX ETF) tömegessé váltak. A retail befektetők is megvehették. Mindenki látta a múltbeli hozamokat: szép, egyenletes emelkedő görbe, minimal drawdown. Sokan nem értették pontosan a mechanikát — csak azt látták, hogy működik.\n\nA baj a payoff görbében volt, ami aszimmetrikus: vol-short eladásakor napról napra kapsz kis prémiumot, de ha a volatilitás hirtelen ugrik, a veszteség nem lineáris, hanem exponenciális. Amikor 2018. február 5-én a VIX egyetlen nap alatt megduplázódott — a legnagyobb egynapos VIX-ugrás a történelemben —, az XIV egyetlen éjszaka alatt 90%-ot veszített. Másnap reggel megszűnt létezni.\n\nAz egész mechanizmus önmagát erősítette: ahogy a VIX emelkedett, a short vol termékeknek automatikusan VIX futures-t kellett venniük a rebalancing miatt — ami tovább hajtotta fel a volatilitást. Akik azt hitték, hogy a „kis napi profit\" valódi kockázatmentes hozam, azok egyetlen nap alatt elveszítették az évek alatt összegyűjtött nyereményt és a tőkét is.",
+    "takeaway": "Ha valami túl sima, nézd meg a tail risket.",
+    "why_now": "Ugyanez a gondolkodás csapdába visz opciózásnál, covered call „kockázatmentességnél\", sőt néhány yield-farm kriptó konstrukciónál is.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_012",
+    "title": "A „Nixon shock\" és a rezsimváltás ára (1971)",
+    "category": "Jegybank",
+    "story_text": "A befektetők szeretik azt hinni, hogy vannak örök keretek: milyen a pénz, mihez van kötve, mit jelent a dollár. A Bretton Woods rendszerben — amely 1944-ben jött létre — a dollár az aranyhoz volt kötve (35 dollár per uncia), a többi deviza pedig a dollárhoz. Ez volt a világ monetáris alapja közel három évtizeden át.\n\n1971. augusztus 15-én Richard Nixon vasárnap este televíziós bejelentést tett: az USA felfüggeszti a dollár aranyra való átválthatóságát. A döntés váratlan volt — a világ többi jegybankja nem tudott felkészülni. A Bretton Woods rendszer de facto összeomlott.\n\nAmi ezután következett, az nem „egyik napról a másikra\" volt katasztrófa, de a játékszabály megváltozott. A devizák lebegni kezdtek egymáshoz képest, az infláció az 1970-es években elszabadult, az arany ára 35 dollárról végül 800 dollár fölé ment. A régi modellek, amelyek a stabil rendszerre épültek, hirtelen rossz térképpé váltak — különösen a hosszú lejáratú kötvénytartók számára, akik az infláció miatt reálértékük nagy részét elveszítették.\n\nA Nixon shock azt mutatja meg, hogy a legnagyobb kockázat néha nem egy rossz részvény, hanem egy megváltozott rendszer. Ilyenkor a portfólió szerkezete — duration, FX-kitettség, commodity hedge, reáleszközök aránya — többet számít, mint az egyedi részvénysztorik.",
+    "takeaway": "A legnagyobb kockázat néha az, hogy megváltozik a rendszer.",
+    "why_now": "Kamatciklus, geopolitikai blokkosodás, iparpolitika — mind rezsim-szintű témák.",
+    "sent_at": null
+  },
+  {
+    "story_id": "PR_013",
+    "title": "A dotcom leckéje: „a technológia igaz, az ár nem biztos\" (1999–2002)",
+    "category": "Buborék",
+    "story_text": "A dotcom korszakban rengeteg dolog tényleg forradalmi volt: internet, e-commerce, hálózati hatások, a digitális világ alapjainak lerakása. Az Amazon, a Google, a Priceline valóban megváltoztatta a világot. A probléma nem a technológia volt, hanem az árazás — és az a meggyőződés, hogy az „új korszakban\" a régi szabályok nem érvényesek.\n\nA Nasdaq 2000 márciusában érte el csúcsát — 5048 ponton. A csúcs közelében az átlagos dot-com cég P/E rátája értelmezhetetlen volt: sok cégnek nem volt nyeresége, néhánynak bevétele sem. A Pets.com — amely kutyaeledeleket szállított házhóz — nyilvánosan beismerte, hogy minden egyes dollárnyi értékesítésen veszít. A befektetők mégis vásároltak, mert „a piac mérete óriási\".\n\nAmikor a hangulat fordult, a Nasdaq 78%-ot esett csúcsáról mélypontjáig — és csak 2015-ben érte el újra a 2000-es csúcsot. Tizenöt évig tartott visszajönni. Az olyan cégek, amelyek valós üzleti modellel rendelkeztek, túlélték és virágoztak. Amelyek nem, azok eltűntek — és magukkal vitték a befektetők pénzét.\n\nA dotcom nem azt mondja, hogy „ne vegyél technológiát\". Azt mondja: a sztori és az ár két külön dolog. Az internet forradalmi volt 1999-ben — a kérdés az volt, hogy mennyit kell fizetni ezért a forradalomért. Aki 100-szoros értékeltségen vett, az még igaz sztori mellett is rosszul járt.",
+    "takeaway": "A „jó trend\" nem egyenlő a „jó belépővel\".",
+    "why_now": "AI-nál ugyanez a kérdés: mi a valós érték, és mennyi „jövőt\" fizetünk ki előre?",
+    "sent_at": null
+  }
+]
