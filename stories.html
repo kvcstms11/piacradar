@@ -7,7 +7,7 @@
   <meta name="description" content="Piacradar szombati pénzügyi történetek — piaci összeomlások, tőzsdei legendák és befektetői tanulságok magyarul." />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0b1220" />
-  <link rel="canonical" href="https://piacradar.eu/stories/" />
+  <link rel="canonical" href="https://piacradar.eu/stories.html" />
   <meta property="og:title" content="Piacradar — Szombati Történetek" />
   <meta property="og:description" content="Piaci összeomlások, tőzsdei legendák és befektetői tanulságok — magyarul, tömören." />
   <meta property="og:type" content="website" />
@@ -334,6 +334,20 @@
     .footer-links a:hover { text-decoration: none; border-color: var(--border); background: rgba(255,255,255,.04); }
     .legal { border-top: 1px solid rgba(255,255,255,.10); padding-top: 12px; color: rgba(255,255,255,.48); font-size: 12px; }
 
+
+    /* NAV SOCIAL */
+    .top-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+    .nav-social { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-social a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 30px; height: 30px; border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.50);
+      transition: border-color .15s, background .15s, color .15s;
+    }
+    .nav-social a:hover { text-decoration: none; border-color: rgba(255,255,255,.28); background: rgba(255,255,255,.05); color: rgba(255,255,255,.82); }
+    @media (max-width: 768px) { .nav-social { display: none; } }
+
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .page-hero h1 { font-size: 26px; }
@@ -383,8 +397,8 @@
       </a>
       <nav class="nav" aria-label="Navigáció">
         <a href="https://piacradar.eu/">Főoldal</a>
-        <a href="https://piacradar.eu/stories/" class="active">Történetek</a>
-        <a href="https://piacradar.eu/glossary/">Szótár</a>
+        <a href="https://piacradar.eu/stories.html" class="active">Történetek</a>
+        <a href="https://piacradar.eu/glossary.html">Szótár</a>
         <a href="https://t.me/+Mk5bfbCfUf1lMGE" target="_blank" rel="noopener">Csatlakozás →</a>
       </nav>
     </div>
@@ -432,7 +446,7 @@
         </div>
         <div class="footer-links">
           <a href="https://piacradar.eu/">Főoldal</a>
-          <a href="https://piacradar.eu/glossary/">Szótár</a>
+          <a href="https://piacradar.eu/glossary.html">Szótár</a>
           <a href="https://piacradar.eu/adatkezeles.html" target="_blank" rel="noopener">Adatkezelés</a>
           <a href="https://t.me/+Mk5bfbCfUf1lMGE" target="_blank" rel="noopener">Telegram →</a>
         </div>
