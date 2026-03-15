@@ -179,15 +179,15 @@
     "sections": [
       {
         "title": "Mi ez?",
-        "text": "A capex (capital expenditure) olyan tőkeberuházás, amely hosszabb távon termel értéket: gyár, gépek, adatközpont, hálózat, infrastruktúra, AI‑kapacitás stb. \nNem azonnali költségként jelenik meg, hanem aktiválják, és évek alatt értékcsökkenésen keresztül fut át."
+        "text": "A capex (capital expenditure) olyan tőkeberuházás, amely hosszabb távon termel értéket: gyár, gépek, adatközpont, hálózat, infrastruktúra, AI‑kapacitás stb. Nem azonnali költségként jelenik meg, hanem aktiválják, és évek alatt értékcsökkenésen keresztül fut át."
       },
       {
         "title": "Miért fontos?",
-        "text": "A magas capex lehet növekedési jel (kapacitásbővítés, új termék, AI‑beruházás), de lehet margin‑nyomás is, ha a megtérülés gyenge. \nA piac azt figyeli, hogy a beruházások hozama meghaladja‑e a tőkeköltséget (WACC). Ha igen, értékteremtő; ha nem, cash‑égetés."
+        "text": "A magas capex lehet növekedési jel (kapacitásbővítés, új termék, AI‑beruházás), de lehet margin‑nyomás is, ha a megtérülés gyenge. A piac azt figyeli, hogy a beruházások hozama meghaladja‑e a tőkeköltséget (WACC). Ha igen, értékteremtő; ha nem, cash‑égetés."
       },
       {
         "title": "Piacradar értelmezés",
-        "text": "Earnings call‑okban a „capex guide” kulcsjelzés: a kérdés mindig az, hogy a beruházás growth story‑t épít, vagy rövid távon rontja a free cash flow‑t. \nA capex‑szint a ciklusérzékenység egyik legjobb indikátora."
+        "text": "Earnings call‑okban a „capex guide\" kulcsjelzés: a kérdés mindig az, hogy a beruházás growth story‑t épít, vagy rövid távon rontja a free cash flow‑t. A capex‑szint a ciklusérzékenység egyik legjobb indikátora."
       }
     ]
   },
@@ -364,6 +364,24 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar az osztalékot a részvényesi hozam egyik pilléreként kezeli, különösen defenzív szektoroknál."
+      }
+    ]
+  },
+  {
+    "slug": "dot-plot",
+    "title": "Dot Plot – Fed kamatvárakozás-térkép",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A Fed döntéshozóinak névtelen kamatvárakozás-előrejelzése. Minden FOMC-tag bejelöli, hol látja a kamatszintet az elkövetkező években és hosszú távon. A „pontok” eloszlásából látható, mennyire egységes vagy megosztott a bizottság."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A dot plot a kamatpálya-várakozások leghitelesebb forrása. Ha a mediánpont elmozdul (pl. 3 vágásról 2-re), az azonnali piaci reakciót vált ki: kötvényhozamok emelkednek, részvények esnek. A piac a dot plot-ot előrejelzésként kezeli, nem kötelezettségvállalásként."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a dot plot-ot mindig a SEP-pel együtt értelmezi — a medián pont változása és a szórás (konszenzus vs. megosztottság) egyaránt releváns. Március, június, szeptember és december FOMC-üléseken jelenik meg."
       }
     ]
   },
@@ -1049,15 +1067,15 @@
     "sections": [
       {
         "title": "Mi ez?",
-        "text": "Az opex (operating expenditure) a vállalat napi működésének költsége: bérek, marketing, bérleti díjak, felhőszolgáltatás, support, adminisztráció. \nAzonnal megjelenik az eredménykimutatásban, és közvetlenül hat az EBIT‑re."
+        "text": "Az opex (operating expenditure) a vállalat napi működésének költsége: bérek, marketing, bérleti díjak, felhőszolgáltatás, support, adminisztráció. Azonnal megjelenik az eredménykimutatásban, és közvetlenül hat az EBIT‑re."
       },
       {
         "title": "Miért fontos?",
-        "text": "A költségbázis kontrollja kulcsfontosságú: ha a bevétel lassul, de az opex nem igazodik, a marginok gyorsan romlanak. \nEarnings‑ben a „cost discipline”, „opex control”, „efficiency program” jelzi, hogy a menedzsment mennyire reagál a ciklusra."
+        "text": "A költségbázis kontrollja kulcsfontosságú: ha a bevétel lassul, de az opex nem igazodik, a marginok gyorsan romlanak. Earnings‑ben a „cost discipline”, „opex control”, „efficiency program” jelzi, hogy a menedzsment mennyire reagál a ciklusra."
       },
       {
         "title": "Piacradar értelmezés",
-        "text": "A capex‑opex mix stratégiai döntés: ugyanazt a célt (pl. IT‑infrastruktúra) lehet beruházásként vagy működési költségként kezelni. \nA piac azt nézi, melyik javítja a cash flow‑profilt és a marginokat a ciklus adott pontján."
+        "text": "A capex‑opex mix stratégiai döntés: ugyanazt a célt (pl. IT‑infrastruktúra) lehet beruházásként vagy működési költségként kezelni. A piac azt nézi, melyik javítja a cash flow‑profilt és a marginokat a ciklus adott pontján."
       }
     ]
   },
@@ -1277,7 +1295,7 @@
     "sections": [
       {
         "title": "Mi ez?",
-        "text": "A jegybank hivatalos döntése arról, hogy változtat-e az irányadó kamatlábon."
+        "text": "A jegybank hivatalos döntése arról, hogy változtat-e az irányadó kamatládon."
       },
       {
         "title": "Miért fontos?",
@@ -1359,7 +1377,7 @@
     "sections": [
       {
         "title": "",
-        "text": "Röviden: olyan eszköz, amelyet a piac jellemzően biztonságos menedéknek tekint stressz, bizonytalanság vagy risk‑off időszakokban. Safe havennek azokat az eszközöket hívjuk, amelyekbe a befektetők jellemzően „menekülnek”, amikor nő a bizonytalanság,\nemelkedik a volatilitás, vagy romlik a kockázatvállalási étvágy (risk‑off környezet).\nIlyenkor a tőke a kockázatosabb eszközökből (részvények, high yield, EM, kockázatosabb devizák) a biztonságosabbnak tartott\neszközök felé áramlik. Amikor a kommentárokban azt látod, hogy „flight to safety” vagy „flight to quality” zajlik, az azt jelenti,\nhogy a befektetők safe haven eszközök felé mozdulnak. Ez tipikusan együtt jár:"
+        "text": "Röviden: olyan eszköz, amelyet a piac jellemzően biztonságos menedéknek tekint stressz, bizonytalanság vagy risk‑off időszakokban. Safe havennek azokat az eszközöket hívjuk, amelyekbe a befektetők jellemzően „menekülnek”, amikor nő a bizonytalanság, emelkedik a volatilitás, vagy romlik a kockázatvállalási étvágy (risk‑off környezet). Ilyenkor a tőke a kockázatosabb eszközökből (részvények, high yield, EM, kockázatosabb devizák) a biztonságosabbnak tartott eszközök felé áramlik. Amikor a kommentárokban azt látod, hogy „flight to safety” vagy „flight to quality” zajlik, az azt jelenti, hogy a befektetők safe haven eszközök felé mozdulnak."
       }
     ]
   },
@@ -1370,6 +1388,24 @@
       {
         "title": "",
         "text": "A szankciók olyan geopolitikai eszközök, amelyek korlátozzák egy ország vagy szervezet gazdasági tevékenységét. A szankciók érinthetik az energia-, pénzügyi, technológiai és nyersanyagpiacokat. A szankciók bevezetése gyakran ellátási zavarokat, árvolatilitást és geopolitikai feszültséget okoz, amelyek közvetlenül hatnak a globális piacokra."
+      }
+    ]
+  },
+  {
+    "slug": "sep",
+    "title": "SEP – Summary of Economic Projections",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A Fed negyedévente közzétett gazdasági előrejelzése, amely tartalmazza a dot plot-ot, valamint a GDP-növekedés, infláció (PCE, Core PCE) és munkanélküliség várakozásait. Március, június, szeptember és december FOMC-üléseken jelenik meg."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A SEP megmutatja, hogyan látja a Fed a gazdaság jövőjét. Ha a GDP-előrejelzés lefelé, az infláció felfelé módosul, az stagflációs kockázatot jelez. A piac a SEP-et a kamatpálya-narratíva egyik legfontosabb forrásaként kezeli."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a SEP-et a dot plot-tal együtt értelmezi — a három komponens (GDP, infláció, dot plot) együttes képet ad arról, merre tart a Fed. A várakozásoktól való eltérés erős piaci reakciót válthat ki."
       }
     ]
   },
