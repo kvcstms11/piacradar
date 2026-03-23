@@ -138,6 +138,24 @@
     ]
   },
   {
+    "slug": "bullish-bearish",
+    "title": "Bullish / Bearish – Bikás / Medvés",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Bullish (bikás): emelkedő árfolyamra számító, optimista piaci hozzáállás. Bearish (medvés): csökkenő árfolyamra számító, pesszimista piaci hozzáállás. A bika felfelé öklel, a medve lefelé csap — innen az elnevezés."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Egy elemző, egy adat vagy egy hír lehet bullish vagy bearish egy eszközre. Például jó earnings = bullish a részvényre, magas infláció = bearish a kötvényekre."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar emoji rendszere erre épül: 🟢 = bullish (pozitív piaci hatás), 🔴 = bearish (negatív piaci hatás), 🟡 = semleges/vegyes."
+      }
+    ]
+  },
+  {
     "slug": "buyback",
     "title": "Buyback – Sajátrészvény-visszavásárlás",
     "sections": [
@@ -392,6 +410,24 @@
       {
         "title": "",
         "text": "A \"dovish\" kommunikáció lazább monetáris politikát jelez: alacsonyabb kamatok, több likviditás, nagyobb kockázati étvágy. A tech és a kripto különösen érzékeny rá."
+      }
+    ]
+  },
+  {
+    "slug": "duration",
+    "title": "Duration – Duráció",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A kötvény árfolyamának kamatlábérzékenységét mérő mutató, években kifejezve. Minél hosszabb a duráció, annál nagyobb az ármozgás ha a kamatok változnak. 10 éves duráció = 1% kamatemelés → ~10% áresés."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Emelkedő kamatkörnyezetben a hosszú durációjú kötvények (és részvények — pl. tech/growth) nagyot esnek. Csökkenő kamatkörnyezetben pont fordítva: a hosszú durációjú eszközök a nyertesek."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar durációt akkor említ, ha kamatemelkedés vagy -csökkenés közvetlenül hat az eszközárakra — a 'long duration trade' jellemzően a tech szektorra utal."
       }
     ]
   },
@@ -674,6 +710,24 @@
     ]
   },
   {
+    "slug": "hedge",
+    "title": "Hedge – Fedezeti ügylet",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Olyan befektetési pozíció, amelynek célja egy másik pozíció kockázatának csökkentése. Például ha valaki részvényeket tart, vehet VIX-et vagy put opciókat, hogy védje a portfólióját egy esés ellen."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A hedge-elés költségének változása (pl. opciós prémiumok emelkedése) jelzi, mennyire tartanak a befektetők egy piaci fordulattól. Ha a hedging drága, az növekvő bizonytalanságot mutat."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar akkor használja a kifejezést, ha egy eszköz (arany, VIX, dollár, BTC) fedezeti szerepe kerül előtérbe — pl. geopolitikai kockázat esetén."
+      }
+    ]
+  },
+  {
     "slug": "housing-starts",
     "title": "Housing Starts – Lakásépítések",
     "sections": [
@@ -860,6 +914,24 @@
     ]
   },
   {
+    "slug": "m-and-a",
+    "title": "M&A – Mergers & Acquisitions (fúziók és felvásárlások)",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Vállalatok összeolvadása (merger) vagy felvásárlása (acquisition). A felvásárló általában prémiumot fizet a piaci ár felett, ami a célpont részvényét emeli, a felvásárlóét gyakran nyomás alá helyezi."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "M&A aktivitás a piaci hangulat barométere: magas M&A = optimizmus és olcsó finanszírozás. Leálló M&A = óvatosság, magas kamatok vagy regulációs bizonytalanság. Antitrust döntések blokkolhatják a deal-eket."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar M&A híreket akkor hozza, ha érdemi piaci hatásuk van: nagy deal (>$10Mrd), szektort mozgató felvásárlás, vagy antitrust döntés."
+      }
+    ]
+  },
+  {
     "slug": "m2-money-supply",
     "title": "M2 Money Supply – M2 pénzmennyiség",
     "sections": [
@@ -874,6 +946,24 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar az M2 változását a likviditási ciklus egyik legjobb mutatójaként használja."
+      }
+    ]
+  },
+  {
+    "slug": "margin-call",
+    "title": "Margin Call – Fedezeti felhívás",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Amikor egy befektető hitelre (tőkeáttétellel) kereskedik és a pozíciója veszteségbe fordul, a brókere további fedezetet kér. Ha nem tudja befizetni, a pozícióját kényszerlikvidálják."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Tömeges margin call-ok láncreakciót indíthatnak: a kényszerlikvidálások további eladást generálnak, ami tovább nyomja az árakat. Ez történt pl. az aranypiacon 2026 márciusában, amikor a CME emelte a margin követelményeket."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar margin call-t akkor említ, ha kényszerlikvidálás okoz szokatlan piaci mozgást — ilyenkor a mozgás nem fundamentális, hanem technikai/likviditási okokra vezethető vissza."
       }
     ]
   },
@@ -920,6 +1010,24 @@
       {
         "title": "",
         "text": "A Bitcoin bányászat a hálózat biztonságának és decentralizációjának alapja. A bányászok számítási kapacitást biztosítanak a tranzakciók validálásához és új blokkok létrehozásához, cserébe blokkjutalmat és tranzakciós díjakat kapnak. A bányászati szektor állapota közvetlenül befolyásolja a Bitcoin fundamentális erejét. A magas energiaárak, alacsony árfolyam vagy technológiai elmaradás bányászleállásokhoz vezethet, ami a hálózat stabilitását és a kínálati oldalt is érinti."
+      }
+    ]
+  },
+  {
+    "slug": "momentum",
+    "title": "Momentum – Lendület",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Piaci lendület: az az elv, hogy ami emelkedik, az hajlamos tovább emelkedni, és ami esik, az tovább esni. A momentum stratégiák a trend folytatására fogadnak."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A momentum gyorsulása vagy megtörése közvetlen jelzés. Ha egy részvény vagy szektor elveszíti a lendületét, az az emelkedés végét jelezheti, még ha a fundamentumok jók is."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a momentum kifejezést earnings szezonban és szektor rotációnál használja — pl. 'tech earnings momentum' azt jelenti, hogy a technológiai cégek pozitív jelentései egymást erősítik."
       }
     ]
   },
@@ -1080,24 +1188,6 @@
     ]
   },
   {
-    "slug": "options-expiration",
-    "title": "Options Expiration (OpEx) – Opciós lejárat",
-    "sections": [
-      {
-        "title": "Mi ez?",
-        "text": "Az a nap, amikor az opciós kontraktusok érvényüket vesztik. Havi OpEx: minden hónap 3. péntekje. Negyedéves „triple/quadruple witching\": index opciók, index futures, egyedi opciók és egyedi futures egyszerre járnak le — ilyenkor a forgalom és a volatilitás kiugró."
-      },
-      {
-        "title": "Miért fontos?",
-        "text": "OpEx napján a market makerek feloldják a hedge pozícióikat, ami hirtelen, mechanikus mozgásokat okoz. A max pain szint körüli „gravitáció\" és a gamma flip (pozitívból negatívba) hetekre megváltoztathatja a piaci dinamikát."
-      },
-      {
-        "title": "Piacradar értelmezés",
-        "text": "A Piacradar az OpEx-et a napi kontextusban jelzi — különösen a havi és negyedéves lejáratoknál, amikor a mechanikus hatás a legerősebb."
-      }
-    ]
-  },
-  {
     "slug": "options",
     "title": "Options – Opciós kereskedés",
     "sections": [
@@ -1112,6 +1202,24 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar az opciós piacot a részvénypiaci mozgások kontextusában kezeli — a dealer-pozícionálás és az expiration hatások relevánsak a napi digest szempontjából."
+      }
+    ]
+  },
+  {
+    "slug": "options-expiration",
+    "title": "Options Expiration (OpEx) – Opciós lejárat",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Az a nap, amikor az opciós kontraktusok érvényüket vesztik. Havi OpEx: minden hónap 3. péntekje. Negyedéves „triple/quadruple witching\": index opciók, index futures, egyedi opciók és egyedi futures egyszerre járnak le — ilyenkor a forgalom és a volatilitás kiugró."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "OpEx napján a market makerek feloldják a hedge pozícióikat, ami hirtelen, mechanikus mozgásokat okoz. A max pain szint körüli „gravitáció\" és a gamma flip (pozitívból negatívba) hetekre megváltoztathatja a piaci dinamikát."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az OpEx-et a napi kontextusban jelzi — különösen a havi és negyedéves lejáratoknál, amikor a mechanikus hatás a legerősebb."
       }
     ]
   },
@@ -1234,24 +1342,6 @@
     ]
   },
   {
-    "slug": "put-call-ratio",
-    "title": "Put/Call Ratio",
-    "sections": [
-      {
-        "title": "Mi ez?",
-        "text": "A kereskedett put opciók és call opciók arányát mérő mutató. Ha az arány 1 felett van, több put-ot vesznek mint call-t (bearish hangulat). Ha 1 alatt, több a call (bullish). A CBOE napi szinten publikálja az equity és index put/call ratio-t."
-      },
-      {
-        "title": "Miért fontos?",
-        "text": "Kontrariánus indikátorként működik: extrém magas put/call ratio (pánik) gyakran piaci alját jelzi, extrém alacsony (eufória) pedig tetőt. A normál tartomány kb. 0.7–1.0. Intézményi befektetők ezt a VIX-szel együtt figyelik a hangulatelemzéshez."
-      },
-      {
-        "title": "Piacradar értelmezés",
-        "text": "A Piacradar a put/call ratio-t extrém értékeknél említi — amikor a piaci hangulat átbillen, az sokszor fordulópontot jelez."
-      }
-    ]
-  },
-  {
     "slug": "put",
     "title": "Put – Eladási opció",
     "sections": [
@@ -1266,6 +1356,24 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar a put aktivitást akkor emeli ki, ha szokatlanul magas volumen jelenik meg egy tickeren, vagy ha intézményi hedging-hullám indul — ez piaci hangulat-jelző."
+      }
+    ]
+  },
+  {
+    "slug": "put-call-ratio",
+    "title": "Put/Call Ratio",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A kereskedett put opciók és call opciók arányát mérő mutató. Ha az arány 1 felett van, több put-ot vesznek mint call-t (bearish hangulat). Ha 1 alatt, több a call (bullish). A CBOE napi szinten publikálja az equity és index put/call ratio-t."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Kontrariánus indikátorként működik: extrém magas put/call ratio (pánik) gyakran piaci alját jelzi, extrém alacsony (eufória) pedig tetőt. A normál tartomány kb. 0.7–1.0. Intézményi befektetők ezt a VIX-szel együtt figyelik a hangulatelemzéshez."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a put/call ratio-t extrém értékeknél említi — amikor a piaci hangulat átbillen, az sokszor fordulópontot jelez."
       }
     ]
   },
@@ -1372,6 +1480,24 @@
     ]
   },
   {
+    "slug": "roe",
+    "title": "ROE – Return on Equity (saját tőke megtérülés)",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A nettó profit és a saját tőke hányadosa, százalékban. Megmutatja, hogy egy cég mennyire hatékonyan használja a tulajdonosok befektetett tőkéjét nyereségtermelésre."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Magas ROE (15%+) általában erős versenyelőnyt és hatékony tőkefelhasználást jelez. Alacsony vagy csökkenő ROE arra utal, hogy a cég nem termel elég profitot a befektetett tőkéhez képest."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar vállalati elemzéseknél az ROE-t a jövedelmezőség egyik fő mutatójaként használja, különösen pénzügyi szektorbeli cégeknél."
+      }
+    ]
+  },
+  {
     "slug": "safe_heaven",
     "title": "Safe haven",
     "sections": [
@@ -1388,6 +1514,24 @@
       {
         "title": "",
         "text": "A szankciók olyan geopolitikai eszközök, amelyek korlátozzák egy ország vagy szervezet gazdasági tevékenységét. A szankciók érinthetik az energia-, pénzügyi, technológiai és nyersanyagpiacokat. A szankciók bevezetése gyakran ellátási zavarokat, árvolatilitást és geopolitikai feszültséget okoz, amelyek közvetlenül hatnak a globális piacokra."
+      }
+    ]
+  },
+  {
+    "slug": "sell-off",
+    "title": "Sell-off – Eladási hullám",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Gyors és széles körű eladási hullám, amikor a befektetők tömegesen válnak meg pozícióiktól. Lehet szektor-specifikus vagy piacszintű. Okozhatja rossz adat, geopolitikai esemény, vagy megváltozott kamatvárakozás."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A sell-off intenzitása és időtartama jelzi, mennyire komoly a piaci félelem. Rövid, koncentrált sell-off után gyakran pattanás jön, elhúzódó sell-off mélyebb korrekciót jelezhet."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar sell-off-ot akkor használ, ha széleskörű, érdemi eladás történik — nem minden piros napot hívunk sell-off-nak."
       }
     ]
   },
@@ -1450,6 +1594,24 @@
     ]
   },
   {
+    "slug": "stagflation",
+    "title": "Stagflation – Stagfláció",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A gazdasági stagnálás és az infláció együttes jelenléte. A legrosszabb forgatókönyv a jegybankok számára: az infláció miatt kamatot kellene emelni, de a lassulás miatt vágni kellene. A kettő együtt megbénítja a monetáris politikát."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Stagflációs környezetben szinte minden eszközosztály szenved: a részvények a lassulás, a kötvények az infláció, a fogyasztók a reálbér-csökkenés miatt. Csak az energia és egyes nyersanyagok teljesíthetnek jól."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar stagflációs kockázatot akkor jelez, ha egyszerre látunk magas olajárat, emelkedő inflációs várakozásokat és romló növekedési adatokat — mint 2026 elején az iráni konfliktus idején."
+      }
+    ]
+  },
+  {
     "slug": "strike-price",
     "title": "Strike Price – Kötési árfolyam",
     "sections": [
@@ -1492,6 +1654,24 @@
       {
         "title": "",
         "text": "A vámok olyan kereskedelmi korlátozások, amelyek növelik az importált termékek árát. A vámháborúk csökkenthetik a globális kereskedelmet, növelhetik az inflációt és lassíthatják a gazdasági növekedést. A vámok bevezetése vagy eltörlése jelentős hatással van a vállalati profitokra, különösen az ipari, autóipari és technológiai szektorokban."
+      }
+    ]
+  },
+  {
+    "slug": "terminal-rate",
+    "title": "Terminal Rate – Végső kamatszint",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Az a kamatszint, amelyet a jegybank (Fed, ECB) a kamatemelési vagy -vágási ciklus végpontjának tekint. A piac a Fed dot plot-ból és a futures piacról olvassa ki a várakozásokat."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A terminal rate várakozás változása közvetlenül mozgatja a kötvényhozamokat, a részvényértékeléseket és a jelzálogkamatokat. Ha a piac magasabb végső szintet áraz, az nyomás alá helyezi a növekedési részvényeket."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar FOMC döntéseknél mindig jelzi, ha a terminal rate várakozás elmozdult — ez az egyik legfontosabb piaci árképző tényező."
       }
     ]
   },
