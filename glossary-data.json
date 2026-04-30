@@ -18,6 +18,16 @@
     ]
   },
   {
+  "title": "AMC (After Market Close)",
+  "slug": "amc",
+  "sections": [
+    {
+      "title": "",
+      "text": "Az amerikai tőzsdei zárás utáni időszakban (16:00 ET után, magyar idő szerint 22:00 után) közzétett vállalati gyorsjelentés. A piac kezdeti reakciója az after-hours kereskedésben látható, de a teljes irány csak a következő napi nyitáskor (BMO) tisztázódik. A nagy technológiai cégek (Microsoft, Apple, Amazon, Meta, Alphabet, Nvidia) jellemzően AMC jelentenek, mert a kereskedés végén nincs mozgó likviditás ami zavarná az árazást. Ellentéte: BMO (nyitás előtt)."
+    }
+  ]
+  },
+  {
     "slug": "antitrust",
     "title": "Antitrust – Trösztellenes eljárás",
     "sections": [
@@ -70,6 +80,16 @@
         "text": "A Piacradar a Beige Book kulcsmondatait emeli ki, amelyek a kamatpálya-várakozásokat mozgathatják."
       }
     ]
+  },
+  {
+  "title": "BMO (Before Market Open)",
+  "slug": "bmo",
+  "sections": [
+    {
+      "title": "",
+      "text": "Az amerikai tőzsdei nyitás előtti időszakban (jellemzően 06:00–09:30 ET, magyar idő szerint 12:00–15:30) közzétett vállalati gyorsjelentés. A piac aznap kora reggel reagálhat az adatokra a pre-market kereskedésben, így a BMO earnings tipikusan korán meghatározza az adott részvény napi irányát. A bankok, fogyasztói cégek és néhány nagy iparvállalat (pl. Coca-Cola, Visa, JPMorgan) jellemzően BMO jelent. Ellentéte: AMC (zárás után)."
+    }
+  ]
   },
   {
     "slug": "boe",
