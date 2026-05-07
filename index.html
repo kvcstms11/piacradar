@@ -520,17 +520,84 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Piacradar",
-    "url": "https://piacradar.eu/",
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61560269362449",
-      "https://www.instagram.com/officialkovacstamas",
-      "https://www.tiktok.com/@officialkovacstamas",
-      "https://www.youtube.com/@officialkovacstamas",
-      "https://x.com/kvcstms11",
-      "https://www.linkedin.com/in/kvcstms",
-      "https://t.me/+Mk5bfbCfUf1lMGE0"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Piacradar",
+        "url": "https://piacradar.eu",
+        "description": "Prémium piaci kivonat Telegramon. EU/USA makró, top earnings és piacmozgató események magyarul.",
+        "inLanguage": "hu"
+      },
+      {
+        "@type": "Organization",
+        "name": "Piacradar",
+        "url": "https://piacradar.eu/",
+        "logo": "https://piacradar.eu/og.png",
+        "description": "Tömör, tényalapú piaci kivonat: mi történt és miért számít. Piaci napokon 3 fix üzenet Telegramon.",
+        "founder": {
+          "@type": "Person",
+          "name": "Tamás Kovács",
+          "url": "https://tamaskovacs.eu",
+          "sameAs": [
+            "https://www.linkedin.com/in/kvcstms",
+            "https://x.com/kvcstms11"
+          ]
+        },
+        "sameAs": [
+          "https://t.me/+Mk5bfbCfUf1lMGE0",
+          "https://www.facebook.com/profile.php?id=61560269362449",
+          "https://www.instagram.com/officialkovacstamas",
+          "https://www.tiktok.com/@officialkovacstamas",
+          "https://www.youtube.com/@officialkovacstamas",
+          "https://x.com/kvcstms11",
+          "https://www.linkedin.com/in/kvcstms"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Hogyan kapom meg a Telegram hozzáférést?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Előfizetés után automatikusan megkapod a belépési információt. A csatorna nem nyilvános."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Milyen gyakran jönnek üzenetek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Piaci napokon 3 fix üzenet: 07:00, 15:15, 21:00 (CET/CEST)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Befektetési tanácsot ad a Piacradar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nem. A tartalmak kizárólag általános tájékoztatási célt szolgálnak, nem minősülnek befektetési tanácsadásnak."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A posztok mennyire kezdőbarátok?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Úgy van írva, hogy gyorsan érthető legyen, de közben tanít is: rövid fogalommagyarázat és miért számít keret."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bármikor le tudom mondani az előfizetést?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Igen, bármikor lemondható. A hozzáférés a már kifizetett időszak végéig él."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
