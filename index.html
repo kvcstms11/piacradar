@@ -332,6 +332,8 @@
     }
     .box h3{ margin:0 0 6px; font-size:14px; font-weight:900; }
     .box p{ margin:0; color:rgba(255,255,255,.74); font-size:13.5px; }
+    .valueprop{ margin-top:14px; border:1px solid rgba(94,234,212,.30); background:linear-gradient(135deg, rgba(94,234,212,.10), rgba(96,165,250,.07)); border-radius:18px; padding:16px 18px; font-size:14px; line-height:1.62; color:rgba(255,255,255,.90); }
+    .valueprop strong{ color:var(--accent); font-weight:900; }
 
     .list{
       margin:10px 0 0;
@@ -570,7 +572,7 @@
             "name": "Milyen gyakran jönnek üzenetek?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Piaci napokon 3 fix üzenet: 07:00, 15:15, 21:00 (CET/CEST)."
+              "text": "Piaci napokon 3 fix üzenet: 07:00, 15:15, 21:00 (magyar idő szerint)."
             }
           },
           {
@@ -598,6 +600,30 @@
             }
           }
         ]
+      },
+      {
+        "@type": "Service",
+        "name": "Piacradar Prémium",
+        "url": "https://piacradar.eu/",
+        "provider": { "@type": "Organization", "name": "Piacradar", "url": "https://piacradar.eu/" },
+        "areaServed": "HU",
+        "availableLanguage": "hu",
+        "serviceType": "Pénzügyi piaci hírösszefoglaló és edukáció",
+        "description": "Piaci napokon napi 3 összefoglaló (07:00, 15:15, 21:00, magyar idő szerint) a piacmozgató hírekről: makró adatok (CPI, NFP, PMI, ISM, Fed/ECB), negyedéves vállalati jelentések, valamint iparági és vállalati elemzések — mi történt és miért számít, forráslinkkel."
+      },
+      {
+        "@type": "DefinedTermSet",
+        "name": "Piacradar Pénzügyi Szótár",
+        "url": "https://piacradar.eu/glossary.html",
+        "description": "100+ pénzügyi és tőzsdei fogalom magyarázata befektetői kontextussal: CPI, GDP, VIX, EPS és sok más.",
+        "inLanguage": "hu"
+      },
+      {
+        "@type": "CreativeWorkSeries",
+        "name": "Szombati Történetek",
+        "url": "https://piacradar.eu/stories.html",
+        "description": "Heti történetek piaci összeomlásokról, tőzsdei legendákról és befektetői tanulságokról — minden szombaton új sztori, magyarul.",
+        "inLanguage": "hu"
       }
     ]
   }
@@ -733,10 +759,9 @@
           <aside class="card" aria-label="Példa">
             <h2>Példa (formátum)</h2>
             <pre>📡 Piacradar — US Open Pulse (15:15)
-2026.02.11.
+2026.02.11. · minden időpont magyar idő szerint
 
-🟢 NFP meglepetés: 130k új állás
-Kulcsadat: 130.000 vs várt 120k
+🟢 NFP meglepetés: 130k új állás | előző: 118k | várható: 120k
 Januári munkaerőpiaci jelentés pozitív meglepetést hozott,
 a munkanélküliség 4,3%-on maradt.
 ↳ Miért számít: erős munkaerőpiac, Fed óvatosabb a vágásokkal
@@ -747,17 +772,18 @@ Spotify Q4 MAU 751M, +11% YoY. Részvény +8.1% premarket.
 ↳ Miért számít: tech earnings momentum, erős subscription modell
 Forrás: [Yahoo Finance]
 
-🔴 ISM Services PMI 49.7 — kontrakció
-A szolgáltatóipar váratlanul zsugorodott: 49.7 vs várt 52.9
+🔴 ISM Services PMI 49,7 — kontrakció | előző: 52,1 | várható: 52,9
+A szolgáltatóipar a várakozással szemben váratlanul zsugorodott.
 ↳ Miért számít: lassulás jelei, Fed lazítási várakozások erősödnek
 Forrás: [tradingeconomics.com]
 
 ⚠️ Tájékoztató jellegű, nem befektetési tanács.</pre>
             <div style="margin-top:14px; padding:10px 14px; background:rgba(255,255,255,.06); border-radius:8px; font-size:13px; line-height:1.7;">
               <strong style="font-size:13px;">Emoji jelölés</strong><br>
-              🟢 <strong>Bullish</strong> — pozitív piaci hatás (emelkedés, jó adat, kedvező fejlemény)<br>
-              🔴 <strong>Bearish</strong> — negatív piaci hatás (esés, kockázat, rossz adat)<br>
-              🟡 <strong>Semleges</strong> — vegyes vagy semleges (nincs egyértelmű irány)
+              🟢 <strong>Bullish</strong> — pozitív piaci értelmezés (az adat/hír a piac szempontjából kedvező)<br>
+              🔴 <strong>Bearish</strong> — negatív piaci értelmezés (a piac szempontjából kockázat/kedvezőtlen)<br>
+              🟡 <strong>Semleges</strong> — vegyes vagy nem egyértelmű piaci hatás
+              <span style="display:block; margin-top:8px; color:rgba(255,255,255,.62); font-size:12px;">A szín a piaci <strong>értelmezést</strong> tükrözi, nem azt, hogy egy eszköz önmagában emelkedett vagy esett.</span>
             </div>
           </aside>
         </div>
@@ -795,6 +821,7 @@ Forrás: [tradingeconomics.com]
             <p>Minden lehetséges esetben azoknak, akik szeretnének mélyebbre merülni.</p>
           </div>
         </div>
+        <div class="valueprop">Napi 3 összefoglaló az igazán piacmozgató hírekről, a jelentős gazdasági adatok jelzése és bemutatása, negyedéves vállalati jelentések elemzése, valamint iparági és vállalati elemzések — mind olyan, ami alapján <strong>jobb befektetési döntéseket</strong> hozhatsz ebben a hírzajos világban.</div>
       </section>
 
       <!-- WHAT YOU GET -->
@@ -804,18 +831,18 @@ Forrás: [tradingeconomics.com]
           <div class="box">
             <h3>Napi ritmus (piaci napokon)</h3>
             <ul class="list">
-              <li><strong>07:00</strong> — Morning Brief</li>
+              <li><strong>07:00</strong> — Reggeli Brief</li>
               <li><strong>15:15</strong> — US Open Pulse</li>
-              <li><strong>21:00</strong> — Evening Wrap</li>
+              <li><strong>21:00</strong> — Esti Összefoglaló</li>
             </ul>
-            <p class="muted" style="margin-top:10px; font-size:12.5px;">Időzóna: Budapest UTC+1</p>
+            <p class="muted" style="margin-top:10px; font-size:12.5px;">Minden időpont magyar idő szerint.</p>
           </div>
           <div class="box">
             <h3>Edukáció (beépítve)</h3>
             <ul class="list">
               <li>Fogalmak: yield, spread, risk-on/off, EPS, guidance, inflation stb.</li>
               <li>Makrónál: előzmény + várakozás + kontextus</li>
-              <li>Negyedéves jelentése: eredmény, hatás, miért fontos?</li>
+              <li>Negyedéves jelentések: eredmény, hatás, miért fontos?</li>
               <li>Gazdasági történetek: amik segítik a nagyobb kép megértését</li>
             </ul>
           </div>
@@ -867,6 +894,14 @@ Forrás: [tradingeconomics.com]
         </div>
       </section>
 
+      <!-- TRANSPARENCY -->
+      <section class="panel">
+        <div class="kicker"><h2>Átlátható teljesítmény</h2></div>
+        <div class="box">
+          <p>Az elemzéseinkben kiemelt szektorok és papírok teljesítményét időről időre nyilvánosan közzétesszük — azt is, ami bevált, azt is, ami nem. A cél nem a követés, hanem a tudásátadás.</p>
+        </div>
+      </section>
+
       <!-- PRICING -->
       <section id="arazas" class="panel">
         <div class="kicker"><h2>Prémium verzió</h2></div>
@@ -890,7 +925,7 @@ Forrás: [tradingeconomics.com]
           </details>
           <details>
             <summary>Milyen gyakran jönnek üzenetek?<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
-            <div class="faq-answer">Piaci napokon 3 fix üzenet: <strong>07:00</strong> / <strong>15:15</strong> / <strong>21:00</strong> (CET/CEST).</div>
+            <div class="faq-answer">Piaci napokon 3 fix üzenet: <strong>07:00</strong> / <strong>15:15</strong> / <strong>21:00</strong> (magyar idő szerint).</div>
           </details>
           <details>
             <summary>Befektetési tanácsot ad a Piacradar?<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
