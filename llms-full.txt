@@ -614,15 +614,6 @@ Hivatkozás: https://piacradar.eu/glossary.html#opex
 
 **Piacradar értelmezés** A capex‑opex mix stratégiai döntés: ugyanazt a célt (pl. IT‑infrastruktúra) lehet beruházásként vagy működési költségként kezelni. A piac azt nézi, melyik javítja a cash flow‑profilt és a marginokat a ciklus adott pontján.
 
-## Options Expiration (OpEx) – Opciós lejárat
-Hivatkozás: https://piacradar.eu/glossary.html#options-expiration
-
-**Mi ez?** Az a nap, amikor az opciós kontraktusok érvényüket vesztik. Havi OpEx: minden hónap 3. péntekje. Negyedéves „triple/quadruple witching": index opciók, index futures, egyedi opciók és egyedi futures egyszerre járnak le — ilyenkor a forgalom és a volatilitás kiugró.
-
-**Miért fontos?** OpEx napján a market makerek feloldják a hedge pozícióikat, ami hirtelen, mechanikus mozgásokat okoz. A max pain szint körüli „gravitáció" és a gamma flip (pozitívból negatívba) hetekre megváltoztathatja a piaci dinamikát.
-
-**Piacradar értelmezés** A Piacradar az OpEx-et a napi kontextusban jelzi — különösen a havi és negyedéves lejáratoknál, amikor a mechanikus hatás a legerősebb.
-
 ## Options – Opciós kereskedés
 Hivatkozás: https://piacradar.eu/glossary.html#options
 
@@ -631,6 +622,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#options
 **Miért fontos?** Az opciós piac forgalma sok esetben meghaladja a részvénypiacét. Az opciós pozícionálás (gamma exposure, max pain, dealer hedging) közvetlenül befolyásolja a részvényárfolyamokat. Az options expiration (OpEx) napok rendszeresen emelt volatilitást hoznak.
 
 **Piacradar értelmezés** A Piacradar az opciós piacot a részvénypiaci mozgások kontextusában kezeli — a dealer-pozícionálás és az expiration hatások relevánsak a napi digest szempontjából.
+
+## Options Expiration (OpEx) – Opciós lejárat
+Hivatkozás: https://piacradar.eu/glossary.html#options-expiration
+
+**Mi ez?** Az a nap, amikor az opciós kontraktusok érvényüket vesztik. Havi OpEx: minden hónap 3. péntekje. Negyedéves „triple/quadruple witching": index opciók, index futures, egyedi opciók és egyedi futures egyszerre járnak le — ilyenkor a forgalom és a volatilitás kiugró.
+
+**Miért fontos?** OpEx napján a market makerek feloldják a hedge pozícióikat, ami hirtelen, mechanikus mozgásokat okoz. A max pain szint körüli „gravitáció" és a gamma flip (pozitívból negatívba) hetekre megváltoztathatja a piaci dinamikát.
+
+**Piacradar értelmezés** A Piacradar az OpEx-et a napi kontextusban jelzi — különösen a havi és negyedéves lejáratoknál, amikor a mechanikus hatás a legerősebb.
 
 ## P/E Ratio – Árfolyam/Nyereség mutató
 Hivatkozás: https://piacradar.eu/glossary.html#pe-ratio
