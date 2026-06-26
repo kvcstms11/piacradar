@@ -26,6 +26,10 @@ A kiemelt szektorok és papírok teljesítményét időről időre nyilvánosan 
 ## Fontos / jogi
 A tartalmak kizárólag általános tájékoztatási célt szolgálnak, nem minősülnek befektetési tanácsadásnak.
 
+## Teljes tartalom (gépi olvasásra)
+A teljes Pénzügyi Szótár (minden fogalom teljes definíciója) és a Szombati Történetek teljes szövege egyetlen fájlban:
+- https://piacradar.eu/llms-full.txt
+
 ## Kapcsolat és hozzáférés
 - Weboldal: https://piacradar.eu/
 - Telegram csatorna: https://t.me/+Mk5bfbCfUf1lMGE0
