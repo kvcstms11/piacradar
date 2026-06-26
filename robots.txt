@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# AI / LLM-readable resources (GEO)
+# Overview:        https://piacradar.eu/llms.txt
+# Full content:    https://piacradar.eu/llms-full.txt
+
 Sitemap: https://piacradar.eu/sitemap.xml
