@@ -5,7 +5,7 @@
 A tartalmak kizárólag általános tájékoztatási célt szolgálnak, nem minősülnek befektetési tanácsadásnak.
 
 
-# Pénzügyi Szótár (123 fogalom)
+# Pénzügyi Szótár (138 fogalom)
 
 Forrás: https://piacradar.eu/glossary.html
 
@@ -61,6 +61,33 @@ Hivatkozás: https://piacradar.eu/glossary.html#beige-book
 
 **Piacradar értelmezés** A Piacradar a Beige Book kulcsmondatait emeli ki, amelyek a kamatpálya-várakozásokat mozgathatják.
 
+## Beta – Béta
+Hivatkozás: https://piacradar.eu/glossary.html#beta
+
+**Mi ez?** Egy eszköz piaci mozgásokra való érzékenységét méri a piaci átlaghoz (jellemzően S&P 500) képest. Béta 1 = a piaccal együtt mozog; 1 felett = nagyobb kilengés (volatilisabb); 1 alatt = csillapítottabb mozgás; negatív béta = ellentétes irányú mozgás.
+
+**Miért fontos?** A magas béta részvények (pl. tech, growth) risk-on környezetben felülteljesítenek, esésben nagyobbat zuhannak. Az alacsony béta, defenzív nevek (közüzem, fogyasztási alap) stabilabbak stresszben. A portfólió bétája a piaci kitettség mértékét mutatja.
+
+**Piacradar értelmezés** A Piacradar a bétát a szektorrotáció és a kockázati étvágy kontextusában használja — risk-on idején a magas béta, risk-off idején az alacsony béta nevek vannak előtérben.
+
+## Bid-Ask Spread – Vételi-eladási különbözet
+Hivatkozás: https://piacradar.eu/glossary.html#bid-ask-spread
+
+**Mi ez?** A legjobb vételi ár (bid) és a legjobb eladási ár (ask) közötti különbség. A likviditás és a kereskedési költség közvetlen mérőszáma: szűk spread = likvid piac, széles spread = illikvid vagy stresszes piac.
+
+**Miért fontos?** A spread hirtelen kiszélesedése likviditás-elapadást jelez — pánikban, hírre, vagy alacsony forgalmú időszakban (pl. pre-market, after-hours). A nagyobb spread drágítja a be- és kilépést, és felerősítheti az ármozgásokat.
+
+**Piacradar értelmezés** A Piacradar a spread kiszélesedését a likviditási stressz jeleként kezeli — ilyenkor az árfolyam kevésbé megbízható, és az illikviditás torzíthatja a mozgást.
+
+## Bitcoin Dominance – BTC-dominancia
+Hivatkozás: https://piacradar.eu/glossary.html#btc-dominance
+
+**Mi ez?** A Bitcoin piaci kapitalizációjának aránya a teljes kriptopiac kapitalizációjához képest, százalékban. Azt mutatja, a tőke mennyire koncentrálódik a BTC-ben az altcoinokkal szemben.
+
+**Miért fontos?** Emelkedő dominancia gyakran kockázatkerülést jelez a kriptón belül (a tőke a BTC „biztonságába” menekül); csökkenő dominancia („alt szezon”) nagyobb kockázati étvágyat, az altcoinok felülteljesítését. A ciklus-pozíció egyik jelzője.
+
+**Piacradar értelmezés** A Piacradar a BTC-dominanciát a kriptón belüli kockázati rotáció jelzőjeként használja — a BTC és az altcoinok relatív erejének kontextusát adja.
+
 ## Bitcoin ETF – Spot BTC ETF
 Hivatkozás: https://piacradar.eu/glossary.html#btc-etf
 
@@ -98,6 +125,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#building-permits
 
 **Piacradar értelmezés** A Piacradar a Building Permits adatot a lakáspiaci ciklus korai jelzőjeként használja.
 
+## Bull Market / Bear Market – Bika- és medvepiac
+Hivatkozás: https://piacradar.eu/glossary.html#bull-bear-market
+
+**Mi ez?** Bull market: tartós emelkedő piaci trend. Bear market: a csúcstól mért 20%-ot meghaladó esés. Korrekció: 10% és 20% közötti visszaesés. Ezek a küszöbök a piaci szakaszt írják le — szemben a bullish/bearish kifejezésekkel, amelyek rövid távú hangulatra utalnak.
+
+**Miért fontos?** A -10%-os (korrekció) és -20%-os (medvepiac) határ átlépése médianarratívát és befektetői pszichológiát mozgat. A medvepiac gyakran recesszióval, likviditásszűküléssel vagy kamatemelési ciklussal jár együtt, a korrekció viszont egészséges bull marketben is előfordul.
+
+**Piacradar értelmezés** A Piacradar ezeket a küszöböket a gazdasági ciklus kontextusában értelmezi. A -10%/-20% technikai határ, nem önmagában fordulópont: a kérdés mindig az, hogy fundamentális ok (lassulás, kamat) vagy átmeneti pánik áll mögötte.
+
 ## Bullish / Bearish – Bikás / Medvés
 Hivatkozás: https://piacradar.eu/glossary.html#bullish-bearish
 
@@ -134,6 +170,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#capex
 
 **Piacradar értelmezés** Earnings call‑okban a „capex guide" kulcsjelzés: a kérdés mindig az, hogy a beruházás growth story‑t épít, vagy rövid távon rontja a free cash flow‑t. A capex‑szint a ciklusérzékenység egyik legjobb indikátora.
 
+## Capitulation / Dead Cat Bounce
+Hivatkozás: https://piacradar.eu/glossary.html#capitulation
+
+**Mi ez?** Capitulation (kapituláció): a befektetők tömeges, pánikszerű feladása az esés végső szakaszában, gyakran kiugró forgalommal — sokszor a mélypont közelében. Dead cat bounce (döglött macska pattanás): rövid, megtévesztő felpattanás egy tartós lejtmenetben, amelyet újabb esés követ.
+
+**Miért fontos?** A kapituláció gyakran (de nem mindig) közel van a piaci aljhoz, mert a „gyenge kezek” kiszálltak. A dead cat bounce viszont csapda: a felpattanást tévesen fordulatnak nézik, miközben a trend lefelé tart.
+
+**Piacradar értelmezés** A Piacradar e fogalmakat óvatosan, megerősítő jelek mellett használja — sem a pánik, sem egy felpattanás önmagában nem fordulópont; a forgalom és a piaci szélesség (breadth) adja a kontextust.
+
 ## Carry Trade
 Hivatkozás: https://piacradar.eu/glossary.html#carry-trade
 
@@ -143,6 +188,15 @@ A carry trade alacsony kamatozású devizákból finanszírozott befektetés mag
 Hivatkozás: https://piacradar.eu/glossary.html#chip-export-control
 
 A chip-export korlátozások az USA és szövetségesei által bevezetett szabályok, amelyek megakadályozzák a fejlett félvezetők és gyártástechnológiák exportját bizonyos országokba, elsősorban Kínába. Ezek a korlátozások közvetlenül érintik a félvezetőipart, a technológiai ellátási láncokat és a geopolitikai erőviszonyokat. A piac gyakran erősen reagál a szabályozás változásaira.
+
+## Circuit Breaker – Kereskedési megszakító
+Hivatkozás: https://piacradar.eu/glossary.html#circuit-breaker
+
+**Mi ez?** Automatikus szabály, amely átmenetileg leállítja a kereskedést, ha egy index vagy részvény túl gyorsan, túl nagyot esik. Az S&P 500-nál három szint van: -7%, -13% (rövid szünet) és -20% (a napi kereskedés leállítása). Egyedi részvényeknél is van hasonló (LULD) mechanizmus.
+
+**Miért fontos?** A circuit breaker célja a pánikeladások megfékezése és a rendezett árazás helyreállítása. Aktiválása rendkívüli piaci stresszt jelez — ritka, de erős figyelmeztető jel.
+
+**Piacradar értelmezés** A Piacradar a circuit breaker aktiválását kivételes eseményként kezeli, amely flash crash-t vagy rendszerszintű pánikot jelez — a mozgás ilyenkor technikai és érzelmi, nem fundamentális.
 
 ## Commodities
 Hivatkozás: https://piacradar.eu/glossary.html#commodity
@@ -213,6 +267,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#delta
 
 **Piacradar értelmezés** A Piacradar a delta-t a dealer-hedging kontextusában kezeli — a GEX (gamma exposure) és a nettó delta pozícionálás piaci hatása releváns.
 
+## Depeg – Rögzítés elvesztése
+Hivatkozás: https://piacradar.eu/glossary.html#depeg
+
+**Mi ez?** Amikor egy stablecoin vagy rögzített árfolyamú eszköz elveszíti a célértékét (pl. egy USD-stablecoin nem 1 dollárt ér). Lehet átmeneti (likviditási stressz) vagy végzetes (a fedezet vagy a mechanizmus összeomlása).
+
+**Miért fontos?** Egy stablecoin depegje bizalmi válságot és tovagyűrűző likvidálásokat indíthat a teljes kriptopiacon. A Terra/UST 2022-es depegje ~60 milliárd dollárt törölt el és láncreakciót okozott (Celsius, 3AC).
+
+**Piacradar értelmezés** A Piacradar a depeget rendszerszintű kockázati jelzésként kezeli — egy nagy stablecoin tartós eltérése a fedezet minőségéről és a piaci likviditásról árulkodik.
+
 ## Dividend – Osztalék
 Hivatkozás: https://piacradar.eu/glossary.html#dividend
 
@@ -236,6 +299,24 @@ Hivatkozás: https://piacradar.eu/glossary.html#dovish
 
 A "dovish" kommunikáció lazább monetáris politikát jelez: alacsonyabb kamatok, több likviditás, nagyobb kockázati étvágy. A tech és a kripto különösen érzékeny rá.
 
+## Drawdown – Visszaesés a csúcstól
+Hivatkozás: https://piacradar.eu/glossary.html#drawdown
+
+**Mi ez?** Egy eszköz vagy portfólió csúcsról mért százalékos esése a legutóbbi mélypontig. A maximális drawdown (max DD) a teljes időszak legnagyobb, csúcstól aljáig tartó esését mutatja.
+
+**Miért fontos?** A drawdown a kockázat és a fájdalom valós mérőszáma: nem csak a hozam, hanem a megtett út számít. Egy -50%-os drawdownból +100% hozam kell a visszatéréshez. A track record megítélésében a max drawdown legalább annyira fontos, mint a hozam.
+
+**Piacradar értelmezés** A Piacradar a drawdownt a kockázat és a teljesítmény őszinte mérőszámaként kezeli — a hozam mellett a megtett út mélysége adja a teljes képet.
+
+## Durable Goods Orders – Tartós cikkek rendelései
+Hivatkozás: https://piacradar.eu/glossary.html#durable-goods
+
+**Mi ez?** A tartós fogyasztási és tőkejavak (gépek, járművek, repülőgépek, berendezések) új rendeléseinek havi változása az USA-ban. Gyakran közlik a volatilis szállítási és repülőgép-tételek nélküli „core” verziót is.
+
+**Miért fontos?** Vezető indikátor a vállalati beruházási kedvről és az ipari ciklusról. Erős core durable goods → bővülő beruházás és bizalom; gyengülő adat → óvatosság, lassuló capex.
+
+**Piacradar értelmezés** A Piacradar a core (repülőgép nélküli, nem védelmi) tőkejószág-rendeléseket figyeli, mert ez a vállalati beruházás (capex) egyik legjobb előrejelzője.
+
 ## Duration – Duráció
 Hivatkozás: https://piacradar.eu/glossary.html#duration
 
@@ -244,6 +325,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#duration
 **Miért fontos?** Emelkedő kamatkörnyezetben a hosszú durációjú kötvények (és részvények — pl. tech/growth) nagyot esnek. Csökkenő kamatkörnyezetben pont fordítva: a hosszú durációjú eszközök a nyertesek.
 
 **Piacradar értelmezés** A Piacradar durációt akkor említ, ha kamatemelkedés vagy -csökkenés közvetlenül hat az eszközárakra — a 'long duration trade' jellemzően a tech szektorra utal.
+
+## DXY – Dollárindex
+Hivatkozás: https://piacradar.eu/glossary.html#dxy
+
+**Mi ez?** A dollár erejét méri hat fő devizából álló kosárhoz képest (a legnagyobb súly az euró). A globális dollárerő legfontosabb benchmarkja.
+
+**Miért fontos?** Erős DXY nyomás alá helyezi a feltörekvő piacokat (EM), a dollárban árazott nyersanyagokat, az aranyat és a multinacionális cégek bevételét; gyengülő DXY fordítva hat. Risk-off időszakban a dollár gyakran maga is menedékként erősödik.
+
+**Piacradar értelmezés** A Piacradar a DXY-t a forex, az EM, az arany és a nyersanyagok mozgásának közös magyarázó tényezőjeként használja — sok napi mozgás a dollár irányából érthető meg leggyorsabban.
 
 ## Earnings Beat – Várakozások feletti eredmény
 Hivatkozás: https://piacradar.eu/glossary.html#earnings-beat
@@ -342,6 +432,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#gdp
 
 A GDP (bruttó hazai termék) egy ország gazdasági teljesítményének legfontosabb mérőszáma. A GDP növekedése a gazdasági aktivitás bővülését, csökkenése pedig lassulást vagy recessziót jelez. A vártnál jobb GDP-adat erősítheti a részvénypiacokat és növelheti a hozamokat, míg a gyenge adat risk-off hangulatot válthat ki. A GDP különösen fontos a jegybanki döntéshozatal szempontjából.
 
+## Gold – Arany
+Hivatkozás: https://piacradar.eu/glossary.html#gold
+
+**Mi ez?** Befektetési eszköz és klasszikus értékmegőrző, amelyet unciánként (troy ounce), XAU/USD jegyzésben áraznak. Kitettség szerezhető fizikai formában, arany-ETF-en (pl. GLD) vagy határidős kontraktuson keresztül.
+
+**Miért fontos?** Az arany a piac egyik fő menedékeszköze (safe haven): risk-off, magas infláció vagy geopolitikai feszültség idején keresletet kap. Jellemzően fordítottan mozog a reálkamatokkal és a dollárral (DXY), a jegybanki vásárlások pedig tartós keresleti tényezőt jelentenek.
+
+**Piacradar értelmezés** A Piacradar az aranyat akkor emeli ki, ha menedék-szerepe kerül előtérbe, vagy ha a reálkamat- és DXY-mozgás magyarázza az árat. Tőzsdei stressznél a határidős margin-követelmény emelése kényszerlikvidálást (margin call) is okozhat — ilyenkor a mozgás technikai, nem fundamentális.
+
 ## Governance Token – Szavazati token
 Hivatkozás: https://piacradar.eu/glossary.html#governance-token
 
@@ -406,6 +505,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#implied-volatility
 **Miért fontos?** IV crush: earnings vagy makroadat után az IV gyakran összeesik, ami az opciók értékét csökkenti — még akkor is, ha az irány helyes volt. Magas IV = drága biztosítás. Az IV rank és IV percentile jelzi, hogy a jelenlegi volatilitás mennyire extrém a múlthoz képest.
 
 **Piacradar értelmezés** A Piacradar az IV-t a VIX kontextusában és earnings-szezon idején emeli ki — az IV szint jelzi, mekkora mozgást áraz a piac.
+
+## Industrial Production – Ipari termelés
+Hivatkozás: https://piacradar.eu/glossary.html#industrial-production
+
+**Mi ez?** Az ipar (feldolgozóipar, bányászat, közüzemek) tényleges kibocsátásának havi változása. A kapacitáskihasználtsággal (capacity utilization) együtt közlik.
+
+**Miért fontos?** A reálgazdasági aktivitás kemény (hard) adata, szemben a felmérés-alapú PMI-vel. Tartós csökkenés ipari recessziót jelez; a magas kapacitáskihasználtság inflációs nyomásra utalhat.
+
+**Piacradar értelmezés** A Piacradar az ipari termelést a PMI puha adatának megerősítésére vagy cáfolatára használja — ha a kettő szétválik, az fordulópontot jelezhet.
 
 ## Infláció – Áremelkedés
 Hivatkozás: https://piacradar.eu/glossary.html#inflacio
@@ -472,6 +580,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#jolts
 
 **Piacradar értelmezés** A Piacradar a JOLTS adatot a munkaerőpiaci túlhevülés vagy lehűlés jelzőjeként használja.
 
+## Leverage – Tőkeáttét
+Hivatkozás: https://piacradar.eu/glossary.html#leverage
+
+**Mi ez?** Idegen (kölcsön) tőke bevonása a pozíció méretének felnagyítására. Megjelenhet margin-kereskedésként, derivatívákon (opció, futures, swap) keresztül, vagy tőkeáttételes ETF-ekben. A tőkeáttét a nyereséget és a veszteséget egyaránt felnagyítja.
+
+**Miért fontos?** A tőkeáttét felgyorsítja a piaci mozgásokat: amikor egy ár ellene fordul, margin call-ok és kényszerlikvidálások indulnak, amelyek további eladást generálnak — ez láncreakcióvá válhat. A túlzott, rendszerszintű tőkeáttét a legtöbb nagy pénzügyi válság közös eleme.
+
+**Piacradar értelmezés** A Piacradar a tőkeáttételt akkor emeli ki, ha kényszerlikvidálás vagy túlzott pozícionáltság technikai (nem fundamentális) mozgást okoz. Ilyenkor az árváltozás nem új információt tükröz, hanem a tőkeáttét leépülését.
+
 ## LNG
 Hivatkozás: https://piacradar.eu/glossary.html#lng
 
@@ -494,6 +611,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#m2-money-supply
 **Miért fontos?** Gyorsuló pénzmennyiség inflációs nyomást jelezhet, csökkenő pénzmennyiség szigorodó pénzügyi feltételeket.
 
 **Piacradar értelmezés** A Piacradar az M2 változását a likviditási ciklus egyik legjobb mutatójaként használja.
+
+## Magnificent Seven (Mag7)
+Hivatkozás: https://piacradar.eu/glossary.html#magnificent-seven
+
+**Mi ez?** Hét nagy amerikai technológiai cég gyűjtőneve: Apple, Microsoft, Alphabet (Google), Amazon, Nvidia, Meta és Tesla. A megnevezés 2023-ban terjedt el, és az AI-narratíva fő hordozóit jelöli.
+
+**Miért fontos?** Ez a hét cég adja az S&P 500 és a Nasdaq teljesítményének aránytalanul nagy részét, ezért index-koncentrációt okoznak: ha a Mag7 mozog, gyakran az egész index velük mozog. Az earnings-ük a teljes piaci hangulatot meghatározhatja.
+
+**Piacradar értelmezés** A Piacradar a Mag7 jelentéseit és mozgásait kiemelt piacmozgató tényezőként kezeli. Ugyanakkor jelzi a koncentráció kockázatát is: néhány név gyengélkedése az egész indexet lehúzhatja, miközben a szélesebb piac stabil.
 
 ## Margin Call – Fedezeti felhívás
 Hivatkozás: https://piacradar.eu/glossary.html#margin-call
@@ -770,7 +896,7 @@ Hivatkozás: https://piacradar.eu/glossary.html#roe
 **Piacradar értelmezés** A Piacradar vállalati elemzéseknél az ROE-t a jövedelmezőség egyik fő mutatójaként használja, különösen pénzügyi szektorbeli cégeknél.
 
 ## Safe haven
-Hivatkozás: https://piacradar.eu/glossary.html#safe_heaven
+Hivatkozás: https://piacradar.eu/glossary.html#safe-haven
 
 Röviden: olyan eszköz, amelyet a piac jellemzően biztonságos menedéknek tekint stressz, bizonytalanság vagy risk‑off időszakokban. Safe havennek azokat az eszközöket hívjuk, amelyekbe a befektetők jellemzően „menekülnek”, amikor nő a bizonytalanság, emelkedik a volatilitás, vagy romlik a kockázatvállalási étvágy (risk‑off környezet). Ilyenkor a tőke a kockázatosabb eszközökből (részvények, high yield, EM, kockázatosabb devizák) a biztonságosabbnak tartott eszközök felé áramlik. Amikor a kommentárokban azt látod, hogy „flight to safety” vagy „flight to quality” zajlik, az azt jelenti, hogy a befektetők safe haven eszközök felé mozdulnak.
 
@@ -801,6 +927,15 @@ Hivatkozás: https://piacradar.eu/glossary.html#sep
 Hivatkozás: https://piacradar.eu/glossary.html#short-interest
 
 A short interest a shortolt részvények arányát mutatja. A magas short interest short squeeze potenciált jelez.
+
+## Short Squeeze / Gamma Squeeze
+Hivatkozás: https://piacradar.eu/glossary.html#short-squeeze
+
+**Mi ez?** Short squeeze: amikor egy emelkedő árfolyam a shortolókat veszteség mellett pozíciózárásra (visszavásárlásra) kényszeríti, ami tovább hajtja az árat felfelé. Gamma squeeze: amikor tömeges call-vásárlás miatt a market makerek delta-hedgingként részvényt kénytelenek venni, ami öngerjesztő emelkedést okoz.
+
+**Miért fontos?** Mindkettő öngerjesztő, technikai eredetű felfelé spirál, amely elszakad a fundamentumoktól. A magas short interest (short squeeze) vagy a koncentrált, rövid lejáratú call-pozíció (gamma squeeze) a gyúanyag. A GameStop 2021 a tankönyvi példa.
+
+**Piacradar értelmezés** A Piacradar squeeze-t akkor említ, ha a mozgás oka technikai (pozíciókényszer), nem hír vagy eredmény — ilyenkor a felpattanás gyors, de gyakran nem tartós.
 
 ## Soft Landing
 Hivatkozás: https://piacradar.eu/glossary.html#soft-landing
