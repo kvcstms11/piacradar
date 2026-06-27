@@ -18,14 +18,14 @@
     ]
   },
   {
-  "title": "AMC (After Market Close)",
-  "slug": "amc",
-  "sections": [
-    {
-      "title": "",
-      "text": "Az amerikai tőzsdei zárás utáni időszakban (16:00 ET után, magyar idő szerint 22:00 után) közzétett vállalati gyorsjelentés. A piac kezdeti reakciója az after-hours kereskedésben látható, de a teljes irány csak a következő napi nyitáskor (BMO) tisztázódik. A nagy technológiai cégek (Microsoft, Apple, Amazon, Meta, Alphabet, Nvidia) jellemzően AMC jelentenek, mert a kereskedés végén nincs mozgó likviditás ami zavarná az árazást. Ellentéte: BMO (nyitás előtt)."
-    }
-  ]
+    "slug": "amc",
+    "title": "AMC (After Market Close)",
+    "sections": [
+      {
+        "title": "",
+        "text": "Az amerikai tőzsdei zárás utáni időszakban (16:00 ET után, magyar idő szerint 22:00 után) közzétett vállalati gyorsjelentés. A piac kezdeti reakciója az after-hours kereskedésben látható, de a teljes irány csak a következő napi nyitáskor (BMO) tisztázódik. A nagy technológiai cégek (Microsoft, Apple, Amazon, Meta, Alphabet, Nvidia) jellemzően AMC jelentenek, mert a kereskedés végén nincs mozgó likviditás ami zavarná az árazást. Ellentéte: BMO (nyitás előtt)."
+      }
+    ]
   },
   {
     "slug": "antitrust",
@@ -82,14 +82,50 @@
     ]
   },
   {
-  "title": "BMO (Before Market Open)",
-  "slug": "bmo",
-  "sections": [
-    {
-      "title": "",
-      "text": "Az amerikai tőzsdei nyitás előtti időszakban (jellemzően 06:00–09:30 ET, magyar idő szerint 12:00–15:30) közzétett vállalati gyorsjelentés. A piac aznap kora reggel reagálhat az adatokra a pre-market kereskedésben, így a BMO earnings tipikusan korán meghatározza az adott részvény napi irányát. A bankok, fogyasztói cégek és néhány nagy iparvállalat (pl. Coca-Cola, Visa, JPMorgan) jellemzően BMO jelent. Ellentéte: AMC (zárás után)."
-    }
-  ]
+    "slug": "beta",
+    "title": "Beta – Béta",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Egy eszköz piaci mozgásokra való érzékenységét méri a piaci átlaghoz (jellemzően S&P 500) képest. Béta 1 = a piaccal együtt mozog; 1 felett = nagyobb kilengés (volatilisabb); 1 alatt = csillapítottabb mozgás; negatív béta = ellentétes irányú mozgás."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A magas béta részvények (pl. tech, growth) risk-on környezetben felülteljesítenek, esésben nagyobbat zuhannak. Az alacsony béta, defenzív nevek (közüzem, fogyasztási alap) stabilabbak stresszben. A portfólió bétája a piaci kitettség mértékét mutatja."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a bétát a szektorrotáció és a kockázati étvágy kontextusában használja — risk-on idején a magas béta, risk-off idején az alacsony béta nevek vannak előtérben."
+      }
+    ]
+  },
+  {
+    "slug": "bid-ask-spread",
+    "title": "Bid-Ask Spread – Vételi-eladási különbözet",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A legjobb vételi ár (bid) és a legjobb eladási ár (ask) közötti különbség. A likviditás és a kereskedési költség közvetlen mérőszáma: szűk spread = likvid piac, széles spread = illikvid vagy stresszes piac."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A spread hirtelen kiszélesedése likviditás-elapadást jelez — pánikban, hírre, vagy alacsony forgalmú időszakban (pl. pre-market, after-hours). A nagyobb spread drágítja a be- és kilépést, és felerősítheti az ármozgásokat."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a spread kiszélesedését a likviditási stressz jeleként kezeli — ilyenkor az árfolyam kevésbé megbízható, és az illikviditás torzíthatja a mozgást."
+      }
+    ]
+  },
+  {
+    "slug": "bmo",
+    "title": "BMO (Before Market Open)",
+    "sections": [
+      {
+        "title": "",
+        "text": "Az amerikai tőzsdei nyitás előtti időszakban (jellemzően 06:00–09:30 ET, magyar idő szerint 12:00–15:30) közzétett vállalati gyorsjelentés. A piac aznap kora reggel reagálhat az adatokra a pre-market kereskedésben, így a BMO earnings tipikusan korán meghatározza az adott részvény napi irányát. A bankok, fogyasztói cégek és néhány nagy iparvállalat (pl. Coca-Cola, Visa, JPMorgan) jellemzően BMO jelent. Ellentéte: AMC (zárás után)."
+      }
+    ]
   },
   {
     "slug": "boe",
@@ -118,6 +154,24 @@
       {
         "title": "",
         "text": "A Brent a globális olajpiac egyik legfontosabb benchmarkja. Az árfolyama meghatározza a nemzetközi olajkereskedelmet, és erősen befolyásolja az inflációs várakozásokat és a részvénypiaci szektorrotációt. A Brent ármozgásai különösen érzékenyek az OPEC-döntésekre, geopolitikai feszültségekre és a globális kereslet változásaira."
+      }
+    ]
+  },
+  {
+    "slug": "btc-dominance",
+    "title": "Bitcoin Dominance – BTC-dominancia",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A Bitcoin piaci kapitalizációjának aránya a teljes kriptopiac kapitalizációjához képest, százalékban. Azt mutatja, a tőke mennyire koncentrálódik a BTC-ben az altcoinokkal szemben."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Emelkedő dominancia gyakran kockázatkerülést jelez a kriptón belül (a tőke a BTC „biztonságába” menekül); csökkenő dominancia („alt szezon”) nagyobb kockázati étvágyat, az altcoinok felülteljesítését. A ciklus-pozíció egyik jelzője."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a BTC-dominanciát a kriptón belüli kockázati rotáció jelzőjeként használja — a BTC és az altcoinok relatív erejének kontextusát adja."
       }
     ]
   },
@@ -154,6 +208,24 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar a Building Permits adatot a lakáspiaci ciklus korai jelzőjeként használja."
+      }
+    ]
+  },
+  {
+    "slug": "bull-bear-market",
+    "title": "Bull Market / Bear Market – Bika- és medvepiac",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Bull market: tartós emelkedő piaci trend. Bear market: a csúcstól mért 20%-ot meghaladó esés. Korrekció: 10% és 20% közötti visszaesés. Ezek a küszöbök a piaci szakaszt írják le — szemben a bullish/bearish kifejezésekkel, amelyek rövid távú hangulatra utalnak."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A -10%-os (korrekció) és -20%-os (medvepiac) határ átlépése médianarratívát és befektetői pszichológiát mozgat. A medvepiac gyakran recesszióval, likviditásszűküléssel vagy kamatemelési ciklussal jár együtt, a korrekció viszont egészséges bull marketben is előfordul."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar ezeket a küszöböket a gazdasági ciklus kontextusában értelmezi. A -10%/-20% technikai határ, nem önmagában fordulópont: a kérdés mindig az, hogy fundamentális ok (lassulás, kamat) vagy átmeneti pánik áll mögötte."
       }
     ]
   },
@@ -230,6 +302,24 @@
     ]
   },
   {
+    "slug": "capitulation",
+    "title": "Capitulation / Dead Cat Bounce",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Capitulation (kapituláció): a befektetők tömeges, pánikszerű feladása az esés végső szakaszában, gyakran kiugró forgalommal — sokszor a mélypont közelében. Dead cat bounce (döglött macska pattanás): rövid, megtévesztő felpattanás egy tartós lejtmenetben, amelyet újabb esés követ."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A kapituláció gyakran (de nem mindig) közel van a piaci aljhoz, mert a „gyenge kezek” kiszálltak. A dead cat bounce viszont csapda: a felpattanást tévesen fordulatnak nézik, miközben a trend lefelé tart."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar e fogalmakat óvatosan, megerősítő jelek mellett használja — sem a pánik, sem egy felpattanás önmagában nem fordulópont; a forgalom és a piaci szélesség (breadth) adja a kontextust."
+      }
+    ]
+  },
+  {
     "slug": "carry-trade",
     "title": "Carry Trade",
     "sections": [
@@ -246,6 +336,24 @@
       {
         "title": "",
         "text": "A chip-export korlátozások az USA és szövetségesei által bevezetett szabályok, amelyek megakadályozzák a fejlett félvezetők és gyártástechnológiák exportját bizonyos országokba, elsősorban Kínába. Ezek a korlátozások közvetlenül érintik a félvezetőipart, a technológiai ellátási láncokat és a geopolitikai erőviszonyokat. A piac gyakran erősen reagál a szabályozás változásaira."
+      }
+    ]
+  },
+  {
+    "slug": "circuit-breaker",
+    "title": "Circuit Breaker – Kereskedési megszakító",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Automatikus szabály, amely átmenetileg leállítja a kereskedést, ha egy index vagy részvény túl gyorsan, túl nagyot esik. Az S&P 500-nál három szint van: -7%, -13% (rövid szünet) és -20% (a napi kereskedés leállítása). Egyedi részvényeknél is van hasonló (LULD) mechanizmus."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A circuit breaker célja a pánikeladások megfékezése és a rendezett árazás helyreállítása. Aktiválása rendkívüli piaci stresszt jelez — ritka, de erős figyelmeztető jel."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a circuit breaker aktiválását kivételes eseményként kezeli, amely flash crash-t vagy rendszerszintű pánikot jelez — a mozgás ilyenkor technikai és érzelmi, nem fundamentális."
       }
     ]
   },
@@ -388,6 +496,24 @@
     ]
   },
   {
+    "slug": "depeg",
+    "title": "Depeg – Rögzítés elvesztése",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Amikor egy stablecoin vagy rögzített árfolyamú eszköz elveszíti a célértékét (pl. egy USD-stablecoin nem 1 dollárt ér). Lehet átmeneti (likviditási stressz) vagy végzetes (a fedezet vagy a mechanizmus összeomlása)."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Egy stablecoin depegje bizalmi válságot és tovagyűrűző likvidálásokat indíthat a teljes kriptopiacon. A Terra/UST 2022-es depegje ~60 milliárd dollárt törölt el és láncreakciót okozott (Celsius, 3AC)."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a depeget rendszerszintű kockázati jelzésként kezeli — egy nagy stablecoin tartós eltérése a fedezet minőségéről és a piaci likviditásról árulkodik."
+      }
+    ]
+  },
+  {
     "slug": "dividend",
     "title": "Dividend – Osztalék",
     "sections": [
@@ -434,6 +560,42 @@
     ]
   },
   {
+    "slug": "drawdown",
+    "title": "Drawdown – Visszaesés a csúcstól",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Egy eszköz vagy portfólió csúcsról mért százalékos esése a legutóbbi mélypontig. A maximális drawdown (max DD) a teljes időszak legnagyobb, csúcstól aljáig tartó esését mutatja."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A drawdown a kockázat és a fájdalom valós mérőszáma: nem csak a hozam, hanem a megtett út számít. Egy -50%-os drawdownból +100% hozam kell a visszatéréshez. A track record megítélésében a max drawdown legalább annyira fontos, mint a hozam."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a drawdownt a kockázat és a teljesítmény őszinte mérőszámaként kezeli — a hozam mellett a megtett út mélysége adja a teljes képet."
+      }
+    ]
+  },
+  {
+    "slug": "durable-goods",
+    "title": "Durable Goods Orders – Tartós cikkek rendelései",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A tartós fogyasztási és tőkejavak (gépek, járművek, repülőgépek, berendezések) új rendeléseinek havi változása az USA-ban. Gyakran közlik a volatilis szállítási és repülőgép-tételek nélküli „core” verziót is."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Vezető indikátor a vállalati beruházási kedvről és az ipari ciklusról. Erős core durable goods → bővülő beruházás és bizalom; gyengülő adat → óvatosság, lassuló capex."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a core (repülőgép nélküli, nem védelmi) tőkejószág-rendeléseket figyeli, mert ez a vállalati beruházás (capex) egyik legjobb előrejelzője."
+      }
+    ]
+  },
+  {
     "slug": "duration",
     "title": "Duration – Duráció",
     "sections": [
@@ -448,6 +610,24 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar durációt akkor említ, ha kamatemelkedés vagy -csökkenés közvetlenül hat az eszközárakra — a 'long duration trade' jellemzően a tech szektorra utal."
+      }
+    ]
+  },
+  {
+    "slug": "dxy",
+    "title": "DXY – Dollárindex",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A dollár erejét méri hat fő devizából álló kosárhoz képest (a legnagyobb súly az euró). A globális dollárerő legfontosabb benchmarkja."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Erős DXY nyomás alá helyezi a feltörekvő piacokat (EM), a dollárban árazott nyersanyagokat, az aranyat és a multinacionális cégek bevételét; gyengülő DXY fordítva hat. Risk-off időszakban a dollár gyakran maga is menedékként erősödik."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a DXY-t a forex, az EM, az arany és a nyersanyagok mozgásának közös magyarázó tényezőjeként használja — sok napi mozgás a dollár irányából érthető meg leggyorsabban."
       }
     ]
   },
@@ -646,6 +826,24 @@
     ]
   },
   {
+    "slug": "gold",
+    "title": "Gold – Arany",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Befektetési eszköz és klasszikus értékmegőrző, amelyet unciánként (troy ounce), XAU/USD jegyzésben áraznak. Kitettség szerezhető fizikai formában, arany-ETF-en (pl. GLD) vagy határidős kontraktuson keresztül."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Az arany a piac egyik fő menedékeszköze (safe haven): risk-off, magas infláció vagy geopolitikai feszültség idején keresletet kap. Jellemzően fordítottan mozog a reálkamatokkal és a dollárral (DXY), a jegybanki vásárlások pedig tartós keresleti tényezőt jelentenek."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az aranyat akkor emeli ki, ha menedék-szerepe kerül előtérbe, vagy ha a reálkamat- és DXY-mozgás magyarázza az árat. Tőzsdei stressznél a határidős margin-követelmény emelése kényszerlikvidálást (margin call) is okozhat — ilyenkor a mozgás technikai, nem fundamentális."
+      }
+    ]
+  },
+  {
     "slug": "governance-token",
     "title": "Governance Token – Szavazati token",
     "sections": [
@@ -794,6 +992,24 @@
     ]
   },
   {
+    "slug": "industrial-production",
+    "title": "Industrial Production – Ipari termelés",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Az ipar (feldolgozóipar, bányászat, közüzemek) tényleges kibocsátásának havi változása. A kapacitáskihasználtsággal (capacity utilization) együtt közlik."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A reálgazdasági aktivitás kemény (hard) adata, szemben a felmérés-alapú PMI-vel. Tartós csökkenés ipari recessziót jelez; a magas kapacitáskihasználtság inflációs nyomásra utalhat."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az ipari termelést a PMI puha adatának megerősítésére vagy cáfolatára használja — ha a kettő szétválik, az fordulópontot jelezhet."
+      }
+    ]
+  },
+  {
     "slug": "inflacio",
     "title": "Infláció – Áremelkedés",
     "sections": [
@@ -924,6 +1140,24 @@
     ]
   },
   {
+    "slug": "leverage",
+    "title": "Leverage – Tőkeáttét",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Idegen (kölcsön) tőke bevonása a pozíció méretének felnagyítására. Megjelenhet margin-kereskedésként, derivatívákon (opció, futures, swap) keresztül, vagy tőkeáttételes ETF-ekben. A tőkeáttét a nyereséget és a veszteséget egyaránt felnagyítja."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A tőkeáttét felgyorsítja a piaci mozgásokat: amikor egy ár ellene fordul, margin call-ok és kényszerlikvidálások indulnak, amelyek további eladást generálnak — ez láncreakcióvá válhat. A túlzott, rendszerszintű tőkeáttét a legtöbb nagy pénzügyi válság közös eleme."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a tőkeáttételt akkor emeli ki, ha kényszerlikvidálás vagy túlzott pozícionáltság technikai (nem fundamentális) mozgást okoz. Ilyenkor az árváltozás nem új információt tükröz, hanem a tőkeáttét leépülését."
+      }
+    ]
+  },
+  {
     "slug": "lng",
     "title": "LNG",
     "sections": [
@@ -966,6 +1200,24 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar az M2 változását a likviditási ciklus egyik legjobb mutatójaként használja."
+      }
+    ]
+  },
+  {
+    "slug": "magnificent-seven",
+    "title": "Magnificent Seven (Mag7)",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Hét nagy amerikai technológiai cég gyűjtőneve: Apple, Microsoft, Alphabet (Google), Amazon, Nvidia, Meta és Tesla. A megnevezés 2023-ban terjedt el, és az AI-narratíva fő hordozóit jelöli."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Ez a hét cég adja az S&P 500 és a Nasdaq teljesítményének aránytalanul nagy részét, ezért index-koncentrációt okoznak: ha a Mag7 mozog, gyakran az egész index velük mozog. Az earnings-ük a teljes piaci hangulatot meghatározhatja."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a Mag7 jelentéseit és mozgásait kiemelt piacmozgató tényezőként kezeli. Ugyanakkor jelzi a koncentráció kockázatát is: néhány név gyengélkedése az egész indexet lehúzhatja, miközben a szélesebb piac stabil."
       }
     ]
   },
@@ -1518,7 +1770,7 @@
     ]
   },
   {
-    "slug": "safe_heaven",
+    "slug": "safe-haven",
     "title": "Safe haven",
     "sections": [
       {
@@ -1580,6 +1832,24 @@
       {
         "title": "",
         "text": "A short interest a shortolt részvények arányát mutatja. A magas short interest short squeeze potenciált jelez."
+      }
+    ]
+  },
+  {
+    "slug": "short-squeeze",
+    "title": "Short Squeeze / Gamma Squeeze",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Short squeeze: amikor egy emelkedő árfolyam a shortolókat veszteség mellett pozíciózárásra (visszavásárlásra) kényszeríti, ami tovább hajtja az árat felfelé. Gamma squeeze: amikor tömeges call-vásárlás miatt a market makerek delta-hedgingként részvényt kénytelenek venni, ami öngerjesztő emelkedést okoz."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Mindkettő öngerjesztő, technikai eredetű felfelé spirál, amely elszakad a fundamentumoktól. A magas short interest (short squeeze) vagy a koncentrált, rövid lejáratú call-pozíció (gamma squeeze) a gyúanyag. A GameStop 2021 a tankönyvi példa."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar squeeze-t akkor említ, ha a mozgás oka technikai (pozíciókényszer), nem hír vagy eredmény — ilyenkor a felpattanás gyors, de gyakran nem tartós."
       }
     ]
   },
