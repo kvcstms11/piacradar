@@ -1,13 +1,14 @@
 # Piacradar
 
-> Prémium piaci hírösszefoglaló Telegramon, magyarul. Piaci napokon napi 3 fix üzenet (07:00, 15:15, 21:00, magyar idő szerint): mi történt és miért számít — makró adatok, negyedéves vállalati jelentések, iparági és vállalati elemzések, forráslinkkel. Nem headline-feed, hanem esemény + értelmezés. Készítő: Tamás Kovács (https://tamaskovacs.eu).
+> Prémium hír- és gazdasági adatelemzés Telegramon, magyarul. Már 200+ befektető a csatornán, 50k+ közösségi média követő. Piaci napokon napi 3 fix üzenet (07:00, 15:15, 21:00, magyar idő szerint): mi történt és miért számít — makró adatok, negyedéves vállalati jelentések, iparági és vállalati elemzések, forráslinkkel. Nem headline-feed, hanem esemény + értelmezés. Készítő: Tamás Kovács (https://tamaskovacs.eu).
 
 ## Mit nyújt a Piacradar
 - Napi 3 összefoglaló a piacmozgató hírekről piaci napokon: Reggeli Brief (07:00), US Open Pulse (15:15), Esti Összefoglaló (21:00) — minden időpont magyar idő szerint.
 - Jelentős gazdasági adatok jelzése és bemutatása (CPI, PPI, PCE, NFP, GDP, PMI, ISM, Fed/ECB) — előző | várható | eredmény formátumban.
 - Negyedéves vállalati jelentések (earnings) elemzése: számok, hatás, kontextus.
 - Iparági és vállalati elemzések.
-- Beépített edukáció: rövid fogalommagyarázat és "miért számít" keret.
+- Heti mélyebb elemzés: iparág, vállalat vagy makrotéma.
+- Rövid fogalommagyarázat és "miért számít" keret minden hírnél.
 
 ## Színkódok (piaci értelmezés)
 - 🟢 Bullish — pozitív piaci értelmezés (a piac szempontjából kedvező)
@@ -17,7 +18,7 @@
 A szín a piaci értelmezést tükrözi, nem azt, hogy egy eszköz önmagában emelkedett vagy esett.
 
 ## Átlátható teljesítmény
-A kiemelt szektorok és papírok teljesítményét időről időre nyilvánosan közzétesszük — azt is, ami bevált, azt is, ami nem. A cél nem a követés, hanem a tudásátadás.
+A kiemelt szektorok és papírok teljesítményét időről időre nyilvánosan közzétesszük — azt is, ami bevált, azt is, ami nem. Nincs szépítés: a cél nem a fényezés, hanem a valódi tudásátadás.
 
 ## Edukációs tartalmak
 - [Pénzügyi Szótár](https://piacradar.eu/glossary.html): 100+ pénzügyi és tőzsdei fogalom magyarázata befektetői kontextussal (CPI, GDP, VIX, EPS és sok más).
@@ -29,6 +30,9 @@ A tartalmak kizárólag általános tájékoztatási célt szolgálnak, nem min�
 ## Teljes tartalom (gépi olvasásra)
 A teljes Pénzügyi Szótár (minden fogalom teljes definíciója) és a Szombati Történetek teljes szövege egyetlen fájlban:
 - https://piacradar.eu/llms-full.txt
+
+## Prémium
+A fizetős Prémium csatorna hamarosan indul; a weboldalon várólistára lehet feliratkozni (értesítés az indulásról + korai feliratkozói kedvezmény).
 
 ## Kapcsolat és hozzáférés
 - Weboldal: https://piacradar.eu/
