@@ -32,7 +32,7 @@ A teljes Pénzügyi Szótár (minden fogalom teljes definíciója) és a Szombat
 - https://piacradar.eu/llms-full.txt
 
 ## Prémium
-A fizetős Prémium csatorna hamarosan indul; a weboldalon várólistára lehet feliratkozni (értesítés az indulásról + korai feliratkozói kedvezmény).
+A Piacradar tartalma jelenleg minden tag számára ingyenes; a csatorna a későbbiekben fizetős szolgáltatássá válik.
 
 ## Kapcsolat és hozzáférés
 - Weboldal: https://piacradar.eu/
