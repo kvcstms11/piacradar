@@ -21,7 +21,7 @@ A szín a piaci értelmezést tükrözi, nem azt, hogy egy eszköz önmagában e
 A kiemelt szektorok és papírok teljesítményét időről időre nyilvánosan közzétesszük — azt is, ami bevált, azt is, ami nem. Nincs szépítés: a cél nem a fényezés, hanem a valódi tudásátadás.
 
 ## Edukációs tartalmak
-- [Pénzügyi Szótár](https://piacradar.eu/glossary.html): 100+ pénzügyi és tőzsdei fogalom magyarázata befektetői kontextussal (CPI, GDP, VIX, EPS és sok más).
+- [Pénzügyi Szótár](https://piacradar.eu/glossary.html): 138 pénzügyi és tőzsdei fogalom magyarázata befektetői kontextussal (CPI, GDP, VIX, EPS és sok más).
 - [Szombati Történetek](https://piacradar.eu/stories.html): heti történetek piaci összeomlásokról, tőzsdei legendákról és befektetői tanulságokról — minden szombaton új sztori.
 
 ## Fontos / jogi
@@ -32,7 +32,7 @@ A teljes Pénzügyi Szótár (minden fogalom teljes definíciója) és a Szombat
 - https://piacradar.eu/llms-full.txt
 
 ## Prémium
-A Piacradar tartalma jelenleg minden tag számára ingyenes; a csatorna a későbbiekben fizetős szolgáltatássá válik.
+A Piacradar teljes Telegram-tartalma — napi elemzések, heti mélyelemzés, befektetési napló — prémium előfizetéssel érhető el (9,99 € / hó, korai feliratkozóknak kedvezmény). Ingyenes tartalmak: a közösségi média csatornák, valamint a weboldalon a Pénzügyi Szótár és a Szombati Történetek. A weboldalon várólistára lehet feliratkozni.
 
 ## Kapcsolat és hozzáférés
 - Weboldal: https://piacradar.eu/
