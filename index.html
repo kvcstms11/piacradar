@@ -912,37 +912,16 @@ Forrás: [tradingeconomics.com]
         </div>
       </section>
 
-      <!-- PRICING / WAITLIST -->
+      <!-- PRICING -->
       <section id="arazas" class="panel">
-        <div class="kicker"><h2>Prémium — kerülj fel a várólistára</h2></div>
+        <div class="kicker"><h2>Prémium tartalom — most még ingyen</h2></div>
         <div class="box" style="max-width:560px;">
           <p style="color:rgba(255,255,255,.78); font-size:14px;">
-            A fizetős Prémium csatorna hamarosan indul. Iratkozz fel a várólistára: elsőként értesítünk az indulásról, és korai feliratkozói kedvezményt kapsz.
+            A Piacradar prémium tartalmát most minden tag ingyen kapja. A csatorna a későbbiekben fizetős szolgáltatássá válik — addig is teljes hozzáférésed van, és te döntöd el, megéri-e majd az előfizetés.
           </p>
-          <div class="notice" id="wlNotice" role="status" aria-live="polite">Köszönjük — felkerültél a várólistára.</div>
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="6d0dd951-1bfb-4f51-85fb-b0fd46f61d6e" />
-            <input type="hidden" name="subject" value="Piacradar — Prémium várólista feliratkozás" />
-            <input type="hidden" name="from_name" value="Piacradar Waitlist" />
-            <input type="hidden" name="redirect" value="https://piacradar.eu/?wl=1#arazas" />
-            <label for="wl-email">Email cím</label>
-            <input id="wl-email" name="email" type="email" autocomplete="email" required />
-            <div class="consent">
-              <input id="wl-consent" name="consent" type="checkbox" required />
-              <div>
-                Hozzájárulok, hogy a Piacradar a Prémium várólistával kapcsolatos értesítésekhez kezelje az email címemet.
-                <div class="consent-actions">
-                  <a class="btn sm" href="./adatkezeles.html" target="_blank" rel="noopener">Adatkezelési tájékoztató →</a>
-                </div>
-              </div>
-            </div>
-            <div class="cta" style="margin-top:12px;">
-              <button class="btn primary" type="submit">Feliratkozom a várólistára →</button>
-            </div>
-          </form>
-          <p class="muted" style="font-size:13px; margin-top:14px;">
-            Addig is: az ingyenes csatorna nyitva áll — <a href="https://t.me/+Mk5bfbCfUf1lMGE0" target="_blank" rel="noopener" style="color:var(--accent);">csatlakozz itt →</a>
-          </p>
+          <div class="cta" style="margin-top:12px;">
+            <a class="btn primary" href="https://t.me/+Mk5bfbCfUf1lMGE0" target="_blank" rel="noopener">Csatlakozom, amíg ingyenes →</a>
+          </div>
         </div>
       </section>
 
@@ -1066,9 +1045,6 @@ Forrás: [tradingeconomics.com]
       const params = new URLSearchParams(window.location.search);
       if (params.get("sent") === "1") {
         document.getElementById("formNotice")?.classList.add("show");
-      }
-      if (params.get("wl") === "1") {
-        document.getElementById("wlNotice")?.classList.add("show");
       }
     });
 
