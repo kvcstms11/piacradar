@@ -32,7 +32,7 @@ A teljes Pénzügyi Szótár (minden fogalom teljes definíciója) és a Szombat
 - https://piacradar.eu/llms-full.txt
 
 ## Prémium
-A Piacradar teljes Telegram-tartalma — napi elemzések, heti mélyelemzés, befektetési napló — prémium előfizetéssel érhető el (9,99 € / hó, korai feliratkozóknak kedvezmény). Ingyenes tartalmak: a közösségi média csatornák, valamint a weboldalon a Pénzügyi Szótár és a Szombati Történetek. A weboldalon várólistára lehet feliratkozni.
+A Piacradar teljes Telegram-tartalma — napi elemzések, heti mélyelemzés, befektetési napló — prémium előfizetéssel érhető el (9,99 € / hó, korai előfizetőknek kedvezmény). Ingyenes tartalmak: a közösségi média csatornák, valamint a weboldalon a Pénzügyi Szótár és a Szombati Történetek.
 
 ## Kapcsolat és hozzáférés
 - Weboldal: https://piacradar.eu/
