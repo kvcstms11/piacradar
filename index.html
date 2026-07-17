@@ -748,7 +748,7 @@
 
             <div class="cta">
               <a class="btn primary" href="#arazas">
-                Kerülj fel a Prémium várólistára →
+                Nézd meg a Prémiumot →
               </a>
               <a class="btn" href="#hogyan">Hogyan működik? ↓</a>
             </div>
@@ -932,38 +932,18 @@ Forrás: [tradingeconomics.com]
         </div>
       </section>
 
-      <!-- PRICING / WAITLIST -->
+      <!-- PRICING -->
       <section id="arazas" class="panel">
-        <div class="kicker"><h2>Prémium — kerülj fel a várólistára</h2></div>
+        <div class="kicker"><h2>Prémium — hamarosan</h2></div>
         <div class="box" style="max-width:560px;">
           <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;">
             <div style="font-size:34px; font-weight:900; color:var(--accent);">9,99&nbsp;€&nbsp;/&nbsp;hó</div>
-            <div class="muted" style="font-size:13px;">Korai feliratkozóknak kedvezmény.</div>
+            <div class="muted" style="font-size:13px;">Korai előfizetőknek kedvezmény.</div>
           </div>
           <p style="color:rgba(255,255,255,.78); font-size:14px; margin-top:10px;">
-            A Piacradar teljes tartalma — napi elemzések, heti mélyelemzés, befektetési napló — a Prémium csatornában érhető el. Iratkozz fel a várólistára: elsőként értesítünk az indulásról.
+            A Piacradar teljes tartalma — napi elemzések, heti mélyelemzés, befektetési napló — a Prémium csatornában érhető el. Az előfizetés hamarosan indul; a belépési lehetőséget itt találod majd.
           </p>
-          <div class="notice" id="wlNotice" role="status" aria-live="polite">Köszönjük — felkerültél a várólistára.</div>
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="6d0dd951-1bfb-4f51-85fb-b0fd46f61d6e" />
-            <input type="hidden" name="subject" value="Piacradar — Prémium várólista feliratkozás" />
-            <input type="hidden" name="from_name" value="Piacradar Waitlist" />
-            <input type="hidden" name="redirect" value="https://piacradar.eu/?wl=1#arazas" />
-            <label for="wl-email">Email cím</label>
-            <input id="wl-email" name="email" type="email" autocomplete="email" required />
-            <div class="consent">
-              <input id="wl-consent" name="consent" type="checkbox" required />
-              <div>
-                Hozzájárulok, hogy a Piacradar a Prémium várólistával kapcsolatos értesítésekhez kezelje az email címemet.
-                <div class="consent-actions">
-                  <a class="btn sm" href="./adatkezeles.html" target="_blank" rel="noopener">Adatkezelési tájékoztató →</a>
-                </div>
-              </div>
-            </div>
-            <div class="cta" style="margin-top:12px;">
-              <button class="btn primary" type="submit">Feliratkozom a várólistára →</button>
-            </div>
-          </form>
+          <!-- TODO: induláskor ide kerül az előfizetési gomb/link -->
         </div>
       </section>
 
@@ -1094,9 +1074,6 @@ Forrás: [tradingeconomics.com]
       const params = new URLSearchParams(window.location.search);
       if (params.get("sent") === "1") {
         document.getElementById("formNotice")?.classList.add("show");
-      }
-      if (params.get("wl") === "1") {
-        document.getElementById("wlNotice")?.classList.add("show");
       }
     });
 
