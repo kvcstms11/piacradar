@@ -11,7 +11,7 @@ Forrás: https://piacradar.eu/glossary.html
 
 
 ## 10-Year Treasury Yield – 10 éves amerikai hozam
-Hivatkozás: https://piacradar.eu/szotar/ten-year-yield.html
+Hivatkozás: https://piacradar.eu/glossary.html#ten-year-yield
 
 **Mi ez?** A 10 éves amerikai állampapír hozama — a globális pénzügyi rendszer legfontosabb referencia-kamata. Ehhez árazódik a jelzálog, a vállalati hitel és a részvények értékeltsége.
 
@@ -20,7 +20,7 @@ Hivatkozás: https://piacradar.eu/szotar/ten-year-yield.html
 **Piacradar értelmezés** A Piacradar a 10 éves hozamot a részvénypiaci értékeltség és a kockázati étvágy egyik fő magyarázó változójaként követi — a szint mellett a változás sebessége is számít.
 
 ## ADP Employment Report – ADP foglalkoztatottsági jelentés
-Hivatkozás: https://piacradar.eu/szotar/adp.html
+Hivatkozás: https://piacradar.eu/glossary.html#adp
 
 **Mi ez?** Az ADP (Automatic Data Processing) bérszámfejtő cég havi jelentése a magánszektorbeli új munkahelyek számáról. A hivatalos NFP adat előtt 2 nappal jelenik meg, ezért gyakran előrejelzőként kezelik.
 
@@ -29,7 +29,7 @@ Hivatkozás: https://piacradar.eu/szotar/adp.html
 **Piacradar értelmezés** A Piacradar az ADP-t az NFP összefüggésében értelmezi — önmagában nem megbízható előrejelző, de a trend iránya fontos kontextus.
 
 ## AMC (After Market Close)
-Hivatkozás: https://piacradar.eu/szotar/amc.html
+Hivatkozás: https://piacradar.eu/glossary.html#amc
 
 **Mi ez?** A „zárás után” rövidítése: az amerikai tőzsdezárást követően, 16:00 ET után (magyar idő szerint 22:00 után) közzétett vállalati gyorsjelentés. Ellentéte a BMO, vagyis a nyitás előtti közlés.
 
@@ -38,7 +38,7 @@ Hivatkozás: https://piacradar.eu/szotar/amc.html
 **Piacradar értelmezés** A Piacradar az after-hours reakciót előzetes jelzésként kezeli, nem végleges árazásként: a nyitás utáni első óra gyakran érdemben korrigálja az első mozgást, különösen ha a konferenciahíváson újabb információ hangzik el.
 
 ## Antitrust – Trösztellenes eljárás
-Hivatkozás: https://piacradar.eu/szotar/antitrust.html
+Hivatkozás: https://piacradar.eu/glossary.html#antitrust
 
 **Mi ez?** Szabályozói eljárás, amely a piaci verseny fenntartását célozza. Felvásárlásokat blokkolhat, cégeket feldarabolásra kötelezhet, vagy bírságot szabhat ki monopolista magatartásért.
 
@@ -47,7 +47,7 @@ Hivatkozás: https://piacradar.eu/szotar/antitrust.html
 **Piacradar értelmezés** A Piacradar antitrust híreket akkor hozza, ha konkrét ár- vagy üzleti modell hatás van — nem minden szabályozói bejelentésnél.
 
 ## AUM – Kezelt vagyon (Assets Under Management)
-Hivatkozás: https://piacradar.eu/szotar/aum.html
+Hivatkozás: https://piacradar.eu/glossary.html#aum
 
 **Mi ez?** Egy vagyonkezelő (alapkezelő, ETF-szolgáltató, hedge fund) által kezelt eszközök összértéke. Az AUM két forrásból nő: a piaci árfolyamok emelkedéséből és a nettó beáramlásból (új ügyfélpénz mínusz kivonások).
 
@@ -56,7 +56,7 @@ Hivatkozás: https://piacradar.eu/szotar/aum.html
 **Piacradar értelmezés** A Piacradar a vagyonkezelői jelentéseknél az AUM-ot és a nettó beáramlást együtt nézi: a rekord AUM piaci emelkedésből is jöhet, a tartósan erős inflow viszont valódi üzleti lendületet jelez.
 
 ## Average Hourly Earnings – Órabérek
-Hivatkozás: https://piacradar.eu/szotar/average-hourly-earnings.html
+Hivatkozás: https://piacradar.eu/glossary.html#average-hourly-earnings
 
 **Mi ez?** Az amerikai dolgozók átlagos órabérének havi változása. A bérinfláció egyik legfontosabb mutatója.
 
@@ -65,7 +65,7 @@ Hivatkozás: https://piacradar.eu/szotar/average-hourly-earnings.html
 **Piacradar értelmezés** A Piacradar az órabéreket az NFP és a CPI összefüggéseiben értelmezi.
 
 ## Bank of England (BoE)
-Hivatkozás: https://piacradar.eu/szotar/boe.html
+Hivatkozás: https://piacradar.eu/glossary.html#boe
 
 **Mi ez?** Az Egyesült Királyság jegybankja, amely az irányadó kamatot és a mérlegpolitikát határozza meg. Célja a 2%-os infláció. A monetáris tanács évente nyolc alkalommal ül össze kamatdöntésre.
 
@@ -74,7 +74,7 @@ Hivatkozás: https://piacradar.eu/szotar/boe.html
 **Piacradar értelmezés** A Piacradar a BoE-t a bérdinamika és a szolgáltatási infláció felől olvassa, mert ez a két tényező határozza meg a kamatpályát. A vártnál szigorúbb hangvétel jellemzően erősíti a fontot és nyomás alá helyezi a brit államkötvényeket.
 
 ## Bank of Japan (BoJ)
-Hivatkozás: https://piacradar.eu/szotar/boj.html
+Hivatkozás: https://piacradar.eu/glossary.html#boj
 
 **Mi ez?** Japán jegybankja, amely évtizedeken át nulla közeli vagy negatív kamatot és hozamgörbe-kontrollt alkalmazott. A normalizáció felé fordulása a globális pénzügyi rendszer egyik legjelentősebb szerkezeti változása.
 
@@ -83,7 +83,7 @@ Hivatkozás: https://piacradar.eu/szotar/boj.html
 **Piacradar értelmezés** A Piacradar a BoJ döntéseit a japán állampapírhozamok és az USDJPY együttmozgásában követi: az emelkedő JGB-hozam és az erősödő jen a carry pozíciók leépítésének kockázatát jelzi, ami a globális likviditásra is kihat.
 
 ## Beige Book – Fed Beige Book
-Hivatkozás: https://piacradar.eu/szotar/beige-book.html
+Hivatkozás: https://piacradar.eu/glossary.html#beige-book
 
 **Mi ez?** A Fed 12 regionális bankjának gazdasági helyzetet összefoglaló jelentése, amely évente 8 alkalommal jelenik meg, az FOMC-ülések előtt 2 héttel. Kvalitatív adatokra épül (vállalati interjúk, helyi gazdasági jelentések).
 
@@ -92,7 +92,7 @@ Hivatkozás: https://piacradar.eu/szotar/beige-book.html
 **Piacradar értelmezés** A Piacradar a Beige Book kulcsmondatait emeli ki, amelyek a kamatpálya-várakozásokat mozgathatják.
 
 ## Beta – Béta
-Hivatkozás: https://piacradar.eu/szotar/beta.html
+Hivatkozás: https://piacradar.eu/glossary.html#beta
 
 **Mi ez?** Egy eszköz piaci mozgásokra való érzékenységét méri a piaci átlaghoz (jellemzően S&P 500) képest. Béta 1 = a piaccal együtt mozog; 1 felett = nagyobb kilengés (volatilisabb); 1 alatt = csillapítottabb mozgás; negatív béta = ellentétes irányú mozgás.
 
@@ -101,7 +101,7 @@ Hivatkozás: https://piacradar.eu/szotar/beta.html
 **Piacradar értelmezés** A Piacradar a bétát a szektorrotáció és a kockázati étvágy kontextusában használja — risk-on idején a magas béta, risk-off idején az alacsony béta nevek vannak előtérben.
 
 ## Bid-Ask Spread – Vételi-eladási különbözet
-Hivatkozás: https://piacradar.eu/szotar/bid-ask-spread.html
+Hivatkozás: https://piacradar.eu/glossary.html#bid-ask-spread
 
 **Mi ez?** A legjobb vételi ár (bid) és a legjobb eladási ár (ask) közötti különbség. A likviditás és a kereskedési költség közvetlen mérőszáma: szűk spread = likvid piac, széles spread = illikvid vagy stresszes piac.
 
@@ -110,7 +110,7 @@ Hivatkozás: https://piacradar.eu/szotar/bid-ask-spread.html
 **Piacradar értelmezés** A Piacradar a spread kiszélesedését a likviditási stressz jeleként kezeli — ilyenkor az árfolyam kevésbé megbízható, és az illikviditás torzíthatja a mozgást.
 
 ## Biosimilar – Biohasonló gyógyszer
-Hivatkozás: https://piacradar.eu/szotar/biosimilar.html
+Hivatkozás: https://piacradar.eu/glossary.html#biosimilar
 
 **Mi ez?** Egy már engedélyezett biológiai gyógyszer (pl. monoklonális antitest) hatóanyagában és hatásában nagymértékben hasonló, olcsóbb változata, amely az eredeti szabadalmi védettségének lejárta után léphet piacra. A klasszikus generikum biológiai megfelelője.
 
@@ -119,7 +119,7 @@ Hivatkozás: https://piacradar.eu/szotar/biosimilar.html
 **Piacradar értelmezés** A Piacradar a gyógyszeripari jelentéseknél a biosimilar-eróziót és az új termékek felfutását egymással szemben méri — ez a szektor növekedési képletének két serpenyője.
 
 ## Bitcoin Dominance – BTC-dominancia
-Hivatkozás: https://piacradar.eu/szotar/btc-dominance.html
+Hivatkozás: https://piacradar.eu/glossary.html#btc-dominance
 
 **Mi ez?** A Bitcoin piaci kapitalizációjának aránya a teljes kriptopiac kapitalizációjához képest, százalékban. Azt mutatja, a tőke mennyire koncentrálódik a BTC-ben az altcoinokkal szemben.
 
@@ -128,7 +128,7 @@ Hivatkozás: https://piacradar.eu/szotar/btc-dominance.html
 **Piacradar értelmezés** A Piacradar a BTC-dominanciát a kriptón belüli kockázati rotáció jelzőjeként használja — a BTC és az altcoinok relatív erejének kontextusát adja.
 
 ## Bitcoin ETF – Spot BTC ETF
-Hivatkozás: https://piacradar.eu/szotar/btc-etf.html
+Hivatkozás: https://piacradar.eu/glossary.html#btc-etf
 
 **Mi ez?** Olyan tőzsdén kereskedett alap (ETF), amely közvetlenül Bitcoint tart. A spot BTC ETF-ek 2024 januárjában indultak az USA-ban (BlackRock IBIT, Fidelity FBTC, stb.), lehetővé téve, hogy hagyományos brókerszámlán is legyen BTC-kitettség.
 
@@ -137,7 +137,7 @@ Hivatkozás: https://piacradar.eu/szotar/btc-etf.html
 **Piacradar értelmezés** A Piacradar az ETF flow adatokat a BTC árfolyam-mozgások kontextusában használja — ez az intézményi kereslet legközvetlenebb mérőszáma.
 
 ## Bitcoin Halving – Felezés
-Hivatkozás: https://piacradar.eu/szotar/halving.html
+Hivatkozás: https://piacradar.eu/glossary.html#halving
 
 **Mi ez?** Kb. 4 évente a Bitcoin bányászok jutalma megfeleződik. Ez csökkenti az új BTC kibocsátási ütemét, szűkítve a kínálatot. A legutóbbi halving 2024 áprilisában volt.
 
@@ -146,7 +146,7 @@ Hivatkozás: https://piacradar.eu/szotar/halving.html
 **Piacradar értelmezés** A Piacradar a halving ciklust a BTC piaci narratíva részeként kezeli — az aktuális ciklus-pozíció kontextust ad a BTC mozgásokhoz.
 
 ## Blue Chip
-Hivatkozás: https://piacradar.eu/szotar/blue-chip.html
+Hivatkozás: https://piacradar.eu/glossary.html#blue-chip
 
 **Mi ez?** Nagy, stabil, piacvezető, hosszú működési múltú vállalat részvénye — jellemzően nagy kapitalizációjú, likvid, gyakran osztalékfizető papír (pl. a Dow Jones index tagjai). Az elnevezés a póker legértékesebb, kék zsetonjából ered.
 
@@ -155,7 +155,7 @@ Hivatkozás: https://piacradar.eu/szotar/blue-chip.html
 **Piacradar értelmezés** A Piacradar a blue chip kifejezést a stabil, nagy kapitalizációjú piacvezetőkre használja — jellemzően a defenzívebb, indexmeghatározó nevek kontextusában.
 
 ## BMO (Before Market Open)
-Hivatkozás: https://piacradar.eu/szotar/bmo.html
+Hivatkozás: https://piacradar.eu/glossary.html#bmo
 
 **Mi ez?** A „nyitás előtt” rövidítése: az amerikai tőzsdenyitás előtt, jellemzően 6:00 és 9:30 ET között (magyar idő szerint 12:00–15:30) közzétett vállalati gyorsjelentés. Ellentéte az AMC, vagyis a zárás utáni közlés.
 
@@ -164,7 +164,7 @@ Hivatkozás: https://piacradar.eu/szotar/bmo.html
 **Piacradar értelmezés** A Piacradar a nyitás utáni első fél óra stabilizálódását tekinti mérvadónak, mert a pre-market ár gyakran nem tükrözi a valós keresletet. Bankok, fogyasztási és ipari nagyvállalatok jellemzően ebben az ablakban jelentenek.
 
 ## Brent Oil
-Hivatkozás: https://piacradar.eu/szotar/brent.html
+Hivatkozás: https://piacradar.eu/glossary.html#brent
 
 **Mi ez?** Az északi-tengeri kitermelésű kőolaj, a globális olajkereskedelem fő referenciaára. A világ olajszállítmányainak nagyjából kétharmadát ehhez árazzák, határidős jegyzése az ICE-en történik.
 
@@ -173,7 +173,7 @@ Hivatkozás: https://piacradar.eu/szotar/brent.html
 **Piacradar értelmezés** A Piacradar a Brentet inflációs előjelzőként olvassa: a tartós emelkedés a jegybanki kamatpályát szigorúbb irányba tolja, míg a mérséklődés teret ad a lazításnak. A geopolitikai kockázati prémium gyorsan beépül, és gyorsan ki is árazódik.
 
 ## Building Permits – Építési engedélyek
-Hivatkozás: https://piacradar.eu/szotar/building-permits.html
+Hivatkozás: https://piacradar.eu/glossary.html#building-permits
 
 **Mi ez?** Az új építési engedélyek száma, amely előre jelzi a jövőbeli lakásépítési aktivitást.
 
@@ -182,7 +182,7 @@ Hivatkozás: https://piacradar.eu/szotar/building-permits.html
 **Piacradar értelmezés** A Piacradar a Building Permits adatot a lakáspiaci ciklus korai jelzőjeként használja.
 
 ## Bull Market / Bear Market – Bika- és medvepiac
-Hivatkozás: https://piacradar.eu/szotar/bull-bear-market.html
+Hivatkozás: https://piacradar.eu/glossary.html#bull-bear-market
 
 **Mi ez?** Bull market: tartós emelkedő piaci trend. Bear market: a csúcstól mért 20%-ot meghaladó esés. Korrekció: 10% és 20% közötti visszaesés. Ezek a küszöbök a piaci szakaszt írják le — szemben a bullish/bearish kifejezésekkel, amelyek rövid távú hangulatra utalnak.
 
@@ -191,7 +191,7 @@ Hivatkozás: https://piacradar.eu/szotar/bull-bear-market.html
 **Piacradar értelmezés** A Piacradar ezeket a küszöböket a gazdasági ciklus kontextusában értelmezi. A -10%/-20% technikai határ, nem önmagában fordulópont: a kérdés mindig az, hogy fundamentális ok (lassulás, kamat) vagy átmeneti pánik áll mögötte.
 
 ## Bullish / Bearish – Bikás / Medvés
-Hivatkozás: https://piacradar.eu/szotar/bullish-bearish.html
+Hivatkozás: https://piacradar.eu/glossary.html#bullish-bearish
 
 **Mi ez?** Bullish (bikás): emelkedő árfolyamra számító, optimista piaci hozzáállás. Bearish (medvés): csökkenő árfolyamra számító, pesszimista piaci hozzáállás. A bika felfelé öklel, a medve lefelé csap — innen az elnevezés.
 
@@ -200,7 +200,7 @@ Hivatkozás: https://piacradar.eu/szotar/bullish-bearish.html
 **Piacradar értelmezés** A Piacradar emoji rendszere erre épül: 🟢 = bullish (pozitív piaci hatás), 🔴 = bearish (negatív piaci hatás), 🟡 = semleges/vegyes.
 
 ## Buyback – Sajátrészvény-visszavásárlás
-Hivatkozás: https://piacradar.eu/szotar/buyback.html
+Hivatkozás: https://piacradar.eu/glossary.html#buyback
 
 **Mi ez?** A buyback során a vállalat a saját részvényeit vásárolja vissza a piacról, csökkentve a forgalomban lévő részvények számát.
 
@@ -209,7 +209,7 @@ Hivatkozás: https://piacradar.eu/szotar/buyback.html
 **Piacradar értelmezés** A Piacradar a buyback programokat a részvényesi értékteremtés egyik kulcselemeként kezeli.
 
 ## Call – Vételi opció
-Hivatkozás: https://piacradar.eu/szotar/call.html
+Hivatkozás: https://piacradar.eu/glossary.html#call
 
 **Mi ez?** Olyan opciós szerződés, amely jogot ad a tulajdonosnak, hogy egy adott eszközt meghatározott áron (strike price) megvegyen egy adott lejáratig. A call vásárlója az árfolyam emelkedéséből profitál. A covered call stratégiában a részvénytulajdonos call-t ad el prémiumért.
 
@@ -218,7 +218,7 @@ Hivatkozás: https://piacradar.eu/szotar/call.html
 **Piacradar értelmezés** A Piacradar a call aktivitást a piaci pozícionálás részeként kezeli — szokatlan call-vásárlás earnings előtt vagy szektor-szinten releváns jelzés.
 
 ## Capex – Tőkeberuházás
-Hivatkozás: https://piacradar.eu/szotar/capex.html
+Hivatkozás: https://piacradar.eu/glossary.html#capex
 
 **Mi ez?** A capex (capital expenditure) olyan tőkeberuházás, amely hosszabb távon termel értéket: gyár, gépek, adatközpont, hálózat, infrastruktúra, AI‑kapacitás stb. Nem azonnali költségként jelenik meg, hanem aktiválják, és évek alatt értékcsökkenésen keresztül fut át.
 
@@ -227,7 +227,7 @@ Hivatkozás: https://piacradar.eu/szotar/capex.html
 **Piacradar értelmezés** Earnings call‑okban a „capex guide" kulcsjelzés: a kérdés mindig az, hogy a beruházás growth story‑t épít, vagy rövid távon rontja a free cash flow‑t. A capex‑szint a ciklusérzékenység egyik legjobb indikátora.
 
 ## Capitulation / Dead Cat Bounce
-Hivatkozás: https://piacradar.eu/szotar/capitulation.html
+Hivatkozás: https://piacradar.eu/glossary.html#capitulation
 
 **Mi ez?** Capitulation (kapituláció): a befektetők tömeges, pánikszerű feladása az esés végső szakaszában, gyakran kiugró forgalommal — sokszor a mélypont közelében. Dead cat bounce (döglött macska pattanás): rövid, megtévesztő felpattanás egy tartós lejtmenetben, amelyet újabb esés követ.
 
@@ -236,7 +236,7 @@ Hivatkozás: https://piacradar.eu/szotar/capitulation.html
 **Piacradar értelmezés** A Piacradar e fogalmakat óvatosan, megerősítő jelek mellett használja — sem a pánik, sem egy felpattanás önmagában nem fordulópont; a forgalom és a piaci szélesség (breadth) adja a kontextust.
 
 ## Carry Trade
-Hivatkozás: https://piacradar.eu/szotar/carry-trade.html
+Hivatkozás: https://piacradar.eu/glossary.html#carry-trade
 
 **Mi ez?** Stratégia, amelyben a befektető alacsony kamatozású devizában vesz fel hitelt, és magasabb hozamú eszközbe fekteti. A legismertebb változat a jen alapú finanszírozás, amely évtizedeken át a japán nulla közeli kamatokra épült.
 
@@ -245,7 +245,7 @@ Hivatkozás: https://piacradar.eu/szotar/carry-trade.html
 **Piacradar értelmezés** A Piacradar a kamatkülönbözetet és a finanszírozó deviza árfolyamát együtt figyeli: a szűkülő olló és az erősödő jen a kockázatvállalás csökkenését vetíti előre. Az unwind jellemzően a legmagasabb bétájú eszközöket éri el először.
 
 ## Chip Export Controls
-Hivatkozás: https://piacradar.eu/szotar/chip-export-control.html
+Hivatkozás: https://piacradar.eu/glossary.html#chip-export-control
 
 **Mi ez?** Az Egyesült Államok és szövetségesei által bevezetett kiviteli korlátozások, amelyek a fejlett félvezetők, gyártóberendezések és tervezőszoftverek exportját tiltják vagy engedélyhez kötik, elsősorban Kína irányába.
 
@@ -254,7 +254,7 @@ Hivatkozás: https://piacradar.eu/szotar/chip-export-control.html
 **Piacradar értelmezés** A Piacradar a chip-korlátozásokat kétirányú kockázatként kezeli: a szigorítás rövid távon a nagy exportkitettségű gyártókat üti, hosszabb távon viszont a kínai önellátás gyorsulása strukturális versenyt teremthet a jelenlegi piacvezetőknek.
 
 ## Circuit Breaker – Kereskedési megszakító
-Hivatkozás: https://piacradar.eu/szotar/circuit-breaker.html
+Hivatkozás: https://piacradar.eu/glossary.html#circuit-breaker
 
 **Mi ez?** Automatikus szabály, amely átmenetileg leállítja a kereskedést, ha egy index vagy részvény túl gyorsan, túl nagyot esik. Az S&P 500-nál három szint van: -7%, -13% (rövid szünet) és -20% (a napi kereskedés leállítása). Egyedi részvényeknél is van hasonló (LULD) mechanizmus.
 
@@ -263,7 +263,7 @@ Hivatkozás: https://piacradar.eu/szotar/circuit-breaker.html
 **Piacradar értelmezés** A Piacradar a circuit breaker aktiválását kivételes eseményként kezeli, amely flash crash-t vagy rendszerszintű pánikot jelez — a mozgás ilyenkor technikai és érzelmi, nem fundamentális.
 
 ## Commodities
-Hivatkozás: https://piacradar.eu/szotar/commodity.html
+Hivatkozás: https://piacradar.eu/glossary.html#commodity
 
 **Mi ez?** Szabványosított nyersanyagok, amelyekkel tőzsdén kereskednek: energiahordozók, ipari és nemesfémek, mezőgazdasági termékek. Áruk a globális kereslet-kínálat egyensúlyát tükrözi, jellemzően határidős szerződéseken keresztül.
 
@@ -272,7 +272,7 @@ Hivatkozás: https://piacradar.eu/szotar/commodity.html
 **Piacradar értelmezés** A Piacradar a nyersanyagpiacot két rétegben olvassa: az ipari fémek a konjunktúra irányát, az energiahordozók az inflációs nyomást jelzik. Az emelkedő rézár bővülő ipari aktivitást vetít előre, a nemesfémek erősödése inkább kockázatkerülést vagy csökkenő reálhozamot tükröz.
 
 ## Commodity Trading Advisors (CTA)
-Hivatkozás: https://piacradar.eu/szotar/cta.html
+Hivatkozás: https://piacradar.eu/glossary.html#cta
 
 **Mi ez?** Szabályalapú, jellemzően trendkövető stratégiát futtató alapkezelők, amelyek határidős piacokon kereskednek részvényindexeket, kötvényeket, devizákat és nyersanyagokat. A döntéseket modellek hozzák, emberi mérlegelés nélkül, gyakran mozgóátlagokra vagy momentumjelzésekre építve.
 
@@ -281,7 +281,7 @@ Hivatkozás: https://piacradar.eu/szotar/cta.html
 **Piacradar értelmezés** A Piacradar a CTA-pozicionáltságot a technikai szintek melletti kiegészítő kockázatként kezeli: egy kulcs mozgóátlag letörése nem csak technikai jelzés, hanem automatikus eladási hullám kiváltója is lehet, ami magyarázhatja a szokatlanul gyors elmozdulásokat.
 
 ## Consumer Confidence – Fogyasztói bizalom
-Hivatkozás: https://piacradar.eu/szotar/consumer-confidence.html
+Hivatkozás: https://piacradar.eu/glossary.html#consumer-confidence
 
 **Mi ez?** A fogyasztói bizalmi index azt méri, mennyire optimisták vagy pesszimisták a háztartások a gazdaság jövőjével kapcsolatban.
 
@@ -290,7 +290,7 @@ Hivatkozás: https://piacradar.eu/szotar/consumer-confidence.html
 **Piacradar értelmezés** A Piacradar a bizalmi indexet a fogyasztási ciklus előrejelzőjeként használja: tartós csökkenés recessziós kockázatot jelez.
 
 ## Core Infláció – Maginfláció
-Hivatkozás: https://piacradar.eu/szotar/core-inflacio.html
+Hivatkozás: https://piacradar.eu/glossary.html#core-inflacio
 
 **Mi ez?** A maginfláció az infláció élelmiszer- és energiaárak nélküli változása.
 
@@ -299,7 +299,7 @@ Hivatkozás: https://piacradar.eu/szotar/core-inflacio.html
 **Piacradar értelmezés** A Piacradar a Core inflációt a monetáris politika egyik legfontosabb indikátoraként kezeli.
 
 ## Core PCE – Maginfláció
-Hivatkozás: https://piacradar.eu/szotar/core-pce.html
+Hivatkozás: https://piacradar.eu/glossary.html#core-pce
 
 **Mi ez?** A Core PCE a személyes fogyasztási kiadások változását méri, az élelmiszer- és energiaárak nélkül. A Fed elsődleges inflációs mutatója.
 
@@ -308,7 +308,7 @@ Hivatkozás: https://piacradar.eu/szotar/core-pce.html
 **Piacradar értelmezés** A Piacradar a Core PCE-t a CPI mellett a monetáris politika legfontosabb indikátoraként kezeli. A vártnál magasabb adat szigorítást, a vártnál alacsonyabb lazítást jelez.
 
 ## CPI – Fogyasztói árindex
-Hivatkozás: https://piacradar.eu/szotar/cpi.html
+Hivatkozás: https://piacradar.eu/glossary.html#cpi
 
 **Mi ez?** A CPI azt méri, mennyivel változtak a fogyasztói árak egy év alatt. A legszélesebb körben használt inflációs mutató, amely az élelmiszer-, energia- és szolgáltatásárakat is tartalmazza.
 
@@ -317,7 +317,7 @@ Hivatkozás: https://piacradar.eu/szotar/cpi.html
 **Piacradar értelmezés** A Piacradar a CPI-t a várakozásokhoz viszonyítja: a vártnál magasabb adat szigorúbb kamatpályát jelez (bearish kötvény, vegyes részvény), a vártnál alacsonyabb adat lazább monetáris környezetet vetít előre (bullish kötvény, vegyes részvény).
 
 ## Current Account
-Hivatkozás: https://piacradar.eu/szotar/current-account.html
+Hivatkozás: https://piacradar.eu/glossary.html#current-account
 
 **Mi ez?** A folyó fizetési mérleg egy ország külfölddel szembeni áru-, szolgáltatás-, jövedelem- és transzferforgalmának egyenlege. Negyedévente publikálják, és jellemzően a GDP százalékában értelmezik, mert így nemzetközileg összehasonlítható.
 
@@ -326,7 +326,7 @@ Hivatkozás: https://piacradar.eu/szotar/current-account.html
 **Piacradar értelmezés** A Piacradar a folyó mérleget devizakockázati mérőszámként olvassa: a magas hiánnyal működő gazdaságok devizája szigorodó globális kondíciók idején jellemzően gyengébben teljesít. A feltörekvő piacok megítélésében ez az egyik legfontosabb szűrő.
 
 ## Defenzív / Ciklikus szektorok
-Hivatkozás: https://piacradar.eu/szotar/defenziv-ciklikus.html
+Hivatkozás: https://piacradar.eu/glossary.html#defenziv-ciklikus
 
 **Mi ez?** Defenzív szektor: kereslete a gazdasági ciklustól nagyjából függetlenül stabil — egészségügy, közüzemek, alapvető fogyasztási cikkek (élelmiszer, háztartási termékek). Ciklikus szektor: kereslete a gazdasággal együtt hullámzik — autóipar, luxus, utazás, ipar, félvezetők, diszkrecionális fogyasztás.
 
@@ -335,7 +335,7 @@ Hivatkozás: https://piacradar.eu/szotar/defenziv-ciklikus.html
 **Piacradar értelmezés** A Piacradar a defenzív–ciklikus rotációt a piaci ciklusérzet egyik legjobb jelzőjeként használja — gyakran hamarabb mozdul, mint a makróadatok.
 
 ## DeFi – Decentralized Finance
-Hivatkozás: https://piacradar.eu/szotar/defi.html
+Hivatkozás: https://piacradar.eu/glossary.html#defi
 
 **Mi ez?** Decentralizált pénzügyi szolgáltatások összessége, amelyek blokkláncon működnek, hagyományos közvetítők (bankok, brókerek) nélkül. Ide tartozik a kölcsönzés, kereskedés, hozamgazdálkodás és biztosítás.
 
@@ -344,7 +344,7 @@ Hivatkozás: https://piacradar.eu/szotar/defi.html
 **Piacradar értelmezés** A Piacradar a DeFi híreket akkor emeli ki, ha intézményi hatásuk van (likviditás, bizalom, szabályozás) — nem minden protokoll-frissítés releváns.
 
 ## Delta – Opciós görög mutató
-Hivatkozás: https://piacradar.eu/szotar/delta.html
+Hivatkozás: https://piacradar.eu/glossary.html#delta
 
 **Mi ez?** Azt méri, mennyit változik az opció ára, ha az alaptermék ára 1 dollárral elmodul. Call delta: 0 és 1 között, put delta: 0 és -1 között. Egy 0.50-es delta call azt jelenti, hogy az alaptermék $1-os emelkedésekor az opció ~$0.50-t drágul.
 
@@ -353,7 +353,7 @@ Hivatkozás: https://piacradar.eu/szotar/delta.html
 **Piacradar értelmezés** A Piacradar a delta-t a dealer-hedging kontextusában kezeli — a GEX (gamma exposure) és a nettó delta pozícionálás piaci hatása releváns.
 
 ## Depeg – Rögzítés elvesztése
-Hivatkozás: https://piacradar.eu/szotar/depeg.html
+Hivatkozás: https://piacradar.eu/glossary.html#depeg
 
 **Mi ez?** Amikor egy stablecoin vagy rögzített árfolyamú eszköz elveszíti a célértékét (pl. egy USD-stablecoin nem 1 dollárt ér). Lehet átmeneti (likviditási stressz) vagy végzetes (a fedezet vagy a mechanizmus összeomlása).
 
@@ -362,7 +362,7 @@ Hivatkozás: https://piacradar.eu/szotar/depeg.html
 **Piacradar értelmezés** A Piacradar a depeget rendszerszintű kockázati jelzésként kezeli — egy nagy stablecoin tartós eltérése a fedezet minőségéről és a piaci likviditásról árulkodik.
 
 ## Dividend – Osztalék
-Hivatkozás: https://piacradar.eu/szotar/dividend.html
+Hivatkozás: https://piacradar.eu/glossary.html#dividend
 
 **Mi ez?** Az osztalék a vállalat által a részvényeseknek kifizetett készpénz vagy részvény formájú juttatás a nyereség terhére.
 
@@ -371,7 +371,7 @@ Hivatkozás: https://piacradar.eu/szotar/dividend.html
 **Piacradar értelmezés** A Piacradar az osztalékot a részvényesi hozam egyik pilléreként kezeli, különösen defenzív szektoroknál.
 
 ## Dot Plot – Fed kamatvárakozás-térkép
-Hivatkozás: https://piacradar.eu/szotar/dot-plot.html
+Hivatkozás: https://piacradar.eu/glossary.html#dot-plot
 
 **Mi ez?** A Fed döntéshozóinak névtelen kamatvárakozás-előrejelzése. Minden FOMC-tag bejelöli, hol látja a kamatszintet az elkövetkező években és hosszú távon. A „pontok” eloszlásából látható, mennyire egységes vagy megosztott a bizottság.
 
@@ -380,7 +380,7 @@ Hivatkozás: https://piacradar.eu/szotar/dot-plot.html
 **Piacradar értelmezés** A Piacradar a dot plot-ot mindig a SEP-pel együtt értelmezi — a medián pont változása és a szórás (konszenzus vs. megosztottság) egyaránt releváns. Március, június, szeptember és december FOMC-üléseken jelenik meg.
 
 ## Dovish
-Hivatkozás: https://piacradar.eu/szotar/dovish.html
+Hivatkozás: https://piacradar.eu/glossary.html#dovish
 
 **Mi ez?** Jegybanki hangvétel, amely lazítási szándékot jelez: kamatcsökkentést, a kamatok alacsonyan tartását vagy a likviditás bővítését. A hawkish (héja) kommunikáció ellentéte.
 
@@ -389,7 +389,7 @@ Hivatkozás: https://piacradar.eu/szotar/dovish.html
 **Piacradar értelmezés** A Piacradar a dovish jelzést a már beárazott kamatpályához méri: ha a jegybank a vártnál lazább hangot üt meg, az jellemzően bullish a kötvényekre, a növekedési részvényekre és a kriptóra, miközben a devizát gyengíti.
 
 ## Drawdown – Visszaesés a csúcstól
-Hivatkozás: https://piacradar.eu/szotar/drawdown.html
+Hivatkozás: https://piacradar.eu/glossary.html#drawdown
 
 **Mi ez?** Egy eszköz vagy portfólió csúcsról mért százalékos esése a legutóbbi mélypontig. A maximális drawdown (max DD) a teljes időszak legnagyobb, csúcstól aljáig tartó esését mutatja.
 
@@ -398,7 +398,7 @@ Hivatkozás: https://piacradar.eu/szotar/drawdown.html
 **Piacradar értelmezés** A Piacradar a drawdownt a kockázat és a teljesítmény őszinte mérőszámaként kezeli — a hozam mellett a megtett út mélysége adja a teljes képet.
 
 ## Durable Goods Orders – Tartós cikkek rendelései
-Hivatkozás: https://piacradar.eu/szotar/durable-goods.html
+Hivatkozás: https://piacradar.eu/glossary.html#durable-goods
 
 **Mi ez?** A tartós fogyasztási és tőkejavak (gépek, járművek, repülőgépek, berendezések) új rendeléseinek havi változása az USA-ban. Gyakran közlik a volatilis szállítási és repülőgép-tételek nélküli „core” verziót is.
 
@@ -407,7 +407,7 @@ Hivatkozás: https://piacradar.eu/szotar/durable-goods.html
 **Piacradar értelmezés** A Piacradar a core (repülőgép nélküli, nem védelmi) tőkejószág-rendeléseket figyeli, mert ez a vállalati beruházás (capex) egyik legjobb előrejelzője.
 
 ## Duration – Duráció
-Hivatkozás: https://piacradar.eu/szotar/duration.html
+Hivatkozás: https://piacradar.eu/glossary.html#duration
 
 **Mi ez?** A kötvény árfolyamának kamatlábérzékenységét mérő mutató, években kifejezve. Minél hosszabb a duráció, annál nagyobb az ármozgás ha a kamatok változnak. 10 éves duráció = 1% kamatemelés → ~10% áresés.
 
@@ -416,7 +416,7 @@ Hivatkozás: https://piacradar.eu/szotar/duration.html
 **Piacradar értelmezés** A Piacradar durációt akkor említ, ha kamatemelkedés vagy -csökkenés közvetlenül hat az eszközárakra — a 'long duration trade' jellemzően a tech szektorra utal.
 
 ## DXY – Dollárindex
-Hivatkozás: https://piacradar.eu/szotar/dxy.html
+Hivatkozás: https://piacradar.eu/glossary.html#dxy
 
 **Mi ez?** A dollár erejét méri hat fő devizából álló kosárhoz képest (a legnagyobb súly az euró). A globális dollárerő legfontosabb benchmarkja.
 
@@ -425,7 +425,7 @@ Hivatkozás: https://piacradar.eu/szotar/dxy.html
 **Piacradar értelmezés** A Piacradar a DXY-t a forex, az EM, az arany és a nyersanyagok mozgásának közös magyarázó tényezőjeként használja — sok napi mozgás a dollár irányából érthető meg leggyorsabban.
 
 ## Earnings Beat – Várakozások feletti eredmény
-Hivatkozás: https://piacradar.eu/szotar/earnings-beat.html
+Hivatkozás: https://piacradar.eu/glossary.html#earnings-beat
 
 **Mi ez?** Earnings Beat-ről akkor beszélünk, ha a vállalat EPS-e vagy bevétele meghaladja az elemzői konszenzust.
 
@@ -434,7 +434,7 @@ Hivatkozás: https://piacradar.eu/szotar/earnings-beat.html
 **Piacradar értelmezés** A Piacradar az earnings beat-et a várakozásokhoz viszonyított teljesítmény gyors jelzőjeként használja.
 
 ## EBITDA
-Hivatkozás: https://piacradar.eu/szotar/ebitda.html
+Hivatkozás: https://piacradar.eu/glossary.html#ebitda
 
 **Mi ez?** Az EBITDA a vállalat eredménye a kamatok, adók, értékcsökkenés és amortizáció levonása előtt.
 
@@ -443,7 +443,7 @@ Hivatkozás: https://piacradar.eu/szotar/ebitda.html
 **Piacradar értelmezés** A Piacradar az EBITDA-t különösen tőkeigényes szektoroknál használja a működési eredmény tisztább mérésére.
 
 ## Emerging Markets (EM)
-Hivatkozás: https://piacradar.eu/szotar/em.html
+Hivatkozás: https://piacradar.eu/glossary.html#em
 
 **Mi ez?** Gyorsan növekvő, de a fejlett piacoknál kockázatosabb gazdaságok csoportja, például Brazília, India, Indonézia vagy Mexikó. Jellemzőjük a nagyobb tőkepiaci volatilitás és a külső finanszírozásra való ráutaltság.
 
@@ -452,7 +452,7 @@ Hivatkozás: https://piacradar.eu/szotar/em.html
 **Piacradar értelmezés** A Piacradar az EM-kitettséget a dollárindex irányához köti: az erősödő dollár és emelkedő amerikai hozamok jellemzően tőkekiáramlást hoznak, míg a gyengülő dollár az EM-részvények és -devizák felülteljesítésének kedvez.
 
 ## EPS – Earnings Per Share
-Hivatkozás: https://piacradar.eu/szotar/eps.html
+Hivatkozás: https://piacradar.eu/glossary.html#eps
 
 **Mi ez?** Az EPS azt mutatja meg, hogy a vállalat egy részvényre vetítve mennyi nyereséget termelt.
 
@@ -461,7 +461,7 @@ Hivatkozás: https://piacradar.eu/szotar/eps.html
 **Piacradar értelmezés** A Piacradar az EPS-t az eredményminőség és a vállalat profitabilitásának gyors jelzőjeként használja.
 
 ## ETF Flows
-Hivatkozás: https://piacradar.eu/szotar/etf-flows.html
+Hivatkozás: https://piacradar.eu/glossary.html#etf-flows
 
 **Mi ez?** Az ETF-ekbe be- és kiáramló tőke mennyisége, amelyet napi bontásban publikálnak. A spot kripto ETF-ek esetében az áramlás mögött valós eszközvásárlás vagy -eladás áll a mögöttes piacon.
 
@@ -470,7 +470,7 @@ Hivatkozás: https://piacradar.eu/szotar/etf-flows.html
 **Piacradar értelmezés** A Piacradar nem az egynapos számot, hanem a többhetes tendenciát nézi, és azt is, mely alapok mozgatják. Ha a kiáramlás néhány kisebb alapra koncentrálódik, miközben a legnagyobbak készlete stabil marad, az árnyalja a széles eladási narratívát.
 
 ## European Central Bank (ECB)
-Hivatkozás: https://piacradar.eu/szotar/ecb.html
+Hivatkozás: https://piacradar.eu/glossary.html#ecb
 
 **Mi ez?** Az eurózóna közös jegybankja, amely az irányadó kamatot és a kötvényvásárlási programokat határozza meg. Elsődleges célja a 2% körüli árstabilitás. Hathetente ül össze kamatdöntésre.
 
@@ -479,7 +479,7 @@ Hivatkozás: https://piacradar.eu/szotar/ecb.html
 **Piacradar értelmezés** A Piacradar az EKB-t mindig a Fed pályájához viszonyítva olvassa: ha az EKB szigorúbb az amerikai jegybanknál, az az eurót erősíti, fordított esetben gyengíti. A német infláció és üzleti hangulat a döntések egyik legfontosabb inputja.
 
 ## Fiskális politika – Költségvetési politika
-Hivatkozás: https://piacradar.eu/szotar/fiskalis-politika.html
+Hivatkozás: https://piacradar.eu/glossary.html#fiskalis-politika
 
 **Mi ez?** A kormány adózási és költekezési döntéseinek összessége, amely befolyásolja a gazdasági aktivitást.
 
@@ -488,7 +488,7 @@ Hivatkozás: https://piacradar.eu/szotar/fiskalis-politika.html
 **Piacradar értelmezés** A Piacradar a fiskális politikát a monetáris politikával együtt értelmezi, mert a kettő együttesen határozza meg a ciklust.
 
 ## FOMC Meeting – Fed ülés
-Hivatkozás: https://piacradar.eu/szotar/fomc-meeting.html
+Hivatkozás: https://piacradar.eu/glossary.html#fomc-meeting
 
 **Mi ez?** A Federal Open Market Committee (FOMC) az amerikai jegybank döntéshozó testülete, amely évente 8 alkalommal ülésezik és meghatározza a monetáris politika irányát.
 
@@ -497,7 +497,7 @@ Hivatkozás: https://piacradar.eu/szotar/fomc-meeting.html
 **Piacradar értelmezés** A Piacradar a FOMC üléseket a kamatvárakozások és a monetáris narratíva fő forrásaként kezeli.
 
 ## Forex – Devizapiac
-Hivatkozás: https://piacradar.eu/szotar/forex.html
+Hivatkozás: https://piacradar.eu/glossary.html#forex
 
 **Mi ez?** A Forex (Foreign Exchange) a világ legnagyobb pénzügyi piaca, ahol devizákkal kereskednek. A kereskedés 24/5 zajlik, és a fő devizapárok (EUR/USD, USD/JPY, GBP/USD) adják a forgalom nagy részét.
 
@@ -506,7 +506,7 @@ Hivatkozás: https://piacradar.eu/szotar/forex.html
 **Piacradar értelmezés** A Piacradar a Forex mozgásokat a kamatkülönbözetek, a kockázati étvágy és a makroadatok összefüggésében értelmezi. A DXY különösen fontos benchmark.
 
 ## Free Cash Flow – Szabad cash flow
-Hivatkozás: https://piacradar.eu/szotar/free-cash-flow.html
+Hivatkozás: https://piacradar.eu/glossary.html#free-cash-flow
 
 **Mi ez?** A szabad cash flow az a pénzmennyiség, ami a működési kiadások és beruházások után szabadon felhasználható (pl. osztalékra, buybackre, adósságcsökkentésre).
 
@@ -515,7 +515,7 @@ Hivatkozás: https://piacradar.eu/szotar/free-cash-flow.html
 **Piacradar értelmezés** A Piacradar a FCF-et a fenntartható osztalék- és buyback-politika egyik kulcsmutatójaként figyeli.
 
 ## Futures – Határidős ügyletek
-Hivatkozás: https://piacradar.eu/szotar/futures.html
+Hivatkozás: https://piacradar.eu/glossary.html#futures
 
 **Mi ez?** A futures egy tőzsdén kereskedett határidős szerződés, amelyben a felek egy jövőbeli időpontban előre meghatározott áron vállalják egy eszköz (pl. index, kötvény, nyersanyag, deviza) adásvételét.
 
@@ -524,7 +524,7 @@ Hivatkozás: https://piacradar.eu/szotar/futures.html
 **Piacradar értelmezés** A Piacradar a futures árfolyamokat a piaci hangulat gyors jelzőjeként használja, különösen makroadatok és nyitás előtti kereskedés idején.
 
 ## GAAP vs. Adjusted – Számviteli és korrigált eredmény
-Hivatkozás: https://piacradar.eu/szotar/gaap-adjusted.html
+Hivatkozás: https://piacradar.eu/glossary.html#gaap-adjusted
 
 **Mi ez?** A GAAP (Generally Accepted Accounting Principles) a hivatalos amerikai számviteli szabályok szerinti eredmény. Az adjusted (korrigált, non-GAAP) eredmény ebből indul ki, de kiszűri az egyszeri, nem a működéshez tartozó tételeket: felvásárlási költségeket, leírásokat, részvényalapú juttatásokat, peres tartalékokat. Ezért egy earnings-jelentésben gyakran két EPS szerepel — és a kettő jelentősen eltérhet.
 
@@ -533,7 +533,7 @@ Hivatkozás: https://piacradar.eu/szotar/gaap-adjusted.html
 **Piacradar értelmezés** A Piacradar earnings-posztjaiban a beat/miss az adjusted számhoz viszonyít, de a GAAP-ot is jelezzük, ha a különbség maga a sztori — a rés mérete az eredményminőség gyors tesztje.
 
 ## Gamma
-Hivatkozás: https://piacradar.eu/szotar/gamma.html
+Hivatkozás: https://piacradar.eu/glossary.html#gamma
 
 **Mi ez?** Opciós mutató, amely azt méri, mennyit változik az opció deltája az alaptermék árának elmozdulásakor. Piaci szinten az árjegyzők összesített gamma-pozíciója a meghatározó.
 
@@ -542,7 +542,7 @@ Hivatkozás: https://piacradar.eu/szotar/gamma.html
 **Piacradar értelmezés** A Piacradar a gamma-pozicionáltságot volatilitási előrejelzőként olvassa: a nagy pozitív gamma szűk sávú, oldalazó kereskedést valószínűsít, míg a negatív tartományba fordulás gyorsuló, egyirányú mozgás kockázatát jelzi. A nagy opciós lejáratok környékén ez különösen meghatározó.
 
 ## GDP
-Hivatkozás: https://piacradar.eu/szotar/gdp.html
+Hivatkozás: https://piacradar.eu/glossary.html#gdp
 
 **Mi ez?** A bruttó hazai termék egy adott időszakban megtermelt javak és szolgáltatások összértéke. Negyedévente, három egymást követő becslésben jelenik meg. Az inflációval kiigazított reál-GDP a mérvadó.
 
@@ -551,7 +551,7 @@ Hivatkozás: https://piacradar.eu/szotar/gdp.html
 **Piacradar értelmezés** A Piacradar a főszám mögötti összetételt nézi: a fogyasztás és a beruházás tartós növekedést jelez, míg a készletfelhalmozásból vagy külkereskedelmi eltolódásból származó ugrás átmeneti lehet. Az erős GDP magasabb kamatpályát, a gyenge risk-off hangulatot vetít előre.
 
 ## Gold – Arany
-Hivatkozás: https://piacradar.eu/szotar/gold.html
+Hivatkozás: https://piacradar.eu/glossary.html#gold
 
 **Mi ez?** Befektetési eszköz és klasszikus értékmegőrző, amelyet unciánként (troy ounce), XAU/USD jegyzésben áraznak. Kitettség szerezhető fizikai formában, arany-ETF-en (pl. GLD) vagy határidős kontraktuson keresztül.
 
@@ -560,7 +560,7 @@ Hivatkozás: https://piacradar.eu/szotar/gold.html
 **Piacradar értelmezés** A Piacradar az aranyat akkor emeli ki, ha menedék-szerepe kerül előtérbe, vagy ha a reálkamat- és DXY-mozgás magyarázza az árat. Tőzsdei stressznél a határidős margin-követelmény emelése kényszerlikvidálást (margin call) is okozhat — ilyenkor a mozgás technikai, nem fundamentális.
 
 ## Governance Token – Szavazati token
-Hivatkozás: https://piacradar.eu/szotar/governance-token.html
+Hivatkozás: https://piacradar.eu/glossary.html#governance-token
 
 **Mi ez?** Olyan kriptovaluta, amely szavazati jogot ad a tulajdonosnak egy protokoll döntéseiben (pl. díjstruktúra, fejlesztési irány, treasury felhasználása). Példák: AAVE, MKR (MakerDAO), UNI (Uniswap).
 
@@ -569,7 +569,7 @@ Hivatkozás: https://piacradar.eu/szotar/governance-token.html
 **Piacradar értelmezés** A Piacradar governance híreket akkor hozza, ha a szavazás a protokoll likviditását, biztonságát vagy a token kínálatát érinti — nem minden technikai javaslatnál.
 
 ## Guidance – Vállalati előrejelzés
-Hivatkozás: https://piacradar.eu/szotar/guidance.html
+Hivatkozás: https://piacradar.eu/glossary.html#guidance
 
 **Mi ez?** A vállalat saját előrejelzése a következő negyedévre vagy évre vonatkozó bevételről, nyereségről vagy más kulcsmutatókról.
 
@@ -578,7 +578,7 @@ Hivatkozás: https://piacradar.eu/szotar/guidance.html
 **Piacradar értelmezés** A Piacradar a guidance változását a menedzsment bizalmának egyik legjobb jelzőjeként értelmezi.
 
 ## Hard Landing
-Hivatkozás: https://piacradar.eu/szotar/hard-landing.html
+Hivatkozás: https://piacradar.eu/glossary.html#hard-landing
 
 **Mi ez?** Az a forgatókönyv, amelyben a monetáris szigorítás vagy egy külső sokk hatására a gazdaság gyorsan lassul és recesszióba fordul. A fogyasztás visszaesik, a vállalati beruházások csökkennek, a munkanélküliség emelkedik.
 
@@ -587,7 +587,7 @@ Hivatkozás: https://piacradar.eu/szotar/hard-landing.html
 **Piacradar értelmezés** A Piacradar a hard landing kockázatát a hitelpiaci feszültségen és a munkaerőpiac fordulatán méri: a táguló vállalati kötvényfelárak és a gyorsuló elbocsátások erősítik a forgatókönyvet. Ilyen környezetben a defenzív szektorok és a hosszú államkötvények jellemzően felülteljesítenek.
 
 ## Hashrate
-Hivatkozás: https://piacradar.eu/szotar/hashrate.html
+Hivatkozás: https://piacradar.eu/glossary.html#hashrate
 
 **Mi ez?** A Bitcoin-hálózat összesített számítási kapacitása, hash per másodpercben mérve. Azt mutatja, mekkora erőforrás dolgozik a blokkok validálásán, és ezzel a hálózat biztonságának mértékét is jelzi.
 
@@ -596,7 +596,7 @@ Hivatkozás: https://piacradar.eu/szotar/hashrate.html
 **Piacradar értelmezés** A Piacradar a hashrate-et a bányászati jövedelmezőséggel együtt olvassa: a tartósan emelkedő kapacitás hosszú távú elköteleződést jelez, míg a gyors visszaesés rövid távú kínálati nyomásra és a szektor stresszére utalhat.
 
 ## Hawkish
-Hivatkozás: https://piacradar.eu/szotar/hawkish.html
+Hivatkozás: https://piacradar.eu/glossary.html#hawkish
 
 **Mi ez?** Jegybanki kommunikációs stílus, amely szigorítási szándékot jelez: kamatemelést, a kamatok tartósan magasan tartását vagy a likviditás szűkítését. Ellentéte a dovish (galamb) hangvétel.
 
@@ -605,7 +605,7 @@ Hivatkozás: https://piacradar.eu/szotar/hawkish.html
 **Piacradar értelmezés** A Piacradar a hawkish jelzést a várakozásokhoz méri: ha a jegybank a vártnál szigorúbb hangot üt meg, az jellemzően bearish a hosszú kötvényekre és a növekedési részvényekre, miközben a devizát erősíti. A hangnem változása gyakran többet mozdít a piacon, mint maga a döntés.
 
 ## Hedge – Fedezeti ügylet
-Hivatkozás: https://piacradar.eu/szotar/hedge.html
+Hivatkozás: https://piacradar.eu/glossary.html#hedge
 
 **Mi ez?** Olyan befektetési pozíció, amelynek célja egy másik pozíció kockázatának csökkentése. Például ha valaki részvényeket tart, vehet VIX-et vagy put opciókat, hogy védje a portfólióját egy esés ellen.
 
@@ -614,7 +614,7 @@ Hivatkozás: https://piacradar.eu/szotar/hedge.html
 **Piacradar értelmezés** A Piacradar akkor használja a kifejezést, ha egy eszköz (arany, VIX, dollár, BTC) fedezeti szerepe kerül előtérbe — pl. geopolitikai kockázat esetén.
 
 ## Housing Starts – Lakásépítések
-Hivatkozás: https://piacradar.eu/szotar/housing-starts.html
+Hivatkozás: https://piacradar.eu/glossary.html#housing-starts
 
 **Mi ez?** A megkezdett lakásépítések száma az USA-ban. A lakáspiac aktivitásának egyik legfontosabb mutatója.
 
@@ -623,7 +623,7 @@ Hivatkozás: https://piacradar.eu/szotar/housing-starts.html
 **Piacradar értelmezés** A Piacradar a Housing Starts adatot a kamatkörnyezet és a lakáspiaci ciklus összefüggéseiben értelmezi.
 
 ## IFO Index
-Hivatkozás: https://piacradar.eu/szotar/ifo.html
+Hivatkozás: https://piacradar.eu/glossary.html#ifo
 
 **Mi ez?** Német üzleti klímaindex, amelyet a müncheni IFO Intézet állít össze több ezer vállalat megkérdezésével. Két komponensből áll: a jelenlegi helyzet megítéléséből és a következő hat hónapra vonatkozó várakozásokból.
 
@@ -632,7 +632,7 @@ Hivatkozás: https://piacradar.eu/szotar/ifo.html
 **Piacradar értelmezés** A Piacradar a két alkomponens szétválását figyeli: ha a várakozások javulnak, miközben a jelenlegi helyzet még gyenge, az fordulópontot jelezhet. A tartósan romló IFO növekvő recessziós kockázatot és az euróra nehezedő nyomást vetít előre.
 
 ## Implied Volatility (IV) – Implikált volatilitás
-Hivatkozás: https://piacradar.eu/szotar/implied-volatility.html
+Hivatkozás: https://piacradar.eu/glossary.html#implied-volatility
 
 **Mi ez?** A piac által várt jövőbeli volatilitás, amelyet az opciók aktuális árából számítanak vissza. Minél magasabb az IV, annál drágábbak az opciók, mert a piac nagyobb mozgást vár. A VIX index az S&P 500 opciók IV-jéből számított piaci félelemmutató.
 
@@ -641,7 +641,7 @@ Hivatkozás: https://piacradar.eu/szotar/implied-volatility.html
 **Piacradar értelmezés** A Piacradar az IV-t a VIX kontextusában és earnings-szezon idején emeli ki — az IV szint jelzi, mekkora mozgást áraz a piac.
 
 ## Industrial Production – Ipari termelés
-Hivatkozás: https://piacradar.eu/szotar/industrial-production.html
+Hivatkozás: https://piacradar.eu/glossary.html#industrial-production
 
 **Mi ez?** Az ipar (feldolgozóipar, bányászat, közüzemek) tényleges kibocsátásának havi változása. A kapacitáskihasználtsággal (capacity utilization) együtt közlik.
 
@@ -650,7 +650,7 @@ Hivatkozás: https://piacradar.eu/szotar/industrial-production.html
 **Piacradar értelmezés** A Piacradar az ipari termelést a PMI puha adatának megerősítésére vagy cáfolatára használja — ha a kettő szétválik, az fordulópontot jelezhet.
 
 ## Infláció – Áremelkedés
-Hivatkozás: https://piacradar.eu/szotar/inflacio.html
+Hivatkozás: https://piacradar.eu/glossary.html#inflacio
 
 **Mi ez?** Az infláció azt mutatja meg, hogy mennyivel emelkedtek az árak egy adott időszak alatt.
 
@@ -659,7 +659,7 @@ Hivatkozás: https://piacradar.eu/szotar/inflacio.html
 **Piacradar értelmezés** A Piacradar az inflációs adatokat a CPI, Core CPI és PCE mutatókkal együtt értelmezi.
 
 ## Installed Base – Telepített géppark üzletág
-Hivatkozás: https://piacradar.eu/szotar/installed-base.html
+Hivatkozás: https://piacradar.eu/glossary.html#installed-base
 
 **Mi ez?** A már kihelyezett, ügyfeleknél működő gépek, berendezések vagy rendszerek állománya — és az ezekből származó, visszatérő bevétel: szerviz, alkatrész, szoftverfrissítés, teljesítménynövelő csomagok. Tőkejavakat gyártó cégeknél (pl. ASML, gyógyszeripari műszergyártók) külön üzletágként jelentik.
 
@@ -668,7 +668,7 @@ Hivatkozás: https://piacradar.eu/szotar/installed-base.html
 **Piacradar értelmezés** A Piacradar az installed base növekedését az üzleti modell minőségi javulásaként kezeli: egy második, stabil profitmotor épülését jelzi a ciklikus gépeladások mellé.
 
 ## Interest Rate – Kamatláb
-Hivatkozás: https://piacradar.eu/szotar/interest-rate.html
+Hivatkozás: https://piacradar.eu/glossary.html#interest-rate
 
 **Mi ez?** A kamatláb az a százalékos díj, amelyet a hitelfelvevő fizet a hitelért, vagy amelyet a megtakarító kap a betétért.
 
@@ -677,7 +677,7 @@ Hivatkozás: https://piacradar.eu/szotar/interest-rate.html
 **Piacradar értelmezés** A Piacradar a kamatlábat a monetáris politika és a hozamgörbe kontextusában értelmezi.
 
 ## Inverted Yield Curve
-Hivatkozás: https://piacradar.eu/szotar/inverted-yield-curve.html
+Hivatkozás: https://piacradar.eu/glossary.html#inverted-yield-curve
 
 **Mi ez?** Olyan piaci állapot, amelyben a rövid lejáratú állampapírok hozama magasabb a hosszú lejáratúaknál. A leggyakrabban figyelt párok a 2 és 10 éves, valamint a 3 hónapos és 10 éves hozam különbsége.
 
@@ -686,7 +686,7 @@ Hivatkozás: https://piacradar.eu/szotar/inverted-yield-curve.html
 **Piacradar értelmezés** A Piacradar nem csak az invertálást, hanem a visszameredekedést is figyeli: a görbe normalizálódása gyakran közelebb esik a recesszió tényleges kezdetéhez, mint maga az inverzió. A bankszektor számára az invertált görbe szűkülő kamatmarzsot jelent.
 
 ## IPO – Tőzsdei bevezetés
-Hivatkozás: https://piacradar.eu/szotar/ipo.html
+Hivatkozás: https://piacradar.eu/glossary.html#ipo
 
 **Mi ez?** Az IPO során egy vállalat először bocsát ki részvényeket a nyilvános piacra.
 
@@ -695,7 +695,7 @@ Hivatkozás: https://piacradar.eu/szotar/ipo.html
 **Piacradar értelmezés** A Piacradar az IPO-k számát és méretét a piaci hangulat indikátoraként használja.
 
 ## ISM Manufacturing PMI
-Hivatkozás: https://piacradar.eu/szotar/ism-manufacturing-pmi.html
+Hivatkozás: https://piacradar.eu/glossary.html#ism-manufacturing-pmi
 
 **Mi ez?** Az amerikai feldolgozóipar havi aktivitási indexe, beszerzési vezetők körében végzett felmérésből számítva. Öt komponensből áll: új rendelések, termelés, foglalkoztatás, szállítási idők és készletek. Minden hónap első munkanapján jelenik meg.
 
@@ -704,7 +704,7 @@ Hivatkozás: https://piacradar.eu/szotar/ism-manufacturing-pmi.html
 **Piacradar értelmezés** A Piacradar a főszám mellett az alkomponenseket is nézi: az új rendelések a jövőbeli aktivitást, az árkomponens az inflációs nyomást vetíti előre. A tartósan 50 alatti érték lassulást jelez, a mélypontról induló gyors emelkedés ciklusfordulót.
 
 ## ISM Services PMI
-Hivatkozás: https://piacradar.eu/szotar/ism-service-pmi.html
+Hivatkozás: https://piacradar.eu/glossary.html#ism-service-pmi
 
 **Mi ez?** Az amerikai szolgáltatási szektor havi aktivitási indexe, amely a gazdaság nagyjából 70%-át fedi le. Az üzleti aktivitást, az új rendeléseket, a foglalkoztatást és az árakat méri, néhány nappal a feldolgozóipari index után.
 
@@ -713,7 +713,7 @@ Hivatkozás: https://piacradar.eu/szotar/ism-service-pmi.html
 **Piacradar értelmezés** A Piacradar az 50-es szinthez és az árkomponenshez méri: a bővülő aktivitás emelkedő árnyomással hawkish kombináció, a lassuló aktivitás enyhülő árakkal dovish. A foglalkoztatási alindex a munkaerőpiaci adatok előjelzője lehet.
 
 ## Japanese Government Bond (JGB)
-Hivatkozás: https://piacradar.eu/szotar/jgb.html
+Hivatkozás: https://piacradar.eu/glossary.html#jgb
 
 **Mi ez?** Japán állampapír. Az ország adósságállománya a GDP arányában a világ legmagasabbjai közé tartozik, a piacot pedig évtizedeken át a jegybank hozamgörbe-kontrollja tartotta mesterségesen alacsony szinten. A legfigyeltebb futamidő a 10 és a 30 éves.
 
@@ -722,7 +722,7 @@ Hivatkozás: https://piacradar.eu/szotar/jgb.html
 **Piacradar értelmezés** A Piacradar a hosszú JGB-hozamokat a globális kockázati étvágy korai jelzőjeként követi: a gyors emelkedés carry pozíciók leépítését indíthatja el, ami a legmagasabb bétájú eszközöket éri el először.
 
 ## Jobless Claims – Munkanélküli segélykérelmek
-Hivatkozás: https://piacradar.eu/szotar/jobless-claims.html
+Hivatkozás: https://piacradar.eu/glossary.html#jobless-claims
 
 **Mi ez?** A heti új munkanélküli segélykérelmek száma. A munkaerőpiac egyik leggyorsabb, legfrissebb mutatója.
 
@@ -731,7 +731,7 @@ Hivatkozás: https://piacradar.eu/szotar/jobless-claims.html
 **Piacradar értelmezés** A Piacradar a Jobless Claims adatot a munkaerőpiaci fordulópontok korai jelzőjeként használja.
 
 ## JOLTS – Betöltetlen állások
-Hivatkozás: https://piacradar.eu/szotar/jolts.html
+Hivatkozás: https://piacradar.eu/glossary.html#jolts
 
 **Mi ez?** A JOLTS a betöltetlen állások számát méri az USA-ban. A munkaerőpiaci kereslet egyik legfontosabb mutatója.
 
@@ -740,7 +740,7 @@ Hivatkozás: https://piacradar.eu/szotar/jolts.html
 **Piacradar értelmezés** A Piacradar a JOLTS adatot a munkaerőpiaci túlhevülés vagy lehűlés jelzőjeként használja.
 
 ## Leverage – Tőkeáttét
-Hivatkozás: https://piacradar.eu/szotar/leverage.html
+Hivatkozás: https://piacradar.eu/glossary.html#leverage
 
 **Mi ez?** Idegen (kölcsön) tőke bevonása a pozíció méretének felnagyítására. Megjelenhet margin-kereskedésként, derivatívákon (opció, futures, swap) keresztül, vagy tőkeáttételes ETF-ekben. A tőkeáttét a nyereséget és a veszteséget egyaránt felnagyítja.
 
@@ -749,7 +749,7 @@ Hivatkozás: https://piacradar.eu/szotar/leverage.html
 **Piacradar értelmezés** A Piacradar a tőkeáttételt akkor emeli ki, ha kényszerlikvidálás vagy túlzott pozícionáltság technikai (nem fundamentális) mozgást okoz. Ilyenkor az árváltozás nem új információt tükröz, hanem a tőkeáttét leépülését.
 
 ## Likviditás
-Hivatkozás: https://piacradar.eu/szotar/likviditas.html
+Hivatkozás: https://piacradar.eu/glossary.html#likviditas
 
 **Mi ez?** Azt fejezi ki, milyen könnyen és mekkora árfolyamhatás nélkül lehet egy eszközt megvenni vagy eladni. Likvid piacon nagy a forgalom és szűk a bid-ask spread; illikvid piacon már közepes megbízás is elmozdítja az árat. Tágabb értelemben a pénzügyi rendszerben elérhető szabad pénz mennyiségét is jelenti.
 
@@ -758,7 +758,7 @@ Hivatkozás: https://piacradar.eu/szotar/likviditas.html
 **Piacradar értelmezés** A Piacradar a likviditást a mozgások megbízhatóságának szűrőjeként használja: vékony likviditás mellett az árfolyamreakció kevésbé informatív, és gyakran másnapra korrigálódik.
 
 ## LNG
-Hivatkozás: https://piacradar.eu/szotar/lng.html
+Hivatkozás: https://piacradar.eu/glossary.html#lng
 
 **Mi ez?** Cseppfolyósított földgáz: a gázt lehűtve, folyékony halmazállapotban szállítják tankhajókkal, így vezeték nélküli piacokra is eljut. Kulcsszerepet játszik Európa energiaellátásában az orosz vezetékes szállítások kiesése óta.
 
@@ -767,7 +767,7 @@ Hivatkozás: https://piacradar.eu/szotar/lng.html
 **Piacradar értelmezés** A Piacradar az LNG-árat európai inflációs és versenyképességi mutatóként olvassa: a tartósan magas gázár nyomja az energiaintenzív ipar marzsait, és szigorúbb EKB-kamatpálya irányába hat. A tárolói töltöttség szezonális alakulása gyakran előre jelzi a téli árnyomást.
 
 ## M&A – Mergers & Acquisitions (fúziók és felvásárlások)
-Hivatkozás: https://piacradar.eu/szotar/m-and-a.html
+Hivatkozás: https://piacradar.eu/glossary.html#m-and-a
 
 **Mi ez?** Vállalatok összeolvadása (merger) vagy felvásárlása (acquisition). A felvásárló általában prémiumot fizet a piaci ár felett, ami a célpont részvényét emeli, a felvásárlóét gyakran nyomás alá helyezi.
 
@@ -776,7 +776,7 @@ Hivatkozás: https://piacradar.eu/szotar/m-and-a.html
 **Piacradar értelmezés** A Piacradar M&A híreket akkor hozza, ha érdemi piaci hatásuk van: nagy deal (>$10Mrd), szektort mozgató felvásárlás, vagy antitrust döntés.
 
 ## M2 Money Supply – M2 pénzmennyiség
-Hivatkozás: https://piacradar.eu/szotar/m2-money-supply.html
+Hivatkozás: https://piacradar.eu/glossary.html#m2-money-supply
 
 **Mi ez?** Az M2 a gazdaságban lévő pénzmennyiség egyik legfontosabb mutatója: készpénz, látra szóló betétek és rövid lejáratú megtakarítások összege.
 
@@ -785,7 +785,7 @@ Hivatkozás: https://piacradar.eu/szotar/m2-money-supply.html
 **Piacradar értelmezés** A Piacradar az M2 változását a likviditási ciklus egyik legjobb mutatójaként használja.
 
 ## Magnificent Seven (Mag7)
-Hivatkozás: https://piacradar.eu/szotar/magnificent-seven.html
+Hivatkozás: https://piacradar.eu/glossary.html#magnificent-seven
 
 **Mi ez?** Hét nagy amerikai technológiai cég gyűjtőneve: Apple, Microsoft, Alphabet (Google), Amazon, Nvidia, Meta és Tesla. A megnevezés 2023-ban terjedt el, és az AI-narratíva fő hordozóit jelöli.
 
@@ -794,7 +794,7 @@ Hivatkozás: https://piacradar.eu/szotar/magnificent-seven.html
 **Piacradar értelmezés** A Piacradar a Mag7 jelentéseit és mozgásait kiemelt piacmozgató tényezőként kezeli. Ugyanakkor jelzi a koncentráció kockázatát is: néhány név gyengélkedése az egész indexet lehúzhatja, miközben a szélesebb piac stabil.
 
 ## Margin Call – Fedezeti felhívás
-Hivatkozás: https://piacradar.eu/szotar/margin-call.html
+Hivatkozás: https://piacradar.eu/glossary.html#margin-call
 
 **Mi ez?** Amikor egy befektető hitelre (tőkeáttétellel) kereskedik és a pozíciója veszteségbe fordul, a brókere további fedezetet kér. Ha nem tudja befizetni, a pozícióját kényszerlikvidálják.
 
@@ -803,7 +803,7 @@ Hivatkozás: https://piacradar.eu/szotar/margin-call.html
 **Piacradar értelmezés** A Piacradar margin call-t akkor említ, ha kényszerlikvidálás okoz szokatlan piaci mozgást — ilyenkor a mozgás nem fundamentális, hanem technikai/likviditási okokra vezethető vissza.
 
 ## Market Cap – Piaci kapitalizáció
-Hivatkozás: https://piacradar.eu/szotar/market-cap.html
+Hivatkozás: https://piacradar.eu/glossary.html#market-cap
 
 **Mi ez?** A piaci kapitalizáció a vállalat összes részvényének összértéke: részvényár × részvényszám.
 
@@ -812,7 +812,7 @@ Hivatkozás: https://piacradar.eu/szotar/market-cap.html
 **Piacradar értelmezés** A Piacradar a Market Cap-et a vállalat méretének és piaci jelentőségének alapmutatójaként kezeli.
 
 ## Michigan Sentiment – Fogyasztói hangulat
-Hivatkozás: https://piacradar.eu/szotar/michigan-sentiment.html
+Hivatkozás: https://piacradar.eu/glossary.html#michigan-sentiment
 
 **Mi ez?** A Michigan Egyetem havi felmérése a fogyasztók gazdasági hangulatáról, inflációs várakozásairól és pénzügyi helyzetéről.
 
@@ -821,7 +821,7 @@ Hivatkozás: https://piacradar.eu/szotar/michigan-sentiment.html
 **Piacradar értelmezés** A Piacradar a Michigan-indexet a fogyasztói inflációs várakozások egyik legjobb jelzőjeként használja.
 
 ## Mining
-Hivatkozás: https://piacradar.eu/szotar/mining.html
+Hivatkozás: https://piacradar.eu/glossary.html#mining
 
 **Mi ez?** A Bitcoin-bányászat során a résztvevők számítási kapacitást biztosítanak a tranzakciók validálásához és új blokkok létrehozásához, cserébe blokkjutalmat és tranzakciós díjat kapnak. Ez adja a hálózat biztonságának alapját.
 
@@ -830,7 +830,7 @@ Hivatkozás: https://piacradar.eu/szotar/mining.html
 **Piacradar értelmezés** A Piacradar a bányászati gazdaságosságot az energiaárak, az árfolyam és a nehézségi szint együttesében nézi: a szűkülő marzs eladói nyomást és leálló kapacitást jelezhet, míg a bővülő jövedelmezőség felhalmozást tesz lehetővé.
 
 ## Momentum – Lendület
-Hivatkozás: https://piacradar.eu/szotar/momentum.html
+Hivatkozás: https://piacradar.eu/glossary.html#momentum
 
 **Mi ez?** Piaci lendület: az az elv, hogy ami emelkedik, az hajlamos tovább emelkedni, és ami esik, az tovább esni. A momentum stratégiák a trend folytatására fogadnak.
 
@@ -839,7 +839,7 @@ Hivatkozás: https://piacradar.eu/szotar/momentum.html
 **Piacradar értelmezés** A Piacradar a momentum kifejezést earnings szezonban és szektor rotációnál használja — pl. 'tech earnings momentum' azt jelenti, hogy a technológiai cégek pozitív jelentései egymást erősítik.
 
 ## Monetáris politika – Jegybanki politika
-Hivatkozás: https://piacradar.eu/szotar/monetaris-politika.html
+Hivatkozás: https://piacradar.eu/glossary.html#monetaris-politika
 
 **Mi ez?** A jegybank által alkalmazott eszközök összessége, amelyekkel szabályozza a pénzkínálatot és a kamatkörnyezetet.
 
@@ -848,7 +848,7 @@ Hivatkozás: https://piacradar.eu/szotar/monetaris-politika.html
 **Piacradar értelmezés** A Piacradar a monetáris politikát a kamatpálya és a likviditási ciklus fő meghatározójaként kezeli.
 
 ## MOVE Index
-Hivatkozás: https://piacradar.eu/szotar/move-index.html
+Hivatkozás: https://piacradar.eu/glossary.html#move-index
 
 **Mi ez?** Az amerikai államkötvénypiac implikált volatilitását mérő index, opciós árazásból számítva. A részvénypiaci VIX kötvénypiaci megfelelője, neve a Merrill Lynch Option Volatility Estimate rövidítése.
 
@@ -857,7 +857,7 @@ Hivatkozás: https://piacradar.eu/szotar/move-index.html
 **Piacradar értelmezés** A Piacradar a MOVE emelkedését korai figyelmeztetésként olvassa: a kötvénypiaci nyugtalanság gyakran megelőzi a részvénypiaci volatilitást. A tartósan alacsony érték viszont önelégült pozicionáltságra utalhat, ami sérülékennyé teszi a piacot egy meglepetéssel szemben.
 
 ## NFP – Nem mezőgazdasági foglalkoztatás
-Hivatkozás: https://piacradar.eu/szotar/nfp.html
+Hivatkozás: https://piacradar.eu/glossary.html#nfp
 
 **Mi ez?** Az NFP az USA havi foglalkoztatási adatainak legfontosabb mutatója, amely azt méri, hány munkahely jött létre vagy szűnt meg a mezőgazdaságon kívüli szektorokban.
 
@@ -866,7 +866,7 @@ Hivatkozás: https://piacradar.eu/szotar/nfp.html
 **Piacradar értelmezés** A Piacradar az NFP-t mindig az előrejelzéshez és az előző havi értékhez viszonyítja. A vártnál magasabb adat szigorúbb kamatpályát jelez (bearish kötvény, vegyes részvény), a vártnál gyengébb adat lazább monetáris környezetet vetít előre (bullish kötvény, vegyes részvény).
 
 ## NII – Nettó kamatbevétel (Net Interest Income)
-Hivatkozás: https://piacradar.eu/szotar/nii.html
+Hivatkozás: https://piacradar.eu/glossary.html#nii
 
 **Mi ez?** A bank kamatbevételeinek (hitelek, értékpapírok) és kamatkiadásainak (betétek, források) különbsége — a hagyományos banki üzletmodell motorja. Százalékos formája a nettó kamatmarzs (NIM): az NII a kamatozó eszközök arányában.
 
@@ -875,7 +875,7 @@ Hivatkozás: https://piacradar.eu/szotar/nii.html
 **Piacradar értelmezés** A Piacradar a banki jelentéseknél az NII irányát a kamatpálya tükrében értelmezi — a trading- és díjbevételek ingadozhatnak, de a bank alappályáját az NII rajzolja ki.
 
 ## Oil Inventories – Olajkészletek
-Hivatkozás: https://piacradar.eu/szotar/oil-inventories.html
+Hivatkozás: https://piacradar.eu/glossary.html#oil-inventories
 
 **Mi ez?** Az amerikai kereskedelmi nyersolaj-készletek heti változása (EIA adat). A kereslet-kínálat egyensúly közvetlen mutatója.
 
@@ -884,7 +884,7 @@ Hivatkozás: https://piacradar.eu/szotar/oil-inventories.html
 **Piacradar értelmezés** A Piacradar az EIA-adatot az olajár rövid távú mozgásának egyik fő katalizátoraként kezeli.
 
 ## OPEC / OPEC+
-Hivatkozás: https://piacradar.eu/szotar/opec.html
+Hivatkozás: https://piacradar.eu/glossary.html#opec
 
 **Mi ez?** A kőolaj-exportáló országok szervezete (OPEC), kibővítve Oroszországgal és más termelőkkel (OPEC+). A tagok összehangolt termelési kvótákkal befolyásolják a globális olajkínálatot.
 
@@ -893,7 +893,7 @@ Hivatkozás: https://piacradar.eu/szotar/opec.html
 **Piacradar értelmezés** A Piacradar az OPEC+ üléseket és a tagok közti feszültségeket (kvótafegyelem) az olajpiaci narratíva fő elemeként követi.
 
 ## Options Expiration (OpEx) – Opciós lejárat
-Hivatkozás: https://piacradar.eu/szotar/options-expiration.html
+Hivatkozás: https://piacradar.eu/glossary.html#options-expiration
 
 **Mi ez?** Az a nap, amikor az opciós kontraktusok lejárnak — a havi lejárat jellemzően a hónap harmadik péntekje. A negyedéves „triple witching” napokon részvény-, index-opciók és futures egyszerre járnak le.
 
@@ -902,7 +902,7 @@ Hivatkozás: https://piacradar.eu/szotar/options-expiration.html
 **Piacradar értelmezés** A Piacradar az OpEx-et technikai tényezőként kezeli: a lejárat körüli mozgás gyakran pozícionálási, nem fundamentális eredetű — a valódi irány a lejárat utáni napokban tisztul ki.
 
 ## P/E Ratio – Árfolyam/nyereség ráta
-Hivatkozás: https://piacradar.eu/szotar/pe-ratio.html
+Hivatkozás: https://piacradar.eu/glossary.html#pe-ratio
 
 **Mi ez?** A P/E azt mutatja, hányszorosát fizeti a piac a vállalat egy részvényre jutó éves nyereségének. Forward P/E: a várt jövőbeli nyereséggel számol.
 
@@ -911,7 +911,7 @@ Hivatkozás: https://piacradar.eu/szotar/pe-ratio.html
 **Piacradar értelmezés** A Piacradar a P/E-t mindig kontextusban használja: a historikus sávhoz és a növekedési ütemhez viszonyítva — a „drága” vagy „olcsó” címke önmagában félrevezető.
 
 ## PCE – Personal Consumption Expenditures
-Hivatkozás: https://piacradar.eu/szotar/pce.html
+Hivatkozás: https://piacradar.eu/glossary.html#pce
 
 **Mi ez?** A PCE a személyes fogyasztási kiadások árindexe, a Fed hivatalos inflációs célmutatója.
 
@@ -920,7 +920,7 @@ Hivatkozás: https://piacradar.eu/szotar/pce.html
 **Piacradar értelmezés** A Piacradar a PCE-t a Fed-kamatpálya szempontjából legfontosabb inflációs adatként kezeli.
 
 ## PMI – Beszerzési menedzserindex
-Hivatkozás: https://piacradar.eu/szotar/pmi.html
+Hivatkozás: https://piacradar.eu/glossary.html#pmi
 
 **Mi ez?** A PMI a vállalati beszerzési vezetők körében készült felmérés, amely a gazdasági aktivitás egyik leggyorsabb ütemű előrejelzője. 50 pont felett bővülést, 50 alatt zsugorodást jelez.
 
@@ -929,7 +929,7 @@ Hivatkozás: https://piacradar.eu/szotar/pmi.html
 **Piacradar értelmezés** A Piacradar a PMI-t a gazdasági ciklus korai jelzőjeként használja, kiemelt figyelemmel az 50-es határ átlépéseire és a trendfordulókra.
 
 ## PPI – Termelői árindex
-Hivatkozás: https://piacradar.eu/szotar/ppi.html
+Hivatkozás: https://piacradar.eu/glossary.html#ppi
 
 **Mi ez?** A PPI a termelői árak változását méri — azt, hogy a vállalatok mennyiért adják el termékeiket és szolgáltatásaikat egymásnak.
 
@@ -938,7 +938,7 @@ Hivatkozás: https://piacradar.eu/szotar/ppi.html
 **Piacradar értelmezés** A Piacradar a PPI-t a jövőbeli CPI-pálya előrejelzőjeként használja, különös figyelemmel a pipeline-inflációra.
 
 ## Pre-market / After-hours kereskedés
-Hivatkozás: https://piacradar.eu/szotar/pre-market.html
+Hivatkozás: https://piacradar.eu/glossary.html#pre-market
 
 **Mi ez?** A hivatalos tőzsdei kereskedési időn (9:30–16:00 ET) kívüli kereskedés: pre-market a nyitás előtt (4:00–9:30 ET), after-hours a zárás után (16:00–20:00 ET). Alacsonyabb likviditás és szélesebb spreadek jellemzik.
 
@@ -947,7 +947,7 @@ Hivatkozás: https://piacradar.eu/szotar/pre-market.html
 **Piacradar értelmezés** A Piacradar a pre-market/after-hours mozgásokat iránymutató, de nem végleges jelzésként kezeli — a megerősítést mindig a normál kereskedési idő adja.
 
 ## Put – Eladási opció
-Hivatkozás: https://piacradar.eu/szotar/put.html
+Hivatkozás: https://piacradar.eu/glossary.html#put
 
 **Mi ez?** Olyan opciós szerződés, amely jogot ad a tulajdonosnak, hogy egy adott eszközt meghatározott áron (strike price) eladjon egy adott lejáratig. A put vásárlója az árfolyam eséséből profitál, vagy meglévő pozícióját védi (protective put).
 
@@ -956,7 +956,7 @@ Hivatkozás: https://piacradar.eu/szotar/put.html
 **Piacradar értelmezés** A Piacradar a put-aktivitást a védekezésre való hajlandóság jeleként figyeli — kiugró put-vásárlás események (Fed, earnings) előtt a piac idegességét mutatja.
 
 ## Quadruple Witching – Négyszeres lejárat
-Hivatkozás: https://piacradar.eu/szotar/quadruple-witching.html
+Hivatkozás: https://piacradar.eu/glossary.html#quadruple-witching
 
 **Mi ez?** Évente négyszer (március, június, szeptember, december harmadik péntekén) egyszerre jár le négyféle derivatíva: index futures, index opciók, részvényopciók és single-stock futures.
 
@@ -965,7 +965,7 @@ Hivatkozás: https://piacradar.eu/szotar/quadruple-witching.html
 **Piacradar értelmezés** A Piacradar a quadruple witching napokat technikai volatilitás-forrásként jelzi — az aznapi mozgásokból óvatosan érdemes következtetést levonni.
 
 ## Quantitative Tightening (QT)
-Hivatkozás: https://piacradar.eu/szotar/qt.html
+Hivatkozás: https://piacradar.eu/glossary.html#qt
 
 **Mi ez?** Mennyiségi szigorítás: a jegybank csökkenti a mérlegfőösszegét, jellemzően úgy, hogy a lejáró állampapírokat nem fekteti újra. Ezzel likviditást von ki a bankrendszerből. A QE (mennyiségi lazítás) ellentéte.
 
@@ -974,7 +974,7 @@ Hivatkozás: https://piacradar.eu/szotar/qt.html
 **Piacradar értelmezés** A Piacradar a QT ütemének változását figyeli: a program gyorsítása szigorítás, a lassítása vagy leállítása dovish jelzés. A mérlegpolitikára tett utalások gyakran nagyobb piaci hatást váltanak ki, mint maga a kamatdöntés.
 
 ## Rate Cut – Kamatvágás
-Hivatkozás: https://piacradar.eu/szotar/rate-cut.html
+Hivatkozás: https://piacradar.eu/glossary.html#rate-cut
 
 **Mi ez?** A jegybank csökkenti az irányadó kamatot, olcsóbbá téve a hitelt és növelve a likviditást.
 
@@ -983,7 +983,7 @@ Hivatkozás: https://piacradar.eu/szotar/rate-cut.html
 **Piacradar értelmezés** A Piacradar a kamatvágási várakozásokat a piaci árazás (Fed funds futures) tükrében követi — a „miért vág” kérdés fontosabb, mint a „mennyit”.
 
 ## Recesszió
-Hivatkozás: https://piacradar.eu/szotar/recesszio.html
+Hivatkozás: https://piacradar.eu/glossary.html#recesszio
 
 **Mi ez?** Tartós gazdasági visszaesés — technikai definíció szerint két egymást követő negyedév GDP-csökkenése. Az USA-ban hivatalosan az NBER datálja, több mutató (foglalkoztatás, jövedelem, termelés) alapján.
 
@@ -992,7 +992,7 @@ Hivatkozás: https://piacradar.eu/szotar/recesszio.html
 **Piacradar értelmezés** A Piacradar a recessziós kockázatot indikátor-kombinációval követi (hozamgörbe, munkaerőpiac, PMI, fogyasztás) — egyetlen adat sosem elég a kimondásához.
 
 ## Retail Sales – Kiskereskedelmi forgalom
-Hivatkozás: https://piacradar.eu/szotar/retail-sales.html
+Hivatkozás: https://piacradar.eu/glossary.html#retail-sales
 
 **Mi ez?** A kiskereskedelmi értékesítések havi változása az USA-ban. A fogyasztói költekezés legfontosabb kemény adata.
 
@@ -1001,7 +1001,7 @@ Hivatkozás: https://piacradar.eu/szotar/retail-sales.html
 **Piacradar értelmezés** A Piacradar a Retail Sales-t a fogyasztó erejének fő mérőszámaként kezeli, a „control group” komponensre külön figyelve.
 
 ## Risk-on / Risk-off
-Hivatkozás: https://piacradar.eu/szotar/risk-on-off.html
+Hivatkozás: https://piacradar.eu/glossary.html#risk-on-off
 
 **Mi ez?** A piaci kockázatvállalási hajlandóság két üzemmódja. Risk-on: a tőke a kockázatos eszközökbe áramlik (részvények, kripto, EM). Risk-off: menekülés a biztonságba (kötvények, dollár, arany, yen).
 
@@ -1010,7 +1010,7 @@ Hivatkozás: https://piacradar.eu/szotar/risk-on-off.html
 **Piacradar értelmezés** A Piacradar a risk-on/off keretet a napi mozgások gyors kontextusaként használja — azt jelzi, hogy a mozgás hangulati vagy eszköz-specifikus eredetű.
 
 ## SEC – Amerikai tőzsdefelügyelet
-Hivatkozás: https://piacradar.eu/szotar/sec.html
+Hivatkozás: https://piacradar.eu/glossary.html#sec
 
 **Mi ez?** A Securities and Exchange Commission az amerikai értékpapírpiac felügyelete: engedélyez, szabályoz, vizsgál és büntet.
 
@@ -1019,7 +1019,7 @@ Hivatkozás: https://piacradar.eu/szotar/sec.html
 **Piacradar értelmezés** A Piacradar a SEC-lépéseket a szabályozási kockázat és a legitimációs folyamat fő eseményeiként követi.
 
 ## Sell the News – Hírre eladás
-Hivatkozás: https://piacradar.eu/szotar/sell-the-news.html
+Hivatkozás: https://piacradar.eu/glossary.html#sell-the-news
 
 **Mi ez?** Piaci jelenség, amikor egy várva várt pozitív esemény (jó earnings, termékbemutató, kamatvágás) bekövetkeztekor a részvény esik, nem emelkedik. A logika: a piac az eseményt már előre beárazta — mire a hír megérkezik, a vevők bent vannak, és a megerősítés eladási alkalommá válik. Párja a „buy the rumor" (pletykára vétel).
 
@@ -1028,7 +1028,7 @@ Hivatkozás: https://piacradar.eu/szotar/sell-the-news.html
 **Piacradar értelmezés** A Piacradar a sell the news jelenséget akkor nevezi meg, ha egy jó jelentésre érkező esés a magas előzetes várakozásokkal magyarázható — ilyenkor a mozgás a pozicionáltságról árulkodik, nem a fundamentumok romlásáról.
 
 ## SEP – Summary of Economic Projections
-Hivatkozás: https://piacradar.eu/szotar/sep.html
+Hivatkozás: https://piacradar.eu/glossary.html#sep
 
 **Mi ez?** A Fed negyedéves gazdasági előrejelzés-csomagja: GDP, munkanélküliség, infláció (PCE) és kamatpálya (dot plot) prognózisok, FOMC-tagonként.
 
@@ -1037,7 +1037,7 @@ Hivatkozás: https://piacradar.eu/szotar/sep.html
 **Piacradar értelmezés** A Piacradar a SEP-revíziókat a Fed-narratíva változásának legkonkrétabb jeleként kezeli — a szavaknál (sajtótájékoztató) megbízhatóbb, mert számszerű.
 
 ## Short Covering – Short zárás
-Hivatkozás: https://piacradar.eu/szotar/short-covering.html
+Hivatkozás: https://piacradar.eu/glossary.html#short-covering
 
 **Mi ez?** A short pozíciók zárása visszavásárlással. Ha sok short zár egyszerre (pl. emelkedő árfolyam miatt), a vételi nyomás tovább emeli az árat.
 
@@ -1046,7 +1046,7 @@ Hivatkozás: https://piacradar.eu/szotar/short-covering.html
 **Piacradar értelmezés** A Piacradar a short covering-et a gyors, hír nélküli emelkedések egyik lehetséges technikai magyarázataként kezeli.
 
 ## Short Squeeze / Gamma Squeeze
-Hivatkozás: https://piacradar.eu/szotar/short-squeeze.html
+Hivatkozás: https://piacradar.eu/glossary.html#short-squeeze
 
 **Mi ez?** Short squeeze: az emelkedő árfolyam a shortosokat kényszerű visszavásárlásra készteti, ami tovább hajtja az árat — öngerjesztő spirál. Gamma squeeze: ugyanez opciós áttételen keresztül, amikor a market makerek call-eladásaik fedezésére kénytelenek részvényt venni.
 
@@ -1055,7 +1055,7 @@ Hivatkozás: https://piacradar.eu/szotar/short-squeeze.html
 **Piacradar értelmezés** A Piacradar a squeeze-gyanús mozgásokat technikai eseményként jelzi — a kérdés mindig az, mi marad az árfolyamból, amikor a kényszervásárlás kifullad.
 
 ## Soft Landing
-Hivatkozás: https://piacradar.eu/szotar/soft-landing.html
+Hivatkozás: https://piacradar.eu/glossary.html#soft-landing
 
 **Mi ez?** Az a forgatókönyv, amelyben a jegybank visszaszorítja az inflációt anélkül, hogy a gazdaság recesszióba fordulna: a növekedés lassul, de pozitív marad, a munkanélküliség csak mérsékelten emelkedik.
 
@@ -1064,7 +1064,7 @@ Hivatkozás: https://piacradar.eu/szotar/soft-landing.html
 **Piacradar értelmezés** A Piacradar a soft landing forgatókönyvet a munkaerőpiaci és inflációs adatok együttállásán méri: lassuló bérdinamika stabil foglalkoztatás mellett támogatja, míg a gyorsuló elbocsátás vagy a ragadós maginfláció gyengíti. A konszenzus túlsúlya ilyenkor sérülékennyé teszi a pozicionáltságot.
 
 ## Spread – Hozamfelár
-Hivatkozás: https://piacradar.eu/szotar/spread.html
+Hivatkozás: https://piacradar.eu/glossary.html#spread
 
 **Mi ez?** Két hozam vagy ár közötti különbség. Leggyakoribb formái: kötvény-hozamfelár (pl. vállalati vs. állampapír — credit spread), országok közti felár (pl. BTP-Bund), vagy lejáratok közti különbség (hozamgörbe-spread, pl. 2s10s).
 
@@ -1073,7 +1073,7 @@ Hivatkozás: https://piacradar.eu/szotar/spread.html
 **Piacradar értelmezés** A Piacradar a spreadeket a rendszerszintű kockázat hőmérőjeként használja — a részvényindexek nyugalma mellett táguló spreadek korai figyelmeztető jelek.
 
 ## Stablecoin
-Hivatkozás: https://piacradar.eu/szotar/stablecoin.html
+Hivatkozás: https://piacradar.eu/glossary.html#stablecoin
 
 **Mi ez?** Stabil árfolyamú kriptovaluta, amely jellemzően az amerikai dollárhoz kötött (1 token ≈ 1 USD). A legnagyobbak: USDT (Tether), USDC (Circle). Fedezetük készpénz, állampapír vagy más eszköz.
 
@@ -1082,7 +1082,7 @@ Hivatkozás: https://piacradar.eu/szotar/stablecoin.html
 **Piacradar értelmezés** A Piacradar a stablecoin-állomány változását a kriptopiaci likviditás jelzőjeként, a szabályozási híreket pedig strukturális eseményként követi.
 
 ## Tariff – Vám
-Hivatkozás: https://piacradar.eu/szotar/tariff.html
+Hivatkozás: https://piacradar.eu/glossary.html#tariff
 
 **Mi ez?** Importált árukra kivetett adó, amely drágítja a külföldi termékeket. Kereskedelempolitikai és alkupozíciós eszköz.
 
@@ -1091,7 +1091,7 @@ Hivatkozás: https://piacradar.eu/szotar/tariff.html
 **Piacradar értelmezés** A Piacradar a vám-híreket az inflációs pálya és a szektorhatások (autóipar, félvezetők, fogyasztási cikkek) szempontjából értelmezi.
 
 ## Trade Balance – Külkereskedelmi mérleg
-Hivatkozás: https://piacradar.eu/szotar/trade-balance.html
+Hivatkozás: https://piacradar.eu/glossary.html#trade-balance
 
 **Mi ez?** Az export és az import különbsége. Többlet: az ország többet ad el külföldre, mint amennyit vásárol; hiány: fordítva.
 
@@ -1100,7 +1100,7 @@ Hivatkozás: https://piacradar.eu/szotar/trade-balance.html
 **Piacradar értelmezés** A Piacradar a külkereskedelmi adatokat a deviza-mozgások és a vámpolitikai hatások kontextusában értelmezi.
 
 ## Treasury – Amerikai állampapír
-Hivatkozás: https://piacradar.eu/szotar/treasury.html
+Hivatkozás: https://piacradar.eu/glossary.html#treasury
 
 **Mi ez?** Az amerikai állam által kibocsátott, világszerte referenciának számító kötvények: T-bill (1 éven belüli), T-note (2–10 év), T-bond (20–30 év).
 
@@ -1109,7 +1109,7 @@ Hivatkozás: https://piacradar.eu/szotar/treasury.html
 **Piacradar értelmezés** A Piacradar a Treasury-piacot a kockázatmentes hozamgörbe és a menedék-kereslet fő színtereként követi — az aukciók és a hozammozgások a tőkepiaci hangulat alapjelei.
 
 ## Unemployment Rate – Munkanélküliségi ráta
-Hivatkozás: https://piacradar.eu/szotar/unemployment-rate.html
+Hivatkozás: https://piacradar.eu/glossary.html#unemployment-rate
 
 **Mi ez?** A munkanélküliek aránya az aktív munkaerőn belül. Az NFP-jelentés része, havonta jelenik meg.
 
@@ -1118,7 +1118,7 @@ Hivatkozás: https://piacradar.eu/szotar/unemployment-rate.html
 **Piacradar értelmezés** A Piacradar a munkanélküliségi rátát az NFP-vel és a bérdinamikával együtt értelmezi — a trendforduló fontosabb, mint az abszolút szint.
 
 ## VIX – Volatilitási index
-Hivatkozás: https://piacradar.eu/szotar/vix.html
+Hivatkozás: https://piacradar.eu/glossary.html#vix
 
 **Mi ez?** A VIX az S&P 500 opcióiból számított, a következő 30 napra várt volatilitást mérő index — a piac „félelem-indexe”. 15 alatt nyugalom, 20 felett emelkedett feszültség, 30 felett stressz/pánik.
 
@@ -1127,7 +1127,7 @@ Hivatkozás: https://piacradar.eu/szotar/vix.html
 **Piacradar értelmezés** A Piacradar a VIX-et a piaci hangulat gyors hőmérőjeként használja, a szint mellett a változás sebességére figyelve — egy hirtelen VIX-ugrás akkor is jelzés, ha az indexek még nyugodtak.
 
 ## Volatilitás
-Hivatkozás: https://piacradar.eu/szotar/volatilitas.html
+Hivatkozás: https://piacradar.eu/glossary.html#volatilitas
 
 **Mi ez?** Az árfolyam ingadozásának mértéke egy adott időszak alatt — a kockázat leggyakoribb mérőszáma. Megkülönböztetjük a realizált (múltbeli, tényleges) és az implikált (a piac által az opciós árakban várt jövőbeli) volatilitást; utóbbi legismertebb mérője a VIX index.
 
@@ -1136,7 +1136,7 @@ Hivatkozás: https://piacradar.eu/szotar/volatilitas.html
 **Piacradar értelmezés** A Piacradar a volatilitást a VIX-szel és a piaci szélességgel együtt olvassa — a kérdés mindig az, hogy a kilengés új információt tükröz, vagy pozicionáltsági, technikai eredetű.
 
 ## WTI Oil
-Hivatkozás: https://piacradar.eu/szotar/wti.html
+Hivatkozás: https://piacradar.eu/glossary.html#wti
 
 **Mi ez?** A West Texas Intermediate az amerikai olajpiac referencia-típusa, könnyű és alacsony kéntartalmú kőolaj. Határidős szerződéseit a NYMEX-en jegyzik, fizikai szállítási pontja az oklahomai Cushing.
 
@@ -1145,7 +1145,7 @@ Hivatkozás: https://piacradar.eu/szotar/wti.html
 **Piacradar értelmezés** A Piacradar a WTI-t a Brenthez viszonyított különbözettel együtt nézi: a szűkülő spread jellemzően amerikai kínálati szűkösséget jelez. A tartósan emelkedő olajár szigorúbb kamatpálya irányába hat, mert az inflációs főszámot közvetlenül emeli.
 
 ## Yield Curve – Hozamgörbe
-Hivatkozás: https://piacradar.eu/szotar/yield-curve.html
+Hivatkozás: https://piacradar.eu/glossary.html#yield-curve
 
 **Mi ez?** Az azonos kibocsátó (jellemzően az amerikai állam) különböző lejáratú kötvényeinek hozamait ábrázoló görbe. Normál esetben emelkedő: a hosszabb lejáratért magasabb hozam jár.
 
@@ -1154,7 +1154,7 @@ Hivatkozás: https://piacradar.eu/szotar/yield-curve.html
 **Piacradar értelmezés** A Piacradar a hozamgörbe alakváltozásait (2s10s spread, meredekség) a gazdasági ciklus és a Fed-pálya piaci árazásának legfontosabb jelzéseként követi.
 
 ## ZEW Index
-Hivatkozás: https://piacradar.eu/szotar/zew.html
+Hivatkozás: https://piacradar.eu/glossary.html#zew
 
 **Mi ez?** Német gazdasági hangulatindex, amely pénzügyi elemzők és intézményi befektetők várakozásait méri a következő hat hónapra. Havonta jelenik meg; a nulla feletti érték a javulást várók többségét jelzi.
 
