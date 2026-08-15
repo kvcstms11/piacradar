@@ -1,10 +1,10 @@
-name: GEO build (JSON-LD + llms-full.txt)
+name: GEO build (szótár oldalak + JSON-LD + sitemap + llms-full.txt)
 
 # Runs whenever the source content JSON is updated (e.g. you upload a new
-# glossary-data.json or data.json). Regenerates the JSON-LD blocks inside
-# glossary.html / stories.html and rebuilds llms-full.txt, then commits the
-# result back to the repo. You keep uploading JSON by hand — everything else
-# is automatic.
+# glossary-data.json or data.json). Regenerates the individual glossary term
+# pages under szotar/, the JSON-LD blocks inside glossary.html / stories.html,
+# the sitemap and llms-full.txt, then commits the result back to the repo.
+# You keep uploading JSON by hand — everything else is automatic.
 
 on:
   push:
@@ -42,10 +42,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add glossary.html stories.html llms-full.txt
+          git add -A glossary.html stories.html llms-full.txt sitemap.xml szotar/
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: auto-regenerate GEO artifacts (JSON-LD + llms-full.txt)"
+            git commit -m "chore: auto-regenerate GEO artifacts (szotar pages + JSON-LD + sitemap)"
             git push
           fi
