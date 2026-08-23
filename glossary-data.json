@@ -2735,4 +2735,346 @@
    }
   ]
  }
+  {
+    "slug": "blockchain",
+    "title": "Blockchain",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Elosztott főkönyv, amelyben a tranzakciókat blokkokba rendezve, kriptográfiai láncolattal rögzítik. A hálózat résztvevői közösen tárolják és ellenőrzik az adatokat, így utólagos módosításhoz a hálózat többségének egyetértése kellene."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A bizalom nem egy központi szereplőtől, hanem a rendszer felépítéséből ered: bárki ellenőrizheti a tranzakciótörténetet, és senki nem írhatja át egyoldalúan. Ez teszi lehetővé az értékátvitelt bank vagy elszámolóház közbeiktatása nélkül."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a blokkláncot infrastruktúraként kezeli, nem befektetési eszközként: az adott hálózat értékét a rajta zajló tényleges gazdasági aktivitás, a fejlesztői jelenlét és a díjbevétel mutatja. A technológiai újdonság önmagában nem árazza a hozzá tartozó tokent."
+      }
+    ]
+  },
+  {
+    "slug": "altcoin",
+    "title": "Altcoin",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Minden kriptoeszköz a Bitcoinon kívül. A kategória rendkívül heterogén: ide tartoznak az önálló alaphálózatok tokenjei, a rájuk épülő alkalmazások eszközei és a stablecoinok is."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Az altcoinok jellemzően magasabb bétájú eszközök: a piaci emelkedésben nagyobbat mozdulnak felfelé, az esésben pedig aránytalanul többet veszítenek. Likviditásuk is szűkebb, ami tovább erősíti a kilengéseket."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az altpiacot a BTC-dominancia felől olvassa: a csökkenő dominancia jellemzően az altok felé áramló tőkét jelez, az emelkedő dominancia pedig a Bitcoinba történő visszahúzódást. Kockázatkerülő környezetben az altok szenvedik el először a likviditás elpárolgását."
+      }
+    ]
+  },
+  {
+    "slug": "wallet",
+    "title": "Wallet – Kriptotárca",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Olyan szoftver vagy fizikai eszköz, amely a blokkláncon lévő vagyonhoz tartozó privát kulcsokat tárolja. Maga az érme a hálózaton marad — a tárca a hozzáférést őrzi, nem magát az eszközt."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A hot wallet folyamatos internetkapcsolattal működik, ezért kényelmes, de támadható. A cold wallet offline tárolja a kulcsokat, így ellenállóbb, viszont körülményesebb. A privát kulcs elvesztése az eszközök végleges elvesztését jelenti."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a tárolási módot önálló kockázati tényezőként kezeli: a tőzsdén hagyott eszköz partnerkockázatot hordoz, mert a kulcsok a szolgáltatónál vannak. A tőzsdei egyenlegek onchain mért növekedése gyakran eladási szándékot vagy fedezetbe helyezést jelez."
+      }
+    ]
+  },
+  {
+    "slug": "smart-contract",
+    "title": "Smart Contract – Okosszerződés",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A blokkláncon futó, önvégrehajtó programkód, amely előre rögzített feltételek teljesülésekor automatikusan végrehajtja a tranzakciót. Közvetítő és utólagos emberi jóváhagyás nélkül működik."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Ez a decentralizált pénzügyi alkalmazások alapja: hitelezés, tőzsdei kereskedés és származtatott termékek egyaránt okosszerződéseken keresztül működnek. A kód nyilvános és ellenőrizhető, ugyanakkor a benne maradt hiba közvetlen és gyakran visszafordíthatatlan pénzügyi veszteséghez vezet."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az okosszerződés-kockázatot a piaci kockázattól elkülönítve kezeli: az auditálatlan vagy frissen kiadott kód sérülékenységet hordoz. A nagyobb protokollhackek jellemzően nem árfolyammozgásból, hanem programozási hibából erednek."
+      }
+    ]
+  },
+  {
+    "slug": "gas-fee",
+    "title": "Gas Fee – Tranzakciós díj",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A blokklánc használatáért fizetett díj, amely a hálózat számítási kapacitásának igénybevételét fedezi. Jellemzően az adott hálózat natív tokenjében kell megfizetni, és a validátorokat díjazza."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A díj a hálózati terheléssel változik: nagy forgalom idején megugorhat, ami a kisebb összegű tranzakciókat gazdaságtalanná teszi. Ez közvetlenül befolyásolja a hálózat használhatóságát és versenyképességét a többi blokklánccal szemben."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a díjbevételt a hálózat tényleges keresletének mérőszámaként olvassa: a tartósan magas díjbevétel valós használatra utal, míg a nulla közeli díj alacsony aktivitásra. Egyes hálózatoknál a díjak egy részét elégetik, ami a kínálati oldalra is hat."
+      }
+    ]
+  },
+  {
+    "slug": "perpetual-futures",
+    "title": "Perpetual Futures – Örökös határidős",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Lejárat nélküli határidős kontraktus, amely tőkeáttételes pozíciót tesz lehetővé az alaptermék birtoklása nélkül. A hagyományos határidős ügyletektől eltérően nincs elszámolási időpont, a pozíció elvileg korlátlan ideig tartható."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A kripto derivatív piac forgalmának túlnyomó részét ezek a kontraktusok adják, ezért az árazás jelentős része itt dől el. A finanszírozási ráta az a mechanizmus, amely az árat a spot piachoz köti."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a perpetual piacot a nyitott kötésállomány és a finanszírozási ráta együttesében nézi: a gyorsan növekvő tőkeáttétel sérülékennyé teszi a piacot, mert egy ellenirányú mozgás kényszerlikvidálási hullámot indíthat el."
+      }
+    ]
+  },
+  {
+    "slug": "funding-rate",
+    "title": "Funding Rate – Finanszírozási ráta",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A perpetual kontraktusok long és short pozíciói között rendszeres időközönként átutalt kifizetés. Ha az ár a spot fölé kerül, a longok fizetnek a shortoknak, fordított esetben a shortok a longoknak."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A mechanizmus az árat a spot piachoz köti, emellett a piaci pozicionáltság egyik legpontosabb mérőszáma. A tartósan magas pozitív ráta azt jelzi, hogy a long oldal túlsúlyba került és a tőkeáttétel felhalmozódott."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a finanszírozási rátát kontraindikátorként is olvassa: a szélsőségesen pozitív érték túlfűtött long pozicionáltságra utal, ami sérülékennyé teszi a piacot egy korrekcióval szemben. A negatív tartomány short dominanciát jelez, ami squeeze alapját adhatja."
+      }
+    ]
+  },
+  {
+    "slug": "liquidation",
+    "title": "Liquidation – Likvidálás",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Tőkeáttételes pozíció automatikus, kényszerű zárása, amikor a fedezet a szükséges szint alá csökken. A margin callal ellentétben itt nincs felszólítás és nincs mérlegelési idő: a rendszer a pozíciót magától zárja."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A kényszerzárás piaci megbízásként érkezik az ajánlati könyvbe, tehát maga is nyomja az árat. Sűrűn elhelyezkedő likvidálási szintek esetén ez láncreakciót indíthat, amelyben minden zárás újabb zárásokat vált ki."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a likvidálási kaszkádot magyarázó tényezőként kezeli a szokatlanul gyors mozgásoknál: ilyenkor az elmozdulás mértéke nem a fundamentumból, hanem a tőkeáttétel kiszóródásából ered. A kaszkád után a rendszerben lévő tőkeáttétel jellemzően lecsökken."
+      }
+    ]
+  },
+  {
+    "slug": "on-chain",
+    "title": "On-chain analízis",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A blokkláncon nyilvánosan rögzített tranzakciós adatok elemzése: tárcaegyenlegek, átutalások, tőzsdei be- és kiáramlások, valamint a birtoklási idő szerinti megoszlás vizsgálata."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A hagyományos piacokon a tulajdonosi mozgások nagy része rejtve marad, itt viszont valós időben követhető. Ez lehetővé teszi, hogy a befektetők a hírek helyett a tényleges tőkeáramlás alapján ítéljék meg a piaci helyzetet."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az onchain adatokat elsősorban a birtokosi csoportok viselkedésén keresztül olvassa: a nagyobb tárcák felhalmozása és a hosszú távú birtokosok mozgása többet mond a trendről, mint az árfolyam önmagában. A tőzsdei egyenlegek változása a kínálati oldalt jelzi."
+      }
+    ]
+  },
+  {
+    "slug": "tvl",
+    "title": "TVL – Total Value Locked",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A decentralizált pénzügyi protokollokban zárolt eszközök összesített értéke. Magában foglalja a hitelezési piacokon elhelyezett fedezetet, a tőzsdei likviditást és a hozamtermelő stratégiákba helyezett tőkét."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A TVL a szektor méretének és a benne lévő bizalomnak a mérőszáma. Emelkedése tőkebeáramlást és növekvő aktivitást jelez, csökkenése pedig tőkekivonást vagy a mögöttes eszközök árfolyamesését tükrözi."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a TVL-t óvatosan kezeli, mert az érték két okból változhat: ténylegesen érkező tőkéből, vagy pusztán a zárolt eszközök átértékelődéséből. Az egy protokollra jutó díjbevétellel együtt nézve ad tisztább képet a valós használatról."
+      }
+    ]
+  },
+  {
+    "slug": "staking",
+    "title": "Staking – Zárolás",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Érmék zárolása a proof-of-stake típusú hálózatok működésének biztosítására. A résztvevő a lekötött tőkéjével garantálja a tranzakciók helyes validálását, és ezért jutalmat kap a hálózattól."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A staking két irányból hat: hozamot termel a birtokosnak, és csökkenti a szabadon forgó kínálatot, mert a zárolt érme átmenetileg nem eladható. A feloldás sok hálózatnál várakozási időhöz kötött."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a staking arányát kínálati mutatóként olvassa: a növekvő zárolt mennyiség szűkíti a piacon elérhető készletet. A hozam forrása ugyanakkor számít — ha az új kibocsátásból származik, a hozam részben önmagát hígítja."
+      }
+    ]
+  },
+  {
+    "slug": "tokenomics",
+    "title": "Tokenomics – Tokenomika",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Egy token gazdasági felépítése: a teljes és a forgalomban lévő kínálat, a kibocsátási ütem, az induló elosztás a csapat és a korai befektetők között, valamint az esetleges égetési mechanizmusok."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A tokenomika határozza meg, hogy a hálózat sikere mennyire csapódik le a token árában. Az agresszív kibocsátási ütem tartós eladói nyomást jelent, a koncentrált induló elosztás pedig későbbi feloldási hullámokat vetít előre."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a tokenomikát a keresleti oldal mellé helyezi: hiába nő a hálózati használat, ha a kínálat gyorsabban bővül. A deflációs vagy lassuló kibocsátású modellek szerkezetileg kedvezőbb helyzetben vannak egy keresleti fordulat esetén."
+      }
+    ]
+  },
+  {
+    "slug": "genius-act",
+    "title": "GENIUS Act",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "2025. július 18-án aláírt, hatályos amerikai szövetségi törvény, amely a fizetési stablecoinokra hoz létre keretrendszert. Előírja az 1:1 arányú tartalékfedezetet, és megtiltja a kibocsátóknak, hogy hozamot fizessenek a tulajdonosoknak."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A törvény jogi biztonságot ad a stablecoin-kibocsátásnak, ami feltétele az intézményi használatnak. A hozamfizetés tilalma elválasztja a stablecoint a banki betéttől, a decentralizált pénzügyek pedig kimaradnak a szolgáltatói definícióból. A végrehajtási rendeletek kidolgozása még tart."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a GENIUS Actet a stablecoinok fizetési célú elterjedésének feltételeként olvassa: a tartalékkövetelmény miatt a kibocsátóknak jellemzően rövid lejáratú államkötvényben kell tartaniuk a fedezetet, ami a szektor növekedését az államadósság-finanszírozáshoz is hozzákapcsolja."
+      }
+    ]
+  },
+  {
+    "slug": "clarity-act",
+    "title": "CLARITY Act",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Teljes nevén Digital Asset Market Clarity Act (H.R. 3633): a digitális eszközök piaci struktúráját szabályozó amerikai törvényjavaslat. Jelenleg még nem hatályos törvény, a jogalkotási folyamat tart."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A javaslat a CFTC-hez rendelné a digitális nyersanyagok azonnali piacának felügyeletét, míg a tőkebevonás és a befektetési szerződések a SEC hatáskörében maradnának. Ez oldaná fel azt a hatásköri bizonytalanságot, amely évek óta akadályozza az amerikai piac fejlődését."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a jogalkotási folyamat tényleges állását követi, nem az egyes nyilatkozatokat: a Képviselőház 2025 júliusában elfogadta, a szenátusi bankbizottság 2026 májusában megszavazta, a végszavazás azonban még nem történt meg. Vitatott pont az összeférhetetlenség és a stablecoin-hozam kérdése."
+      }
+    ]
+  },
+  {
+    "slug": "token-taxonomia",
+    "title": "Token-taxonómia",
+    "category": "Kripto",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A digitális eszközök jogi besorolása három fő kategóriába: digitális nyersanyag, befektetési szerződés vagy fizetési stablecoin. A besorolás dönti el, melyik hatóság felügyeli az eszközt és milyen szabályok vonatkoznak rá."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A minősítés közvetlenül hat arra, hogy egy token elérhető-e szabályozott platformokon, és milyen közzétételi kötelezettség terheli a kibocsátót. A besorolás bizonytalansága évekig visszatartotta az intézményi tőkét az eszközosztálytól."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar megkülönbözteti a hatósági iránymutatást a törvénytől: a SEC és a CFTC 2026. március 17-i közös besorolása tizenhat tokent minősített nyersanyagnak, de ez rendeleti szintű döntés, amelyet egy következő adminisztráció visszabonthat. Jogszabályi szintre a CLARITY Act emelné."
+      }
+    ]
+  },
+  {
+    "slug": "eurusd",
+    "title": "EURUSD",
+    "category": "Deviza",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Az euró és az amerikai dollár árfolyampárja, a devizapiac legnagyobb forgalmú instrumentuma. Az árfolyam azt mutatja, hány dollárt ér egy euró az adott pillanatban."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A pár mozgása a Fed és az EKB kamatpályájának különbségét, a két gazdasági övezet növekedési kilátásait és a globális kockázati hangulatot tükrözi. Az európai exportőrök versenyképességét és az amerikai vállalatok külföldi bevételének dollárértékét egyaránt befolyásolja."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az EURUSD-t elsősorban a kamatkülönbözet felől olvassa: ha a Fed szigorúbb pályán jár az EKB-nál, az jellemzően a dollárt erősíti. Kockázatkerülő időszakokban a dollár menedékszerepe önmagában is felfelé hajthatja a keresletét."
+      }
+    ]
+  },
+  {
+    "slug": "devizaintervencio",
+    "title": "Devizaintervenció",
+    "category": "Deviza",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Jegybanki vagy kormányzati beavatkozás a devizapiacon, amelynek célja a saját fizetőeszköz árfolyamának befolyásolása. Történhet közvetlen adásvétellel, illetve verbális formában, puszta bejelentéssel is."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Az intervencióhoz devizatartalékot kell felhasználni, ami korlátozott erőforrás. Ezért a beavatkozás jellemzően a mozgás ütemét lassítja vagy időt nyer, de a fundamentumokkal szemben tartósan nem képes irányt fordítani."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az intervenciót figyelmeztető jelzésként olvassa: azt mutatja, hogy az árfolyammozgás elért egy olyan szintet, amelyet a döntéshozók már kezelendőnek tartanak. Több jegybank összehangolt fellépése erősebb hatású, mint az egyoldalú beavatkozás."
+      }
+    ]
+  },
+  {
+    "slug": "kamatparitas",
+    "title": "Kamatparitás – Interest Rate Parity",
+    "category": "Deviza",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Elméleti összefüggés, amely szerint két deviza kamatkülönbözetét a határidős árfolyam kiegyenlíti, így a magasabb kamatozású deviza határidőre gyengébben árazódik. Fedezett és fedezetlen változata is létezik."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Ez a carry trade elméleti alapja: ha a paritás tökéletesen érvényesülne, a kamatkülönbözetből nem lehetne nyereséget elérni. A gyakorlatban a fedezetlen változat rendszeresen sérül, és éppen ez teremti meg a stratégia hozamát."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a kamatparitás sérülését kockázati jelzésként is olvassa: a carry pozíciók addig működnek, amíg a finanszírozó deviza gyenge marad. A kamatkülönbözet szűkülése vagy a finanszírozó deviza erősödése a pozíciók gyors leépítését indíthatja el."
+      }
+    ]
+  }
 ]
