@@ -139,6 +139,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/bollinger-szalag.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/brent.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -253,6 +259,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/dca.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/defenziv-ciklikus.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -278,6 +290,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/devizaintervencio.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/diverzifikacio.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -337,6 +355,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/eladosodottsag.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/em.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -344,6 +368,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/eps.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/etf.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -367,6 +397,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/ev-ebitda.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/fiskalis-politika.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -379,7 +415,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/fomo.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/forex.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/forgalom.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -410,6 +458,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/gamma.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/gap.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -470,6 +524,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/hedge.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/horgonyzas.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -565,6 +625,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/kockazat-hozam-arany.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/kotveny.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/leverage.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -601,6 +673,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/macd.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/magnificent-seven.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -619,6 +697,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/megerositesi-torzitas.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/mentalis-konyveles.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/michigan-sentiment.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -626,6 +716,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/mining.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/moat.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -644,6 +740,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/move-index.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/mozgoatlag.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -709,6 +811,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/osztalekhozam.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/price-to-book.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/pe-ratio.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -727,6 +841,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/peg-ratio.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/pboc.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -740,6 +860,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/pmi.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/poziciomeretezes.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -824,6 +950,18 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/roe.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/roic.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/rsi.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -919,6 +1057,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/stop-loss.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/strike-price.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -926,6 +1070,12 @@
   </url>
   <url>
     <loc>https://piacradar.eu/szotar/swap.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/tamasz-ellenallas.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -967,7 +1117,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/trailing-stop.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/treasury.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/trendvonal.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -979,7 +1141,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://piacradar.eu/szotar/ujrasulyozas.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://piacradar.eu/szotar/unemployment-rate.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://piacradar.eu/szotar/veszteseg-kerules.html</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
