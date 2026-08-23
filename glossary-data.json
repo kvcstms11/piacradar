@@ -2702,7 +2702,6 @@
   {
     "slug": "blockchain",
     "title": "Blockchain",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2721,7 +2720,6 @@
   {
     "slug": "altcoin",
     "title": "Altcoin",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2740,7 +2738,6 @@
   {
     "slug": "wallet",
     "title": "Wallet – Kriptotárca",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2759,7 +2756,6 @@
   {
     "slug": "smart-contract",
     "title": "Smart Contract – Okosszerződés",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2778,7 +2774,6 @@
   {
     "slug": "gas-fee",
     "title": "Gas Fee – Tranzakciós díj",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2797,7 +2792,6 @@
   {
     "slug": "perpetual-futures",
     "title": "Perpetual Futures – Örökös határidős",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2816,7 +2810,6 @@
   {
     "slug": "funding-rate",
     "title": "Funding Rate – Finanszírozási ráta",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2835,7 +2828,6 @@
   {
     "slug": "liquidation",
     "title": "Liquidation – Likvidálás",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2854,7 +2846,6 @@
   {
     "slug": "on-chain",
     "title": "On-chain analízis",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2873,7 +2864,6 @@
   {
     "slug": "tvl",
     "title": "TVL – Total Value Locked",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2892,7 +2882,6 @@
   {
     "slug": "staking",
     "title": "Staking – Zárolás",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2911,7 +2900,6 @@
   {
     "slug": "tokenomics",
     "title": "Tokenomics – Tokenomika",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2930,7 +2918,6 @@
   {
     "slug": "genius-act",
     "title": "GENIUS Act",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2949,7 +2936,6 @@
   {
     "slug": "clarity-act",
     "title": "CLARITY Act",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2968,7 +2954,6 @@
   {
     "slug": "token-taxonomia",
     "title": "Token-taxonómia",
-    "category": "Kripto",
     "sections": [
       {
         "title": "Mi ez?",
@@ -2987,7 +2972,6 @@
   {
     "slug": "eurusd",
     "title": "EURUSD",
-    "category": "Deviza",
     "sections": [
       {
         "title": "Mi ez?",
@@ -3006,7 +2990,6 @@
   {
     "slug": "devizaintervencio",
     "title": "Devizaintervenció",
-    "category": "Deviza",
     "sections": [
       {
         "title": "Mi ez?",
@@ -3025,7 +3008,6 @@
   {
     "slug": "kamatparitas",
     "title": "Kamatparitás – Interest Rate Parity",
-    "category": "Deviza",
     "sections": [
       {
         "title": "Mi ez?",
@@ -3038,6 +3020,528 @@
       {
         "title": "Piacradar értelmezés",
         "text": "A Piacradar a kamatparitás sérülését kockázati jelzésként is olvassa: a carry pozíciók addig működnek, amíg a finanszírozó deviza gyenge marad. A kamatkülönbözet szűkülése vagy a finanszírozó deviza erősödése a pozíciók gyors leépítését indíthatja el."
+      }
+    ]
+  },
+  {
+    "slug": "mozgoatlag",
+    "title": "Mozgóátlag – Moving Average",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Egy adott időszak záróárainak átlaga, amely naponta gördül előre. Angolul moving average (MA). Az egyszerű változat minden napot azonos súllyal vesz figyelembe, az exponenciális (EMA) a frissebb adatokat nagyobb súllyal."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A mozgóátlag kisimítja a napi zajt és a trend irányát mutatja. A leggyakrabban figyelt szintek az 50, a 100 és a 200 napos átlag; ezek gyakran dinamikus támaszként vagy ellenállásként viselkednek, mert sok piaci szereplő ugyanazt a vonalat nézi."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a 200 napos és a 200 hetes átlagot hosszú távú trendhatárként kezeli: a fölötte tartózkodás emelkedő szerkezetet jelez, az alatta ragadás gyengülő trendet. Az átlag átlépése önmagában nem fordulat — a megerősítést a szint megtartása adja."
+      }
+    ]
+  },
+  {
+    "slug": "tamasz-ellenallas",
+    "title": "Támasz és ellenállás – Support and Resistance",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Olyan árszintek, ahol az árfolyam korábban többször megfordult. Angolul support (támasz, alulról tartó szint) és resistance (ellenállás, felülről nyomó szint). A szint erejét az adja, hányszor és mekkora forgalom mellett tesztelték."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Ezeknél a szinteknél sűrűsödnek a megbízások, ezért az árfolyam ott lassul vagy fordul. Az áttört ellenállás gyakran támasszá alakul, és fordítva — ezt nevezik szerepcserének."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a szinteket zónaként kezeli, nem pontos árként: a piac ritkán fordul meg egyetlen számnál. Az áttörés akkor válik értelmezhetővé, ha nagyobb forgalom kíséri és az árfolyam a szint fölött vagy alatt zár, nem csak megérinti."
+      }
+    ]
+  },
+  {
+    "slug": "rsi",
+    "title": "RSI – Relatív erősség index",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Lendületet mérő indikátor, angolul Relative Strength Index. Nulla és száz közötti értéket vesz fel, és azt mutatja, milyen arányban voltak emelkedő és csökkenő napok az adott időszakban. Alapbeállítása jellemzően 14 periódus."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A 70 feletti érték túlvett, a 30 alatti túladott állapotot jelez. Ez azonban nem vételi vagy eladási jelzés: erős trendben az RSI hosszan a szélsőértékek közelében maradhat, miközben az árfolyam tovább mozog."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az RSI-t elsősorban a divergencia miatt figyeli: ha az árfolyam új csúcsot üt, de az indikátor nem követi, az gyengülő lendületre utal. A hosszabb időtávú, heti nézetű RSI és annak mozgóátlaga megbízhatóbb, mint a napi érték."
+      }
+    ]
+  },
+  {
+    "slug": "macd",
+    "title": "MACD",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Trendkövető lendületindikátor, angolul Moving Average Convergence Divergence. Két exponenciális mozgóátlag különbségét ábrázolja, mellette egy jelzővonallal és egy hisztogrammal, amely a kettő közötti eltérést mutatja."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A vonalak keresztezése irányváltásra utalhat: a jelzővonal fölé emelkedés emelkedő, alá süllyedés csökkenő lendületet jelez. A hisztogram szűkülése a mozgás kifulladását mutatja még azelőtt, hogy az árfolyam fordulna."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a MACD-t megerősítő eszközként használja, nem önálló jelzésként: oldalazó piacon sok téves keresztezést ad. A hosszabb, havi vagy heti időtávon adott fordulós jelzés lényegesen ritkább, ezért informatívabb."
+      }
+    ]
+  },
+  {
+    "slug": "bollinger-szalag",
+    "title": "Bollinger-szalag – Bollinger Bands",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Három vonalból álló indikátor, angolul Bollinger Bands: egy középső mozgóátlag, valamint fölötte és alatta egy-egy szalag, amelyet a szórás alapján számítanak. A szalagok szélessége az aktuális volatilitást mutatja."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A szalagok szűkülése alacsony volatilitást jelez, amit jellemzően kitágulás követ — ezt nevezik squeeze-nek. A jelenség azt vetíti előre, hogy erősebb mozgás jöhet, az irányát azonban nem határozza meg."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a szalagszűkülést volatilitási előjelzésként olvassa, nem iránymutatásként: a kitörés utáni irány előre nem ismert, ezért az ilyen helyzet önmagában nem alapoz meg irányfogadást. A középvonal visszaszerzése gyakran trendfordulós megerősítés."
+      }
+    ]
+  },
+  {
+    "slug": "trendvonal",
+    "title": "Trendvonal – Trendline",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A charton berajzolt egyenes, angolul trendline, amely legalább két mélypontot vagy csúcsot köt össze. Emelkedő trendben a mélypontokat, csökkenőben a csúcsokat kötik össze; a vonal dinamikus támaszként vagy ellenállásként működhet."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A trendvonal a mozgás szerkezetét mutatja: az emelkedő trendet a magasabb mélypontok sorozata tartja fenn. A vonal áttörése a szerkezet megváltozását jelzi, ami gyakran megelőzi a nagyobb irányváltást."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a trendvonalat szubjektív eszközként kezeli: ugyanazon a charton több érvényes vonal is behúzható. Az áttörés akkor lesz értelmezhető jelzés, ha volumennel és a szerkezet tényleges megbomlásával — például az utolsó mélypont elvesztésével — jár együtt."
+      }
+    ]
+  },
+  {
+    "slug": "gap",
+    "title": "Gap – Árrés a charton",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Két kereskedési nap között keletkező árrés, amikor a nyitóár érdemben eltér az előző záróártól, és a köztes tartományban nem történt üzletkötés. Angolul gap, jellemzően hírre, gyorsjelentésre vagy zárás utáni eseményre alakul ki."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A résben nincs kialakult ár, ezért ott hiányzik a megbízásállomány. Az árfolyam gyakran visszatér és „betölti” a rést, mert a szereplők ezen a tartományon belül keresik az egyensúlyi árat."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a betöltetlen rést nyitott kérdésként tartja számon a charton: a visszateszt gyakori, de az időzítése nem jelezhető előre. A gappel induló nyitás egyben azt is jelenti, hogy a stop megbízások az eltervezett szint helyett rosszabb áron teljesülhetnek."
+      }
+    ]
+  },
+  {
+    "slug": "forgalom",
+    "title": "Forgalom – Volume",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Az adott időszakban gazdát cserélt darabszám vagy kontraktusmennyiség. Angolul volume. Nem az árat mutatja, hanem azt, mekkora tényleges tőke állt a mozgás mögött."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A forgalom a mozgás hitelességét méri: nagy volumen mellett kialakult áttörés több szereplő egyetértését tükrözi, míg a vékony forgalmú mozgás könnyebben visszafordul. Ünnepnapok és nyári időszakok körül a alacsony likviditás felnagyíthatja a kilengéseket."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a forgalmat megerősítő adatként használja a technikai szintek mellett: a kulcsszint áttörése alacsony forgalommal gyakran téves kitörés. A magas forgalmú árzónák később támaszként vagy ellenállásként viselkednek."
+      }
+    ]
+  },
+  {
+    "slug": "diverzifikacio",
+    "title": "Diverzifikáció – Diversification",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A tőke megosztása több eszköz, szektor, régió vagy eszközosztály között, hogy egyetlen pozíció kimenetele ne határozza meg a teljes portfólió sorsát. Angolul diversification."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A diverzifikáció az egyedi kockázatot csökkenti, a piac egészét érintő rendszerkockázatot nem. Akkor hatékony, ha a pozíciók valóban eltérő tényezőkre reagálnak — több hasonló papír egy szektorból nem jelent tényleges szórást."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a diverzifikációt a korreláció felől nézi, nem a darabszám alapján: öt technológiai részvény együtt mozog, tehát egyetlen kitettséget jelent. A valódi szórás akkor jön létre, ha az egyes pozíciókat más gazdasági erők mozgatják."
+      }
+    ]
+  },
+  {
+    "slug": "poziciomeretezes",
+    "title": "Pozícióméretezés – Position Sizing",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Annak meghatározása, mekkora tőkét helyez a befektető egyetlen pozícióba. Angolul position sizing. A méretet jellemzően nem az elérhető tőke, hanem a vállalt maximális veszteség alapján számítják ki."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A pozícióméret dönti el, mekkora hatása lesz egy tévedésnek a teljes portfólióra. Ugyanaz a jó belépő túl nagy mérettel is veszteséges élménnyé válhat, mert a normális áringadozás is elviselhetetlen nyomást okoz."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a kezdő pozíció méretét a mozgástér kérdéseként kezeli: ha egy papírba egyszerre kerül a teljes tervezett tőke, később nincs lehetőség átlagolni anélkül, hogy a koncentráció túlzottá válna. A lépcsős felépítés ezt a mozgásteret tartja fenn."
+      }
+    ]
+  },
+  {
+    "slug": "stop-loss",
+    "title": "Stop loss – Veszteségvágó megbízás",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Előre megadott árszinthez kötött megbízás, amely automatikusan zárja a pozíciót, ha az árfolyam ellenkező irányba mozdul. Angolul stop loss. Célja a veszteség előre meghatározott szinten tartása."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A stop a döntést a kereskedés megnyitásának pillanatára helyezi, amikor még nincs érzelmi nyomás. Gappel induló nyitásnál viszont a teljesülés a megadottnál rosszabb áron történhet, mert a köztes tartományban nincs ár."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a stop utólagos módosítását külön kockázatként tartja számon: a szint kitolása a veszteség realizálásának halasztása, ami a kis veszteséget naggyá növelheti. Befektetési logikánál a stop szerepét gyakran a tézis érvénytelenné válása veszi át."
+      }
+    ]
+  },
+  {
+    "slug": "trailing-stop",
+    "title": "Trailing stop – Követő stop",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Olyan stop megbízás, amely az árfolyammal együtt mozog a nyereség irányába, de visszafelé nem. Angolul trailing stop. Rögzíthető fix távolsággal vagy százalékos eltéréssel az aktuális ártól."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A követő stop a nyereség egy részét védi anélkül, hogy előre meg kellene határozni a célárat. Trendben tartja a pozíciót, viszont a normális visszahúzások is kiüthetik, ha a távolság túl szűkre van állítva."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a követő stopot magas volatilitású eszközöknél tartja indokoltnak, ahol a tézis gyorsan változhat. A távolságot az eszköz átlagos napi kilengéséhez érdemes igazítani: a túl szűk beállítás a zajra reagál, nem a trendfordulóra."
+      }
+    ]
+  },
+  {
+    "slug": "kockazat-hozam-arany",
+    "title": "Kockázat/hozam arány – Risk/Reward Ratio",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A vállalt maximális veszteség és a megcélzott nyereség aránya egy adott pozícióban. Angolul risk/reward ratio. Egy 1:3 arány azt jelenti, hogy a kockáztatott összeg háromszorosa a célzott hozam."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Az arány dönti el, milyen találati arány mellett nyereséges egy rendszer. Kedvező kockázat/hozam mellett akár 40 százalék alatti találati arány is nyereséges lehet, míg szűk aránnyal a magas találati arány sem elegendő."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a belépő értékelésekor a stop és a célár távolságát együtt nézi: ugyanaz a tézis kedvezőtlen aránnyal rossz kereskedéssé válik. A már elszaladt árfolyamnál a kockázat/hozam romlik, még ha az eredeti olvasat helyes volt is."
+      }
+    ]
+  },
+  {
+    "slug": "dca",
+    "title": "DCA – Költségátlagolás",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Rendszeres időközönként, azonos összegben történő vásárlás, függetlenül az aktuális ártól. Angolul dollar cost averaging. Alacsonyabb áron automatikusan több, magasabb áron kevesebb egységet vásárol a befektető."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A módszer kiiktatja az időzítés kérdését, és csökkenti annak kockázatát, hogy a teljes tőke egyetlen kedvezőtlen ponton kerüljön befektetésre. Cserébe emelkedő piacon jellemzően alacsonyabb hozamot ad, mint az egyösszegű befektetés."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar megkülönbözteti a tervezett költségátlagolást a veszteséges pozícióra történő átlagolástól: az előbbi előre rögzített ütemterv, az utóbbi menet közbeni döntés egy romló helyzetben. A kettő pszichológiai háttere ellentétes."
+      }
+    ]
+  },
+  {
+    "slug": "ujrasulyozas",
+    "title": "Újrasúlyozás – Rebalancing",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A portfólió eredeti arányainak helyreállítása: a felülteljesítő eszközök egy részének eladása és az alulteljesítők vásárlása. Angolul rebalancing. Történhet naptári alapon vagy meghatározott eltérési küszöb elérésekor."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Az emelkedő pozíciók idővel túlsúlyossá válnak, ezzel a portfólió kockázata észrevétlenül megnő. Az újrasúlyozás visszaállítja a tervezett kockázati szintet, és mechanikusan érvényesíti a drágán eladni, olcsón venni elvet."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az újrasúlyozást szabályalapú eszközként kezeli, nem előrejelzésként: éppen az a lényege, hogy érzelmi mérlegelés nélkül működik. Adózási és tranzakciós költsége van, ezért a túl gyakori kiigazítás rontja az eredményt."
+      }
+    ]
+  },
+  {
+    "slug": "fomo",
+    "title": "FOMO – Kimaradástól való félelem",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Angolul fear of missing out: az a késztetés, hogy a befektető egy már elszaladt mozgásba is beszálljon, nehogy kimaradjon belőle. Jellemzően nem új információ, hanem az emelkedés látványa váltja ki."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A FOMO a legrosszabb kockázat/hozam arányú pontokon vezet belépéshez: a mozgás nagy része már megtörtént, a stop pedig messzebb kerül. Emiatt a belépés mérete és időzítése is jellemzően eltér az eredeti tervtől."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar figyelmeztető jelzésként kezeli, ha a belépés indoka egy korábbi mozgásból való kimaradás, nem pedig önálló tézis. Az elszalasztott nyereség nem valós veszteség — az elmulasztott lehetőség és a rossz belépő között lényeges a különbség."
+      }
+    ]
+  },
+  {
+    "slug": "veszteseg-kerules",
+    "title": "Veszteségkerülés – Loss Aversion",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Angolul loss aversion: a viselkedési közgazdaságtan megfigyelése, amely szerint az azonos nagyságú veszteség lélektanilag erősebb hatást vált ki, mint az ugyanakkora nyereség. Kahneman és Tversky kutatásaiból származik."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Ez magyarázza, miért hajlamosak a befektetők a nyereséges pozíciókat túl korán zárni, a veszteségeseket viszont hosszan tartani: a veszteség realizálása fájdalmasabb, mint a papíron megmaradó mínusz elviselése."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar ezt a torzítást a portfólió szerkezetében látja: ha a nyertesek rendre kis nyereséggel zárulnak, a vesztesek pedig hónapokig nyitva maradnak, az nem piaci, hanem döntési minta. Az előre rögzített kilépési feltétel ezt semlegesíti."
+      }
+    ]
+  },
+  {
+    "slug": "megerositesi-torzitas",
+    "title": "Megerősítési torzítás – Confirmation Bias",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Angolul confirmation bias: az a hajlam, hogy a saját álláspontunkat alátámasztó információt keressük és fogadjuk el, az ellentmondót pedig figyelmen kívül hagyjuk vagy leértékeljük."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Nyitott pozíció mellett a torzítás felerősödik: a befektető olyan forrásokat követ, amelyek a saját tézisét ismétlik, és a figyelmeztető adatokat átmenetinek minősíti. Így a tézis érvénytelenné válása későn tudatosul."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a torzítást azzal ellensúlyozza, hogy a belépéskor rögzíti, milyen konkrét adat cáfolná a tézist. Az előre leírt cáfolati feltételt nehezebb utólag átértelmezni, mint egy homályos elvárást."
+      }
+    ]
+  },
+  {
+    "slug": "horgonyzas",
+    "title": "Horgonyzás – Anchoring",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Angolul anchoring: az a torzítás, amelyben egy önkényes referenciapont — jellemzően a saját belépési vagy kilépési ár — aránytalanul befolyásolja a későbbi döntéseket."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A piac nem ismeri a befektető bekerülési árát, mégis sokan ehhez viszonyítva ítélik meg, hogy egy papír olcsó vagy drága. Ez akadályozza a helyzet újraértékelését a jelenlegi információk alapján."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a horgonyzás jelének tekinti, ha egy korábban eladott eszköz minden magasabb ára automatikusan drágának tűnik. A releváns kérdés nem az, hol szállt ki korábban a befektető, hanem hogy a jelenlegi szinten mit árazna a fundamentum."
+      }
+    ]
+  },
+  {
+    "slug": "mentalis-konyveles",
+    "title": "Mentális könyvelés – Mental Accounting",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Angolul mental accounting: az a jelenség, amikor a befektető elkülönített kasszákban gondolkodik, és ugyanazt az összeget eltérően kezeli attól függően, honnan származik vagy hol keletkezett a vesztesége."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A pénz helyettesíthető: egy adott összeg értéke nem függ attól, melyik eszközön keletkezett. A mentális könyvelés mégis oda vezethet, hogy a befektető ragaszkodik ahhoz, hogy a veszteséget ugyanabban az eszközosztályban hozza vissza."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar kockázati jelzésként kezeli, ha egy döntés indoka egy korábbi, más eszközön elszenvedett veszteség helyreállítása. Ez a gondolat jellemzően nagyobb pozícióhoz és magasabb tőkeáttételhez vezet, mint amit a befektető egyébként vállalna."
+      }
+    ]
+  },
+  {
+    "slug": "etf",
+    "title": "ETF – Tőzsdén kereskedett alap",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Angolul exchange traded fund: tőzsdén, részvényként kereskedhető befektetési alap, amely jellemzően egy indexet, szektort vagy nyersanyagot követ. Egyetlen tranzakcióval sok mögöttes eszközre ad kitettséget."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Az ETF-ek alacsony költséggel és azonnali diverzifikációval kínálnak hozzáférést egész piacokhoz. A napon belüli kereskedhetőség megkülönbözteti őket a hagyományos befektetési alapoktól, amelyek naponta egyszer árazódnak."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az ETF-nél a követett indexet és a mögöttes szerkezetet nézi, nem csak a nevét: a fizikai és a szintetikus replikáció eltérő partnerkockázatot hordoz. Az alap mérete és napi forgalma a kereskedhetőséget és a vételi-eladási különbözetet határozza meg."
+      }
+    ]
+  },
+  {
+    "slug": "kotveny",
+    "title": "Kötvény – Bond",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Hitelviszonyt megtestesítő értékpapír: a kibocsátó — állam vagy vállalat — kamatot fizet a futamidő alatt, és lejáratkor visszafizeti a névértéket. Angolul bond."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A kötvény ára és hozama ellentétesen mozog: emelkedő piaci kamatszint mellett a már kibocsátott, alacsonyabb kamatozású papírok ára esik. Az árfolyam kamatérzékenységét a hátralévő futamidő, pontosabban a duráció határozza meg."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a kötvénypiacot vezető jelzésként olvassa: a hozamok elmozdulása gyakran megelőzi a részvénypiaci reakciót, mert a globális árazás alapja a kockázatmentes hozam. A vállalati és állampapír-hozam közötti felár a kockázati étvágyat méri."
+      }
+    ]
+  },
+  {
+    "slug": "price-to-book",
+    "title": "P/B – Ár/könyv szerinti érték",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Az árfolyam és az egy részvényre jutó saját tőke hányadosa. Angolul price-to-book ratio. Azt mutatja, hányszorosát fizeti a piac a vállalat könyv szerinti nettó vagyonának."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Eszközintenzív ágazatokban — bankok, biztosítók, ingatlan, ipar — jól használható értékelési mutató. Szolgáltató és szoftvercégeknél kevésbé informatív, mert a fő érték a mérlegben nem szereplő szellemi tulajdonban van."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a P/B-t a saját tőke arányos megtérülésével együtt nézi: az alacsony mutató önmagában lehet olcsóság, de romló jövedelmezőség jele is. Az egy alatti érték azt jelenti, hogy a piac a könyv szerinti vagyonnál kevesebbre értékeli a céget."
+      }
+    ]
+  },
+  {
+    "slug": "peg-ratio",
+    "title": "PEG ráta",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A P/E mutató elosztva a várható éves eredménynövekedési ütemmel. Angolul price/earnings-to-growth ratio. A növekedés ütemét is beépíti az értékelésbe, ezért a gyorsan bővülő cégeknél reálisabb képet ad."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "Az egy alatti érték hagyományosan azt jelzi, hogy a piac a növekedési ütemnél olcsóbban árazza a részvényt. Egy 30-as P/E magas lehet, de 30 százalékos növekedés mellett a PEG 1,0 — vagyis az értékeltség indokolt."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a PEG-et a növekedési előrejelzés minőségével együtt kezeli: a mutató annyit ér, amennyire a becsült ütem megalapozott. Ciklikus vállalatoknál a csúcson mért növekedés torzít, ezért ott a többéves átlag ad használhatóbb képet."
+      }
+    ]
+  },
+  {
+    "slug": "ev-ebitda",
+    "title": "EV/EBITDA",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A vállalatérték és az EBITDA hányadosa. Az EV (enterprise value) a piaci kapitalizáció plusz a nettó adósság, vagyis a cég teljes felvásárlási ára. Angolul enterprise value to EBITDA."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A P/E-vel szemben figyelembe veszi az eladósodottságot, ezért eltérő tőkeszerkezetű vállalatok is összehasonlíthatók vele. Felvásárlási tárgyalásokon és iparági összevetésekben ez az egyik leggyakrabban használt szorzószám."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az EV/EBITDA-t iparágon belül értelmezi, mert az elfogadott szint ágazatonként jelentősen eltér. Az EBITDA nem tartalmazza az értékcsökkenést, ezért tőkeigényes szektorokban a mutató kedvezőbb képet ad a valós készpénztermelésnél."
+      }
+    ]
+  },
+  {
+    "slug": "roic",
+    "title": "ROIC – Befektetett tőke megtérülése",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Angolul return on invested capital: az adózott működési eredmény és a működésbe fektetett tőke — saját tőke plusz kamatozó adósság — hányadosa. Azt méri, mennyire hatékonyan használja a vállalat a rendelkezésére álló forrásokat."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A ROIC a minőség egyik legjobb mérőszáma, mert az adósságtól függetlenül mutatja a működés hatékonyságát. Akkor teremt értéket a vállalat, ha a ROIC tartósan meghaladja a tőkeköltségét — a kettő különbsége a valódi kérdés."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a ROIC-ot a saját tőke megtérülésénél informatívabbnak tartja, mert a magas adósság a ROE-t mesterségesen felnagyíthatja. A tartósan magas ROIC általában védett piaci pozícióra utal, a hanyatló trend pedig erősödő versenyre."
+      }
+    ]
+  },
+  {
+    "slug": "osztalekhozam",
+    "title": "Osztalékhozam – Dividend Yield",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Az egy részvényre jutó éves osztalék és az aktuális árfolyam hányadosa, százalékban. Angolul dividend yield. Az árfolyam változásával automatikusan mozog: eső árfolyam mellett emelkedik."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A hozam a befektetett tőkére vetített készpénzmegtérülést mutatja. A kiugróan magas érték azonban gyakran nem a bőkezűségből, hanem az árfolyam eséséből ered, ezért önmagában nem jelent olcsóságot."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az osztalékhozamot a kifizetési rátával és a szabad cash flow-val együtt nézi: a fenntarthatóság kérdése az, hogy a vállalat a termelt készpénzből fizet-e. A többéves átlaghoz mért magas hozam value-jelzés lehet, de osztalékvágás előjele is."
+      }
+    ]
+  },
+  {
+    "slug": "eladosodottsag",
+    "title": "Eladósodottság – Debt-to-Equity",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "A kamatozó adósság és a saját tőke aránya. Angolul debt-to-equity ratio (D/E). Azt mutatja, milyen mértékben finanszírozza a vállalat a működését hitelből a tulajdonosi tőkéhez képest."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A magas eladósodottság emelkedő kamatkörnyezetben gyorsan növekvő terhet jelent, és szűkíti a mozgásteret egy visszaesésben. A tolerálható szint ágazatonként eltér: a közművek és a telekommunikáció stabil cash flow mellett magasabb adósságot bír el."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar az eladósodottságot az adósság lejárati szerkezetével együtt vizsgálja: a közeli refinanszírozási igény magas kamatszint mellett akkor is kockázat, ha az arány önmagában elfogadható. A nettó adósság és az EBITDA hányadosa gyakran beszédesebb mutató."
+      }
+    ]
+  },
+  {
+    "slug": "moat",
+    "title": "Moat – Gazdasági várárok",
+    "sections": [
+      {
+        "title": "Mi ez?",
+        "text": "Tartós versenyelőny, amely megvédi a vállalat jövedelmezőségét a versenytársaktól. Angolul economic moat, a kifejezést Warren Buffett tette ismertté. Forrása lehet márka, hálózati hatás, méretgazdaságosság, szabadalom vagy magas váltási költség."
+      },
+      {
+        "title": "Miért fontos?",
+        "text": "A várárok nélküli magas nyereségességet a verseny idővel leépíti. A védett pozíció ezzel szemben lehetővé teszi, hogy a vállalat évtizedekig a tőkeköltsége felett termeljen megtérülést, ami a hosszú távú értéknövekedés motorja."
+      },
+      {
+        "title": "Piacradar értelmezés",
+        "text": "A Piacradar a várárok meglétét a marzsok időbeli alakulásán méri: a tartósan magas és stabil működési marzs védett pozícióra utal, a szűkülő marzs pedig erősödő versenyre. Az árazási erő megléte a legmegbízhatóbb gyakorlati jelzés."
       }
     ]
   }
