@@ -5,7 +5,7 @@
 A tartalmak kizárólag általános tájékoztatási célt szolgálnak, nem minősülnek befektetési tanácsadásnak.
 
 
-# Pénzügyi Szótár (152 fogalom)
+# Pénzügyi Szótár (168 fogalom)
 
 Forrás: https://piacradar.eu/glossary.html
 
@@ -27,6 +27,15 @@ Hivatkozás: https://piacradar.eu/szotar/adp.html
 **Miért fontos?** Az ADP adat a munkaerőpiac állapotáról ad előzetes képet. Erős szám a kamatcsökkentési várakozásokat tompíthatja, gyenge szám lassulást jelezhet.
 
 **Piacradar értelmezés** A Piacradar az ADP-t az NFP összefüggésében értelmezi — önmagában nem megbízható előrejelző, de a trend iránya fontos kontextus.
+
+## Altcoin
+Hivatkozás: https://piacradar.eu/szotar/altcoin.html
+
+**Mi ez?** Minden kriptoeszköz a Bitcoinon kívül. A kategória rendkívül heterogén: ide tartoznak az önálló alaphálózatok tokenjei, a rájuk épülő alkalmazások eszközei és a stablecoinok is.
+
+**Miért fontos?** Az altcoinok jellemzően magasabb bétájú eszközök: a piaci emelkedésben nagyobbat mozdulnak felfelé, az esésben pedig aránytalanul többet veszítenek. Likviditásuk is szűkebb, ami tovább erősíti a kilengéseket.
+
+**Piacradar értelmezés** A Piacradar az altpiacot a BTC-dominancia felől olvassa: a csökkenő dominancia jellemzően az altok felé áramló tőkét jelez, az emelkedő dominancia pedig a Bitcoinba történő visszahúzódást. Kockázatkerülő környezetben az altok szenvedik el először a likviditás elpárolgását.
 
 ## AMC (After Market Close)
 Hivatkozás: https://piacradar.eu/szotar/amc.html
@@ -145,6 +154,15 @@ Hivatkozás: https://piacradar.eu/szotar/halving.html
 
 **Piacradar értelmezés** A Piacradar a halving ciklust a BTC piaci narratíva részeként kezeli — az aktuális ciklus-pozíció kontextust ad a BTC mozgásokhoz.
 
+## Blockchain
+Hivatkozás: https://piacradar.eu/szotar/blockchain.html
+
+**Mi ez?** Elosztott főkönyv, amelyben a tranzakciókat blokkokba rendezve, kriptográfiai láncolattal rögzítik. A hálózat résztvevői közösen tárolják és ellenőrzik az adatokat, így utólagos módosításhoz a hálózat többségének egyetértése kellene.
+
+**Miért fontos?** A bizalom nem egy központi szereplőtől, hanem a rendszer felépítéséből ered: bárki ellenőrizheti a tranzakciótörténetet, és senki nem írhatja át egyoldalúan. Ez teszi lehetővé az értékátvitelt bank vagy elszámolóház közbeiktatása nélkül.
+
+**Piacradar értelmezés** A Piacradar a blokkláncot infrastruktúraként kezeli, nem befektetési eszközként: az adott hálózat értékét a rajta zajló tényleges gazdasági aktivitás, a fejlesztői jelenlét és a díjbevétel mutatja. A technológiai újdonság önmagában nem árazza a hozzá tartozó tokent.
+
 ## Blue Chip
 Hivatkozás: https://piacradar.eu/szotar/blue-chip.html
 
@@ -224,7 +242,7 @@ Hivatkozás: https://piacradar.eu/szotar/capex.html
 
 **Miért fontos?** A magas capex lehet növekedési jel (kapacitásbővítés, új termék, AI‑beruházás), de lehet margin‑nyomás is, ha a megtérülés gyenge. A piac azt figyeli, hogy a beruházások hozama meghaladja‑e a tőkeköltséget (WACC). Ha igen, értékteremtő; ha nem, cash‑égetés.
 
-**Piacradar értelmezés** Earnings call‑okban a „capex guide" kulcsjelzés: a kérdés mindig az, hogy a beruházás growth story‑t épít, vagy rövid távon rontja a free cash flow‑t. A capex‑szint a ciklusérzékenység egyik legjobb indikátora.
+**Piacradar értelmezés** A Piacradar a capexet a szabad cash flow tükrében olvassa: a beruházás növekedési sztorit építhet, de rövid távon rontja a készpénztermelést. Az earnings hívásokon elhangzó capex-előrejelzés a ciklusérzékenység egyik legjobb indikátora.
 
 ## Capitulation / Dead Cat Bounce
 Hivatkozás: https://piacradar.eu/szotar/capitulation.html
@@ -261,6 +279,15 @@ Hivatkozás: https://piacradar.eu/szotar/circuit-breaker.html
 **Miért fontos?** A circuit breaker célja a pánikeladások megfékezése és a rendezett árazás helyreállítása. Aktiválása rendkívüli piaci stresszt jelez — ritka, de erős figyelmeztető jel.
 
 **Piacradar értelmezés** A Piacradar a circuit breaker aktiválását kivételes eseményként kezeli, amely flash crash-t vagy rendszerszintű pánikot jelez — a mozgás ilyenkor technikai és érzelmi, nem fundamentális.
+
+## CLARITY Act
+Hivatkozás: https://piacradar.eu/szotar/clarity-act.html
+
+**Mi ez?** Teljes nevén Digital Asset Market Clarity Act (H.R. 3633): a digitális eszközök piaci struktúráját szabályozó amerikai törvényjavaslat. Jelenleg még nem hatályos törvény, a jogalkotási folyamat tart.
+
+**Miért fontos?** A javaslat a CFTC-hez rendelné a digitális nyersanyagok azonnali piacának felügyeletét, míg a tőkebevonás és a befektetési szerződések a SEC hatáskörében maradnának. Ez oldaná fel azt a hatásköri bizonytalanságot, amely évek óta akadályozza az amerikai piac fejlődését.
+
+**Piacradar értelmezés** A Piacradar a jogalkotási folyamat tényleges állását követi, nem az egyes nyilatkozatokat: a Képviselőház 2025 júliusában elfogadta, a szenátusi bankbizottság 2026 májusában megszavazta, a végszavazás azonban még nem történt meg. Vitatott pont az összeférhetetlenség és a stablecoin-hozam kérdése.
 
 ## Commodities
 Hivatkozás: https://piacradar.eu/szotar/commodity.html
@@ -360,6 +387,15 @@ Hivatkozás: https://piacradar.eu/szotar/depeg.html
 **Miért fontos?** Egy stablecoin depegje bizalmi válságot és tovagyűrűző likvidálásokat indíthat a teljes kriptopiacon. A Terra/UST 2022-es depegje ~60 milliárd dollárt törölt el és láncreakciót okozott (Celsius, 3AC).
 
 **Piacradar értelmezés** A Piacradar a depeget rendszerszintű kockázati jelzésként kezeli — egy nagy stablecoin tartós eltérése a fedezet minőségéről és a piaci likviditásról árulkodik.
+
+## Devizaintervenció
+Hivatkozás: https://piacradar.eu/szotar/devizaintervencio.html
+
+**Mi ez?** Jegybanki vagy kormányzati beavatkozás a devizapiacon, amelynek célja a saját fizetőeszköz árfolyamának befolyásolása. Történhet közvetlen adásvétellel, illetve verbális formában, puszta bejelentéssel is.
+
+**Miért fontos?** Az intervencióhoz devizatartalékot kell felhasználni, ami korlátozott erőforrás. Ezért a beavatkozás jellemzően a mozgás ütemét lassítja vagy időt nyer, de a fundamentumokkal szemben tartósan nem képes irányt fordítani.
+
+**Piacradar értelmezés** A Piacradar az intervenciót figyelmeztető jelzésként olvassa: azt mutatja, hogy az árfolyammozgás elért egy olyan szintet, amelyet a döntéshozók már kezelendőnek tartanak. Több jegybank összehangolt fellépése erősebb hatású, mint az egyoldalú beavatkozás.
 
 ## Dividend – Osztalék
 Hivatkozás: https://piacradar.eu/szotar/dividend.html
@@ -478,6 +514,15 @@ Hivatkozás: https://piacradar.eu/szotar/ecb.html
 
 **Piacradar értelmezés** A Piacradar az EKB-t mindig a Fed pályájához viszonyítva olvassa: ha az EKB szigorúbb az amerikai jegybanknál, az az eurót erősíti, fordított esetben gyengíti. A német infláció és üzleti hangulat a döntések egyik legfontosabb inputja.
 
+## EURUSD
+Hivatkozás: https://piacradar.eu/szotar/eurusd.html
+
+**Mi ez?** Az euró és az amerikai dollár árfolyampárja, a devizapiac legnagyobb forgalmú instrumentuma. Az árfolyam azt mutatja, hány dollárt ér egy euró az adott pillanatban.
+
+**Miért fontos?** A pár mozgása a Fed és az EKB kamatpályájának különbségét, a két gazdasági övezet növekedési kilátásait és a globális kockázati hangulatot tükrözi. Az európai exportőrök versenyképességét és az amerikai vállalatok külföldi bevételének dollárértékét egyaránt befolyásolja.
+
+**Piacradar értelmezés** A Piacradar az EURUSD-t elsősorban a kamatkülönbözet felől olvassa: ha a Fed szigorúbb pályán jár az EKB-nál, az jellemzően a dollárt erősíti. Kockázatkerülő időszakokban a dollár menedékszerepe önmagában is felfelé hajthatja a keresletét.
+
 ## Fiskális politika – Költségvetési politika
 Hivatkozás: https://piacradar.eu/szotar/fiskalis-politika.html
 
@@ -514,6 +559,15 @@ Hivatkozás: https://piacradar.eu/szotar/free-cash-flow.html
 
 **Piacradar értelmezés** A Piacradar a FCF-et a fenntartható osztalék- és buyback-politika egyik kulcsmutatójaként figyeli.
 
+## Funding Rate – Finanszírozási ráta
+Hivatkozás: https://piacradar.eu/szotar/funding-rate.html
+
+**Mi ez?** A perpetual kontraktusok long és short pozíciói között rendszeres időközönként átutalt kifizetés. Ha az ár a spot fölé kerül, a longok fizetnek a shortoknak, fordított esetben a shortok a longoknak.
+
+**Miért fontos?** A mechanizmus az árat a spot piachoz köti, emellett a piaci pozicionáltság egyik legpontosabb mérőszáma. A tartósan magas pozitív ráta azt jelzi, hogy a long oldal túlsúlyba került és a tőkeáttétel felhalmozódott.
+
+**Piacradar értelmezés** A Piacradar a finanszírozási rátát kontraindikátorként is olvassa: a szélsőségesen pozitív érték túlfűtött long pozicionáltságra utal, ami sérülékennyé teszi a piacot egy korrekcióval szemben. A negatív tartomány short dominanciát jelez, ami squeeze alapját adhatja.
+
 ## Futures – Határidős ügyletek
 Hivatkozás: https://piacradar.eu/szotar/futures.html
 
@@ -541,6 +595,15 @@ Hivatkozás: https://piacradar.eu/szotar/gamma.html
 
 **Piacradar értelmezés** A Piacradar a gamma-pozicionáltságot volatilitási előrejelzőként olvassa: a nagy pozitív gamma szűk sávú, oldalazó kereskedést valószínűsít, míg a negatív tartományba fordulás gyorsuló, egyirányú mozgás kockázatát jelzi. A nagy opciós lejáratok környékén ez különösen meghatározó.
 
+## Gas Fee – Tranzakciós díj
+Hivatkozás: https://piacradar.eu/szotar/gas-fee.html
+
+**Mi ez?** A blokklánc használatáért fizetett díj, amely a hálózat számítási kapacitásának igénybevételét fedezi. Jellemzően az adott hálózat natív tokenjében kell megfizetni, és a validátorokat díjazza.
+
+**Miért fontos?** A díj a hálózati terheléssel változik: nagy forgalom idején megugorhat, ami a kisebb összegű tranzakciókat gazdaságtalanná teszi. Ez közvetlenül befolyásolja a hálózat használhatóságát és versenyképességét a többi blokklánccal szemben.
+
+**Piacradar értelmezés** A Piacradar a díjbevételt a hálózat tényleges keresletének mérőszámaként olvassa: a tartósan magas díjbevétel valós használatra utal, míg a nulla közeli díj alacsony aktivitásra. Egyes hálózatoknál a díjak egy részét elégetik, ami a kínálati oldalra is hat.
+
 ## GDP
 Hivatkozás: https://piacradar.eu/szotar/gdp.html
 
@@ -549,6 +612,15 @@ Hivatkozás: https://piacradar.eu/szotar/gdp.html
 **Miért fontos?** A GDP a gazdaság tényleges teljesítményét mutatja, és a jegybanki mérlegelés egyik pillére. Két egymást követő negatív negyedév a recesszió technikai definíciója, ami a vállalati eredményvárakozások átárazását indítja el.
 
 **Piacradar értelmezés** A Piacradar a főszám mögötti összetételt nézi: a fogyasztás és a beruházás tartós növekedést jelez, míg a készletfelhalmozásból vagy külkereskedelmi eltolódásból származó ugrás átmeneti lehet. Az erős GDP magasabb kamatpályát, a gyenge risk-off hangulatot vetít előre.
+
+## GENIUS Act
+Hivatkozás: https://piacradar.eu/szotar/genius-act.html
+
+**Mi ez?** 2025. július 18-án aláírt, hatályos amerikai szövetségi törvény, amely a fizetési stablecoinokra hoz létre keretrendszert. Előírja az 1:1 arányú tartalékfedezetet, és megtiltja a kibocsátóknak, hogy hozamot fizessenek a tulajdonosoknak.
+
+**Miért fontos?** A törvény jogi biztonságot ad a stablecoin-kibocsátásnak, ami feltétele az intézményi használatnak. A hozamfizetés tilalma elválasztja a stablecoint a banki betéttől, a decentralizált pénzügyek pedig kimaradnak a szolgáltatói definícióból. A végrehajtási rendeletek kidolgozása még tart.
+
+**Piacradar értelmezés** A Piacradar a GENIUS Actet a stablecoinok fizetési célú elterjedésének feltételeként olvassa: a tartalékkövetelmény miatt a kibocsátóknak jellemzően rövid lejáratú államkötvényben kell tartaniuk a fedezetet, ami a szektor növekedését az államadósság-finanszírozáshoz is hozzákapcsolja.
 
 ## Gold – Arany
 Hivatkozás: https://piacradar.eu/szotar/gold.html
@@ -739,6 +811,15 @@ Hivatkozás: https://piacradar.eu/szotar/jolts.html
 
 **Piacradar értelmezés** A Piacradar a JOLTS adatot a munkaerőpiaci túlhevülés vagy lehűlés jelzőjeként használja.
 
+## Kamatparitás – Interest Rate Parity
+Hivatkozás: https://piacradar.eu/szotar/kamatparitas.html
+
+**Mi ez?** Elméleti összefüggés, amely szerint két deviza kamatkülönbözetét a határidős árfolyam kiegyenlíti, így a magasabb kamatozású deviza határidőre gyengébben árazódik. Fedezett és fedezetlen változata is létezik.
+
+**Miért fontos?** Ez a carry trade elméleti alapja: ha a paritás tökéletesen érvényesülne, a kamatkülönbözetből nem lehetne nyereséget elérni. A gyakorlatban a fedezetlen változat rendszeresen sérül, és éppen ez teremti meg a stratégia hozamát.
+
+**Piacradar értelmezés** A Piacradar a kamatparitás sérülését kockázati jelzésként is olvassa: a carry pozíciók addig működnek, amíg a finanszírozó deviza gyenge marad. A kamatkülönbözet szűkülése vagy a finanszírozó deviza erősödése a pozíciók gyors leépítését indíthatja el.
+
 ## Leverage – Tőkeáttét
 Hivatkozás: https://piacradar.eu/szotar/leverage.html
 
@@ -756,6 +837,15 @@ Hivatkozás: https://piacradar.eu/szotar/likviditas.html
 **Miért fontos?** A likviditás elapadása felerősíti az ármozgásokat: stresszhelyzetben, alacsony forgalmú időszakban (pre-market, after-hours, ünnepnapok) a mozgások túlzóak lehetnek. Rendszerszinten a jegybanki likviditás (QE/QT) a kockázati étvágy egyik fő hajtóereje.
 
 **Piacradar értelmezés** A Piacradar a likviditást a mozgások megbízhatóságának szűrőjeként használja: vékony likviditás mellett az árfolyamreakció kevésbé informatív, és gyakran másnapra korrigálódik.
+
+## Liquidation – Likvidálás
+Hivatkozás: https://piacradar.eu/szotar/liquidation.html
+
+**Mi ez?** Tőkeáttételes pozíció automatikus, kényszerű zárása, amikor a fedezet a szükséges szint alá csökken. A margin callal ellentétben itt nincs felszólítás és nincs mérlegelési idő: a rendszer a pozíciót magától zárja.
+
+**Miért fontos?** A kényszerzárás piaci megbízásként érkezik az ajánlati könyvbe, tehát maga is nyomja az árat. Sűrűn elhelyezkedő likvidálási szintek esetén ez láncreakciót indíthat, amelyben minden zárás újabb zárásokat vált ki.
+
+**Piacradar értelmezés** A Piacradar a likvidálási kaszkádot magyarázó tényezőként kezeli a szokatlanul gyors mozgásoknál: ilyenkor az elmozdulás mértéke nem a fundamentumból, hanem a tőkeáttétel kiszóródásából ered. A kaszkád után a rendszerben lévő tőkeáttétel jellemzően lecsökken.
 
 ## LNG
 Hivatkozás: https://piacradar.eu/szotar/lng.html
@@ -892,14 +982,14 @@ Hivatkozás: https://piacradar.eu/szotar/oil-inventories.html
 
 **Piacradar értelmezés** A Piacradar az EIA-adatot az olajár rövid távú mozgásának egyik fő katalizátoraként kezeli.
 
-## On-chain adatok
+## On-chain analízis
 Hivatkozás: https://piacradar.eu/szotar/on-chain.html
 
-**Mi ez?** A blokkláncon nyilvánosan rögzített tranzakciós adatok elemzése: pénztárcák egyenlege, tőzsdére be- és kiáramló mennyiség, tartási idő szerinti megoszlás, aktív címek száma, tranzakciós díjak.
+**Mi ez?** A blokkláncon nyilvánosan rögzített tranzakciós adatok elemzése: tárcaegyenlegek, átutalások, tőzsdei be- és kiáramlások, valamint a birtoklási idő szerinti megoszlás vizsgálata.
 
-**Miért fontos?** Az on-chain adatok a kriptopiac egyetlen olyan információforrása, amely nem a piaci áron alapul, hanem a tényleges eszközmozgáson. A tőzsdékre áramló nagy mennyiség eladási szándékot vetíthet előre, a tőzsdékről való kiáramlás inkább hosszú távú tartást jelez.
+**Miért fontos?** A hagyományos piacokon a tulajdonosi mozgások nagy része rejtve marad, itt viszont valós időben követhető. Ez lehetővé teszi, hogy a befektetők a hírek helyett a tényleges tőkeáramlás alapján ítéljék meg a piaci helyzetet.
 
-**Piacradar értelmezés** A Piacradar az on-chain adatokat megerősítő jelzésként használja: egy árfolyammozgás akkor kap nagyobb súlyt, ha a mögöttes eszközmozgás is alátámasztja. Önmagában egyetlen on-chain mutató sem irányadó.
+**Piacradar értelmezés** A Piacradar az onchain adatokat elsősorban a birtokosi csoportok viselkedésén keresztül olvassa: a nagyobb tárcák felhalmozása és a hosszú távú birtokosok mozgása többet mond a trendről, mint az árfolyam önmagában. A tőzsdei egyenlegek változása a kínálati oldalt jelzi.
 
 ## OPEC / OPEC+
 Hivatkozás: https://piacradar.eu/szotar/opec.html
@@ -981,6 +1071,15 @@ Hivatkozás: https://piacradar.eu/szotar/pboc.html
 **Miért fontos?** Kína a globális nyersanyagkereslet és az ellátási láncok meghatározó szereplője, ezért a PBoC lazítása vagy szigorítása közvetlenül hat az ipari fémek árára, a feltörekvő piacokra és az európai exportőrökre. A jüan árfolyamának irányított gyengítése globális dezinflációs nyomást is közvetíthet.
 
 **Piacradar értelmezés** A Piacradar a PBoC lépéseit a kínai konjunktúra és a nyersanyagpiac felől olvassa: az élénkítő csomagok jellemzően a rézre, az ipari fémekre és a Kínára kitett európai nevekre hatnak először.
+
+## Perpetual Futures – Örökös határidős
+Hivatkozás: https://piacradar.eu/szotar/perpetual-futures.html
+
+**Mi ez?** Lejárat nélküli határidős kontraktus, amely tőkeáttételes pozíciót tesz lehetővé az alaptermék birtoklása nélkül. A hagyományos határidős ügyletektől eltérően nincs elszámolási időpont, a pozíció elvileg korlátlan ideig tartható.
+
+**Miért fontos?** A kripto derivatív piac forgalmának túlnyomó részét ezek a kontraktusok adják, ezért az árazás jelentős része itt dől el. A finanszírozási ráta az a mechanizmus, amely az árat a spot piachoz köti.
+
+**Piacradar értelmezés** A Piacradar a perpetual piacot a nyitott kötésállomány és a finanszírozási ráta együttesében nézi: a gyorsan növekvő tőkeáttétel sérülékennyé teszi a piacot, mert egy ellenirányú mozgás kényszerlikvidálási hullámot indíthat el.
 
 ## PMI – Beszerzési menedzserindex
 Hivatkozás: https://piacradar.eu/szotar/pmi.html
@@ -1198,6 +1297,15 @@ Hivatkozás: https://piacradar.eu/szotar/short-squeeze.html
 
 **Piacradar értelmezés** A Piacradar a squeeze-gyanús mozgásokat technikai eseményként jelzi — a kérdés mindig az, mi marad az árfolyamból, amikor a kényszervásárlás kifullad.
 
+## Smart Contract – Okosszerződés
+Hivatkozás: https://piacradar.eu/szotar/smart-contract.html
+
+**Mi ez?** A blokkláncon futó, önvégrehajtó programkód, amely előre rögzített feltételek teljesülésekor automatikusan végrehajtja a tranzakciót. Közvetítő és utólagos emberi jóváhagyás nélkül működik.
+
+**Miért fontos?** Ez a decentralizált pénzügyi alkalmazások alapja: hitelezés, tőzsdei kereskedés és származtatott termékek egyaránt okosszerződéseken keresztül működnek. A kód nyilvános és ellenőrizhető, ugyanakkor a benne maradt hiba közvetlen és gyakran visszafordíthatatlan pénzügyi veszteséghez vezet.
+
+**Piacradar értelmezés** A Piacradar az okosszerződés-kockázatot a piaci kockázattól elkülönítve kezeli: az auditálatlan vagy frissen kiadott kód sérülékenységet hordoz. A nagyobb protokollhackek jellemzően nem árfolyammozgásból, hanem programozási hibából erednek.
+
 ## Soft Landing
 Hivatkozás: https://piacradar.eu/szotar/soft-landing.html
 
@@ -1233,6 +1341,15 @@ Hivatkozás: https://piacradar.eu/szotar/stagflation.html
 **Miért fontos?** A stagfláció a jegybank számára a legkényelmetlenebb helyzet, mert a két mandátum ellentétes irányba húz: az infláció letöréséhez szigorítani kellene, a gyengülő növekedés viszont lazítást kívánna. A részvénypiac számára a legrosszabb kombináció, mert a vállalati eredmények romlanak, miközben a diszkontráta magas marad.
 
 **Piacradar értelmezés** A Piacradar a stagflációs kockázatot az inflációs és növekedési adatok szétválásán méri: a lassuló GDP ragadós maginflációval együtt erősíti a forgatókönyvet, és jellemzően a nyersanyagoknak, a menedékeszközöknek kedvez a növekedési részvényekkel szemben.
+
+## Staking – Zárolás
+Hivatkozás: https://piacradar.eu/szotar/staking.html
+
+**Mi ez?** Érmék zárolása a proof-of-stake típusú hálózatok működésének biztosítására. A résztvevő a lekötött tőkéjével garantálja a tranzakciók helyes validálását, és ezért jutalmat kap a hálózattól.
+
+**Miért fontos?** A staking két irányból hat: hozamot termel a birtokosnak, és csökkenti a szabadon forgó kínálatot, mert a zárolt érme átmenetileg nem eladható. A feloldás sok hálózatnál várakozási időhöz kötött.
+
+**Piacradar értelmezés** A Piacradar a staking arányát kínálati mutatóként olvassa: a növekvő zárolt mennyiség szűkíti a piacon elérhető készletet. A hozam forrása ugyanakkor számít — ha az új kibocsátásból származik, a hozam részben önmagát hígítja.
 
 ## Strike Price – Kötési ár
 Hivatkozás: https://piacradar.eu/szotar/strike-price.html
@@ -1279,6 +1396,24 @@ Hivatkozás: https://piacradar.eu/szotar/theta.html
 
 **Piacradar értelmezés** A Piacradar a thétát az opciós pozicionáltság magyarázatánál említi — a lejárat közeli időszakban ez az egyik oka annak, hogy az opciós piac nyomása felerősödik.
 
+## Token-taxonómia
+Hivatkozás: https://piacradar.eu/szotar/token-taxonomia.html
+
+**Mi ez?** A digitális eszközök jogi besorolása három fő kategóriába: digitális nyersanyag, befektetési szerződés vagy fizetési stablecoin. A besorolás dönti el, melyik hatóság felügyeli az eszközt és milyen szabályok vonatkoznak rá.
+
+**Miért fontos?** A minősítés közvetlenül hat arra, hogy egy token elérhető-e szabályozott platformokon, és milyen közzétételi kötelezettség terheli a kibocsátót. A besorolás bizonytalansága évekig visszatartotta az intézményi tőkét az eszközosztálytól.
+
+**Piacradar értelmezés** A Piacradar megkülönbözteti a hatósági iránymutatást a törvénytől: a SEC és a CFTC 2026. március 17-i közös besorolása tizenhat tokent minősített nyersanyagnak, de ez rendeleti szintű döntés, amelyet egy következő adminisztráció visszabonthat. Jogszabályi szintre a CLARITY Act emelné.
+
+## Tokenomics – Tokenomika
+Hivatkozás: https://piacradar.eu/szotar/tokenomics.html
+
+**Mi ez?** Egy token gazdasági felépítése: a teljes és a forgalomban lévő kínálat, a kibocsátási ütem, az induló elosztás a csapat és a korai befektetők között, valamint az esetleges égetési mechanizmusok.
+
+**Miért fontos?** A tokenomika határozza meg, hogy a hálózat sikere mennyire csapódik le a token árában. Az agresszív kibocsátási ütem tartós eladói nyomást jelent, a koncentrált induló elosztás pedig későbbi feloldási hullámokat vetít előre.
+
+**Piacradar értelmezés** A Piacradar a tokenomikát a keresleti oldal mellé helyezi: hiába nő a hálózati használat, ha a kínálat gyorsabban bővül. A deflációs vagy lassuló kibocsátású modellek szerkezetileg kedvezőbb helyzetben vannak egy keresleti fordulat esetén.
+
 ## Trade Balance – Külkereskedelmi mérleg
 Hivatkozás: https://piacradar.eu/szotar/trade-balance.html
 
@@ -1300,11 +1435,11 @@ Hivatkozás: https://piacradar.eu/szotar/treasury.html
 ## TVL – Total Value Locked
 Hivatkozás: https://piacradar.eu/szotar/tvl.html
 
-**Mi ez?** A decentralizált pénzügyi (DeFi) protokollokban lekötött eszközök összértéke, jellemzően dollárban kifejezve. A szektor méretének és használatának leggyakrabban idézett mutatója.
+**Mi ez?** A decentralizált pénzügyi protokollokban zárolt eszközök összesített értéke. Magában foglalja a hitelezési piacokon elhelyezett fedezetet, a tőzsdei likviditást és a hozamtermelő stratégiákba helyezett tőkét.
 
-**Miért fontos?** A TVL a DeFi-szektor egészségének gyors jelzője: emelkedése növekvő bizalmat és tőkebeáramlást mutat, gyors esése tőkekivonást vagy bizalomvesztést. Óvatosan kell kezelni, mert az érték az eszközárakkal együtt mozog — egy árfolyamesés önmagában is csökkenti a TVL-t, valódi tőkekivonás nélkül.
+**Miért fontos?** A TVL a szektor méretének és a benne lévő bizalomnak a mérőszáma. Emelkedése tőkebeáramlást és növekvő aktivitást jelez, csökkenése pedig tőkekivonást vagy a mögöttes eszközök árfolyamesését tükrözi.
 
-**Piacradar értelmezés** A Piacradar a TVL változását mindig az árfolyammozgás mellett értelmezi: az érdemi jelzés az, ha a TVL az árfolyamtól eltérő irányba mozdul.
+**Piacradar értelmezés** A Piacradar a TVL-t óvatosan kezeli, mert az érték két okból változhat: ténylegesen érkező tőkéből, vagy pusztán a zárolt eszközök átértékelődéséből. Az egy protokollra jutó díjbevétellel együtt nézve ad tisztább képet a valós használatról.
 
 ## Unemployment Rate – Munkanélküliségi ráta
 Hivatkozás: https://piacradar.eu/szotar/unemployment-rate.html
@@ -1332,6 +1467,15 @@ Hivatkozás: https://piacradar.eu/szotar/volatilitas.html
 **Miért fontos?** Az emelkedő volatilitás bizonytalanságot és kockázatkerülést jelez, a tartósan alacsony volatilitás nyugalmat — de túlzott elkényelmesedést is. A volatilitás hirtelen kiugrása (vol spike) kényszerlikvidálásokat és mechanikus eladási hullámokat indíthat.
 
 **Piacradar értelmezés** A Piacradar a volatilitást a VIX-szel és a piaci szélességgel együtt olvassa — a kérdés mindig az, hogy a kilengés új információt tükröz, vagy pozicionáltsági, technikai eredetű.
+
+## Wallet – Kriptotárca
+Hivatkozás: https://piacradar.eu/szotar/wallet.html
+
+**Mi ez?** Olyan szoftver vagy fizikai eszköz, amely a blokkláncon lévő vagyonhoz tartozó privát kulcsokat tárolja. Maga az érme a hálózaton marad — a tárca a hozzáférést őrzi, nem magát az eszközt.
+
+**Miért fontos?** A hot wallet folyamatos internetkapcsolattal működik, ezért kényelmes, de támadható. A cold wallet offline tárolja a kulcsokat, így ellenállóbb, viszont körülményesebb. A privát kulcs elvesztése az eszközök végleges elvesztését jelenti.
+
+**Piacradar értelmezés** A Piacradar a tárolási módot önálló kockázati tényezőként kezeli: a tőzsdén hagyott eszköz partnerkockázatot hordoz, mert a kulcsok a szolgáltatónál vannak. A tőzsdei egyenlegek onchain mért növekedése gyakran eladási szándékot vagy fedezetbe helyezést jelez.
 
 ## Whale – Bálna
 Hivatkozás: https://piacradar.eu/szotar/whale.html
