@@ -21,7 +21,7 @@ A szín a piaci értelmezést tükrözi, nem azt, hogy egy eszköz önmagában e
 A kiemelt szektorok és papírok teljesítményét időről időre nyilvánosan közzétesszük — azt is, ami bevált, azt is, ami nem. Nincs szépítés: a cél nem a fényezés, hanem a valódi tudásátadás.
 
 ## Edukációs tartalmak
-- [Pénzügyi Szótár](https://piacradar.eu/glossary.html): 128 pénzügyi és tőzsdei fogalom magyarázata befektetői kontextussal (CPI, GDP, VIX, EPS és sok más). Minden fogalom önálló oldalon is elérhető: https://piacradar.eu/szotar/<slug>.html
+- [Pénzügyi Szótár](https://piacradar.eu/glossary.html): 197 pénzügyi és tőzsdei fogalom magyarázata befektetői kontextussal (CPI, GDP, VIX, EPS és sok más). Minden fogalom önálló oldalon is elérhető: https://piacradar.eu/szotar/<slug>.html
 - [Szombati Történetek](https://piacradar.eu/stories.html): heti történetek piaci összeomlásokról, tőzsdei legendákról és befektetői tanulságokról — minden szombaton új sztori.
 
 ## Fontos / jogi
