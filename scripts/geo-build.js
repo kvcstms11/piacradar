@@ -61,6 +61,7 @@ function termPageHTML(entry, prev, next) {
           url: `${SITE}/glossary.html`,
         },
         inLanguage: 'hu',
+        ...(entry.category ? { termCode: entry.category } : {}),
       },
       {
         '@type': 'BreadcrumbList',
@@ -152,7 +153,7 @@ ${JSON.stringify(ld, null, 2)}
     <a href="/">Piacradar</a> › <a href="/glossary.html">Pénzügyi Szótár</a> › <span>${esc(entry.title)}</span>
   </nav>
 
-  <div class="kick"><span class="dot"></span> Pénzügyi fogalom</div>
+  <div class="kick"><span class="dot"></span> ${esc(entry.category || 'Pénzügyi fogalom')}</div>
   <h1>${esc(entry.title)}</h1>
 
 ${body}
@@ -215,6 +216,7 @@ function glossaryLD(glossary) {
       url: termUrl(e.slug),
       description: shorten(desc, 180),
       inDefinedTermSet: `${SITE}/glossary.html`,
+      ...(e.category ? { termCode: e.category } : {}),
     };
   });
   return {
@@ -321,6 +323,7 @@ function buildLlmsFull(glossary, stories) {
   );
   for (const e of sorted) {
     out.push(`\n## ${e.title}`);
+    if (e.category) out.push(`Kategória: ${e.category}`);
     out.push(`Hivatkozás: ${termUrl(e.slug)}`);
     for (const sec of e.sections || []) {
       if (sec && typeof sec === 'object') {
