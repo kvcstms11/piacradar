@@ -22,6 +22,8 @@ A kiemelt szektorok és papírok teljesítményét időről időre nyilvánosan 
 
 ## Edukációs tartalmak
 - [Pénzügyi Szótár](https://piacradar.eu/glossary.html): 197 pénzügyi és tőzsdei fogalom magyarázata befektetői kontextussal (CPI, GDP, VIX, EPS és sok más). Minden fogalom önálló oldalon is elérhető: https://piacradar.eu/szotar/<slug>.html
+  Minden fogalom azonos szerkezetű: „Mi ez?" (definíció) · „Miért fontos?" (piaci jelentőség) · „Piacradar értelmezés" (irányt mutató olvasat).
+  Hat kategória: Makró & jegybank (53) · Kereskedés & technikai (46) · Vállalati & értékelés (32) · Globális piacok (28) · Kripto (25) · Portfólió & pszichológia (13).
 - [Szombati Történetek](https://piacradar.eu/stories.html): heti történetek piaci összeomlásokról, tőzsdei legendákról és befektetői tanulságokról — minden szombaton új sztori.
 
 ## Fontos / jogi
@@ -29,7 +31,11 @@ A tartalmak kizárólag általános tájékoztatási célt szolgálnak, nem min�
 
 ## Teljes tartalom (gépi olvasásra)
 A teljes Pénzügyi Szótár (minden fogalom teljes definíciója) és a Szombati Történetek teljes szövege egyetlen fájlban:
-- https://piacradar.eu/llms-full.txt
+- https://piacradar.eu/llms-full.txt — markdown szerkezet, kategóriánkénti tartalomjegyzékkel
+
+Strukturált (JSON) formátum programozott feldolgozáshoz:
+- https://piacradar.eu/glossary-data.json — a 197 fogalom: `slug`, `title`, `category`, `sections[{title,text}]`
+- https://piacradar.eu/sitemap-1.xml — az összes indexelhető oldal
 
 ## Hozzáférés
 A Piacradar teljes Telegram-tartalma — napi elemzések, heti mélyelemzés, befektetési napló — a zárt Telegram-csatornában érhető el; a csatlakozás jelenleg ingyenes. A weboldalon a Pénzügyi Szótár és a Szombati Történetek bárki számára nyitva áll.
