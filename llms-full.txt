@@ -9,6 +9,222 @@ A tartalmak kizárólag általános tájékoztatási célt szolgálnak, nem min�
 
 Forrás: https://piacradar.eu/glossary.html
 
+## Tartalomjegyzék kategóriánként
+
+Minden fogalom szerkezete azonos: "Mi ez?" · "Miért fontos?" · "Piacradar értelmezés".
+
+
+### Makró & jegybank (53)
+ADP Employment Report – ADP foglalkoztatottsági jelentés — https://piacradar.eu/szotar/adp.html
+Average Hourly Earnings – Órabérek — https://piacradar.eu/szotar/average-hourly-earnings.html
+Bank of England (BoE) — https://piacradar.eu/szotar/boe.html
+Bank of Japan (BoJ) — https://piacradar.eu/szotar/boj.html
+Beige Book – Fed Beige Book — https://piacradar.eu/szotar/beige-book.html
+Building Permits – Építési engedélyek — https://piacradar.eu/szotar/building-permits.html
+Consumer Confidence – Fogyasztói bizalom — https://piacradar.eu/szotar/consumer-confidence.html
+Core Infláció – Maginfláció — https://piacradar.eu/szotar/core-inflacio.html
+Core PCE – Maginfláció — https://piacradar.eu/szotar/core-pce.html
+CPI – Fogyasztói árindex — https://piacradar.eu/szotar/cpi.html
+Current Account — https://piacradar.eu/szotar/current-account.html
+Dot Plot – Fed kamatvárakozás-térkép — https://piacradar.eu/szotar/dot-plot.html
+Dovish — https://piacradar.eu/szotar/dovish.html
+Durable Goods Orders – Tartós cikkek rendelései — https://piacradar.eu/szotar/durable-goods.html
+European Central Bank (ECB) — https://piacradar.eu/szotar/ecb.html
+Fiskális politika – Költségvetési politika — https://piacradar.eu/szotar/fiskalis-politika.html
+FOMC Meeting – Fed ülés — https://piacradar.eu/szotar/fomc-meeting.html
+GDP — https://piacradar.eu/szotar/gdp.html
+Hard Landing — https://piacradar.eu/szotar/hard-landing.html
+Hawkish — https://piacradar.eu/szotar/hawkish.html
+Housing Starts – Lakásépítések — https://piacradar.eu/szotar/housing-starts.html
+IFO Index — https://piacradar.eu/szotar/ifo.html
+Industrial Production – Ipari termelés — https://piacradar.eu/szotar/industrial-production.html
+Infláció – Áremelkedés — https://piacradar.eu/szotar/inflacio.html
+Interest Rate – Kamatláb — https://piacradar.eu/szotar/interest-rate.html
+ISM Manufacturing PMI — https://piacradar.eu/szotar/ism-manufacturing-pmi.html
+ISM Services PMI — https://piacradar.eu/szotar/ism-service-pmi.html
+Jobless Claims – Munkanélküli segélykérelmek — https://piacradar.eu/szotar/jobless-claims.html
+JOLTS – Betöltetlen állások — https://piacradar.eu/szotar/jolts.html
+Likviditás — https://piacradar.eu/szotar/likviditas.html
+M2 Money Supply – M2 pénzmennyiség — https://piacradar.eu/szotar/m2-money-supply.html
+Michigan Sentiment – Fogyasztói hangulat — https://piacradar.eu/szotar/michigan-sentiment.html
+Monetáris politika – Jegybanki politika — https://piacradar.eu/szotar/monetaris-politika.html
+NFP – Nem mezőgazdasági foglalkoztatás — https://piacradar.eu/szotar/nfp.html
+Nonfarm Productivity – Termelékenység — https://piacradar.eu/szotar/nonfarm-productivity.html
+Participation Rate – Munkaerőpiaci részvételi ráta — https://piacradar.eu/szotar/participation-rate.html
+PCE – Personal Consumption Expenditures — https://piacradar.eu/szotar/pce.html
+People's Bank of China (PBoC) — https://piacradar.eu/szotar/pboc.html
+PMI – Beszerzési menedzserindex — https://piacradar.eu/szotar/pmi.html
+PPI – Termelői árindex — https://piacradar.eu/szotar/ppi.html
+Quantitative Easing (QE) – Mennyiségi lazítás — https://piacradar.eu/szotar/qe.html
+Quantitative Tightening (QT) — https://piacradar.eu/szotar/qt.html
+Rate Cut – Kamatvágás — https://piacradar.eu/szotar/rate-cut.html
+Recesszió — https://piacradar.eu/szotar/recesszio.html
+Retail Sales – Kiskereskedelmi forgalom — https://piacradar.eu/szotar/retail-sales.html
+SEP – Summary of Economic Projections — https://piacradar.eu/szotar/sep.html
+Soft Landing — https://piacradar.eu/szotar/soft-landing.html
+Stagflation – Stagfláció — https://piacradar.eu/szotar/stagflation.html
+Terminal Rate – Terminális kamat — https://piacradar.eu/szotar/terminal-rate.html
+Trade Balance – Külkereskedelmi mérleg — https://piacradar.eu/szotar/trade-balance.html
+Unemployment Rate – Munkanélküliségi ráta — https://piacradar.eu/szotar/unemployment-rate.html
+Yield Curve Control (YCC) – Hozamgörbe-kontroll — https://piacradar.eu/szotar/ycc.html
+ZEW Index — https://piacradar.eu/szotar/zew.html
+
+### Kereskedés & technikai (46)
+AMC (After Market Close) — https://piacradar.eu/szotar/amc.html
+Beta – Béta — https://piacradar.eu/szotar/beta.html
+Bid-Ask Spread – Vételi-eladási különbözet — https://piacradar.eu/szotar/bid-ask-spread.html
+BMO (Before Market Open) — https://piacradar.eu/szotar/bmo.html
+Bollinger-szalag – Bollinger Bands — https://piacradar.eu/szotar/bollinger-szalag.html
+Bull Market / Bear Market – Bika- és medvepiac — https://piacradar.eu/szotar/bull-bear-market.html
+Bullish / Bearish – Bikás / Medvés — https://piacradar.eu/szotar/bullish-bearish.html
+Call – Vételi opció — https://piacradar.eu/szotar/call.html
+Capitulation / Dead Cat Bounce — https://piacradar.eu/szotar/capitulation.html
+Circuit Breaker – Kereskedési megszakító — https://piacradar.eu/szotar/circuit-breaker.html
+Commodity Trading Advisors (CTA) — https://piacradar.eu/szotar/cta.html
+Delta – Opciós görög mutató — https://piacradar.eu/szotar/delta.html
+Drawdown – Visszaesés a csúcstól — https://piacradar.eu/szotar/drawdown.html
+ETF Flows — https://piacradar.eu/szotar/etf-flows.html
+Forgalom – Volume — https://piacradar.eu/szotar/forgalom.html
+Futures – Határidős ügyletek — https://piacradar.eu/szotar/futures.html
+Gamma — https://piacradar.eu/szotar/gamma.html
+Gap – Árrés a charton — https://piacradar.eu/szotar/gap.html
+Hedge – Fedezeti ügylet — https://piacradar.eu/szotar/hedge.html
+Implied Volatility (IV) – Implikált volatilitás — https://piacradar.eu/szotar/implied-volatility.html
+Leverage – Tőkeáttét — https://piacradar.eu/szotar/leverage.html
+MACD — https://piacradar.eu/szotar/macd.html
+Margin Call – Fedezeti felhívás — https://piacradar.eu/szotar/margin-call.html
+Momentum – Lendület — https://piacradar.eu/szotar/momentum.html
+Mozgóátlag – Moving Average — https://piacradar.eu/szotar/mozgoatlag.html
+Open Interest – Nyitott kötésállomány — https://piacradar.eu/szotar/open-interest.html
+Options – Opciók — https://piacradar.eu/szotar/options.html
+Options Expiration (OpEx) – Opciós lejárat — https://piacradar.eu/szotar/options-expiration.html
+Pre-market / After-hours kereskedés — https://piacradar.eu/szotar/pre-market.html
+Put – Eladási opció — https://piacradar.eu/szotar/put.html
+Put/Call Ratio – Put-call arány — https://piacradar.eu/szotar/put-call-ratio.html
+Quadruple Witching – Négyszeres lejárat — https://piacradar.eu/szotar/quadruple-witching.html
+Risk-on / Risk-off — https://piacradar.eu/szotar/risk-on-off.html
+RSI – Relatív erősség index — https://piacradar.eu/szotar/rsi.html
+Sell the News – Hírre eladás — https://piacradar.eu/szotar/sell-the-news.html
+Sell-off – Eladási hullám — https://piacradar.eu/szotar/sell-off.html
+Short Covering – Short zárás — https://piacradar.eu/szotar/short-covering.html
+Short Interest – Short állomány — https://piacradar.eu/szotar/short-interest.html
+Short Squeeze / Gamma Squeeze — https://piacradar.eu/szotar/short-squeeze.html
+Strike Price – Kötési ár — https://piacradar.eu/szotar/strike-price.html
+Swap – Csereügylet — https://piacradar.eu/szotar/swap.html
+Támasz és ellenállás – Support and Resistance — https://piacradar.eu/szotar/tamasz-ellenallas.html
+Theta – Időérték-vesztés — https://piacradar.eu/szotar/theta.html
+Trendvonal – Trendline — https://piacradar.eu/szotar/trendvonal.html
+VIX – Volatilitási index — https://piacradar.eu/szotar/vix.html
+Volatilitás — https://piacradar.eu/szotar/volatilitas.html
+
+### Vállalati & értékelés (32)
+Antitrust – Trösztellenes eljárás — https://piacradar.eu/szotar/antitrust.html
+AUM – Kezelt vagyon (Assets Under Management) — https://piacradar.eu/szotar/aum.html
+Biosimilar – Biohasonló gyógyszer — https://piacradar.eu/szotar/biosimilar.html
+Blue Chip — https://piacradar.eu/szotar/blue-chip.html
+Buyback – Sajátrészvény-visszavásárlás — https://piacradar.eu/szotar/buyback.html
+Capex – Tőkeberuházás — https://piacradar.eu/szotar/capex.html
+Defenzív / Ciklikus szektorok — https://piacradar.eu/szotar/defenziv-ciklikus.html
+Dividend – Osztalék — https://piacradar.eu/szotar/dividend.html
+Earnings Beat – Várakozások feletti eredmény — https://piacradar.eu/szotar/earnings-beat.html
+EBITDA — https://piacradar.eu/szotar/ebitda.html
+Eladósodottság – Debt-to-Equity — https://piacradar.eu/szotar/eladosodottsag.html
+EPS – Earnings Per Share — https://piacradar.eu/szotar/eps.html
+EV/EBITDA — https://piacradar.eu/szotar/ev-ebitda.html
+Free Cash Flow – Szabad cash flow — https://piacradar.eu/szotar/free-cash-flow.html
+GAAP vs. Adjusted – Számviteli és korrigált eredmény — https://piacradar.eu/szotar/gaap-adjusted.html
+Guidance – Vállalati előrejelzés — https://piacradar.eu/szotar/guidance.html
+Installed Base – Telepített géppark üzletág — https://piacradar.eu/szotar/installed-base.html
+IPO – Tőzsdei bevezetés — https://piacradar.eu/szotar/ipo.html
+M&A – Mergers & Acquisitions (fúziók és felvásárlások) — https://piacradar.eu/szotar/m-and-a.html
+Magnificent Seven (Mag7) — https://piacradar.eu/szotar/magnificent-seven.html
+Market Cap – Piaci kapitalizáció — https://piacradar.eu/szotar/market-cap.html
+Moat – Gazdasági várárok — https://piacradar.eu/szotar/moat.html
+NII – Nettó kamatbevétel (Net Interest Income) — https://piacradar.eu/szotar/nii.html
+Operating Margin – Működési marzs — https://piacradar.eu/szotar/operating-margin.html
+Osztalékhozam – Dividend Yield — https://piacradar.eu/szotar/osztalekhozam.html
+P/B – Ár/könyv szerinti érték — https://piacradar.eu/szotar/price-to-book.html
+P/E Ratio – Árfolyam/nyereség ráta — https://piacradar.eu/szotar/pe-ratio.html
+PEG ráta — https://piacradar.eu/szotar/peg-ratio.html
+Profit Margin – Nettó profitmarzs — https://piacradar.eu/szotar/profit-margin.html
+Revenue – Árbevétel — https://piacradar.eu/szotar/revenue.html
+ROE – Sajáttőke-arányos megtérülés — https://piacradar.eu/szotar/roe.html
+ROIC – Befektetett tőke megtérülése — https://piacradar.eu/szotar/roic.html
+
+### Globális piacok (28)
+10-Year Treasury Yield – 10 éves amerikai hozam — https://piacradar.eu/szotar/ten-year-yield.html
+Brent Oil — https://piacradar.eu/szotar/brent.html
+Carry Trade — https://piacradar.eu/szotar/carry-trade.html
+Chip Export Controls — https://piacradar.eu/szotar/chip-export-control.html
+Commodities — https://piacradar.eu/szotar/commodity.html
+Devizaintervenció — https://piacradar.eu/szotar/devizaintervencio.html
+Duration – Duráció — https://piacradar.eu/szotar/duration.html
+DXY – Dollárindex — https://piacradar.eu/szotar/dxy.html
+Emerging Markets (EM) — https://piacradar.eu/szotar/em.html
+EURUSD — https://piacradar.eu/szotar/eurusd.html
+Forex – Devizapiac — https://piacradar.eu/szotar/forex.html
+Gold – Arany — https://piacradar.eu/szotar/gold.html
+Inverted Yield Curve — https://piacradar.eu/szotar/inverted-yield-curve.html
+Japanese Government Bond (JGB) — https://piacradar.eu/szotar/jgb.html
+Kamatparitás – Interest Rate Parity — https://piacradar.eu/szotar/kamatparitas.html
+Kötvény – Bond — https://piacradar.eu/szotar/kotveny.html
+LNG — https://piacradar.eu/szotar/lng.html
+MOVE Index — https://piacradar.eu/szotar/move-index.html
+Oil Inventories – Olajkészletek — https://piacradar.eu/szotar/oil-inventories.html
+OPEC / OPEC+ — https://piacradar.eu/szotar/opec.html
+Safe Haven – Menedékeszköz — https://piacradar.eu/szotar/safe-haven.html
+Sanctions – Szankciók — https://piacradar.eu/szotar/sanction.html
+SEC – Amerikai tőzsdefelügyelet — https://piacradar.eu/szotar/sec.html
+Spread – Hozamfelár — https://piacradar.eu/szotar/spread.html
+Tariff – Vám — https://piacradar.eu/szotar/tariff.html
+Treasury – Amerikai állampapír — https://piacradar.eu/szotar/treasury.html
+WTI Oil — https://piacradar.eu/szotar/wti.html
+Yield Curve – Hozamgörbe — https://piacradar.eu/szotar/yield-curve.html
+
+### Kripto (25)
+Altcoin — https://piacradar.eu/szotar/altcoin.html
+Bitcoin Dominance – BTC-dominancia — https://piacradar.eu/szotar/btc-dominance.html
+Bitcoin ETF – Spot BTC ETF — https://piacradar.eu/szotar/btc-etf.html
+Bitcoin Halving – Felezés — https://piacradar.eu/szotar/halving.html
+Blockchain — https://piacradar.eu/szotar/blockchain.html
+CLARITY Act — https://piacradar.eu/szotar/clarity-act.html
+DeFi – Decentralized Finance — https://piacradar.eu/szotar/defi.html
+Depeg – Rögzítés elvesztése — https://piacradar.eu/szotar/depeg.html
+Funding Rate – Finanszírozási ráta — https://piacradar.eu/szotar/funding-rate.html
+Gas Fee – Tranzakciós díj — https://piacradar.eu/szotar/gas-fee.html
+GENIUS Act — https://piacradar.eu/szotar/genius-act.html
+Governance Token – Szavazati token — https://piacradar.eu/szotar/governance-token.html
+Hashrate — https://piacradar.eu/szotar/hashrate.html
+Liquidation – Likvidálás — https://piacradar.eu/szotar/liquidation.html
+Mining — https://piacradar.eu/szotar/mining.html
+On-chain analízis — https://piacradar.eu/szotar/on-chain.html
+Perpetual Futures – Örökös határidős — https://piacradar.eu/szotar/perpetual-futures.html
+Smart Contract – Okosszerződés — https://piacradar.eu/szotar/smart-contract.html
+Stablecoin — https://piacradar.eu/szotar/stablecoin.html
+Staking – Zárolás — https://piacradar.eu/szotar/staking.html
+Token-taxonómia — https://piacradar.eu/szotar/token-taxonomia.html
+Tokenomics – Tokenomika — https://piacradar.eu/szotar/tokenomics.html
+TVL – Total Value Locked — https://piacradar.eu/szotar/tvl.html
+Wallet – Kriptotárca — https://piacradar.eu/szotar/wallet.html
+Whale – Bálna — https://piacradar.eu/szotar/whale.html
+
+### Portfólió & pszichológia (13)
+DCA – Költségátlagolás — https://piacradar.eu/szotar/dca.html
+Diverzifikáció – Diversification — https://piacradar.eu/szotar/diverzifikacio.html
+ETF – Tőzsdén kereskedett alap — https://piacradar.eu/szotar/etf.html
+FOMO – Kimaradástól való félelem — https://piacradar.eu/szotar/fomo.html
+Horgonyzás – Anchoring — https://piacradar.eu/szotar/horgonyzas.html
+Kockázat/hozam arány – Risk/Reward Ratio — https://piacradar.eu/szotar/kockazat-hozam-arany.html
+Megerősítési torzítás – Confirmation Bias — https://piacradar.eu/szotar/megerositesi-torzitas.html
+Mentális könyvelés – Mental Accounting — https://piacradar.eu/szotar/mentalis-konyveles.html
+Pozícióméretezés – Position Sizing — https://piacradar.eu/szotar/poziciomeretezes.html
+Stop loss – Veszteségvágó megbízás — https://piacradar.eu/szotar/stop-loss.html
+Trailing stop – Követő stop — https://piacradar.eu/szotar/trailing-stop.html
+Újrasúlyozás – Rebalancing — https://piacradar.eu/szotar/ujrasulyozas.html
+Veszteségkerülés – Loss Aversion — https://piacradar.eu/szotar/veszteseg-kerules.html
+
+---
+
 
 ## 10-Year Treasury Yield – 10 éves amerikai hozam
 Kategória: Globális piacok
