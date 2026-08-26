@@ -11,7 +11,7 @@
  *   - glossary.html        (JSON-LD DefinedTermSet block refreshed in place)
  *   - stories.html         (JSON-LD Blog block refreshed in place)
  *   - llms-full.txt        (full machine-readable content)
- *   - sitemap.xml          (static pages + every term page)
+ *   - sitemap-1.xml        (static pages + every term page)
  *
  * llms.txt is intentionally NOT touched (it is hand-written, content-agnostic).
  *
@@ -301,7 +301,7 @@ function buildSitemap(glossary) {
     )
     .join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
-  fs.writeFileSync('sitemap.xml', xml);
+  fs.writeFileSync('sitemap-1.xml', xml);
   return urls.length;
 }
 
@@ -368,7 +368,7 @@ function main() {
   console.log(`glossary.html: ${glossary.length} terms embedded (${gLen} bytes)`);
   console.log(`stories.html: ${stories.length} posts embedded (${sLen} bytes)`);
   console.log(`llms-full.txt: ${full.length} bytes`);
-  console.log(`sitemap.xml: ${smCount} URLs`);
+  console.log(`sitemap-1.xml: ${smCount} URLs`);
 }
 
 main();
