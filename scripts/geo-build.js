@@ -321,6 +321,22 @@ function buildLlmsFull(glossary, stories) {
   const sorted = [...glossary].sort((a, b) =>
     a.title.toLowerCase().localeCompare(b.title.toLowerCase(), 'hu')
   );
+
+  // Tartalomjegyzék kategóriánként (gépi tájékozódáshoz)
+  const catOrder = ['Makró & jegybank', 'Kereskedés & technikai', 'Vállalati & értékelés',
+                    'Globális piacok', 'Kripto', 'Portfólió & pszichológia'];
+  const cats = [...new Set(sorted.map((e) => e.category || 'Egyéb'))].sort(
+    (a, b) => (catOrder.indexOf(a) < 0 ? 99 : catOrder.indexOf(a)) -
+              (catOrder.indexOf(b) < 0 ? 99 : catOrder.indexOf(b))
+  );
+  out.push('## Tartalomjegyzék kategóriánként\n');
+  out.push('Minden fogalom szerkezete azonos: "Mi ez?" · "Miért fontos?" · "Piacradar értelmezés".\n');
+  for (const c of cats) {
+    const inCat = sorted.filter((e) => (e.category || 'Egyéb') === c);
+    out.push(`\n### ${c} (${inCat.length})`);
+    out.push(inCat.map((e) => `${e.title} — ${termUrl(e.slug)}`).join('\n'));
+  }
+  out.push('\n---\n');
   for (const e of sorted) {
     out.push(`\n## ${e.title}`);
     if (e.category) out.push(`Kategória: ${e.category}`);
