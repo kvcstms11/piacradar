@@ -6,4 +6,4 @@ Allow: /
 # Full content:    https://piacradar.eu/llms-full.txt
 # Glossary terms:  https://piacradar.eu/szotar/
 
-Sitemap: https://piacradar.eu/sitemap.xml
+Sitemap: https://piacradar.eu/sitemap-1.xml
